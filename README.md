@@ -24,7 +24,7 @@ There is no build step. All paths in the page are relative.
 - `css/style.css` — paper field (`#F4F3F1` / `#F5F4F2`), red `#C8102E`, Abril Fatface / Noto Serif SC / Libre Baskerville
 - `js/content.js` — all bilingual copy, captions, links and media paths (edit this to update wording or assets)
 - `js/app.js` — language switch, chapter nav, lightbox, expanders, click-to-play video
-- `assets/` — official stills, YouTube posters, and complete uncropped presentation slides (10000×2200, shown full-width with `object-fit: contain`)
+- `assets/` — official stills, YouTube posters, Instagram cover images (`assets/ig/`), and photographs extracted for typographic plates (`assets/plates/`). The typography itself is live HTML/CSS in British English, not a screenshot of the original slides.
 - `GAPS.md` — remaining gaps and source differences
 
 ## Language

@@ -48,14 +48,20 @@ window.GM = {
       source: "interview"
     },
     images: {
-      type: "slides",
+      type: "plates",
       items: [
         {
-          src: "assets/slides/slide-13.jpg",
-          altEn: "A full typographic title page for Goldfish Mayhem — 金魚街大亂鬥 — beside the street and the three-girl key art",
-          altZh: "《金魚街大亂鬥》完整标题页，旁边是街道画面与三位女孩的主视觉",
-          capEn: "The typographic title I use for this film: 金魚街大亂鬥, Goldfish Mayhem.",
-          capZh: "我为这部影片使用的标题页：金魚街大亂鬥，Goldfish Mayhem。"
+          kind: "title",
+          highlight: "worlds",
+          headline: "GOLDFISH MAYHEM",
+          officialZh: "金魚街大亂鬥",
+          wordmark: "G O L D F I S H    M A Y H E M",
+          photos: [
+            { src: "assets/plates/13-goldfish-street.jpg", altEn: "A crowded future Goldfish Street, with a festival banner stretched between the buildings", altZh: "一条拥挤的未来金鱼街，楼与楼之间拉着节庆横幅" },
+            { src: "assets/plates/13-key-art.jpg", altEn: "Key art for Goldfish Mayhem: three girls standing together, with the official title 金魚街大亂鬥 on the artwork", altZh: "《金魚街大亂鬥》主视觉：三个女孩站在一起，画面上保留官方片名" }
+          ],
+          capEn: "The title plate for this film: Goldfish Mayhem, with the official title 金魚街大亂鬥.",
+          capZh: "这部影片的标题版：Goldfish Mayhem，并保留官方片名金魚街大亂鬥。"
         }
       ]
     },
@@ -81,6 +87,20 @@ window.GM = {
           en: "My name is Junie Lau. I am a director and creative based between London and Shanghai.",
           zh: "我叫 Junie Lau，是一名常驻伦敦和上海两地的导演和创意工作者。",
           source: "interview"
+        },
+        {
+          type: "links",
+          items: [
+            {
+              href: "https://junielau.com/",
+              kindEn: "Official website",
+              kindZh: "官网",
+              labelEn: "junielau.com",
+              labelZh: "junielau.com",
+              noteEn: "My official homepage. This livestream companion page is a separate page, not the homepage.",
+              noteZh: "我的官方主页。本次直播配套页是另一个页面，并不是官网首页。"
+            }
+          ]
         },
         {
           type: "paras",
@@ -109,37 +129,83 @@ window.GM = {
         },
         {
           type: "para",
-          en: "These four pages are how I walk through that introduction. I am showing each one in full, so the typography, the lists and the portraits stay together.",
-          zh: "下面这四页，就是我用来做这段自我介绍的完整画面。每一页我都会整页展开，排版、名单和肖像都保持原样。"
+          en: "These four plates are how I walk through that introduction — typography, lists and portraits kept together.",
+          zh: "下面这四块版面，就是我用来做这段自我介绍的完整画面：标题、名单和肖像都放在一起。"
         },
         {
-          type: "slides",
+          type: "plates",
           items: [
             {
-              src: "assets/slides/slide-01.jpg",
-              altEn: "A complete introduction page headed “我是一名青年导演?”, with a short list of films and awards and a portrait",
-              altZh: "完整的自我介绍页，标题为「我是一名青年导演?」，旁边是影片、奖项与一张肖像",
-              capEn: "The first page I walk through in this introduction: I am a director, with a short list of films and awards I can already share.",
-              capZh: "这段自我介绍翻开的第一页：我是一名导演，上面有我已经可以分享的影片和奖项。"
+              kind: "intro-awards",
+              highlight: "director",
+              ghost: "DIRECTOR",
+              headline: "I am a young director?",
+              wordmark: "D I R E C T O R",
+              awards: [
+                { n: "01", text: "Stable Diffusion AI Short Film Contest | Global Champion" },
+                { n: "02", text: "Runway International AI Film Festival | Silver" },
+                { n: "03", text: "Artefact AI Film Festival, France | Best Applied Award" },
+                { n: "04", text: "London AIFA International AI Film Festival | Best Film" },
+                { n: "05", text: "Amsterdam AI Film Festival | Best Hybrid Film" },
+                { n: "06", text: "Project Odyssey Global AI Film Festival | Silver" }
+              ],
+              photos: [
+                { src: "assets/plates/01-portrait.jpg", altEn: "A portrait of Junie Lau in a red sculptural dress, holding a golden trophy beside a gold astronaut helmet", altZh: "Junie Lau 的肖像：穿着红色雕塑感礼服，手持金色奖杯，身旁是金色宇航头盔" },
+                { src: "assets/plates/01-forbes.jpg", altEn: "A clipping of the Forbes profile “How AI And Peter Gabriel Changed Junie Lau’s Path To Directing”", altZh: "《福布斯》人物专访剪报：《How AI And Peter Gabriel Changed Junie Lau’s Path To Directing》" }
+              ],
+              capEn: "The first plate I walk through in this introduction: I am a director, with a short list of films and awards I can already share.",
+              capZh: "这段自我介绍翻开的第一块版面：我是一名导演，上面有我已经可以分享的影片和奖项。"
             },
             {
-              src: "assets/slides/slide-02.jpg",
-              altEn: "A complete page of international film-festival invitations and creative milestones, including Tribeca",
-              altZh: "完整一页：国际电影节邀请与创作里程碑，其中包括 Tribeca",
+              kind: "milestones",
+              highlight: "director",
+              ghost: "TRIBECA",
+              headline: "International film festivals and creative milestones",
+              wordmark: "T R I B E C A",
+              milestones: [
+                { n: "07", title: "Tribeca Film Festival, USA", text: "Invited twice as a special guest" },
+                { n: "08", title: "Our T2 Remake", text: "Co-director of the world’s first AI feature film" }
+              ],
+              photos: [
+                { src: "assets/plates/02-tribeca-google.jpg", altEn: "Junie Lau with colleagues in front of a Tribeca Festival and Google step-and-repeat", altZh: "Junie Lau 与同行站在 Tribeca Festival 与 Google 的背景板前" },
+                { src: "assets/plates/02-events.jpg", altEn: "A festival stage at WAIC, and Junie Lau at the Beyond the Loop 2 premiere", altZh: "WAIC 的舞台，以及 Junie Lau 在 Beyond the Loop 2 首映现场" },
+                { src: "assets/plates/02-tribeca-25.jpg", altEn: "An aerial view of a city with the Tribeca Festival 25 mark", altZh: "城市航拍，上面有 Tribeca Festival 25 的标识" }
+              ],
               capEn: "Festivals and milestones I have already reached, including invitations to the Tribeca Film Festival, and work as a co-director on Our T2 Remake.",
               capZh: "我已经走到的电影节和创作里程碑，包括受邀前往 Tribeca Film Festival，以及担任《Our T2 Remake》的联合导演。"
             },
             {
-              src: "assets/slides/slide-03.jpg",
-              altEn: "A complete page headed “我是一名艺术家?”, with collaborations, a Forbes profile, and university invitations",
-              altZh: "完整一页，标题为「我是一名艺术家?」，上面有合作、福布斯专访和高校邀请",
-              capEn: "I also work as an artist. This page brings together collaborations with Google and OpenAI, a Forbes profile, and invitations to speak at universities including Tsinghua University and Peking University.",
-              capZh: "我也做艺术家的工作。这一页把与 Google、OpenAI 的合作、《福布斯》专访，以及包括清华、北大在内的高校邀请放在一起。"
+              kind: "artist",
+              highlight: "artist",
+              ghost: "ARTIST",
+              headline: "I am an artist?",
+              wordmark: "G O O G L E  ·  O P E N A I",
+              credits: [
+                "Google, OpenAI | Official collaborating artist",
+                "Forbes | Profile of a woman AI artist",
+                "Among the world’s leading AI filmmakers | Highly regarded by the industry",
+                "Leading universities worldwide | Guest lecturer, including Tsinghua University and Peking University"
+              ],
+              photos: [
+                { src: "assets/plates/03-dear-stranger.jpg", altEn: "Key art for Dear “Stranger”, a Google I/O collaboration", altZh: "与 Google I/O 合作的《Dear “Stranger”》主视觉" },
+                { src: "assets/plates/03-love-from-void.jpg", altEn: "A still from Love from Void by Junie Lau, an OpenAI / Sora Selects work", altZh: "Junie Lau 的 Love from Void 剧照，OpenAI / Sora Selects 作品" },
+                { src: "assets/plates/03-revan.jpg", altEn: "A portrait from the REVAN campaign, with Junie standing among large flowers", altZh: "REVAN 系列肖像：Junie 站在巨大的花丛中" }
+              ],
+              capEn: "I also work as an artist. This plate brings together collaborations with Google and OpenAI, a Forbes profile, and invitations to speak at universities including Tsinghua University and Peking University.",
+              capZh: "我也做艺术家的工作。这块版面把与 Google、OpenAI 的合作、《福布斯》专访，以及包括清华、北大在内的高校邀请放在一起。"
             },
             {
-              src: "assets/slides/slide-04.jpg",
-              altEn: "A complete page of figures — 10+, 30+, 40+, 50 — beside a portrait",
-              altZh: "完整一页：10+、30+、40+、50 这些数字，旁边是一张肖像",
+              kind: "numerals",
+              highlight: "artist",
+              numerals: [
+                { num: "10+", text: "Top-tier AI film competitions — invited to serve as a professional juror" },
+                { num: "30+", text: "Domestic and international media — profiles, features, and published work" },
+                { num: "40+", text: "Technology companies — long-term partnerships and industry exchange" },
+                { num: "50", text: "Twice selected for the Global Top 50 Women AI Filmmakers", circled: true }
+              ],
+              photos: [
+                { src: "assets/plates/04-portrait.jpg", altEn: "Junie Lau seated in a pale pink jacket, introduced as a film director and multidisciplinary creative", altZh: "Junie Lau 坐着，穿着浅粉色外套，介绍为电影导演与跨界创作者" }
+              ],
               capEn: "A snapshot of the scale of that work, together with a portrait, as I continue this introduction.",
               capZh: "这份工作体量的一个速写，旁边是一张肖像。自我介绍从这里再往下走。"
             }
@@ -167,14 +233,52 @@ window.GM = {
           source: "public"
         },
         {
-          type: "slides",
+          type: "plates",
           items: [
             {
-              src: "assets/slides/slide-06.jpg",
-              altEn: "A complete timeline page: a 1999 drawing and childhood photograph, art-direction work in 2020, Disco Diffusion in February 2022, and The Court for Peter Gabriel in May 2023",
-              altZh: "完整的时间线页：1999 年的画和童年照片、2020 年的美术指导、2022 年 2 月的 Disco Diffusion，以及 2023 年 5 月为 Peter Gabriel 创作的《The Court》",
-              capEn: "This page keeps the whole path on one layout: a drawing from Children’s Day in 1999, art direction in July 2020, making worlds with Disco Diffusion in February 2022, and The Court, the AI music video for Peter Gabriel, in May 2023.",
-              capZh: "这一页把整条路径放在同一张版式上：1999 年六一儿童节的画，2020 年 7 月的美术指导，2022 年 2 月用 Disco Diffusion 创造世界，以及 2023 年 5 月为 Peter Gabriel 创作的 AI MV《The Court》。"
+              kind: "timeline",
+              highlight: "worlds",
+              headline: "Looking back over all these years, it seems there is only one thing I have never given up — *creating worlds*",
+              moments: [
+                {
+                  title: "Hand-drawn",
+                  date: "1999",
+                  caption: "Creating worlds with oil pastels from childhood",
+                  photos: [
+                    { src: "assets/plates/06-drawing-1999.jpg", altEn: "A childhood oil-pastel drawing of a yellow rabbit, a house and a sun", altZh: "一幅童年油画棒作品：黄色的兔子、房子和太阳" },
+                    { src: "assets/plates/06-childhood-1999.jpg", altEn: "A childhood photograph of Junie as a young girl, standing in front of drawings, holding a balloon", altZh: "Junie 童年的照片：小女孩站在画作前，手里拿着气球" }
+                  ]
+                },
+                {
+                  title: "Art direction",
+                  date: "2020.07",
+                  caption: "Creating worlds with timber structures, metal frameworks, fibreglass, scenic painting, 3D printing, LED screens and physical props",
+                  photos: [
+                    { src: "assets/plates/06-art-direction.jpg", altEn: "Art-direction stills from a set: a built street, an LED wall, and a studio floor with cameras and costumes", altZh: "美术指导现场：搭景街道、LED 屏，以及有摄影机和服装的棚内" },
+                    { src: "assets/plates/06-set-floral.jpg", altEn: "A densely built floral and architectural set", altZh: "一座铺满花卉与建筑细节的场景" }
+                  ]
+                },
+                {
+                  title: "Creating with AI",
+                  date: "2022.02",
+                  caption: "Creating worlds with Disco Diffusion",
+                  photos: [
+                    { src: "assets/plates/06-disco-diffusion.jpg", altEn: "A Google Colab window running Disco Diffusion v5.6, with prompt settings visible", altZh: "正在运行 Disco Diffusion v5.6 的 Google Colab 窗口，可见提示词设置" }
+                  ]
+                },
+                {
+                  title: "Grammy-winning musician Peter Gabriel AI music video",
+                  date: "2023.05",
+                  caption: "Made with Stable Diffusion and Midjourney",
+                  photos: [
+                    { src: "assets/plates/06-the-court.jpg", altEn: "A still from The Court: a man in sunglasses moving through a city street", altZh: "《The Court》剧照：一个戴墨镜的人走在城市街道上" },
+                    { src: "assets/plates/06-diffuse-together.jpg", altEn: "A #DiffuseTogether winners screen, with Junie’s name marked", altZh: "#DiffuseTogether 获奖画面，标有 Junie 的名字" },
+                    { src: "assets/plates/06-the-court-still.jpg", altEn: "A still from The Court, with the title on the image", altZh: "《The Court》剧照，画面上有片名" }
+                  ]
+                }
+              ],
+              capEn: "The path on one plate: a drawing from 1999, art direction in July 2020, making worlds with Disco Diffusion in February 2022, and The Court, the AI music video for Peter Gabriel, in May 2023.",
+              capZh: "整条路径放在同一块版面上：1999 年的画，2020 年 7 月的美术指导，2022 年 2 月用 Disco Diffusion 创造世界，以及 2023 年 5 月为 Peter Gabriel 创作的 AI MV《The Court》。"
             }
           ]
         },
@@ -200,19 +304,26 @@ window.GM = {
           source: "public"
         },
         {
-          type: "slides",
+          type: "plates",
           items: [
             {
-              src: "assets/slides/slide-07.jpg",
-              altEn: "A complete typographic page: “The best way to predict the future is to create it.” / 「预测未来最好的方式，是创造它。」",
-              altZh: "完整的标题页：「预测未来最好的方式，是创造它。」 / The best way to predict the future is to create it.",
+              kind: "chapter-quote",
+              highlight: "worlds",
+              leftWord: "Creating Worlds",
+              rightWord: "Imagining the Future",
+              headline: "The best way to predict the future is to *create it.*",
+              chapter: "C H A P T E R   0 1",
               capEn: "A line I come back to: the best way to predict the future is to create it.",
               capZh: "我常回到的一句话：预测未来最好的方式，是创造它。"
             },
             {
-              src: "assets/slides/slide-08.jpg",
-              altEn: "A complete chapter page headed 创造世界, a figure walking through a red forest of flowers",
-              altZh: "完整的章节页，标题为「创造世界」，一个人走在红色的花林里",
+              kind: "chapter-art",
+              highlight: "worlds",
+              headline: "Creating worlds",
+              chapter: "C H A P T E R   0 2",
+              photos: [
+                { src: "assets/plates/08-red-forest.jpg", altEn: "A figure in white walking through a forest of red flowers", altZh: "一个穿白衣的人走在红色的花林里" }
+              ],
               capEn: "Creating worlds — the thread I keep returning to.",
               capZh: "创造世界——我一直回到的那条线。"
             }
@@ -245,14 +356,22 @@ window.GM = {
           source: "public"
         },
         {
-          type: "slides",
+          type: "plates",
           items: [
             {
-              src: "assets/slides/slide-12.jpg",
-              altEn: "A complete page of original film IPs, including ZEЯRO, 51IST, 猩紅木蘭, MADAM PINK, and 金魚街大亂鬥 × WONDERSTUDIOS",
-              altZh: "完整一页原创电影 IP，包括 ZEЯRO、51IST、猩紅木蘭、MADAM PINK，以及「金魚街大亂鬥 × WONDERSTUDIOS」",
-              capEn: "Original film IPs I have been developing with production teams, including Goldfish Mayhem — 金魚街大亂鬥 × WONDERSTUDIOS.",
-              capZh: "我和制作团队一起开发的原创电影 IP，其中包括《金魚街大亂鬥》——金魚街大亂鬥 × WONDERSTUDIOS。"
+              kind: "invitations",
+              highlight: "worlds",
+              ghost: "INVITATIONS",
+              kickerLine: "Invitations from film companies",
+              invites: [
+                { src: "assets/plates/12-zero.jpg", altEn: "Poster for ZEЯRO, a PROMISE title", altZh: "ZEЯRO 海报，PROMISE 出品", left: "ZEЯRO", right: "PROMISE" },
+                { src: "assets/plates/12-51ist.jpg", altEn: "Poster for 51IST, a PROMISE title", altZh: "51IST 海报，PROMISE 出品", left: "51IST", right: "PROMISE" },
+                { src: "assets/plates/12-mulan.jpg", altEn: "Poster for 猩紅木蘭, a PROMISE title", altZh: "猩紅木蘭海报，PROMISE 出品", left: "猩紅木蘭", right: "PROMISE" },
+                { src: "assets/plates/12-madam-pink.jpg", altEn: "Poster for MADAM PINK, with 幕间映画", altZh: "MADAM PINK 海报，幕间映画", left: "MADAM PINK", right: "幕间映画" },
+                { src: "assets/plates/12-goldfish-mayhem.jpg", altEn: "Poster for Goldfish Mayhem with Wonder Studios", altZh: "《金魚街大亂鬥》海报，Wonder Studios", left: "Goldfish Mayhem", right: "WONDERSTUDIOS" }
+              ],
+              capEn: "Original film IPs I have been developing with production teams, including Goldfish Mayhem — Goldfish Mayhem × WONDERSTUDIOS.",
+              capZh: "我和制作团队一起开发的原创电影 IP，其中包括《金魚街大亂鬥》——Goldfish Mayhem × WONDERSTUDIOS。"
             }
           ]
         },
@@ -351,14 +470,26 @@ window.GM = {
           source: "site"
         },
         {
-          type: "slides",
+          type: "plates",
           items: [
             {
-              src: "assets/slides/slide-16.jpg",
-              altEn: "A complete page headed “我是谁?”, mapping the film’s world, the three girls, and ideas such as cyber-folk and data immortality",
-              altZh: "完整一页，标题为「我是谁?」，把影片世界、三个女孩，以及赛博民俗、数据永生等想法放在一起",
-              capEn: "A page I use when I ask “Who am I?” of this world — the three girls, the street, the Cloud, and the ideas around them, kept on one layout.",
-              capZh: "我问「我是谁?」时用的一页：三个女孩、金鱼街、云端，以及旁边那些想法，都留在同一张版式上。"
+              kind: "who",
+              highlight: "worlds",
+              headline: "Who am I?",
+              tagsLeft: ["cyber-folk", "street myth", "Lingnan aesthetics", "action comedy", "Xixili", "BOBO"],
+              tagsRight: ["Fengshui Girl", "data immortality", "Goldfish Street", "the Cloud"],
+              photosLeft: [
+                { src: "assets/plates/16-laundry.jpg", altEn: "A night street in the Goldfish Mayhem world, with laundry hanging above red plastic chairs", altZh: "《金魚街大亂鬥》世界里的夜街，红色塑料椅上方晾着衣服" },
+                { src: "assets/plates/16-bobo-art.jpg", altEn: "Key art of BOBO", altZh: "BOBO 的角色主视觉" },
+                { src: "assets/plates/16-rooftop.jpg", altEn: "A figure lying on a rooftop above a brightly lit Goldfish Street", altZh: "一个人躺在屋顶上，下面是灯火通明的金鱼街" }
+              ],
+              photosRight: [
+                { src: "assets/plates/16-offerings.jpg", altEn: "A wet street lined with paper offerings", altZh: "一条摆满纸扎的潮湿街道" },
+                { src: "assets/plates/16-shops.jpg", altEn: "A glowing shop street at night", altZh: "夜里灯火通明的店铺街" },
+                { src: "assets/plates/16-mahjong.jpg", altEn: "An old man playing mahjong with robots under a tree", altZh: "一位老人在树下和机器人打麻将" }
+              ],
+              capEn: "A plate I use when I ask “Who am I?” of this world — the three girls, the street, the Cloud, and the ideas around them, kept on one layout.",
+              capZh: "我问「我是谁?」时用的版面：三个女孩、金鱼街、云端，以及旁边那些想法，都留在同一张版式上。"
             }
           ]
         },
@@ -397,14 +528,18 @@ window.GM = {
           ]
         },
         {
-          type: "slides",
+          type: "plates",
           items: [
             {
-              src: "assets/slides/slide-17.jpg",
-              altEn: "A complete page: “以中国文化为根，让东方故事走向世界，与未来对话,” with practice stills and a lion dance in front of 佛山鸿胜纪念",
-              altZh: "完整一页：「以中国文化为根，让东方故事走向世界，与未来对话。」旁边是习武画面，以及佛山鸿胜纪念建筑前的醒狮",
-              capEn: "Taking Chinese culture as a root — practice, a lion dance, and 佛山鸿胜, kept on one full page.",
-              capZh: "「以中国文化为根」——习武、醒狮，以及佛山鸿胜，都留在完整的一页上。"
+              kind: "statement",
+              highlight: "worlds",
+              headline: "Taking Chinese culture as a root,\nso that Eastern stories can travel the world\nand enter into dialogue with the future.",
+              photos: [
+                { src: "assets/plates/17-practice.jpg", altEn: "Practice stills — people training in a hall", altZh: "习武画面——厅堂里的训练" },
+                { src: "assets/plates/17-lion-foshan.jpg", altEn: "A lion dance in front of 佛山鸿胜纪念", altZh: "佛山鸿胜纪念建筑前的醒狮" }
+              ],
+              capEn: "Taking Chinese culture as a root — practice, a lion dance, and 佛山鸿胜, kept on one plate.",
+              capZh: "「以中国文化为根」——习武、醒狮，以及佛山鸿胜，都留在同一块版面上。"
             }
           ]
         },
@@ -540,21 +675,43 @@ window.GM = {
           source: "public"
         },
         {
-          type: "slides",
+          type: "plates",
           items: [
             {
-              src: "assets/slides/slide-14.jpg",
-              altEn: "A complete page of remarks from A24 and Fox Animation after a screening",
-              altZh: "完整一页：放映后 A24 与福克斯动画的评价",
-              capEn: "Remarks I have already shared from that Los Angeles screening, including words from A24 and Fox Animation, kept on one full page.",
-              capZh: "那场洛杉矶放映之后，我已经分享过的评价，包括来自 A24 和福克斯动画的话，留在完整的一页上。"
+              kind: "quotes",
+              highlight: "worlds",
+              quotes: [
+                {
+                  text: "We've never seen anything quite like this before.",
+                  cite: "A24",
+                  photo: { src: "assets/plates/14-still-a24.jpg", altEn: "A still shown beside the A24 remark", altZh: "放在 A24 评价旁的一张剧照" }
+                },
+                {
+                  text: "We would love to explore opportunities to collaborate with you.",
+                  cite: "FOX ANIMATION",
+                  photo: { src: "assets/plates/14-still-fox.jpg", altEn: "A still shown beside the Fox Animation remark", altZh: "放在 Fox Animation 评价旁的一张剧照" }
+                }
+              ],
+              capEn: "Remarks I have already shared from that Los Angeles screening, including words from A24 and Fox Animation.",
+              capZh: "那场洛杉矶放映之后，我已经分享过的评价，包括来自 A24 和福克斯动画的话。"
             },
             {
-              src: "assets/slides/slide-15.jpg",
-              altEn: "A complete page of remarks from Disney and Netflix after a screening",
-              altZh: "完整一页：放映后迪士尼与 Netflix 的评价",
-              capEn: "The facing page, with remarks from Disney and Netflix.",
-              capZh: "相对的一页，是来自迪士尼和 Netflix 的评价。"
+              kind: "quotes",
+              highlight: "worlds",
+              quotes: [
+                {
+                  text: "We absolutely love your work. It truly feels like stepping into a video game.",
+                  cite: "DISNEY",
+                  photo: { src: "assets/plates/15-still-disney.jpg", altEn: "A still shown beside the Disney remark", altZh: "放在迪士尼评价旁的一张剧照" }
+                },
+                {
+                  text: "Your film is truly remarkable. An exceptional piece of work.",
+                  cite: "NETFLIX",
+                  photo: { src: "assets/plates/15-still-netflix.jpg", altEn: "A still shown beside the Netflix remark", altZh: "放在 Netflix 评价旁的一张剧照" }
+                }
+              ],
+              capEn: "The facing plate, with remarks from Disney and Netflix.",
+              capZh: "相对的一块版面，是来自迪士尼和 Netflix 的评价。"
             }
           ]
         },
@@ -594,8 +751,12 @@ window.GM = {
               kindZh: "Instagram",
               labelEn: "Goldfish Street: BOBO",
               labelZh: "金鱼街：BOBO",
-              noteEn: "Character reel, 2026.10.01.",
-              noteZh: "角色短视频，2026.10.01。"
+              noteEn: "Character reel, 2026.10.01. Opens the official post in a new tab.",
+              noteZh: "角色短视频，2026.10.01。将在新标签页打开官方帖子。",
+              poster: "assets/ig/Dd876e-hI6l.jpg",
+              posterW: 360,
+              posterH: 640,
+              altEn: "Cover of the Goldfish Street: BOBO Instagram reel"
             },
             {
               href: "https://www.instagram.com/junielaux/reel/Dd5_GT6B8f-/",
@@ -603,8 +764,12 @@ window.GM = {
               kindZh: "Instagram",
               labelEn: "Goldfish Street: FENG SHUI GIRL",
               labelZh: "金鱼街：FENG SHUI GIRL",
-              noteEn: "Character reel, 2026.09.30.",
-              noteZh: "角色短视频，2026.09.30。"
+              noteEn: "Character reel, 2026.09.30. Opens the official post in a new tab.",
+              noteZh: "角色短视频，2026.09.30。将在新标签页打开官方帖子。",
+              poster: "assets/ig/Dd5_GT6B8f-.jpg",
+              posterW: 360,
+              posterH: 640,
+              altEn: "Cover of the Goldfish Street: FENG SHUI GIRL Instagram reel"
             },
             {
               href: "https://www.instagram.com/junielaux/reel/Dd3bIc3uqDZ/",
@@ -612,8 +777,12 @@ window.GM = {
               kindZh: "Instagram",
               labelEn: "Goldfish Street: LITTLE ONE",
               labelZh: "金鱼街：LITTLE ONE",
-              noteEn: "Character reel, 2026.09.29.",
-              noteZh: "角色短视频，2026.09.29。"
+              noteEn: "Character reel, 2026.09.29. Opens the official post in a new tab.",
+              noteZh: "角色短视频，2026.09.29。将在新标签页打开官方帖子。",
+              poster: "assets/ig/Dd3bIc3uqDZ.jpg",
+              posterW: 360,
+              posterH: 640,
+              altEn: "Cover of the Goldfish Street: LITTLE ONE Instagram reel"
             },
             {
               href: "https://www.instagram.com/wearewonderstudios/reel/DeJsNDlImjg/",
@@ -621,8 +790,12 @@ window.GM = {
               kindZh: "Instagram",
               labelEn: "Wonder Studios collaboration reel",
               labelZh: "与 Wonder Studios 的合作短视频",
-              noteEn: "Posted 2026.10.06. I have also written this collaboration as 金魚街大亂鬥 × WONDERSTUDIOS.",
-              noteZh: "发布于 2026.10.06。我也把这次合作写为「金魚街大亂鬥 × WONDERSTUDIOS」。"
+              noteEn: "Posted 2026.10.06. I have also written this collaboration as 金魚街大亂鬥 × WONDERSTUDIOS. Opens the official post in a new tab.",
+              noteZh: "发布于 2026.10.06。我也把这次合作写为「金魚街大亂鬥 × WONDERSTUDIOS」。将在新标签页打开官方帖子。",
+              poster: "assets/ig/DeJsNDlImjg.jpg",
+              posterW: 360,
+              posterH: 640,
+              altEn: "Cover of the Wonder Studios collaboration Instagram reel"
             }
           ]
         }
@@ -653,21 +826,48 @@ window.GM = {
               blocks: [
                 {
                   type: "para",
-                  en: "The first thing I need is a place to hold the feeling of the world — colour, street life, the clash between something very local and something already speeding toward the future. The final moodboard I can share today is this Miro board.",
-                  zh: "首先我需要一个地方，把这个世界的感觉放下——颜色、市井生活，以及非常本地的事物和已经冲向未来的事物怎样撞在一起。今天我可以分享的最终情绪板，是这块 Miro 看板。",
+                  en: "The first thing I need is a place to hold the feeling of the world — colour, street life, the clash between something very local and something already speeding toward the future. These four official links belong here, in the order of early process: from the first idea to the final moodboard. They are early design, early inspiration and early research — not later making. I open each one in a new tab rather than try to embed a login wall.",
+                  zh: "首先我需要一个地方，把这个世界的感觉放下——颜色、市井生活，以及非常本地的事物和已经冲向未来的事物怎样撞在一起。这四个正式链接都放在情绪板这一步，顺序是早期过程：从最初的想法，到最终情绪板。它们是早期设计、早期灵感和早期研究，而不是后面的制作环节。我会在新标签页打开，而不是把需要登录的页面嵌进来。",
                   source: "interview"
                 },
                 {
                   type: "links",
                   items: [
                     {
+                      href: "https://docs.google.com/document/d/1VcMepSYRJIBV8J73Q2OGmHHfble0TXMi_-3V2NyDFGQ/edit?usp=sharing",
+                      kindEn: "Google Doc — official link",
+                      kindZh: "Google 文档 — 正式链接",
+                      labelEn: "Project document (first IDEA)",
+                      labelZh: "项目文档（最初的想法）",
+                      noteEn: "A production-reference link only. I am not quoting unpublished plot from it on this public page. Opens in a new tab.",
+                      noteZh: "仅作为制作参考链接。这个公开页面不会从中摘录尚未公开的情节。将在新标签页打开。"
+                    },
+                    {
+                      href: "https://www.figma.com/board/VrMF8IULPUp7JQ9RESBTzx/GOLDFISH-MAYHEM?node-id=0-1&t=ZSduhjK4uau2P4OO-1",
+                      kindEn: "Figma — official link",
+                      kindZh: "Figma — 正式链接",
+                      labelEn: "Character and Environment references (Moodboard 1)",
+                      labelZh: "角色与场景参考（情绪板 1）",
+                      noteEn: "Early character and environment references. Opens in a new tab. I am not embedding the board here.",
+                      noteZh: "早期的角色与场景参考。将在新标签页打开。这里不嵌入看板。"
+                    },
+                    {
+                      href: "https://boardmix.cn/app/share/CAE.COXspA8gASoQsqc7K6je5x5Cr_JW2E5n3DAFQAE/uySoI0",
+                      kindEn: "Boardmix — official link",
+                      kindZh: "Boardmix — 正式链接",
+                      labelEn: "Movement references (Moodboard 2)",
+                      labelZh: "动作参考（情绪板 2）",
+                      noteEn: "Early movement references. Opens in a new tab. I am not logging in or embedding the board.",
+                      noteZh: "早期的动作参考。将在新标签页打开。这里不登录，也不嵌入看板。"
+                    },
+                    {
                       href: "https://miro.com/app/board/uXjVGg8zP5k=/?share_link_id=713540723386",
                       kindEn: "Miro — official link",
                       kindZh: "Miro — 正式链接",
-                      labelEn: "Final moodboard",
-                      labelZh: "最终情绪板",
-                      noteEn: "Opens in a new tab. I am not embedding the board here.",
-                      noteZh: "将在新标签页打开。这里不嵌入看板。"
+                      labelEn: "Final moodboard (FINAL FINAL)",
+                      labelZh: "最终情绪板（FINAL FINAL）",
+                      noteEn: "The final moodboard. Opens in a new tab. I am not embedding the board here.",
+                      noteZh: "最终情绪板。将在新标签页打开。这里不嵌入看板。"
                     }
                   ]
                 },
@@ -704,8 +904,8 @@ window.GM = {
                 {
                   type: "callout",
                   kind: "gap",
-                  en: "I have not placed screenshots of the Miro board on this page. If we want a few still frames from the board itself for a later version, they will need to be exported on purpose.",
-                  zh: "这个页面上没有放 Miro 看板的截图。如果以后版本需要从看板里导出几张静帧，需要另外专门导出。"
+                  en: "I have not placed screenshots of the Miro, Figma or Boardmix boards, or of the project document, on this page. If we want a few still frames from a board itself for a later version, they will need to be exported on purpose.",
+                  zh: "这个页面上没有放 Miro、Figma、Boardmix 看板或项目文档的截图。如果以后版本需要从看板里导出几张静帧，需要另外专门导出。"
                 }
               ]
             },
@@ -735,6 +935,12 @@ window.GM = {
                   ]
                 },
                 {
+                  type: "para",
+                  en: "Earlier project documents and character, environment and movement references live in the Moodboard section, in the order of early process.",
+                  zh: "更早的项目文档，以及角色、场景和动作参考，都放在情绪板那一步，按早期过程的顺序排列。",
+                  source: "interview"
+                },
+                {
                   type: "links",
                   items: [
                     {
@@ -743,26 +949,8 @@ window.GM = {
                       kindZh: "Luma — 正式看板",
                       labelEn: "World building and Character design",
                       labelZh: "世界观与角色设计",
-                      noteEn: "The official board I am using for these two steps. Opens in a new tab. I am not logging in or embedding it here.",
+                      noteEn: "The official board I am using for these two later steps. Opens in a new tab. I am not logging in or embedding it here.",
                       noteZh: "这两步我指定使用的正式看板。将在新标签页打开。这里不登录，也不嵌入。"
-                    },
-                    {
-                      href: "https://www.figma.com/board/VrMF8IULPUp7JQ9RESBTzx/GOLDFISH-MAYHEM?node-id=0-1&t=ZSduhjK4uau2P4OO-1",
-                      kindEn: "Figma — additional reference",
-                      kindZh: "Figma — 补充参考",
-                      labelEn: "Character and environment references",
-                      labelZh: "角色与场景参考",
-                      noteEn: "An additional reference board. Opens in a new tab.",
-                      noteZh: "补充参考看板。将在新标签页打开。"
-                    },
-                    {
-                      href: "https://docs.google.com/document/d/1VcMepSYRJIBV8J73Q2OGmHHfble0TXMi_-3V2NyDFGQ/edit?usp=sharing",
-                      kindEn: "Google Doc — official link",
-                      kindZh: "Google 文档 — 正式链接",
-                      labelEn: "Project document",
-                      labelZh: "项目文档",
-                      noteEn: "A production-reference link only. I am not quoting extra unpublished plot from it on this public page.",
-                      noteZh: "仅作为制作参考链接。这个公开页面不会从中摘录尚未公开的情节。"
                     }
                   ]
                 }
@@ -775,8 +963,8 @@ window.GM = {
               blocks: [
                 {
                   type: "para",
-                  en: "The three girls are not perfect heroines. They can be impulsive, rebellious, and make a mess — and I like that. As I said earlier, they are also three mirrors of myself: BOBO, 风水妹 / Fengshui Girl, and 细细粒 / Xixili. The official board I am using for world-building and character design is the Luma board below. The Instagram reels in the previous chapter are the character introductions already published.",
-                  zh: "这三个女孩不是完美的女英雄。她们可能冲动、叛逆，把事情搞得一团糟——我反而喜欢这样。如我前面所说，她们也是我的三面镜子：BOBO、风水妹 / Fengshui Girl，以及细细粒 / Xixili。世界观与角色设计，我指定使用的正式看板是下面这块 Luma 看板。上一章里的 Instagram 短视频，则是已经公开的角色介绍。",
+                  en: "The three girls are not perfect heroines. They can be impulsive, rebellious, and make a mess — and I like that. As I said earlier, they are also three mirrors of myself: BOBO, 风水妹 / Fengshui Girl, and 细细粒 / Xixili. The official board I am using for world-building and character design is the Luma board below. Earlier character and environment references are in the Moodboard section. The Instagram reels in the previous chapter are the character introductions already published.",
+                  zh: "这三个女孩不是完美的女英雄。她们可能冲动、叛逆，把事情搞得一团糟——我反而喜欢这样。如我前面所说，她们也是我的三面镜子：BOBO、风水妹 / Fengshui Girl，以及细细粒 / Xixili。世界观与角色设计，我指定使用的正式看板是下面这块 Luma 看板。更早的角色与场景参考在情绪板那一步。上一章里的 Instagram 短视频，则是已经公开的角色介绍。",
                   source: "interview"
                 },
                 {
@@ -788,17 +976,8 @@ window.GM = {
                       kindZh: "Luma — 正式看板",
                       labelEn: "World building and Character design",
                       labelZh: "世界观与角色设计",
-                      noteEn: "The official board I am using for these two steps. Opens in a new tab.",
+                      noteEn: "The official board I am using for these two later steps. Opens in a new tab.",
                       noteZh: "这两步我指定使用的正式看板。将在新标签页打开。"
-                    },
-                    {
-                      href: "https://www.figma.com/board/VrMF8IULPUp7JQ9RESBTzx/GOLDFISH-MAYHEM?node-id=0-1&t=ZSduhjK4uau2P4OO-1",
-                      kindEn: "Figma — additional reference",
-                      kindZh: "Figma — 补充参考",
-                      labelEn: "Character and environment references",
-                      labelZh: "角色与场景参考",
-                      noteEn: "An additional reference board. Opens in a new tab.",
-                      noteZh: "补充参考看板。将在新标签页打开。"
                     }
                   ]
                 },
@@ -833,8 +1012,8 @@ window.GM = {
               blocks: [
                 {
                   type: "para",
-                  en: "Because I spent years as an art director, I care a great deal about whether a place feels lived in. Goldfish Street had to carry street life, Lingnan culture, and the story at the same time: a fish-ball stand, a feng shui stall, a paper-offering shop, a dessert shop, a wishing tree, dai pai dong. The Luma board above is the official world-building and character-design board I can point to today; the Figma board remains as an additional environment reference.",
-                  zh: "因为我做过很多年美术指导，我很在意一个地方看起来是否像有人真正生活过。金鱼街需要同时装下市井生活、岭南文化和故事本身：鱼蛋档、风水摊、纸扎店、糖水铺、许愿树、大排档。今天我能够指给大家看的正式世界观与角色设计看板，是上面的 Luma 看板；Figma 看板仍可作为补充的场景参考。",
+                  en: "Because I spent years as an art director, I care a great deal about whether a place feels lived in. Goldfish Street had to carry street life, Lingnan culture, and the story at the same time: a fish-ball stand, a feng shui stall, a paper-offering shop, a dessert shop, a wishing tree, dai pai dong. The Luma board above is the official world-building and character-design board I can point to today. Earlier character and environment references live in the Moodboard section.",
+                  zh: "因为我做过很多年美术指导，我很在意一个地方看起来是否像有人真正生活过。金鱼街需要同时装下市井生活、岭南文化和故事本身：鱼蛋档、风水摊、纸扎店、糖水铺、许愿树、大排档。今天我能够指给大家看的正式世界观与角色设计看板，是上面的 Luma 看板。更早的角色与场景参考，在情绪板那一步。",
                   source: "interview"
                 },
                 {
@@ -957,19 +1136,29 @@ window.GM = {
           source: "interview"
         },
         {
-          type: "slides",
+          type: "plates",
           items: [
             {
-              src: "assets/slides/slide-17.jpg",
-              altEn: "A complete page: taking Chinese culture as a root, with practice stills and a lion dance in front of 佛山鸿胜纪念",
-              altZh: "完整一页：「以中国文化为根」，旁边是习武画面，以及佛山鸿胜纪念建筑前的醒狮",
-              capEn: "The same full page again, here in a closer look at kung fu: practice, the lion dance, and 佛山鸿胜, uncropped.",
-              capZh: "还是完整的这一页，在这里把它放到功夫这一章里再看一遍：习武、醒狮，以及佛山鸿胜，都不裁切。"
+              kind: "statement",
+              highlight: "worlds",
+              headline: "Taking Chinese culture as a root,\nso that Eastern stories can travel the world\nand enter into dialogue with the future.",
+              photos: [
+                { src: "assets/plates/17-practice.jpg", altEn: "Practice stills — people training in a hall", altZh: "习武画面——厅堂里的训练" },
+                { src: "assets/plates/17-lion-foshan.jpg", altEn: "A lion dance in front of 佛山鸿胜纪念", altZh: "佛山鸿胜纪念建筑前的醒狮" }
+              ],
+              capEn: "The same plate again, here in a closer look at kung fu: practice, the lion dance, and 佛山鸿胜.",
+              capZh: "还是这块版面，在这里把它放到功夫这一章里再看一遍：习武、醒狮，以及佛山鸿胜。"
             },
             {
-              src: "assets/slides/slide-18.jpg",
-              altEn: "A complete page: “以女性导演的视角，携手 AI 开拓影像表达的新边界,” with portraits in a study and a workspace",
-              altZh: "完整一页：「以女性导演的视角，携手 AI 开拓影像表达的新边界。」旁边是书房和创作空间里的肖像",
+              kind: "statement",
+              highlight: "worlds",
+              photosLeft: true,
+              headline: "From the point of view of a woman director,\nworking with AI to open a new edge\nof moving-image expression.",
+              photos: [
+                { src: "assets/plates/18-bookshelf.jpg", altEn: "Junie Lau in a study, standing before a wall of books", altZh: "Junie Lau 在书房里，站在书架前" },
+                { src: "assets/plates/18-workspace-a.jpg", altEn: "A portrait in a workspace", altZh: "创作空间里的肖像" },
+                { src: "assets/plates/18-workspace-b.jpg", altEn: "Another portrait in the same workspace", altZh: "同一创作空间里的另一张肖像" }
+              ],
               capEn: "From the point of view of a woman director, working with AI to open a new edge of moving-image expression.",
               capZh: "以女性导演的视角，携手 AI 开拓影像表达的新边界。"
             }
@@ -1028,22 +1217,17 @@ window.GM = {
           type: "links",
           items: [
             {
-              href: "https://boardmix.cn/app/share/CAE.COXspA8gASoQsqc7K6je5x5Cr_JW2E5n3DAFQAE/uySoI0",
-              kindEn: "Boardmix — official link",
-              kindZh: "Boardmix — 正式链接",
-              labelEn: "Movement references",
-              labelZh: "动作参考",
-              noteEn: "Opens in a new tab. I am not logging in or embedding the board.",
-              noteZh: "将在新标签页打开。这里不登录，也不嵌入看板。"
-            },
-            {
               href: "https://www.instagram.com/junielaux/p/DefAdokAb9G/",
               kindEn: "Instagram",
               kindZh: "Instagram",
               labelEn: "Kung fu behind-the-scenes, 2026.10.14",
               labelZh: "功夫幕后，2026.10.14",
-              noteEn: "A public Instagram post.",
-              noteZh: "已公开的 Instagram 帖子。"
+              noteEn: "A public Instagram post. Opens the official post in a new tab.",
+              noteZh: "已公开的 Instagram 帖子。将在新标签页打开官方帖子。",
+              poster: "assets/ig/DefAdokAb9G.jpg",
+              posterW: 480,
+              posterH: 640,
+              altEn: "Cover of the kung fu behind-the-scenes Instagram post, 2026.10.14"
             }
           ]
         },
@@ -1056,8 +1240,8 @@ window.GM = {
         {
           type: "callout",
           kind: "gap",
-          en: "What I have not yet confirmed in writing is the exact mix of live-action performance, on-set reference, and generated shots for particular kung fu moments — how a movement was filmed or referenced, and how it was then cut. The official behind-the-scenes film and the movement-reference board are what I can show today. A closer, confirmed breakdown can be added later.",
-          zh: "我还没有书面确认：某一个功夫镜头里，真人表演、现场参考和生成画面究竟是怎样配合的，这个动作是怎样拍摄或被参考，后来又怎样剪在一起。今天我可以出示的，是官方幕后影片和动作参考看板。更细、也经过确认的拆解，可以以后再补。"
+          en: "What I have not yet confirmed in writing is the exact mix of live-action performance, on-set reference, and generated shots for particular kung fu moments — how a movement was filmed or referenced, and how it was then cut. The official behind-the-scenes film and the public Instagram post are what I can show here. Movement references from early research are in the Moodboard section. A closer, confirmed breakdown can be added later.",
+          zh: "我还没有书面确认：某一个功夫镜头里，真人表演、现场参考和生成画面究竟是怎样配合的，这个动作是怎样拍摄或被参考，后来又怎样剪在一起。这里我可以出示的，是官方幕后影片和已公开的 Instagram 帖子。早期研究的动作参考在情绪板那一步。更细、也经过确认的拆解，可以以后再补。"
         },
         {
           type: "details",
@@ -1089,14 +1273,18 @@ window.GM = {
           source: "public"
         },
         {
-          type: "slides",
+          type: "plates",
           items: [
             {
-              src: "assets/slides/slide-21.jpg",
-              altEn: "A complete chapter page headed 畅想未来, a figure walking through a field of pink flowers",
-              altZh: "完整的章节页，标题为「畅想未来」，一个人走在粉红色的花田里",
-              capEn: "Imagining the future — the page I open when I move from work already made to what I want to explore next.",
-              capZh: "畅想未来——从已经做过的事情，走到我接下来想探索的事情时，我会翻开的这一页。"
+              kind: "chapter-art",
+              highlight: "future",
+              headline: "Imagining the future",
+              chapter: "C H A P T E R   0 3",
+              photos: [
+                { src: "assets/plates/21-pink-field.jpg", altEn: "A figure walking through a field of pink flowers", altZh: "一个人走在粉红色的花田里" }
+              ],
+              capEn: "Imagining the future — the plate I open when I move from work already made to what I want to explore next.",
+              capZh: "畅想未来——从已经做过的事情，走到我接下来想探索的事情时，我会翻开的这块版面。"
             }
           ]
         },
@@ -1126,26 +1314,39 @@ window.GM = {
           ]
         },
         {
-          type: "slides",
+          type: "plates",
           items: [
             {
-              src: "assets/slides/slide-23.jpg",
-              altEn: "A complete page, a media evolution table from Broadcast to Immersive, Network, and Neural",
-              altZh: "完整一页：传播模式演化表，从广播、沉浸式、网络，到神经",
+              kind: "media-table",
+              highlight: "future",
+              headline: "Media Evolution Table",
+              wordmark: "M E D I A   E V O L U T I O N   T A B L E",
+              eras: [
+                { name: "Broadcast", dates: "1920–1950" },
+                { name: "Immersive", dates: "1950–1980" },
+                { name: "Network", dates: "1980–2010" },
+                { name: "Neural", dates: "2010–2040" }
+              ],
+              photos: [
+                { src: "assets/plates/23-media-evolution.jpg", altEn: "A media-evolution graphic, from Broadcast through Immersive and Network to Neural", altZh: "传播模式演化图，从广播、沉浸式、网络，到神经" }
+              ],
               capEn: "How I have laid out a change in media forms, arriving at what I call Neural Media.",
-              capZh: "我怎样把媒体形式的变化排在一页上，走到我所说的神经媒体。"
+              capZh: "我怎样把媒体形式的变化排在一块版面上，走到我所说的神经媒体。"
             },
             {
-              src: "assets/slides/slide-24.jpg",
-              altEn: "A complete typographic page: “我们正站在信息传播新时代的入口——神经媒体时代的到来.”",
-              altZh: "完整的标题页：「我们正站在信息传播新时代的入口——神经媒体时代的到来。」",
+              kind: "statement-ghost",
+              highlight: "future",
+              ghost: "NEURAL MEDIA",
+              headline: "We are standing at the entrance of a new age of communication —\nthe arrival of the Neural Media era.",
+              sub: "High-dimensional space, hallucinated content, and embedded identity",
+              wordmark: "N E U R A L   M E D I A",
               capEn: "A line I use when I talk about Neural Media: we are standing at the entrance of a new age of communication.",
               capZh: "我谈到神经媒体时用的一句：我们正站在信息传播新时代的入口——神经媒体时代的到来。"
             },
             {
-              src: "assets/slides/slide-25.jpg",
-              altEn: "A complete typographic page: “我想把梦境带进现实”",
-              altZh: "完整的标题页：「我想把梦境带进现实」",
+              kind: "statement-ghost",
+              highlight: "future",
+              headline: "I want to bring dreams into reality,\nlet imagination and the real world collide and intertwine,\nand create a sensory world unlike any before.",
               capEn: "I want to bring dreams into reality, and let imagination and the real world meet.",
               capZh: "我想把梦境带进现实，让想象与真实碰撞、交融。"
             }
@@ -1159,13 +1360,17 @@ window.GM = {
           source: "public"
         },
         {
-          type: "slides",
+          type: "plates",
           items: [
             {
-              src: "assets/slides/slide-27.jpg",
-              altEn: "A complete page about conceiving a futurist virtual ecosystem in which humans and AI evolve together",
-              altZh: "完整一页：构想一个未来主义的虚拟生态系统，人类与 AI 协同进化",
-              capEn: "A page for a futurist virtual world I have been conceiving — a “virtual ecosystem” in which humans and AI evolve together. This is an idea I am exploring, not a greenlit production.",
+              kind: "statement",
+              highlight: "dreams",
+              photosLeft: true,
+              headline: "I want to build a futurist virtual world\n— a “virtual ecosystem” in which humans and AI evolve together.",
+              photos: [
+                { src: "assets/plates/27-virtual-world.jpg", altEn: "A still from a conceived futurist virtual world", altZh: "构想中的未来主义虚拟世界画面" }
+              ],
+              capEn: "A plate for a futurist virtual world I have been conceiving — a “virtual ecosystem” in which humans and AI evolve together. This is an idea I am exploring, not a greenlit production.",
               capZh: "我在构想的一个未来主义虚拟世界——一个人类与 AI 协同进化的「虚拟生态系统」。这是我正在探索的构想，不是已经立项的项目。"
             }
           ]
@@ -1177,12 +1382,19 @@ window.GM = {
           source: "public"
         },
         {
-          type: "slides",
+          type: "plates",
           items: [
             {
-              src: "assets/slides/slide-28.jpg",
-              altEn: "A complete page: “我希望成为一种全新的艺术家——世界建筑师 (World Architect).”",
-              altZh: "完整一页：「我希望成为一种全新的艺术家——世界建筑师（World Architect）。」",
+              kind: "world-architect",
+              highlight: "dreams",
+              headline: "I hope to become a new kind of artist\n— a “World Architect”",
+              columns: [
+                "What I am pursuing is not merely “AI-generated film” or “AI-generated fiction”, but the exploration of a new form of dynamic, interactive, generative media that we cannot yet fully imagine.",
+                "The role of AI systems is not only to enhance or automate existing forms such as film and games, but to possess the capacity to summon countless imagined worlds and narrative possibilities, thereby giving rise to an art form that is essentially altogether different."
+              ],
+              photos: [
+                { src: "assets/plates/28-world-architect-diagram.jpg", altEn: "A diagram of the World Architect idea", altZh: "世界建筑师构想的示意图" }
+              ],
               capEn: "I hope to become a new kind of artist: a World Architect.",
               capZh: "我希望成为一种全新的艺术家——世界建筑师（World Architect）。"
             }
@@ -1208,12 +1420,14 @@ window.GM = {
           source: "public"
         },
         {
-          type: "slides",
+          type: "plates",
           items: [
             {
-              src: "assets/slides/slide-33.jpg",
-              altEn: "A complete typographic page: “我不是末日乐观主义者。但我想继续创造世界.” / CREATE THE WORLD",
-              altZh: "完整的标题页：「我不是末日乐观主义者。但我想继续创造世界。」 / CREATE THE WORLD",
+              kind: "statement-ghost",
+              highlight: "dreams",
+              ghost: "CREATE",
+              headline: "I am not a doom-and-gloom optimist.\nBut I want to keep *creating worlds*.",
+              wordmark: "C R E A T E   T H E   W O R L D",
               capEn: "I am not a doom-and-gloom optimist. But I want to keep creating worlds.",
               capZh: "我不是末日乐观主义者。但我想继续创造世界。"
             }
@@ -1448,8 +1662,8 @@ window.GM = {
       zh: "已公开的第一人称讲述——包括 2035 年赛博民俗故事简介、佛山童年、鸿胜武馆、作者性、神经媒体、DATALAND、世界建筑师，以及工作室邀请。"
     },
     {
-      en: "Presentation slides used when introducing this work — visual language, key art, the 1999–2023 creating-worlds timeline, 金魚街大亂鬥 × WONDERSTUDIOS, and title forms.",
-      zh: "介绍这部作品时使用的演示文稿——视觉风格、主视觉、1999 至 2023 的创造世界时间线、「金魚街大亂鬥 × WONDERSTUDIOS」，以及片名写法。"
+      en: "Typographic plates typeset from the presentation used when introducing this work — visual language, key art, the 1999–2023 creating-worlds timeline, Goldfish Mayhem × WONDERSTUDIOS, and title forms. The typography on the page is live English type, not a screenshot of the original slides.",
+      zh: "由介绍这部作品时使用的演示文稿重新排版的字体版面——视觉风格、主视觉、1999 至 2023 的创造世界时间线、「Goldfish Mayhem × WONDERSTUDIOS」，以及片名写法。页面上的英文是可排版的活字，不是原演示文稿的截图。"
     },
     {
       en: "Interview Q&A — hometown and mixed culture, fictional Goldfish Street and the real street downstairs, the rotating restaurant, the three girls as mirrors, themes, tools (ChatGPT, Mr. Duan, invideo Agent One, CapCut Video Studio – Director Mode, OpenArt Smart Shot / World Builder), the red-haired hero universe still in development, and rapid-fire lines.",
@@ -1476,8 +1690,8 @@ window.GM = {
       zh: "小红书——已公开的第一集、第二集，以及幕后制作特辑。"
     },
     {
-      en: "Production-reference links placed but not quoted for unpublished plot: final moodboard (Miro), official world-building and character-design board (Luma), additional character and environment references (Figma), movement references (Boardmix), and the project document (Google Doc).",
-      zh: "已放置、但未从中摘录未公开情节的制作参考链接：最终情绪板（Miro）、正式的世界观与角色设计看板（Luma）、补充的角色与场景参考（Figma）、动作参考（Boardmix），以及项目文档（Google 文档）。"
+      en: "Production-reference links placed but not quoted for unpublished plot. In the Moodboard section, in early-process order: the project document (Google Doc, first IDEA), character and environment references (Figma, Moodboard 1), movement references (Boardmix, Moodboard 2), and the final moodboard (Miro, FINAL FINAL). Later, the official world-building and character-design board (Luma).",
+      zh: "已放置、但未从中摘录未公开情节的制作参考链接。情绪板一步按早期过程排列：项目文档（Google 文档，最初的想法）、角色与场景参考（Figma，情绪板 1）、动作参考（Boardmix，情绪板 2），以及最终情绪板（Miro，FINAL FINAL）。再往后，是正式的世界观与角色设计看板（Luma）。"
     },
     {
       en: "Official stills already used on the public site, copied into this folder for the livestream page.",

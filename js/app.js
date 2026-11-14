@@ -31,8 +31,14 @@
 
   function textPair(obj, className) {
     if (!obj) return "";
+    const en = obj.en || "";
+    const zh = obj.zh || "";
+    if (en === zh) {
+      const cls = ["pair", "same", className].filter(Boolean).join(" ");
+      return `<div class="${cls}"><div class="en">${en}</div></div>`;
+    }
     const cls = ["pair", className].filter(Boolean).join(" ");
-    return `<div class="${cls}"><div class="en">${obj.en || ""}</div><div class="zh">${obj.zh || ""}</div></div>`;
+    return `<div class="${cls}"><div class="en">${en}</div><div class="zh">${zh}</div></div>`;
   }
 
   function rich(obj, extraClass) {
@@ -91,17 +97,250 @@
     </div>`;
   }
 
-  function renderLinks(links) {
-    return `<div class="link-grid">${links
-      .map(
-        (l) => `<a class="link-card" href="${esc(l.href)}" target="_blank" rel="noopener noreferrer">
+  function renderLinkCard(l) {
+    return `<a class="link-card" href="${esc(l.href)}" target="_blank" rel="noopener noreferrer">
         <div class="k">${textPair({ en: l.kindEn || "Link", zh: l.kindZh || "链接" })}</div>
         <div class="t">${textPair({ en: l.labelEn, zh: l.labelZh })}</div>
         ${l.noteEn || l.noteZh ? `<div class="d">${textPair({ en: l.noteEn || "", zh: l.noteZh || "" })}</div>` : ""}
         <div class="go">${textPair({ en: "Open ↗", zh: "打开 ↗" })}</div>
-      </a>`
-      )
-      .join("")}</div>`;
+      </a>`;
+  }
+
+  function renderPosterCard(l) {
+    const alt = esc(l.altEn || l.labelEn || "");
+    return `<a class="poster-card" href="${esc(l.href)}" target="_blank" rel="noopener noreferrer">
+        <img src="${esc(l.poster)}" alt="${alt}" width="${l.posterW || 360}" height="${l.posterH || 640}">
+        <div class="meta">
+          <div class="k">${textPair({ en: l.kindEn || "Instagram", zh: l.kindZh || "Instagram" })}</div>
+          <div class="t">${textPair({ en: l.labelEn, zh: l.labelZh })}</div>
+          ${l.noteEn || l.noteZh ? `<div class="d">${textPair({ en: l.noteEn || "", zh: l.noteZh || "" })}</div>` : ""}
+          <div class="go">${textPair({ en: "Open ↗", zh: "打开 ↗" })}</div>
+        </div>
+      </a>`;
+  }
+
+  function renderLinks(links) {
+    const posters = (links || []).filter((l) => l.poster);
+    const texts = (links || []).filter((l) => !l.poster);
+    return `${posters.length ? `<div class="poster-grid">${posters.map(renderPosterCard).join("")}</div>` : ""}${
+      texts.length ? `<div class="link-grid">${texts.map(renderLinkCard).join("")}</div>` : ""
+    }`;
+  }
+
+  const PLATE_NAV = [
+    { key: "director", label: "Young Director" },
+    { key: "artist", label: "Artist" },
+    { key: "worlds", label: "Creating Worlds" },
+    { key: "future", label: "Imagining the Future" },
+    { key: "dreams", label: "Dreams × Reality" }
+  ];
+
+  function plateChrome(p) {
+    const nav = PLATE_NAV.map(
+      (n) => `<span class="${n.key === p.highlight ? "is-current" : ""}">${esc(n.label)}</span>`
+    ).join("");
+    const ghost = p.ghost
+      ? `<span class="plate-ghost" aria-hidden="true">${esc(p.ghost)}</span>`
+      : "";
+    return `<header class="plate-bar">
+        <div class="plate-kicker">JUNIE LAU</div>
+        <nav class="plate-nav" aria-label="Section">${nav}</nav>
+      </header>${ghost}`;
+  }
+
+  function plateCap(p) {
+    if (!p.capEn && !p.capZh) return "";
+    return `<div class="plate-cap">${textPair({ en: p.capEn || "", zh: p.capZh || "" })}</div>`;
+  }
+
+  function plateFig(img, i) {
+    const alt = esc(img.altEn || img.altZh || "");
+    const src = esc(img.src);
+    return `<figure class="fig natural" data-lb="${src}" data-idx="${i}" tabindex="0" role="button" aria-label="${alt}">
+      <img src="${src}" alt="${alt}" loading="lazy">
+    </figure>`;
+  }
+
+  function figs(photos, prefix) {
+    return (photos || []).map((ph, i) => plateFig(ph, `${prefix}-${i}`)).join("");
+  }
+
+  function hl(html) {
+    // wrap *asterisks* as accent
+    return String(html || "").replace(/\*([^*]+)\*/g, '<span class="accent">$1</span>');
+  }
+
+  function typo(text) {
+    return hl(esc(text || "")).replace(/\n/g, "<br>");
+  }
+
+  function renderPlate(p, idx) {
+    const kind = p.kind || "statement-ghost";
+    let body = "";
+    if (kind === "intro-awards") {
+      const awards = (p.awards || [])
+        .map((a) => `<li><span class="n">${esc(a.n)}</span><span>${esc(a.text)}</span></li>`)
+        .join("");
+      body = `<div class="plate-intro">
+        <div>
+          <h3 class="plate-headline">${typo(p.headline)}</h3>
+          <ul class="plate-awards">${awards}<li class="more" aria-hidden="true">······</li></ul>
+          ${p.wordmark ? `<div class="plate-wordmark">${esc(p.wordmark)}</div>` : ""}
+        </div>
+        <div class="plate-photos">${figs(p.photos, idx)}</div>
+      </div>`;
+    } else if (kind === "milestones") {
+      const items = (p.milestones || [])
+        .map(
+          (m) => `<li><span class="n">${esc(m.n)}</span><span><strong>${esc(m.title)}</strong>${esc(m.text)}</span></li>`
+        )
+        .join("");
+      body = `<div class="plate-miles">
+        <div class="plate-miles-photos">${figs(p.photos, idx)}</div>
+        <div class="plate-miles-copy">
+          <h3 class="plate-headline">${typo(p.headline)}</h3>
+          <ul class="plate-mile-list">${items}</ul>
+          ${p.wordmark ? `<div class="plate-wordmark">${esc(p.wordmark)}</div>` : ""}
+        </div>
+      </div>`;
+    } else if (kind === "artist") {
+      const items = (p.credits || []).map((t) => `<li>${esc(t)}</li>`).join("");
+      body = `<div class="plate-artist">
+        <div class="plate-photos">${figs(p.photos, idx)}</div>
+        <div>
+          <h3 class="plate-headline">${typo(p.headline)}</h3>
+          <ul class="plate-credits">${items}</ul>
+          ${p.wordmark ? `<div class="plate-wordmark">${esc(p.wordmark)}</div>` : ""}
+        </div>
+      </div>`;
+    } else if (kind === "numerals") {
+      const items = (p.numerals || [])
+        .map(
+          (n) => `<div class="numeral-item"><div class="num${n.circled ? " is-circled" : ""}">${esc(n.num)}</div><p>${esc(n.text)}</p></div>`
+        )
+        .join("");
+      body = `<div class="plate-numerals">
+        <div class="numeral-grid">${items}</div>
+        <div class="plate-photos single">${figs(p.photos, idx)}</div>
+      </div>`;
+    } else if (kind === "timeline") {
+      const cells = (p.moments || [])
+        .map((m, i) => {
+          const cls = (m.photos || []).length === 1 ? "solo" : (m.photos || []).length > 2 ? "triple" : "";
+          return `<article class="timeline-cell">
+            <div class="t-photos ${cls}">${figs(m.photos, idx + "-m" + i)}</div>
+            <h3>${esc(m.title)} <span>${esc(m.date || "")}</span></h3>
+            <p>${esc(m.caption)}</p>
+          </article>`;
+        })
+        .join("");
+      body = `<div class="plate-timeline">
+        <h3 class="plate-headline">${typo(p.headline)}</h3>
+        <div class="timeline-grid">${cells}</div>
+      </div>`;
+    } else if (kind === "chapter-quote") {
+      body = `<div class="plate-quote-row">
+        <div class="plate-side-word">${esc(p.leftWord || "")}</div>
+        <div>
+          <h3 class="plate-headline">${typo(p.headline)}</h3>
+          ${p.chapter ? `<div class="plate-chapter">${esc(p.chapter)}</div>` : ""}
+        </div>
+        <div class="plate-side-word">${esc(p.rightWord || "")}</div>
+      </div>`;
+    } else if (kind === "chapter-art") {
+      body = `<div class="plate-chapter-art">
+        ${p.chapter ? `<div class="plate-chapter">${esc(p.chapter)}</div>` : ""}
+        <h3 class="plate-headline">${typo(p.headline)}</h3>
+        <div class="art-wrap">${figs(p.photos, idx)}</div>
+      </div>`;
+    } else if (kind === "invitations") {
+      const items = (p.invites || [])
+        .map(
+          (it, i) => `<article class="invite-item">${plateFig(it, idx + "-i" + i)}<div class="label">${esc(it.left)} <em>×</em> ${esc(it.right)}</div></article>`
+        )
+        .join("");
+      body = `<div>
+        <div class="plate-kicker-line">${esc(p.kickerLine || "Invitations from film companies")}</div>
+        <div class="invite-grid">${items}</div>
+      </div>`;
+    } else if (kind === "title") {
+      body = `<div class="plate-title">
+        ${p.photos && p.photos[0] ? plateFig(p.photos[0], idx + "-a") : ""}
+        ${p.photos && p.photos[1] ? plateFig(p.photos[1], idx + "-b") : ""}
+        <div class="title-copy">
+          ${p.officialZh ? `<div class="plate-official-zh">${esc(p.officialZh)}</div>` : ""}
+          <h3 class="plate-headline">${typo(p.headline)}</h3>
+          ${p.wordmark ? `<div class="plate-wordmark red">${esc(p.wordmark)}</div>` : ""}
+        </div>
+      </div>`;
+    } else if (kind === "quotes") {
+      const cells = (p.quotes || [])
+        .map(
+          (q, i) => `<article class="quote-cell">${q.photo ? plateFig(q.photo, idx + "-q" + i) : ""}
+            <blockquote>“${esc(q.text)}”<cite>${esc(q.cite)}</cite></blockquote>
+          </article>`
+        )
+        .join("");
+      body = `<div class="quote-pair">${cells}</div>`;
+    } else if (kind === "who") {
+      const tagsL = (p.tagsLeft || []).map((t) => `<span class="who-tag">${esc(t)}</span>`).join("");
+      const tagsR = (p.tagsRight || []).map((t) => `<span class="who-tag">${esc(t)}</span>`).join("");
+      body = `<div class="plate-who"><div class="who-layout">
+        <div>
+          <div class="who-tags">${tagsL}</div>
+          <div class="who-photos">${figs(p.photosLeft, idx + "-l")}</div>
+        </div>
+        <div class="who-center"><h3 class="plate-headline">${typo(p.headline)}</h3></div>
+        <div>
+          <div class="who-tags">${tagsR}</div>
+          <div class="who-photos">${figs(p.photosRight, idx + "-r")}</div>
+        </div>
+      </div></div>`;
+    } else if (kind === "statement") {
+      const side = p.photosLeft ? "photos-left" : "";
+      body = `<div class="plate-statement ${side}">
+        <div class="statement-copy">
+          <h3 class="plate-headline">${typo(p.headline)}</h3>
+        </div>
+        <div class="statement-photos${(p.photos || []).length === 1 ? " solo" : ""}">${figs(p.photos, idx)}</div>
+      </div>`;
+    } else if (kind === "media-table") {
+      const eras = (p.eras || [])
+        .map((e) => `<article class="era-card"><h3>${esc(e.name)}</h3><p>${esc(e.dates)}</p></article>`)
+        .join("");
+      body = `<div class="media-evo">
+        <div>
+          <h3 class="plate-headline">${typo(p.headline)}</h3>
+          ${p.wordmark ? `<div class="plate-wordmark red">${esc(p.wordmark)}</div>` : ""}
+        </div>
+        <div class="media-evo-chart">
+          ${figs(p.photos, idx)}
+          <div class="era-row">${eras}</div>
+        </div>
+      </div>`;
+    } else if (kind === "world-architect") {
+      const cols = (p.columns || []).map((t) => `<p>${esc(t)}</p>`).join("");
+      body = `<div class="plate-architect">
+        <div class="plate-photos single">${figs(p.photos, idx)}</div>
+        <div>
+          <h3 class="plate-headline">${typo(p.headline)}</h3>
+          <div class="architect-cols">${cols}</div>
+        </div>
+      </div>`;
+    } else {
+      // statement-ghost and default typographic statement
+      body = `<div class="plate-statement-ghost">
+        <h3 class="plate-headline">${typo(p.headline)}</h3>
+        ${p.sub ? `<p class="plate-sub">${esc(p.sub)}</p>` : ""}
+        ${p.wordmark ? `<div class="plate-wordmark red">${esc(p.wordmark)}</div>` : ""}
+        ${p.photos ? `<div class="plate-photos" style="margin-top:1rem">${figs(p.photos, idx)}</div>` : ""}
+      </div>`;
+    }
+    return `<article class="plate" data-kind="${esc(kind)}" data-highlight="${esc(p.highlight || "")}">
+      ${plateChrome(p)}
+      <div class="plate-body">${body}</div>
+      ${plateCap(p)}
+    </article>`;
   }
 
   function renderCallout(b) {
@@ -139,6 +378,10 @@
         return `<div class="mod video-grid">${(b.items || []).map(renderVideo).join("")}</div>`;
       case "links":
         return `<div class="mod">${renderLinks(b.items || [])}</div>`;
+      case "plates":
+        return `<div class="mod plate-stack">${(b.items || [])
+          .map((pl, i) => renderPlate(pl, `${idxPrefix}-plate-${i}`))
+          .join("")}</div>`;
       case "callout":
         return renderCallout(b);
       case "compare":
