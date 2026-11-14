@@ -664,7 +664,7 @@
         <h1>Goldfish Mayhem</h1>
         <div class="zh-film zh">${esc(h.titleZh)}</div>
       </div>
-      ${rich(h.lead, "hero-lead")}
+      ${h.lead ? rich(h.lead, "hero-lead") : ""}
       ${h.images ? renderBlock(h.images, "hero") : ""}
       ${h.videos ? renderBlock(h.videos, "hero-v") : ""}
       ${h.note ? `<div class="hero-note">${rich(h.note)}</div>` : ""}

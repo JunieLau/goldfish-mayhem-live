@@ -41,11 +41,6 @@ window.GM = {
   hero: {
     titleZh: "金魚街大亂鬥",
     ghost: "金魚街",
-    lead: {
-      en: "My name is Junie Lau. I am a director and creative based between London and Shanghai.",
-      zh: "我叫 Junie Lau，是一名常驻伦敦和上海两地的导演和创意工作者。",
-      source: "interview"
-    },
     images: {
       type: "plates",
       items: [
@@ -70,16 +65,9 @@ window.GM = {
             altEn: "Key art for Goldfish Mayhem: three girls standing together, with the official title 金魚街大亂鬥 on the artwork",
             altZh: "《金魚街大亂鬥》主视觉：三个女孩站在一起，画面上保留官方片名"
           },
-          capEn: "The official trailer, played over a still of Goldfish Street; the official key art, with the title 金魚街大亂鬥 left as it is lettered; and the typeset title.",
-          capZh: "官方预告，封面是金鱼街的静帧；官方主视觉，画面上的片名金魚街大亂鬥保持原样；以及排好的标题字。"
         }
       ]
     },
-    note: {
-      en: "On my official site, the Chinese title is written in simplified characters as 金鱼街大乱斗. The form used on the film’s key art is 金魚街大亂鬥.",
-      zh: "我的官网中文页使用简体写法「金鱼街大乱斗」。影片设定图上的写法是「金魚街大亂鬥」。",
-      source: "site"
-    }
   },
 
   chapters: [
@@ -136,11 +124,6 @@ window.GM = {
               source: "interview"
             }
           ]
-        },
-        {
-          type: "para",
-          en: "These four plates are my introduction — typography, lists and portraits kept together.",
-          zh: "下面这四块版面是我的自我介绍：标题、名单和肖像都放在一起。"
         },
         {
           type: "plates",
