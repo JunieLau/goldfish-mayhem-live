@@ -213,11 +213,6 @@ window.GM = {
               en: "The path there still feels quite ordinary to me. I grew up in Guangdong, later studied in London, worked in fashion and advertising, and only then, because of AI, found my way into directing. When Forbes came to interview me, I was genuinely surprised. The title they chose, in September 2026, was “How AI And Peter Gabriel Changed Junie Lau’s Path To Directing.”",
               zh: "前段时间，《福布斯》给我做了一篇专访。我收到邀请的时候很惊讶，因为我一直觉得自己的经历挺普通的：一个在广东长大的女孩，后来去伦敦读书，在时尚和广告影视行业摸爬滚打，最后因为 AI，走上了导演这条路。2026 年 9 月刊出的标题是：《How AI And Peter Gabriel Changed Junie Lau’s Path To Directing》。",
               source: "public"
-            },
-            {
-              en: "Apart from “director”, some people have also started calling me an artist. I still feel a certain awe for that word. As a child I loved the photographer Chen Man, because she had such a distinct personal eye. So I would rather talk about how I actually got here than only recite a list of results.",
-              zh: "不过，除了导演，最近也有人开始叫我艺术家。我对这个词其实一直挺敬畏的。小时候我很喜欢摄影师陈漫，因为她有特别鲜明的个人审美。所以比起只列举成绩，我更想聊聊自己到底是怎么走到这里的。",
-              source: "public"
             }
           ]
         },
