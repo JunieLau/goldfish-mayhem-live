@@ -13,7 +13,6 @@ window.GM = {
     },
     play: { en: "Play", zh: "播放" },
     chapterOf: { en: "Chapter", zh: "章节" },
-    promptTag: { en: "Discussion prompt", zh: "讨论引导" },
     liveTag: { en: "Live audience questions", zh: "现场观众提问" },
     callouts: {
       gap: { en: "To be confirmed", zh: "待补充" },
@@ -150,7 +149,8 @@ window.GM = {
                 { n: "06", text: "Project Odyssey Global AI Film Festival | Silver" }
               ],
               photos: [
-                { src: "assets/plates/01-forbes-portrait.jpg", altEn: "The Forbes profile “How AI And Peter Gabriel Changed Junie Lau’s Path To Directing”, beside a portrait of Junie Lau in a red sculptural dress, holding a golden trophy next to a gold astronaut helmet", altZh: "《福布斯》人物专访《How AI And Peter Gabriel Changed Junie Lau’s Path To Directing》，旁为 Junie Lau 的肖像：穿着红色雕塑感礼服，手持金色奖杯，身旁是金色宇航头盔" }
+                { src: "assets/plates/01-forbes-portrait.jpg", crop: { l: 51.007, r: 0.007, b: 3.5 }, altEn: "A portrait of Junie Lau in a red sculptural dress, holding a golden trophy next to a gold astronaut helmet", altZh: "Junie Lau 的肖像：穿着红色雕塑感礼服，手持金色奖杯，身旁是金色宇航头盔" },
+                { src: "assets/plates/01-forbes-portrait.jpg", crop: { l: 0.3, r: 51.2, b: 4.458 }, altEn: "The Forbes profile “How AI And Peter Gabriel Changed Junie Lau’s Path To Directing”", altZh: "《福布斯》人物专访《How AI And Peter Gabriel Changed Junie Lau’s Path To Directing》" }
               ],
               capEn: "I am a director, with a short list of films and awards.",
               capZh: "我是一名导演，上面有我的影片和奖项。"
@@ -166,9 +166,10 @@ window.GM = {
                 { n: "08", title: "Our T2 Remake", text: "Co-director of the world’s first AI feature film" }
               ],
               photos: [
-                { src: "assets/plates/02-tribeca-people.jpg", altEn: "Junie Lau with colleagues in front of a Tribeca Festival and Google step-and-repeat", altZh: "Junie Lau 与同行站在 Tribeca Festival 与 Google 的背景板前" },
-                { src: "assets/plates/02-waic.jpg", altEn: "A festival stage at the World Artificial Intelligence Conference (WAIC)", altZh: "世界人工智能大会（WAIC）的舞台" },
-                { src: "assets/plates/02-tribeca-premiere.jpg", altEn: "An aerial view of a city with the Tribeca Festival 25 mark, above a portrait of Junie Lau at the Beyond the Loop 2 Los Angeles premiere", altZh: "城市航拍与 Tribeca Festival 25 标识，下方是 Junie Lau 在 Beyond the Loop 2 洛杉矶首映的肖像" }
+                { src: "assets/plates/02-tribeca-people.jpg", crop: { t: 0.123, b: 0.123 }, altEn: "Junie Lau with colleagues in front of a Tribeca Festival and Google step-and-repeat", altZh: "Junie Lau 与同行站在 Tribeca Festival 与 Google 的背景板前" },
+                { src: "assets/plates/02-waic.jpg", crop: { l: 1.411, t: 1.5, r: 1.411, b: 1.5 }, altEn: "A festival stage at the World Artificial Intelligence Conference (WAIC)", altZh: "世界人工智能大会（WAIC）的舞台" },
+                { src: "assets/plates/02-tribeca-premiere.jpg", crop: { l: 0.108, t: 50.2, r: 0.108 }, altEn: "Junie Lau at the Beyond the Loop 2 Los Angeles premiere", altZh: "Junie Lau 在 Beyond the Loop 2 洛杉矶首映" },
+                { src: "assets/plates/02-tribeca-premiere.jpg", crop: { l: 30.11, r: 30.11, b: 50.0 }, altEn: "An aerial view of a city with the Tribeca Festival 25 mark", altZh: "城市航拍与 Tribeca Festival 25 标识" }
               ],
               capEn: "Festivals and milestones I have already reached, including invitations to the Tribeca Film Festival, and work as a co-director on Our T2 Remake.",
               capZh: "我已经走到的电影节和创作里程碑，包括受邀前往 Tribeca Film Festival，以及担任《Our T2 Remake》的联合导演。"
@@ -186,9 +187,9 @@ window.GM = {
                 "Leading universities worldwide | Guest lecturer, including Tsinghua University and Peking University"
               ],
               photos: [
-                { src: "assets/plates/03-dear-stranger.jpg", altEn: "Key art for Dear “Stranger”, a Google I/O collaboration", altZh: "与 Google I/O 合作的《Dear “Stranger”》主视觉" },
-                { src: "assets/plates/03-love-from-void.jpg", altEn: "A still from Love from Void by Junie Lau, an OpenAI / Sora Selects work", altZh: "Junie Lau 的 Love from Void 剧照，OpenAI / Sora Selects 作品" },
-                { src: "assets/plates/03-revan.jpg", altEn: "A portrait from the REVAN campaign, with Junie standing among large flowers", altZh: "REVAN 系列肖像：Junie 站在巨大的花丛中" }
+                { src: "assets/plates/03-dear-stranger.jpg", crop: { t: 0.098, b: 0.098 }, altEn: "Key art for Dear “Stranger”, a Google I/O collaboration", altZh: "与 Google I/O 合作的《Dear “Stranger”》主视觉" },
+                { src: "assets/plates/03-love-from-void.jpg", crop: { t: 0.069, b: 0.069 }, altEn: "A still from Love from Void by Junie Lau, an OpenAI / Sora Selects work", altZh: "Junie Lau 的 Love from Void 剧照，OpenAI / Sora Selects 作品" },
+                { src: "assets/plates/03-revan.jpg", crop: { t: 0.092, b: 0.092 }, altEn: "A portrait from the REVAN campaign, with Junie standing among large flowers", altZh: "REVAN 系列肖像：Junie 站在巨大的花丛中" }
               ],
               capEn: "I also work as an artist. This plate brings together collaborations with Google and OpenAI, a Forbes profile, and invitations to speak at universities including Tsinghua University and Peking University.",
               capZh: "我也做艺术家的工作。这块版面把与 Google、OpenAI 的合作、《福布斯》专访，以及包括清华、北大在内的高校邀请放在一起。"
@@ -196,6 +197,7 @@ window.GM = {
             {
               kind: "numerals",
               highlight: "artist",
+              ghost: "JUNIE LAU",
               numerals: [
                 { num: "10+", text: "Top-tier AI film competitions — invited to serve as a professional juror" },
                 { num: "30+", text: "Domestic and international media — profiles, features, and published work" },
@@ -203,7 +205,7 @@ window.GM = {
                 { num: "50", text: "Twice selected for the Global Top 50 Women AI Filmmakers", circled: true }
               ],
               photos: [
-                { src: "assets/plates/04-interview.jpg", altEn: "Junie Lau seated in a pale pink jacket, introduced as a film director and multidisciplinary creative, above a still from the Google I/O 2025 keynote in which her work appears", altZh: "Junie Lau 坐着，穿着浅粉色外套，介绍为电影导演与跨界创作者；下方是 2025 年 Google I/O 主题演讲中出现她作品的画面" }
+                { src: "assets/plates/04-interview.jpg", crop: { l: 2.0, r: 19.543, b: 51.0 }, altEn: "Junie Lau seated in a pale pink jacket, introduced as a film director and multidisciplinary creative", altZh: "Junie Lau 坐着，穿着浅粉色外套，介绍为电影导演与跨界创作者" }
               ],
               capEn: "A snapshot of the scale of that work, together with a portrait.",
               capZh: "这份工作体量的一个速写，旁边是一张肖像。"
@@ -237,6 +239,7 @@ window.GM = {
             {
               kind: "timeline",
               highlight: "worlds",
+              ghost: "CREATING WORLDS",
               headline: "Looking back over all these years, it seems there is only one thing I have never given up — *creating worlds*",
               moments: [
                 {
@@ -246,7 +249,7 @@ window.GM = {
                   layout: "pair",
                   photos: [
                     { src: "assets/plates/06-drawing-1999.jpg", altEn: "A childhood oil-pastel drawing of a yellow rabbit, a house and a sun", altZh: "一幅童年油画棒作品：黄色的兔子、房子和太阳" },
-                    { src: "assets/plates/06-childhood-1999.jpg", altEn: "A childhood photograph of Junie as a young girl, standing in front of drawings, holding a balloon", altZh: "Junie 童年的照片：小女孩站在画作前，手里拿着气球" }
+                    { src: "assets/plates/06-childhood-1999.jpg", crop: { l: 60.908, t: 2.963, r: 3.144, b: 2.519 }, altEn: "A childhood photograph of Junie as a young girl, standing in front of drawings, holding a balloon", altZh: "Junie 童年的照片：小女孩站在画作前，手里拿着气球" }
                   ]
                 },
                 {
@@ -255,8 +258,8 @@ window.GM = {
                   caption: "Creating worlds with timber structures, metal frameworks, fibreglass, scenic painting, 3D printing, LED screens and physical props",
                   layout: "sets",
                   photos: [
-                    { src: "assets/plates/06-set-01.jpg", altEn: "A built street set, seen during art direction", altZh: "美术指导期间搭建的街道场景" },
-                    { src: "assets/plates/06-set-02.jpg", altEn: "A studio floor with cameras, costumes and an LED wall", altZh: "有摄影机、服装和 LED 屏的棚内" },
+                    { src: "assets/plates/06-set-01.jpg", crop: { t: 4.63, b: 4.63 }, altEn: "A built street set, seen during art direction", altZh: "美术指导期间搭建的街道场景" },
+                    { src: "assets/plates/06-set-02.jpg", crop: { l: 12.43, t: 34.653, r: 18.726, b: 30.208 }, altEn: "A studio floor with cameras, costumes and an LED wall", altZh: "有摄影机、服装和 LED 屏的棚内" },
                     { src: "assets/plates/06-art-direction.jpg", altEn: "A densely built floral and architectural set", altZh: "一座铺满花卉与建筑细节的场景" }
                   ]
                 },
@@ -267,7 +270,7 @@ window.GM = {
                   layout: "pair-wide",
                   photos: [
                     { src: "assets/plates/06-disco-world.jpg", altEn: "An image made with Disco Diffusion", altZh: "用 Disco Diffusion 创作的画面" },
-                    { src: "assets/plates/06-disco-ui.jpg", altEn: "A Google Colab window running Disco Diffusion v5.6, with prompt settings visible", altZh: "正在运行 Disco Diffusion v5.6 的 Google Colab 窗口，可见提示词设置" }
+                    { src: "assets/plates/06-disco-ui.jpg", crop: { l: 4.434, t: 8.056, r: 57.402, b: 15.191 }, altEn: "A Google Colab window running Disco Diffusion v5.6, with prompt settings visible", altZh: "正在运行 Disco Diffusion v5.6 的 Google Colab 窗口，可见提示词设置" }
                   ]
                 },
                 {
@@ -276,7 +279,7 @@ window.GM = {
                   caption: "Made with Stable Diffusion and Midjourney",
                   layout: "pair-wide",
                   photos: [
-                    { src: "assets/plates/06-the-court.jpg", altEn: "A still from The Court: a man in sunglasses moving through a city street", altZh: "《The Court》剧照：一个戴墨镜的人走在城市街道上" },
+                    { src: "assets/plates/06-the-court.jpg", crop: { l: 0.152, r: 0.152 }, altEn: "A still from The Court: a man in sunglasses moving through a city street", altZh: "《The Court》剧照：一个戴墨镜的人走在城市街道上" },
                     { src: "assets/plates/06-the-court-winners.jpg", altEn: "A #DiffuseTogether winners screen, with Junie’s name marked, above a still from The Court", altZh: "#DiffuseTogether 获奖画面（标有 Junie 的名字），下方是《The Court》剧照" }
                   ]
                 }
@@ -368,11 +371,11 @@ window.GM = {
               ghost: "INVITATIONS",
               kickerLine: "Invitations from film companies",
               invites: [
-                { src: "assets/plates/12-zero.jpg", altEn: "Poster for ZEЯRO, a PROMISE title", altZh: "ZEЯRO 海报，PROMISE 出品", left: "ZEЯRO", right: "PROMISE" },
-                { src: "assets/plates/12-51ist.jpg", altEn: "Poster for 51IST, a PROMISE title", altZh: "51IST 海报，PROMISE 出品", left: "51IST", right: "PROMISE" },
-                { src: "assets/plates/12-mulan.jpg", altEn: "Poster for 猩紅木蘭, a PROMISE title", altZh: "猩紅木蘭海报，PROMISE 出品", left: "猩紅木蘭", right: "PROMISE" },
-                { src: "assets/plates/12-madam-pink.jpg", altEn: "Poster for MADAM PINK, with 幕间映画", altZh: "MADAM PINK 海报，幕间映画", left: "MADAM PINK", right: "幕间映画" },
-                { src: "assets/plates/12-goldfish-mayhem.jpg", altEn: "Poster for Goldfish Mayhem — 金魚街大亂鬥 — with Wonder Studios", altZh: "《金魚街大亂鬥》海报，Wonder Studios", left: "金魚街大亂鬥", right: "WONDERSTUDIOS" }
+                { src: "assets/plates/12-zero.jpg", crop: { t: 2.576, b: 2.576 }, altEn: "Poster for ZEЯRO, a PROMISE title", altZh: "ZEЯRO 海报，PROMISE 出品", left: "ZEЯRO", right: "PROMISE" },
+                { src: "assets/plates/12-51ist.jpg", crop: { t: 2.409, b: 2.409 }, altEn: "Poster for 51IST, a PROMISE title", altZh: "51IST 海报，PROMISE 出品", left: "51IST", right: "PROMISE" },
+                { src: "assets/plates/12-mulan.jpg", crop: { t: 2.726, b: 2.726 }, altEn: "Poster for 猩紅木蘭, a PROMISE title", altZh: "猩紅木蘭海报，PROMISE 出品", left: "猩紅木蘭", right: "PROMISE" },
+                { src: "assets/plates/12-madam-pink.jpg", crop: { t: 2.803, b: 2.803 }, altEn: "Poster for MADAM PINK, with 幕间映画", altZh: "MADAM PINK 海报，幕间映画", left: "MADAM PINK", right: "幕间映画" },
+                { src: "assets/plates/12-goldfish-mayhem.jpg", crop: { t: 2.803, b: 2.803 }, altEn: "Poster for Goldfish Mayhem — 金魚街大亂鬥 — with Wonder Studios", altZh: "《金魚街大亂鬥》海报，Wonder Studios", left: "金魚街大亂鬥", right: "WONDERSTUDIOS" }
               ],
               capEn: "Original film IPs I have been developing with production teams, including Goldfish Mayhem — Goldfish Mayhem × WONDERSTUDIOS.",
               capZh: "我和制作团队一起开发的原创电影 IP，其中包括《金魚街大亂鬥》——Goldfish Mayhem × WONDERSTUDIOS。"
@@ -480,19 +483,19 @@ window.GM = {
               kind: "who",
               highlight: "worlds",
               headline: "Who am I?",
-              titlePos: { x: 35.6, y: 28.0, w: 28.8 },
+              titlePos: { x: 35.6, y: 42.0, w: 28.8 },
               photo: { src: "assets/plates/16-whoami-network.jpg", altEn: "A network of stills from the Goldfish Mayhem world, arranged around a central space for the question “Who am I?”", altZh: "《金魚街大亂鬥》世界里的一组剧照，环绕在「我是谁？」的中心留白周围" },
               tags: [
-                { label: "+ cyber-folk", x: 1.6, y: 8.1 },
-                { label: "+ Lingnan aesthetics", x: 1.8, y: 79.7 },
-                { label: "+ action comedy", x: 17.2, y: 92.0 },
-                { label: "+ street myth", x: 28.8, y: 22.3 },
-                { label: "+ BOBO", x: 42.8, y: 11.2 },
-                { label: "+ Xixili", x: 44.4, y: 84.8 },
-                { label: "+ the Cloud", x: 68.4, y: 80.2 },
-                { label: "+ Goldfish Street", x: 72.0, y: 55.3 },
-                { label: "+ Fengshui Girl", x: 64.0, y: 3.0 },
-                { label: "+ data immortality", x: 82.0, y: 3.0 }
+                { label: "+ cyber-folk", x: 1.6, y: 17.73 },
+                { label: "+ Lingnan aesthetics", x: 1.8, y: 81.82 },
+                { label: "+ action comedy", x: 17.2, y: 93.64 },
+                { label: "+ street myth", x: 28.8, y: 30.45 },
+                { label: "+ BOBO", x: 42.8, y: 20.45 },
+                { label: "+ Xixili", x: 44.4, y: 86.36 },
+                { label: "+ the Cloud", x: 68.4, y: 82.27 },
+                { label: "+ Goldfish Street", x: 72.0, y: 60.0 },
+                { label: "+ Fengshui Girl", x: 74.6, y: 13.18 },
+                { label: "+ data immortality", x: 89.2, y: 13.18 }
               ],
               capEn: "A plate I use when I ask “Who am I?” of this world — the three girls, the street, the Cloud, and the ideas around them, kept on one layout.",
               capZh: "我问「我是谁?」时用的版面：三个女孩、金鱼街、云端，以及旁边那些想法，都留在同一张版式上。"
@@ -670,53 +673,6 @@ window.GM = {
                   en: "Another reason I wanted to make this film is that I wanted to shoot the kind of women’s stories I longed to watch as a child. Growing up with kung fu films, I always wondered: why couldn’t the lead be a girl? Girls can be the superheroes who save the world as well. AI has given me a freedom I did not have when budget and scale stood in the way, so I can finally try to put the place I grew up, the culture I love, and a female filmmaker’s point of view into a film world.",
                   zh: "还有一个很重要的原因，是我想拍一些自己小时候特别想看的女性故事。从小看功夫片，我就总在想：为什么主角不能是女孩子？她们也可以是拯救世界的超级英雄。以前很多画面，我受限于预算和制作规模，没有机会真正做出来。现在 AI 给了我过去没有的自由，让我终于可以试着把自己成长的地方、喜欢的文化，以及作为女性创作者的视角放到电影世界里。",
                   source: "public"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          type: "para",
-          en: "This September we held a small invitation-only screening in Los Angeles. The film company invited friends from the local industry, including people from Disney, Netflix, A24 and Fox Animation. It was the first time I sat in a room like that and watched my own work with people from those companies. Afterwards, some of the audience said they had never seen a world like this before. I was happy, because a strange imagination I had kept since childhood had really been seen by someone else. And after finishing the film I also began to ask: once the technology grows stronger and stronger, what stories do I actually want to tell? I think the special thing in a work is its authorship — the filmmaker’s own experience, taste, feeling, and what they truly want to express or criticise.",
-          zh: "今年九月，我们在洛杉矶办了一场小型邀请制放映。电影公司邀请了一些当地影视行业的朋友，有来自迪士尼、Netflix、A24、福克斯动画等公司的从业者。那是我第一次坐在这样的放映现场，跟来自不同顶级电影公司的从业者一起看自己的作品。放映结束以后，有观众说，他们以前没有见过这样的世界。我听到的时候很开心，因为一个小时候藏在脑子里的奇怪想象，真的被别人看见了。但做完这部电影，我也开始思考：技术越来越强之后，我究竟想讲什么故事？我觉得，是它的作者性。创作者自己的经历、审美、情感，还有他真正想表达和批判的东西。",
-          source: "public"
-        },
-        {
-          type: "plates",
-          items: [
-            {
-              kind: "quotes",
-              highlight: "worlds",
-              quotes: [
-                {
-                  text: "We've never seen anything quite like this before.",
-                  cite: "A24",
-                  logo: { src: "assets/plates/14-logo-a24.png", altEn: "A24", altZh: "A24" },
-                  photo: { src: "assets/plates/14-still-a24.jpg", altEn: "A still shown beside the A24 remark", altZh: "放在 A24 评价旁的一张剧照" }
-                },
-                {
-                  text: "We would love to explore opportunities to collaborate with you.",
-                  cite: "FOX ANIMATION",
-                  logo: { src: "assets/plates/14-logo-fox.png", altEn: "Fox Animation Studios", altZh: "福克斯动画" },
-                  photo: { src: "assets/plates/14-still-fox.jpg", altEn: "A still shown beside the Fox Animation remark: an old man playing mahjong with robots", altZh: "放在 Fox Animation 评价旁的一张剧照：一位老人与机器人打麻将" }
-                }
-              ]
-            },
-            {
-              kind: "quotes",
-              highlight: "worlds",
-              quotes: [
-                {
-                  text: "We absolutely love your work. It truly feels like stepping into a video game.",
-                  cite: "DISNEY",
-                  logo: { src: "assets/plates/15-logo-disney.png", altEn: "Disney", altZh: "迪士尼" },
-                  photo: { src: "assets/plates/15-still-disney.jpg", altEn: "A still shown beside the Disney remark", altZh: "放在迪士尼评价旁的一张剧照" }
-                },
-                {
-                  text: "Your film is truly remarkable. An exceptional piece of work.",
-                  cite: "NETFLIX",
-                  logo: { src: "assets/plates/15-logo-netflix.png", altEn: "Netflix", altZh: "Netflix" },
-                  photo: { src: "assets/plates/15-still-netflix.jpg", altEn: "A still shown beside the Netflix remark", altZh: "放在 Netflix 评价旁的一张剧照" }
                 }
               ]
             }
@@ -1370,7 +1326,7 @@ window.GM = {
               photosLeft: true,
               headline: "I want to build a futurist virtual world\n— a “virtual ecosystem” in which humans and AI evolve together.",
               photos: [
-                { src: "assets/plates/27-virtual-world.jpg", altEn: "A still from a conceived futurist virtual world", altZh: "构想中的未来主义虚拟世界画面" }
+                { src: "assets/plates/27-virtual-world.jpg", crop: { r: 36.0 }, altEn: "A still from a conceived futurist virtual world", altZh: "构想中的未来主义虚拟世界画面" }
               ],
               capEn: "A plate for a futurist virtual world I have been conceiving — a “virtual ecosystem” in which humans and AI evolve together. This is an idea I am exploring, not a greenlit production.",
               capZh: "我在构想的一个未来主义虚拟世界——一个人类与 AI 协同进化的「虚拟生态系统」。这是我正在探索的构想，不是已经立项的项目。"
@@ -1534,70 +1490,9 @@ window.GM = {
         },
         {
           type: "lede",
-          en: "I would like to stay with you here and talk about the film, the way it was made, and AI filmmaking. The questions below are only prompts to open the room. They are not a substitute for the questions you actually want to ask.",
-          zh: "我想在这里停下来，和大家一起聊聊这部电影、它的制作方式，以及 AI filmmaking。下面这些问题只是用来打开讨论的引导，并不能代替你们真正想问的问题。",
+          en: "I would like to stay with you here and talk about the film, the way it was made, and AI filmmaking.",
+          zh: "我想在这里停下来，和大家一起聊聊这部电影、它的制作方式，以及 AI filmmaking。",
           source: "public"
-        },
-        {
-          type: "prompts",
-          items: [
-            {
-              qEn: "When images can be made very quickly, what does authorship still mean to you?",
-              qZh: "当画面可以被很快做出来时，作者性对你来说还意味着什么？",
-              noteEn: "I talked about this after the Los Angeles screening: once the technology grows stronger, the special thing is still the filmmaker’s own experience, taste and questions.",
-              noteZh: "洛杉矶放映之后，我谈过这件事：技术越来越强之后，真正特别的，仍是创作者自己的经历、审美和问题。",
-              source: "public"
-            },
-            {
-              qEn: "What, for you, is the difference between the real Goldfish Street downstairs and the Goldfish Street in the film?",
-              qZh: "对你来说，家楼下那条真的金鱼街，和电影里的金鱼街，差别在哪里？",
-              noteEn: "The film’s street is fictional, assembled from Foshan, a street near Mong Kok, and childhood memory. I can also talk about the rotating restaurant that became the Cloud.",
-              noteZh: "电影里的街是虚构的，来自佛山、旺角附近的一条金鱼街，以及童年记忆。我也可以谈谈后来变成「云端」的那家旋转餐厅。",
-              source: "interview"
-            },
-            {
-              qEn: "The three girls are three mirrors. Which side do you find hardest to look at?",
-              qZh: "三个女孩是三面镜子。哪一面是你最不容易看的？",
-              noteEn: "BOBO, 风水妹 / Fengshui Girl, and 细细粒 / Xixili each carry a different part of me. I have not named one of them as “the most me.”",
-              noteZh: "BOBO、风水妹 / Fengshui Girl，以及细细粒 / Xixili，各自带着我的不同部分。我没有指定其中一个人「最像我」。",
-              source: "interview"
-            },
-            {
-              qEn: "How do you want kung fu to feel in this film — and what is still being worked out in the hybrid process?",
-              qZh: "你希望这部影片里的功夫是什么样的感觉？混合式制作里，又有哪些地方还在被理清？",
-              noteEn: "I can talk about 鸿胜武馆, girl heroes, the movement-reference board, and the official behind-the-scenes film. A shot-by-shot live-action / generated breakdown is still to be confirmed.",
-              noteZh: "我可以谈鸿胜武馆、女性英雄、动作参考看板，以及官方幕后影片。按镜头拆开的真人 / 生成说明，仍待补充。",
-              source: "interview"
-            },
-            {
-              qEn: "Where exactly do ChatGPT, a human screenwriter, invideo Agent One, CapCut and OpenArt enter this film’s workflow?",
-              qZh: "ChatGPT、人类编剧、invideo Agent One、CapCut 和 OpenArt，究竟是在这部影片工作流的哪些环节进入的？",
-              noteEn: "I have already described this in the “From moodboard to screen” chapter. I’m glad to go over any one tool more slowly.",
-              noteZh: "我在「从情绪板到银幕」一章里已经谈过。如果大家想把其中某一个工具再走慢一点，我很愿意。",
-              source: "interview"
-            },
-            {
-              qEn: "What do you want someone to feel two minutes after the film ends?",
-              qZh: "你希望观众在影片结束两分钟后，心里留下什么？",
-              noteEn: "I hope people can enjoy Goldfish Street as a funny, chaotic, strange and warm world — and perhaps recognise a childhood, a community, or a memory that is slowly disappearing.",
-              noteZh: "我希望大家可以享受金鱼街这个好笑、混乱、奇怪但也温暖的世界；也许还会看见自己的童年、自己的社区，或某种正在慢慢消失的记忆。",
-              source: "interview"
-            },
-            {
-              qEn: "You spoke about Neural Media, DATALAND, and becoming a World Architect. What is already in motion, and what is still a conception?",
-              qZh: "你谈到了神经媒体、DATALAND，以及成为世界建筑师。哪些已经在发生，哪些仍是构想？",
-              noteEn: "The visit to DATALAND and the wish to make work that lasts are things I have already done or clearly named. The virtual ecosystem of agents, XR and BCI is still exploration.",
-              noteZh: "探访 DATALAND，以及希望做出能够留下来的作品，是我已经做过或明确说过的。而智能体、XR 和 BCI 组成的虚拟生态系统，仍是探索中的构想。",
-              source: "public"
-            },
-            {
-              qEn: "You are developing a larger universe around a red-haired female hero. What can you say about it today?",
-              qZh: "你正在发展一个更大的红发女性英雄宇宙。今天你能说到哪一步？",
-              noteEn: "I can share the direction I have already written: powers that may come from emotion, memory and desire. It is work in development, not a greenlit title.",
-              noteZh: "我可以分享已经写过的方向：力量可能来自情绪、记忆和欲望。这是正在发展的工作，不是一个已经立项的片名。",
-              source: "interview"
-            }
-          ]
         },
         {
           type: "live-slot",

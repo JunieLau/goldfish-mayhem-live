@@ -135,6 +135,24 @@
     { key: "dreams", label: "Dreams × Reality" }
   ];
 
+  const PLATE_W = 5500;
+  const PLATE_H = 1210;
+
+  function cropStyle(crop) {
+    if (!crop) return "";
+    const l = Number(crop.l || 0);
+    const t = Number(crop.t || 0);
+    const r = Number(crop.r || 0);
+    const b = Number(crop.b || 0);
+    if (!l && !t && !r && !b) return "";
+    return ` style="--crop-l:${l};--crop-t:${t};--crop-r:${r};--crop-b:${b}"`;
+  }
+
+  function hasCrop(crop) {
+    if (!crop) return false;
+    return Number(crop.l || 0) || Number(crop.t || 0) || Number(crop.r || 0) || Number(crop.b || 0);
+  }
+
   function plateChrome(p) {
     const nav = PLATE_NAV.map(
       (n) => `<span class="${n.key === p.highlight ? "is-current" : ""}">${esc(n.label)}</span>`
@@ -156,7 +174,8 @@
   function plateFig(img, i) {
     const alt = esc(img.altEn || img.altZh || "");
     const src = esc(img.src);
-    return `<figure class="fig natural" data-lb="${src}" data-idx="${i}" tabindex="0" role="button" aria-label="${alt}">
+    const cropped = hasCrop(img.crop);
+    return `<figure class="fig natural${cropped ? " is-cropped" : ""}"${cropStyle(img.crop)} data-lb="${src}" data-idx="${i}" tabindex="0" role="button" aria-label="${alt}">
       <img src="${src}" alt="${alt}" loading="lazy">
     </figure>`;
   }
@@ -166,12 +185,19 @@
   }
 
   function hl(html) {
-    // wrap *asterisks* as accent
     return String(html || "").replace(/\*([^*]+)\*/g, '<span class="accent">$1</span>');
   }
 
   function typo(text) {
     return hl(esc(text || "")).replace(/\n/g, "<br>");
+  }
+
+  function quoteLogo(logo) {
+    if (!logo) return "";
+    const cropped = hasCrop(logo.crop);
+    const img = `<img class="quote-logo" src="${esc(logo.src)}" alt="${esc(logo.altEn || "")}">`;
+    if (!cropped) return img;
+    return `<span class="quote-logo-wrap is-cropped"${cropStyle(logo.crop)}>${img}</span>`;
   }
 
   function renderPlate(p, idx) {
@@ -182,14 +208,14 @@
       const mid = Math.ceil(awards.length / 2);
       const item = (a) => `<li><span class="n">${esc(a.n)}</span><span>${esc(a.text)}</span></li>`;
       body = `<div class="plate-intro">
-        <div>
+        <div class="intro-copy">
           <h3 class="plate-headline">${typo(p.headline)}</h3>
-          <div class="plate-awards">
-            <ul>${awards.slice(0, mid).map(item).join("")}</ul>
-            <ul>${awards.slice(mid).map(item).join("")}<li class="more" aria-hidden="true">······</li></ul>
-          </div>
-          ${p.wordmark ? `<div class="plate-wordmark">${esc(p.wordmark)}</div>` : ""}
         </div>
+        <div class="plate-awards">
+          <ul>${awards.slice(0, mid).map(item).join("")}</ul>
+          <ul>${awards.slice(mid).map(item).join("")}<li class="more" aria-hidden="true">······</li></ul>
+        </div>
+        ${p.wordmark ? `<div class="plate-wordmark">${esc(p.wordmark)}</div>` : ""}
         <div class="plate-photos">${figs(p.photos, idx)}</div>
       </div>`;
     } else if (kind === "milestones") {
@@ -202,24 +228,24 @@
         <div class="plate-miles-photos">${figs(p.photos, idx)}</div>
         <div class="plate-miles-copy">
           <h3 class="plate-headline">${typo(p.headline)}</h3>
-          <ul class="plate-mile-list">${items}</ul>
-          ${p.wordmark ? `<div class="plate-wordmark">${esc(p.wordmark)}</div>` : ""}
         </div>
+        <ul class="plate-mile-list">${items}</ul>
+        ${p.wordmark ? `<div class="plate-wordmark">${esc(p.wordmark)}</div>` : ""}
       </div>`;
     } else if (kind === "artist") {
       const items = (p.credits || []).map((t) => `<li>${esc(t)}</li>`).join("");
       body = `<div class="plate-artist">
         <div class="plate-photos">${figs(p.photos, idx)}</div>
-        <div>
+        <div class="artist-copy">
           <h3 class="plate-headline">${typo(p.headline)}</h3>
-          <ul class="plate-credits">${items}</ul>
-          ${p.wordmark ? `<div class="plate-wordmark">${esc(p.wordmark)}</div>` : ""}
         </div>
+        <ul class="plate-credits">${items}</ul>
+        ${p.wordmark ? `<div class="plate-wordmark">${esc(p.wordmark)}</div>` : ""}
       </div>`;
     } else if (kind === "numerals") {
       const items = (p.numerals || [])
         .map(
-          (n) => `<div class="numeral-item"><div class="num${n.circled ? " is-circled" : ""}">${esc(n.num)}</div><p>${esc(n.text)}</p></div>`
+          (n) => `<div class="numeral-item${n.circled ? " is-circled" : ""}"><div class="num">${esc(n.num)}</div><p>${esc(n.text)}</p></div>`
         )
         .join("");
       body = `<div class="plate-numerals">
@@ -231,7 +257,7 @@
         .map((m, i) => {
           const n = (m.photos || []).length;
           const cls = m.layout || (n === 1 ? "solo" : n > 2 ? "sets" : "pair");
-          return `<article class="timeline-cell">
+          return `<article class="timeline-cell cell-${i} ${esc(cls)}">
             <div class="t-photos ${esc(cls)}">${figs(m.photos, idx + "-m" + i)}</div>
             <h3>${esc(m.title)} <span>${esc(m.date || "")}</span></h3>
             <p>${esc(m.caption)}</p>
@@ -244,26 +270,26 @@
       </div>`;
     } else if (kind === "chapter-quote") {
       body = `<div class="plate-quote-row">
-        <div class="plate-side-word">${esc(p.leftWord || "")}</div>
-        <div>
+        <div class="plate-side-word left">${esc(p.leftWord || "")}</div>
+        <div class="quote-main">
           <h3 class="plate-headline">${typo(p.headline)}</h3>
-          ${p.chapter ? `<div class="plate-chapter">${esc(p.chapter)}</div>` : ""}
         </div>
-        <div class="plate-side-word">${esc(p.rightWord || "")}</div>
+        ${p.chapter ? `<div class="plate-chapter">${esc(p.chapter)}</div>` : ""}
+        <div class="plate-side-word right">${esc(p.rightWord || "")}</div>
       </div>`;
     } else if (kind === "chapter-art") {
       body = `<div class="plate-chapter-art">
+        <div class="art-wrap">${figs(p.photos, idx)}</div>
         ${p.chapter ? `<div class="plate-chapter">${esc(p.chapter)}</div>` : ""}
         <h3 class="plate-headline">${typo(p.headline)}</h3>
-        <div class="art-wrap">${figs(p.photos, idx)}</div>
       </div>`;
     } else if (kind === "invitations") {
       const items = (p.invites || [])
         .map(
-          (it, i) => `<article class="invite-item">${plateFig(it, idx + "-i" + i)}<div class="label">${esc(it.left)} <em>×</em> ${esc(it.right)}</div></article>`
+          (it, i) => `<article class="invite-item">${plateFig(it, idx + "-i" + i)}<div class="label">${esc(it.left).replace(/Я/g, "<span class=\"cyr\">Я</span>")} <em>×</em> ${esc(it.right)}</div></article>`
         )
         .join("");
-      body = `<div>
+      body = `<div class="plate-invites">
         <div class="plate-kicker-line">${esc(p.kickerLine || "Invitations from film companies")}</div>
         <div class="invite-grid">${items}</div>
       </div>`;
@@ -273,18 +299,14 @@
         ${p.photos && p.photos[1] ? plateFig(p.photos[1], idx + "-b") : ""}
         <div class="title-copy">
           ${p.officialZh ? `<div class="plate-official-zh">${esc(p.officialZh)}</div>` : ""}
-          <h3 class="plate-headline">${typo(p.headline)}</h3>
           ${p.wordmark ? `<div class="plate-wordmark red">${esc(p.wordmark)}</div>` : ""}
         </div>
       </div>`;
     } else if (kind === "quotes") {
       const cells = (p.quotes || [])
         .map((q, i) => {
-          const logo = q.logo
-            ? `<img class="quote-logo" src="${esc(q.logo.src)}" alt="${esc(q.logo.altEn || q.cite || "")}">`
-            : "";
           return `<article class="quote-cell">${q.photo ? plateFig(q.photo, idx + "-q" + i) : ""}
-            <div class="quote-copy">${logo}<blockquote>“${esc(q.text)}”<cite>── ${esc(q.cite)}</cite></blockquote></div>
+            <div class="quote-copy">${quoteLogo(q.logo)}<blockquote>“${esc(q.text)}”<cite>── ${esc(q.cite)}</cite></blockquote></div>
           </article>`;
         })
         .join("");
@@ -296,18 +318,18 @@
             `<span class="who-tag" style="left:${Number(t.x)}%;top:${Number(t.y)}%">${esc(t.label)}</span>`
         )
         .join("");
-      const tp = p.titlePos || { x: 35, y: 28, w: 30 };
+      const tp = p.titlePos || { x: 35.6, y: 42, w: 28.8 };
       body = `<div class="plate-who">
         <div class="who-stage">
           ${p.photo ? plateFig(p.photo, idx) : ""}
-          <div class="who-overlay">
-            ${tags}
-            <h3 class="plate-headline who-title" style="left:${Number(tp.x)}%;top:${Number(tp.y)}%;width:${Number(tp.w)}%">${typo(p.headline)}</h3>
-          </div>
+        </div>
+        <div class="who-overlay">
+          ${tags}
+          <h3 class="plate-headline who-title" style="left:${Number(tp.x)}%;top:${Number(tp.y)}%;width:${Number(tp.w)}%">${typo(p.headline)}</h3>
         </div>
       </div>`;
     } else if (kind === "statement") {
-      const side = p.photosLeft ? "photos-left" : "";
+      const side = p.photosLeft ? "photos-left" : "photos-right";
       const n = (p.photos || []).length;
       const photoCls = n === 1 ? " solo" : n >= 3 ? " trio" : "";
       body = `<div class="plate-statement ${side}">
@@ -321,10 +343,10 @@
         .map((e) => `<article class="era-card"><h3>${esc(e.name)}</h3><p>${esc(e.dates)}</p></article>`)
         .join("");
       body = `<div class="media-evo">
-        <div>
+        <div class="media-evo-copy">
           <h3 class="plate-headline">${typo(p.headline)}</h3>
-          ${p.wordmark ? `<div class="plate-wordmark red">${esc(p.wordmark)}</div>` : ""}
         </div>
+        ${p.wordmark ? `<div class="plate-wordmark red">${esc(p.wordmark)}</div>` : ""}
         <div class="media-evo-chart">
           ${figs(p.photos, idx)}
           <div class="era-row">${eras}</div>
@@ -334,13 +356,12 @@
       const cols = (p.columns || []).map((t) => `<p>${esc(t)}</p>`).join("");
       body = `<div class="plate-architect">
         <div class="plate-photos single">${figs(p.photos, idx)}</div>
-        <div>
+        <div class="architect-copy">
           <h3 class="plate-headline">${typo(p.headline)}</h3>
-          <div class="architect-cols">${cols}</div>
         </div>
+        <div class="architect-cols">${cols}</div>
       </div>`;
     } else {
-      // statement-ghost and default typographic statement
       body = `<div class="plate-statement-ghost">
         <h3 class="plate-headline">${typo(p.headline)}</h3>
         ${p.sub ? `<p class="plate-sub">${esc(p.sub)}</p>` : ""}
@@ -349,10 +370,26 @@
       </div>`;
     }
     return `<article class="plate" data-kind="${esc(kind)}" data-highlight="${esc(p.highlight || "")}">
-      ${plateChrome(p)}
-      <div class="plate-body">${body}</div>
+      <div class="plate-lock">
+        <div class="plate-design">
+          ${plateChrome(p)}
+          <div class="plate-body">${body}</div>
+        </div>
+      </div>
       ${plateCap(p)}
     </article>`;
+  }
+
+  function scalePlates() {
+    $$(".plate-lock").forEach((lock) => {
+      const design = lock.querySelector(".plate-design");
+      if (!design) return;
+      const w = lock.clientWidth;
+      if (!w) return;
+      const s = w / PLATE_W;
+      design.style.transform = "scale(" + s + ")";
+      lock.style.height = PLATE_H * s + "px";
+    });
   }
 
   function renderCallout(b) {
@@ -433,16 +470,6 @@
             <h3>${textPair({ en: tip.titleEn, zh: tip.titleZh })}</h3>
             ${rich({ en: tip.whyEn, zh: tip.whyZh }, "why")}
             ${rich({ en: tip.nextEn, zh: tip.nextZh }, "next")}
-          </article>`
-          )
-          .join("")}</div>`;
-      case "prompts":
-        return `<div class="mod prompt-grid">${(b.items || [])
-          .map(
-            (p) => `<article class="prompt">
-            <div class="tag">${textPair(window.GM.ui.promptTag)}</div>
-            <div class="subh">${textPair({ en: p.qEn, zh: p.qZh })}</div>
-            ${p.noteEn || p.noteZh ? rich({ en: p.noteEn, zh: p.noteZh, source: p.source }, "para") : ""}
           </article>`
           )
           .join("")}</div>`;
@@ -565,6 +592,7 @@
       renderSources();
     $("#foot-credit").innerHTML = textPair(window.GM.ui.footer);
     bindMedia();
+    scalePlates();
   }
 
   /* language */
@@ -734,7 +762,13 @@
     });
 
     window.addEventListener("scroll", updateSpy, { passive: true });
-    window.addEventListener("resize", updateSpy);
+    window.addEventListener("resize", () => {
+      scalePlates();
+      updateSpy();
+    });
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(() => scalePlates());
+    }
     updateSpy();
 
     $(".lb .x").addEventListener("click", closeLb);
