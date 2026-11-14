@@ -52,15 +52,26 @@ window.GM = {
         {
           kind: "title",
           highlight: "worlds",
-          headline: "GOLDFISH MAYHEM",
           officialZh: "金魚街大亂鬥",
           wordmark: "G O L D F I S H    M A Y H E M",
-          photos: [
-            { src: "assets/plates/13-goldfish-street.jpg", altEn: "A crowded future Goldfish Street, with a festival banner stretched between the buildings", altZh: "一条拥挤的未来金鱼街，楼与楼之间拉着节庆横幅" },
-            { src: "assets/plates/13-key-art.jpg", altEn: "Key art for Goldfish Mayhem: three girls standing together, with the official title 金魚街大亂鬥 on the artwork", altZh: "《金魚街大亂鬥》主视觉：三个女孩站在一起，画面上保留官方片名" }
-          ],
-          capEn: "The title plate for this film: Goldfish Mayhem, with the official title 金魚街大亂鬥.",
-          capZh: "这部影片的标题版：Goldfish Mayhem，并保留官方片名金魚街大亂鬥。"
+          trailer: {
+            id: "N3ZfYhO8cBY",
+            poster: "assets/plates/13-goldfish-street.jpg",
+            posterW: 3200,
+            posterH: 1800,
+            titleEn: "Goldfish Mayhem | Official Trailer | Beyond the Loop S2",
+            titleZh: "《金魚街大亂鬥》官方预告 ｜ Beyond the Loop 第二季",
+            source: "yt"
+          },
+          keyArt: {
+            src: "assets/plates/13-key-art.jpg",
+            w: 1086,
+            h: 1448,
+            altEn: "Key art for Goldfish Mayhem: three girls standing together, with the official title 金魚街大亂鬥 on the artwork",
+            altZh: "《金魚街大亂鬥》主视觉：三个女孩站在一起，画面上保留官方片名"
+          },
+          capEn: "The official trailer, played over a still of Goldfish Street; the official key art, with the title 金魚街大亂鬥 left as it is lettered; and the typeset title.",
+          capZh: "官方预告，封面是金鱼街的静帧；官方主视觉，画面上的片名金魚街大亂鬥保持原样；以及排好的标题字。"
         }
       ]
     },
@@ -138,7 +149,7 @@ window.GM = {
               kind: "intro-awards",
               highlight: "director",
               ghost: "DIRECTOR",
-              headline: "I am a young director?",
+              headline: "I am a *young director*?",
               wordmark: "D I R E C T O R",
               awards: [
                 { n: "01", text: "Stable Diffusion AI Short Film Contest | Global Champion" },
@@ -159,7 +170,7 @@ window.GM = {
               kind: "milestones",
               highlight: "director",
               ghost: "TRIBECA",
-              headline: "International film festivals and creative milestones",
+              headline: "*International film festivals* and creative milestones",
               wordmark: "T R I B E C A",
               milestones: [
                 { n: "07", title: "Tribeca Film Festival, USA", text: "Invited twice as a special guest" },
@@ -178,7 +189,7 @@ window.GM = {
               kind: "artist",
               highlight: "artist",
               ghost: "ARTIST",
-              headline: "I am an artist?",
+              headline: "I am an *artist*?",
               wordmark: "G O O G L E  ·  O P E N A I",
               credits: [
                 "Google, OpenAI | Official collaborating artist",
@@ -279,7 +290,15 @@ window.GM = {
                   caption: "Made with Stable Diffusion and Midjourney",
                   layout: "pair-wide",
                   photos: [
-                    { src: "assets/plates/06-the-court.jpg", crop: { l: 0.152, r: 0.152 }, altEn: "A still from The Court: a man in sunglasses moving through a city street", altZh: "《The Court》剧照：一个戴墨镜的人走在城市街道上" },
+                    {
+                      youtube: "6chvzqAVCnI",
+                      poster: "assets/yt-6chvzqAVCnI.jpg",
+                      posterW: 1280,
+                      posterH: 720,
+                      titleEn: "Peter Gabriel - The Court (Dark-Side Mix) (Junie Lau Official Video)",
+                      titleZh: "《The Court》（Dark-Side Mix）｜Junie Lau 官方影像，Peter Gabriel",
+                      source: "yt"
+                    },
                     { src: "assets/plates/06-the-court-winners.jpg", altEn: "A #DiffuseTogether winners screen, with Junie’s name marked, above a still from The Court", altZh: "#DiffuseTogether 获奖画面（标有 Junie 的名字），下方是《The Court》剧照" }
                   ]
                 }
@@ -326,7 +345,7 @@ window.GM = {
             {
               kind: "chapter-art",
               highlight: "worlds",
-              headline: "Creating worlds",
+              headline: "*Creating worlds*",
               chapter: "C H A P T E R   0 2",
               photos: [
                 { src: "assets/plates/08-creating-worlds.jpg", altEn: "Official artwork: a figure in white walking through a forest of red flowers, with the title 创造世界 on the image", altZh: "官方设定图：一个穿白衣的人走在红色的花林里，画面上保留「创造世界」标题" }
@@ -439,10 +458,21 @@ window.GM = {
       ghost: "金魚街",
       blocks: [
         {
-          type: "lede",
-          en: "Goldfish Mayhem is a cyber-folk action comedy. The story is set in 2035, on a noisy, chaotic future Goldfish Street. People there work frantically and modify their bodies, hoping one day to reach the Cloud world high above. Our three leads are three girls who keep getting into trouble. To rescue their foster mother, 芬姨, who is about to be sacrificed, they break into that Cloud world — and find a secret experiment about data immortality.",
-          zh: "今天想跟大家分享一下《金魚街大亂鬥》。它是一部赛博民俗动作喜剧，故事发生在 2035 年一条热闹又混乱的未来金鱼街。街坊们拼命赚钱、改造身体，都希望有一天能去到高高在上的「云端」世界。但我们的三个主角，是三个爱闯祸的女孩。她们为了救回即将被献祭的养母芬姨，闯进云端世界，结果发现了一个关于数据永生的秘密实验。",
-          source: "public"
+          type: "paras",
+          items: [
+            {
+              en: "*Goldfish Mayhem* is a cyber-folk action-comedy set amid the chaotic streets inspired by Junie Lau’s childhood neighborhood.",
+              zh: "《金鱼街大乱斗》是一部赛博民俗动作喜剧，故事发生在以巨妮 Junie Lau 童年生活社区为灵感的混乱街巷中。"
+            },
+            {
+              en: "The story follows three quirky, mischievous, and recklessly fearless girls—BOBO, FENG SHUI GIRL, and LITTLE ONE—who venture into a cloud-based digital world in a desperate attempt to save their foster mother from being sacrificed. There, they uncover a secret experiment in data immortality orchestrated by the city’s elite.",
+              zh: "三个古灵精怪、不知天高地厚的少女——BOBO、风水妹与细细粒——为拯救即将被献祭的养母，闯入云端数字世界，并意外揭开城市上层社会秘密进行的“数据永生”实验。"
+            },
+            {
+              en: "Blending street mythology, absurdist humor, ethical allegory, and a highly stylized Lingnan aesthetic from southern China, the film creates a world that is surreal, vibrant, and unmistakably rooted in its local culture.",
+              zh: "影片融合街头神话、荒诞幽默、伦理寓言与高度风格化的中国岭南美学，构建出一个超现实、鲜活而又深深扎根于本土文化的世界。"
+            }
+          ]
         },
         {
           type: "videos",
@@ -464,19 +494,12 @@ window.GM = {
           ]
         },
         {
-          type: "callout",
-          kind: "conflict",
-          en: "I have described it as a cyber-folk action comedy set in 2035, about three troublemaking girls rescuing their foster mother 芬姨 from being sacrificed, entering the Cloud, and discovering a secret experiment about data immortality. My official site’s one-liner is: “Cantonese cyberpunk world of kung fu and robo-cops: three sisters save their aunt from cyber elites.” / 「粤式赛博朋克世界，功夫与机械警察：三姐妹从赛博精英手中救出姑妈。」 The site also lists Year 2026 and my role as Director — that is the work year of the film, not necessarily the story year. The story year I have used when telling this story is 2035.",
-          zh: "我把它说成一部发生在 2035 年的赛博民俗动作喜剧：三个爱闯祸的女孩，为了救回即将被献祭的养母芬姨，闯进云端，发现了关于数据永生的秘密实验。官网的一句话是：「粤式赛博朋克世界，功夫与机械警察：三姐妹从赛博精英手中救出姑妈。」官网同时标注年份 2026、职务为导演——那是作品年份，不一定是故事发生的年份。我讲述这个故事时使用的故事年份是 2035。",
-          source: "site"
-        },
-        {
           type: "plates",
           items: [
             {
               kind: "who",
               highlight: "worlds",
-              headline: "Who am I?",
+              headline: "*Who am I?*",
               titlePos: { x: 35.6, y: 42.0, w: 28.8 },
               photo: { src: "assets/plates/16-whoami-network.jpg", altEn: "A network of stills from the Goldfish Mayhem world, arranged around a central space for the question “Who am I?”", altZh: "《金魚街大亂鬥》世界里的一组剧照，环绕在「我是谁？」的中心留白周围" },
               tags: [
@@ -501,11 +524,15 @@ window.GM = {
           cols: 1,
           items: [
             {
-              src: "assets/stills/goldfish-3.jpg",
-              altEn: "Three girls gathered around a glowing device in a garden courtyard",
-              altZh: "三个女孩在庭院里围着一台发光的装置",
-              capEn: "An official still: three girls around a glowing device.",
-              capZh: "官方剧照：三个女孩围在一台发光的装置旁。",
+              src: "assets/stills/goldfish-key-art.jpg",
+              w: 1448,
+              h: 1086,
+              natural: true,
+              modest: true,
+              altEn: "Official key art",
+              altZh: "官方主视觉",
+              capEn: "Official key art.",
+              capZh: "官方主视觉。",
               source: "stills"
             }
           ]
@@ -536,7 +563,7 @@ window.GM = {
             {
               kind: "statement",
               highlight: "worlds",
-              headline: "Taking Chinese culture as a root,\nso that Eastern stories can travel the world\nand enter into dialogue with the future.",
+              headline: "Taking *Chinese culture* as a root,\nso that *Eastern stories* can travel the world\nand enter into dialogue with the *future*.",
               photos: [
                 { src: "assets/plates/17-practice-a.jpg", altEn: "A practice still: a woman seen through a carved wooden screen in a hall", altZh: "习武画面：厅堂里，透过木雕隔扇看见一位女子" },
                 { src: "assets/plates/17-practice-b.jpg", altEn: "People training in a hall, seen from behind", altZh: "厅堂里的训练，从身后看去" },
@@ -553,10 +580,13 @@ window.GM = {
           items: [
             {
               src: "assets/stills/goldfish-6.jpg",
-              altEn: "A girl mid-kick beside a lion-headed food cart on a wet street",
-              altZh: "湿漉漉的街道上，一个女孩在狮头餐车旁踢腿",
-              capEn: "An official still: a kick beside a lion-headed cart on the street.",
-              capZh: "官方剧照：街道上，狮头餐车旁的一记踢腿。",
+              w: 3840,
+              h: 2160,
+              natural: true,
+              altEn: "A girl mid-kick beside a lion-headed food cart",
+              altZh: "一个女孩在狮头餐车旁踢腿",
+              capEn: "A girl mid-kick beside a lion-headed food cart.",
+              capZh: "一个女孩在狮头餐车旁踢腿。",
               source: "stills"
             }
           ]
@@ -642,8 +672,8 @@ window.GM = {
         {
           type: "callout",
           kind: "editorial",
-          en: "On Xiaohongshu, in a public reply on episode two, I already mixed the forms 「BOBO、风水妹、细细粒」. The official site describes “three sisters” saving their “aunt”; in the talk and the interview I call 芬姨 our foster mother (养母). I am leaving those public wordings as they are.",
-          zh: "我在小红书第二集的公开回复里，已经混用过「BOBO、风水妹、细细粒」这种写法。官网说的是「三姐妹」救出「姑妈」；在我已经公开说过的讲述和访谈里，我称芬姨为养母。这些已经公开的用词，我都保留原样。",
+          en: "On Xiaohongshu, in a public reply on episode two, I already mixed the forms 「BOBO、风水妹、细细粒」.",
+          zh: "我在小红书第二集的公开回复里，已经混用过「BOBO、风水妹、细细粒」这种写法。",
           source: "xhs"
         },
         {
@@ -914,13 +944,22 @@ window.GM = {
               blocks: [
                 {
                   type: "para",
-                  en: "The three girls are not perfect heroines. They can be impulsive, rebellious, and make a mess — and I like that. As I said earlier, they are also three mirrors of myself: BOBO, 风水妹 / Fengshui Girl, and 细细粒 / Xixili. The official board I am using for world-building and character design is the Luma board below. Earlier character and environment references are in the Moodboard section. The Instagram reels in the previous chapter are the character introductions already published.",
-                  zh: "这三个女孩不是完美的女英雄。她们可能冲动、叛逆，把事情搞得一团糟——我反而喜欢这样。如我前面所说，她们也是我的三面镜子：BOBO、风水妹 / Fengshui Girl，以及细细粒 / Xixili。世界观与角色设计，我指定使用的正式看板是下面这块 Luma 看板。更早的角色与场景参考在情绪板那一步。上一章里的 Instagram 短视频，则是已经公开的角色介绍。",
+                  en: "The three girls are not perfect heroines. They can be impulsive, rebellious, and make a mess — and I like that. As I said earlier, they are also three mirrors of myself: BOBO, 风水妹 / FENG SHUI GIRL, and 细细粒 / Little One. Fengshui Girl and XIXILI also appear as published variants — XIXILI, for example, on the height sheet. I am not treating any one English form as the single official standard. The official board I am using for world-building and character design is the Luma board below. The official character-design slides are in the Google Slides link below. Earlier character and environment references are in the Moodboard section. The Instagram reels in the previous chapter are the character introductions already published.",
+                  zh: "这三个女孩不是完美的女英雄。她们可能冲动、叛逆，把事情搞得一团糟——我反而喜欢这样。如我前面所说，她们也是我的三面镜子：BOBO、风水妹 / FENG SHUI GIRL，以及细细粒 / Little One。Fengshui Girl 和 XIXILI 也作为已公开的异写出现——例如身高对照图上的 XIXILI。我不会把某一种英文写法收成唯一的官方标准。世界观与角色设计，我指定使用的正式看板是下面这块 Luma 看板。正式的角色设计演示文稿在下面的 Google 幻灯片链接里。更早的角色与场景参考在情绪板那一步。上一章里的 Instagram 短视频，则是已经公开的角色介绍。",
                   source: "interview"
                 },
                 {
                   type: "links",
                   items: [
+                    {
+                      href: "https://docs.google.com/presentation/d/1EVbK8V-iMr9yPNaBzIjR6GarXHSLsdvajtfnv05_QMY/edit?usp=sharing",
+                      kindEn: "Google Slides",
+                      kindZh: "Google 幻灯片",
+                      labelEn: "Character design presentation",
+                      labelZh: "角色设计演示文稿",
+                      noteEn: "The official character-design slides. Open the official board — this page does not embed it.",
+                      noteZh: "正式的角色设计演示文稿。打开官方链接即可，本页不内嵌。"
+                    },
                     {
                       href: "https://app.lumalabs.ai/board/c8442ab4-5e14-4bb3-a93d-fdcb806d5c1a",
                       kindEn: "Luma — official board",
@@ -929,6 +968,88 @@ window.GM = {
                       labelZh: "世界观与角色设计",
                       noteEn: "The official board for world-building and character design.",
                       noteZh: "世界观与角色设计的正式看板。"
+                    }
+                  ]
+                },
+                {
+                  type: "character",
+                  nameEn: "BOBO",
+                  nameZh: "BOBO",
+                  fields: [
+                    { labelEn: "Job", labelZh: "职业", en: "Fish-ball stall owner / kung fu school heir.", zh: "鱼蛋摊主 / 武馆继承人。" },
+                    { labelEn: "Look", labelZh: "外形", en: "A mechanical right arm, used for making fish balls.", zh: "机械右臂，用来做鱼蛋。" },
+                    { labelEn: "Personality", labelZh: "性格", en: "Angry, rebellious, and protective.", zh: "性格火爆、叛逆，也很护短。" },
+                    { labelEn: "Voice", labelZh: "声音", en: "A wilful, rebellious punk kung-fu girl; a smoky, slightly boyish voice with the snap of someone always ready to fight.", zh: "中性、任性、叛逆的朋克功夫少女；烟嗓少年音，随时开战的爆发感。" },
+                    { labelEn: "Skills", labelZh: "技能", en: "South-Chinese martial arts — Wing Chun, the Huang Feihong / Wong Fei-hung lineage, Choy Li Fut, Hung Kuen (咏春、黄飞鸿、蔡李佛、洪拳); a comic, Stephen Chow kind of rhythm; and a curry fish-ball cannon as a skill/prop.", zh: "南派武术（咏春、黄飞鸿、蔡李佛、洪拳），喜剧／周星驰式节奏，以及咖喱鱼蛋炮作为技能／道具。" }
+                  ],
+                  sheets: [
+                    { src: "assets/characters/bobo-dragon-details-shoes.jpg", w: 3200, h: 3000, altEn: "Design sheet of BOBO’s dragon headdress, shoes and details", altZh: "BOBO 龙头头饰、鞋子与细节设定图", capEn: "A design sheet: BOBO’s dragon headdress, shoes and details.", capZh: "设定图：BOBO 的龙头头饰、鞋子与细节。" },
+                    { src: "assets/characters/bobo-mech-arm-angles.jpg", w: 1672, h: 941, altEn: "Design sheet of BOBO’s mechanical right arm, from several angles", altZh: "BOBO 机械右臂多角度设定图", capEn: "A design sheet: BOBO’s mechanical right arm, from several angles.", capZh: "设定图：BOBO 的机械右臂，多个角度。" },
+                    { src: "assets/characters/bobo-turnaround-portraits.jpg", w: 3000, h: 1152, altEn: "BOBO turnaround and portraits", altZh: "BOBO 全身转面与肖像", capEn: "BOBO turnaround and portraits.", capZh: "BOBO 全身转面与肖像。" },
+                    { src: "assets/characters/bobo-wingchun-arm-hands.jpg", w: 2000, h: 941, altEn: "Design sheet of BOBO’s mechanical arm and bandaged hands", altZh: "BOBO 机械手臂与缠带手部设定图", capEn: "A design sheet: BOBO’s mechanical arm and bandaged hands.", capZh: "设定图：BOBO 的机械手臂与缠带的手。" }
+                  ],
+                  posters: [
+                    { src: "assets/characters/bobo-poster-small-girl-big-chaos.jpg", w: 941, h: 1672, altEn: "Portrait poster of BOBO, lettered BOBO", altZh: "BOBO 竖版海报，画面上保留 BOBO 字样", capEn: "A portrait poster of BOBO, with the lettering left as it is.", capZh: "BOBO 竖版海报，画面上的字样保持原样。" },
+                    { src: "assets/characters/bobo-poster-bad-girl-good-luck.jpg", w: 941, h: 1672, altEn: "Portrait poster of BOBO in a dragon headdress, lettered BOBO", altZh: "BOBO 竖版海报（龙头头饰），画面上保留 BOBO 字样", capEn: "A portrait poster of BOBO in a dragon headdress, with the lettering left as it is.", capZh: "BOBO 竖版海报（龙头头饰），画面上的字样保持原样。" }
+                  ]
+                },
+                {
+                  type: "character",
+                  nameEn: "FENG SHUI GIRL",
+                  nameZh: "风水妹",
+                  fields: [
+                    { labelEn: "Job", labelZh: "职业", en: "Fortune-telling stall owner / “a businesswoman”.", zh: "算命摊主 / 「生意人儿」。" },
+                    { labelEn: "Look", labelZh: "外形", en: "An elf ear, used for listening / sound localization.", zh: "精灵耳，用来听声／声波定位。" },
+                    { labelEn: "Personality", labelZh: "性格", en: "She performs in social situations.", zh: "在社交场合很会演、很会撑场面。" },
+                    { labelEn: "Voice", labelZh: "声音", en: "A smiling fox; a sweet, sharp, wealthy-young-lady voice that can charm people.", zh: "笑面虎；甜美精明、蛊惑人心的富贵千金音。" },
+                    { labelEn: "Skills", labelZh: "技能", en: "Qigong, feng shui arts, and ritual work; talismans, a peach-wood sword, a luopan.", zh: "气功、风水术法与法事；符咒、桃木剑、罗盘等。" }
+                  ],
+                  sheets: [
+                    { src: "assets/characters/fengshui-pink-turnaround.jpg", w: 2560, h: 1440, altEn: "Turnaround of 风水妹 in a pink dress", altZh: "风水妹粉色造型转面图", capEn: "A turnaround of 风水妹 in a pink dress.", capZh: "风水妹粉色造型转面图。" },
+                    { src: "assets/characters/fengshui-smiles-braces-hands.jpg", w: 4000, h: 2000, altEn: "Detail sheet of 风水妹’s smile, braces and hands", altZh: "风水妹笑容、牙套与手部细节图", capEn: "A detail sheet: 风水妹’s smile, braces and hands.", capZh: "细节图：风水妹的笑容、牙套与手。" },
+                    { src: "assets/characters/fengshui-shorts-legs-shoes.jpg", w: 1647, h: 1903, altEn: "Detail sheet of 风水妹’s shorts, legs and shoes", altZh: "风水妹短裤、腿部与鞋子细节图", capEn: "A detail sheet: 风水妹’s shorts, legs and shoes.", capZh: "细节图：风水妹的短裤、腿部与鞋子。" },
+                    { src: "assets/characters/fengshui-headdress-nails-handkerchief.jpg", w: 4000, h: 2500, altEn: "Detail sheet of 风水妹’s ceremonial headdress, nails and handkerchief", altZh: "风水妹礼冠、指甲与手帕细节图", capEn: "A detail sheet: 风水妹’s ceremonial headdress, nails and handkerchief.", capZh: "细节图：风水妹的礼冠、指甲与手帕。" },
+                    { src: "assets/characters/fengshui-ceremonial-flags.jpg", w: 4000, h: 1440, altEn: "Turnaround of 风水妹 in ceremonial dress with flags", altZh: "风水妹仪式服装与旗幡转面图", capEn: "A turnaround of 风水妹 in ceremonial dress with flags.", capZh: "风水妹仪式服装与旗幡转面图。" }
+                  ],
+                  posters: [
+                    { src: "assets/characters/fengshui-poster-laughing-money.jpg", w: 941, h: 1672, altEn: "Portrait poster of 风水妹, lettered 风水", altZh: "风水妹竖版海报，画面上保留「风水」字样", capEn: "A portrait poster of 风水妹, with the lettering left as it is.", capZh: "风水妹竖版海报，画面上的字样保持原样。" },
+                    { src: "assets/characters/fengshui-poster-teal-fox.jpg", w: 941, h: 1672, altEn: "Portrait poster of 风水妹 with a fox, lettered 风水", altZh: "风水妹竖版海报（狐狸），画面上保留「风水」字样", capEn: "A portrait poster of 风水妹 with a fox, with the lettering left as it is.", capZh: "风水妹竖版海报（狐狸），画面上的字样保持原样。" }
+                  ]
+                },
+                {
+                  type: "character",
+                  nameEn: "Little One",
+                  nameZh: "细细粒",
+                  fields: [
+                    { labelEn: "Job", labelZh: "职业", en: "Paper-offering shop owner / hacker / mad scientist.", zh: "纸扎店主 / 黑客 / 科学怪人。" },
+                    { labelEn: "Look", labelZh: "外形", en: "A cyber eye that reverse-engineers what it sees into code.", zh: "赛博义眼，能把看到的东西反推成代码。" },
+                    { labelEn: "Personality", labelZh: "性格", en: "Curious about technology and the unknown.", zh: "对科技和未知充满好奇。" },
+                    { labelEn: "Voice", labelZh: "声音", en: "A tall girl; mysterious; a riddler who talks in riddles; a hoarse, mysterious, incantation-like voice.", zh: "高妹、神秘、神神叨叨的谜语人；沙哑神秘的魔咒之音。" },
+                    { labelEn: "Skills", labelZh: "技能", en: "Not a close-combat fighter; gadgets and remote weapons.", zh: "不近身搏击，使用机关与远程武器。" }
+                  ],
+                  sheets: [
+                    { src: "assets/characters/little-one-turnaround.jpg", w: 4000, h: 1440, altEn: "Turnaround and portraits of 细细粒 / Little One", altZh: "细细粒全身转面与肖像", capEn: "Turnaround and portraits of 细细粒 / Little One.", capZh: "细细粒全身转面与肖像。" },
+                    { src: "assets/characters/little-one-three-expressions.jpg", w: 1672, h: 941, altEn: "Three expressions of 细细粒 / Little One", altZh: "细细粒三种表情", capEn: "Three expressions of 细细粒 / Little One.", capZh: "细细粒三种表情。" }
+                  ],
+                  posters: [
+                    { src: "assets/characters/little-one-poster-crows.jpg", w: 941, h: 1672, altEn: "Portrait poster of 细细粒, lettered 細細粒", altZh: "细细粒竖版海报，画面上保留「細細粒」字样", capEn: "A portrait poster of 细细粒, with the lettering left as it is.", capZh: "细细粒竖版海报，画面上的字样保持原样。" },
+                    { src: "assets/characters/little-one-poster-soul-leaving.jpg", w: 941, h: 1672, altEn: "Portrait poster of 细细粒, lettered 魂離世", altZh: "细细粒竖版海报，画面上保留「魂離世」字样", capEn: "A portrait poster of 细细粒, with the lettering 魂離世 left as it is.", capZh: "细细粒竖版海报，画面上的「魂離世」字样保持原样。" }
+                  ]
+                },
+                {
+                  type: "images",
+                  cols: 1,
+                  items: [
+                    {
+                      src: "assets/characters/height-comparison.jpg",
+                      w: 1159,
+                      h: 941,
+                      natural: true,
+                      heightSheet: true,
+                      altEn: "Height comparison of the three girls, lettered 风水妹 173 cm, BOBO 176 cm, and XIXILI / 细细粒 195 cm",
+                      altZh: "三个女孩的身高对照图，画面上标有风水妹 173 cm、BOBO 176 cm，以及 XIXILI / 细细粒 195 cm",
+                      capEn: "Height comparison of the three girls, as lettered on the artwork: 风水妹 173 cm, BOBO 176 cm, and XIXILI / 细细粒 195 cm. XIXILI appears here as a published variant; the English name used in this section is Little One.",
+                      capZh: "三个女孩的身高对照，按画面上的标注：风水妹 173 cm、BOBO 176 cm，以及 XIXILI / 细细粒 195 cm。XIXILI 是已公开的异写；这一段里使用的英文名是 Little One。"
                     }
                   ]
                 },
@@ -1092,7 +1213,7 @@ window.GM = {
             {
               kind: "statement",
               highlight: "worlds",
-              headline: "Taking Chinese culture as a root,\nso that Eastern stories can travel the world\nand enter into dialogue with the future.",
+              headline: "Taking *Chinese culture* as a root,\nso that *Eastern stories* can travel the world\nand enter into dialogue with the *future*.",
               photos: [
                 { src: "assets/plates/17-practice-a.jpg", altEn: "A practice still: a woman seen through a carved wooden screen in a hall", altZh: "习武画面：厅堂里，透过木雕隔扇看见一位女子" },
                 { src: "assets/plates/17-practice-b.jpg", altEn: "People training in a hall, seen from behind", altZh: "厅堂里的训练，从身后看去" },
@@ -1105,7 +1226,7 @@ window.GM = {
               kind: "statement",
               highlight: "worlds",
               photosLeft: true,
-              headline: "From the point of view of a woman director,\nworking with AI to open a new edge\nof moving-image expression.",
+              headline: "From the point of view of a *woman director*,\nworking with *AI* to open a new edge\nof *moving-image expression*.",
               photos: [
                 { src: "assets/plates/18-bookshelf.jpg", altEn: "Junie Lau at a desk by the window, in front of a wall of books", altZh: "Junie Lau 坐在窗边书桌前，身后是书架" },
                 { src: "assets/plates/18-workspace-a.jpg", altEn: "Junie Lau standing in a purple-lit workspace, looking at a handheld device", altZh: "Junie Lau 站在紫色灯光的创作空间里，看着一只手持设备" },
@@ -1230,7 +1351,7 @@ window.GM = {
             {
               kind: "chapter-art",
               highlight: "future",
-              headline: "Imagining the future",
+              headline: "*Imagining the future*",
               chapter: "C H A P T E R   0 3",
               photos: [
                 { src: "assets/plates/21-imagining-future.jpg", altEn: "Official artwork: a figure walking through a field of pink flowers, with the title 畅想未来 on the image", altZh: "官方设定图：一个人走在粉红色的花田里，画面上保留「畅想未来」标题" }
@@ -1271,7 +1392,7 @@ window.GM = {
             {
               kind: "media-table",
               highlight: "future",
-              headline: "Media Evolution Table",
+              headline: "*Media Evolution Table*",
               wordmark: "M E D I A   E V O L U T I O N   T A B L E",
               eras: [
                 { name: "Broadcast", dates: "1920–1950" },
@@ -1289,7 +1410,7 @@ window.GM = {
               kind: "statement-ghost",
               highlight: "future",
               ghost: "NEURAL MEDIA",
-              headline: "We are standing at the entrance of a new age of communication —\nthe arrival of the Neural Media era.",
+              headline: "We are standing at the entrance of a *new age of communication* —\nthe arrival of the *Neural Media* era.",
               sub: "High-dimensional space, hallucinated content, and embedded identity",
               wordmark: "N E U R A L   M E D I A",
               capEn: "A line I use when I talk about Neural Media: we are standing at the entrance of a new age of communication.",
@@ -1298,7 +1419,8 @@ window.GM = {
             {
               kind: "statement-ghost",
               highlight: "future",
-              headline: "I want to bring dreams into reality,\nlet imagination and the real world collide and intertwine,\nand create a sensory world unlike any before.",
+              narrow: true,
+              headline: "I want to bring *dreams into reality*,\nlet *imagination* and the *real world*\ncollide and intertwine,\nand create a *sensory world*\nunlike any before.",
               capEn: "I want to bring dreams into reality, and let imagination and the real world meet.",
               capZh: "我想把梦境带进现实，让想象与真实碰撞、交融。"
             }
@@ -1318,7 +1440,7 @@ window.GM = {
               kind: "statement",
               highlight: "dreams",
               photosLeft: true,
-              headline: "I want to build a futurist virtual world\n— a “virtual ecosystem” in which humans and AI evolve together.",
+              headline: "I want to build a *futurist virtual world*\n— a “*virtual ecosystem*” in which *humans and AI* evolve together.",
               photos: [
                 { src: "assets/plates/27-virtual-world.jpg", crop: { r: 36.0 }, altEn: "A still from a conceived futurist virtual world", altZh: "构想中的未来主义虚拟世界画面" }
               ],
@@ -1339,7 +1461,7 @@ window.GM = {
             {
               kind: "world-architect",
               highlight: "dreams",
-              headline: "I hope to become a new kind of artist\n— a “World Architect”",
+              headline: "I hope to become a new kind of *artist*\n— a “*World Architect*”",
               columns: [
                 "What I am pursuing is not merely “AI-generated film” or “AI-generated fiction”, but the exploration of a new form of dynamic, interactive, generative media that we cannot yet fully imagine.",
                 "The role of AI systems is not only to enhance or automate existing forms such as film and games, but to possess the capacity to summon countless imagined worlds and narrative possibilities, thereby giving rise to an art form that is essentially altogether different."
@@ -1378,10 +1500,10 @@ window.GM = {
               kind: "statement-ghost",
               highlight: "dreams",
               ghost: "CREATE",
-              headline: "I am not a doom-and-gloom optimist.\nBut I want to keep *creating worlds*.",
+              headline: "I'm not an apocaloptimist.\nBut I still choose to keep *creating worlds*.",
               wordmark: "C R E A T E   T H E   W O R L D",
-              capEn: "I am not a doom-and-gloom optimist. But I want to keep creating worlds.",
-              capZh: "我不是末日乐观主义者。但我想继续创造世界。"
+              capEn: "I'm not an apocaloptimist. But I still choose to keep creating worlds.",
+              capZh: "我并不是末日乐观主义者，但我仍然选择继续创造世界。"
             }
           ]
         }
@@ -1565,6 +1687,10 @@ window.GM = {
     {
       en: "YouTube, Wonder Studios — official film 8R4hEVX46fA, official trailer N3ZfYhO8cBY, behind the scenes 4nqVxmtilzA, all titled as Beyond the Loop S2.",
       zh: "YouTube，Wonder Studios——官方影片 8R4hEVX46fA、官方预告 N3ZfYhO8cBY、幕后 4nqVxmtilzA，标题均为 Beyond the Loop 第二季。"
+    },
+    {
+      en: "YouTube, Peter Gabriel — The Court (Dark-Side Mix) (Junie Lau Official Video), 6chvzqAVCnI.",
+      zh: "YouTube，Peter Gabriel——《The Court》（Dark-Side Mix）（Junie Lau 官方影像），6chvzqAVCnI。"
     },
     {
       en: "Instagram — character reels for BOBO, FENG SHUI GIRL and LITTLE ONE; kung fu BTS on 2026.10.14; Wonder Studios collaboration reel on 2026.10.06.",

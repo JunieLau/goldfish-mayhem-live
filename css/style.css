@@ -279,7 +279,27 @@ main { padding: 0 0 80px; }
 .fig img { width: 100%; aspect-ratio: 16/10; object-fit: cover; background: #ddd; }
 .fig.portrait img { aspect-ratio: 3/4; object-fit: cover; }
 .fig.contain img { object-fit: contain; background: #111; aspect-ratio: 16/10; }
-.fig.natural img { aspect-ratio: auto; object-fit: contain; background: var(--cream-card); }
+.fig.natural img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center center;
+  background: var(--cream-card);
+}
+.fig.modest {
+  width: 82%;
+  max-width: 82%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fig.height-sheet {
+  width: 64%;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.media-grid.cols-1 { grid-template-columns: 1fr; }
 .fig figcaption {
   font-family: var(--sans);
   font-size: 0.82rem;
@@ -326,6 +346,42 @@ main { padding: 0 0 80px; }
 }
 .player-meta a { color: var(--red); font-weight: 600; text-decoration: none; }
 .player-meta a:hover { text-decoration: underline; }
+
+[data-lang="both"] .playbtn .plab .pair {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: baseline;
+  grid-template-columns: none;
+}
+[data-lang="both"] .playbtn .plab .pair .zh {
+  border: 0;
+  padding: 0;
+}
+[data-lang="both"] .playbtn .plab .en::after {
+  content: "/";
+  margin-left: 8px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* Narrow video captions: stack EN above ZH so titles do not collide */
+[data-lang="both"] .player-meta .pair {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  grid-template-columns: none;
+}
+[data-lang="both"] .player-meta .pair .zh {
+  border-left: 0;
+  padding-left: 0;
+}
+.hero-trailer .player-meta {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
 
 /* links — high-contrast, livestream-clickable */
 .link-card {
@@ -508,7 +564,14 @@ details.fold .fold-body { padding: 0 18px 18px; border-top: 1px solid var(--line
   top: -0.15em; left: auto; right: -0.05em;
   opacity: 0.1;
 }
-.hero-lead { max-width: 46rem; margin: 18px 0 28px; font-size: clamp(1.15rem, 1.7vw, 1.4rem); }
+.hero-lead { margin: 18px 0 28px; font-size: clamp(1.15rem, 1.7vw, 1.4rem); }
+.hero-lead em,
+.lede em,
+.para em {
+  font-style: italic;
+  color: inherit;
+  font-weight: inherit;
+}
 .hero-note { font-size: 0.95rem; color: var(--ink-soft); }
 
 /* Q&A */
@@ -925,6 +988,8 @@ html { scroll-padding-top: calc(var(--header) + 8px); }
   line-height: 1.45;
   color: var(--ink-soft);
   margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   z-index: 1;
   width: min(var(--max), 100%);
@@ -1231,12 +1296,12 @@ html { scroll-padding-top: calc(var(--header) + 8px); }
   position: absolute;
   left: 154px;
   top: 132px;
-  width: 2420px;
-  height: 264px;
-  font-size: 88px;
-  line-height: 1.05;
+  width: 3200px;
+  height: auto;
+  font-size: 80px;
+  line-height: 1.08;
   margin: 0;
-  overflow: hidden;
+  overflow: visible;
 }
 .timeline-grid {
   position: absolute;
@@ -1270,46 +1335,75 @@ html { scroll-padding-top: calc(var(--header) + 8px); }
 .timeline-cell.cell-3 .fig:nth-child(1) { left: 0; top: 0; width: 1384.2px; height: 781px; }
 .timeline-cell.cell-3 .fig:nth-child(2) { left: 1384.2px; top: 0; width: 585.8px; height: 781px; }
 
-.timeline-cell h3 {
+.timeline-cell { overflow: visible; }
+.timeline-cell .t-copy {
   position: absolute;
   left: 0;
+  overflow: visible;
+}
+.timeline-cell .t-copy h3 {
+  position: static;
   font-family: var(--sans);
   font-weight: 800;
   font-size: 67.22px;
   margin: 0;
   letter-spacing: 0;
-  line-height: 1.1;
+  line-height: 1.12;
+  overflow: visible;
+  white-space: normal;
 }
-.timeline-cell h3 span {
+.timeline-cell .t-copy .t-date {
+  position: static;
+  margin: 0;
   color: var(--red);
   font-family: var(--display-plate);
   font-weight: 400;
   font-size: 48.89px;
-  margin-left: 0.35em;
+  line-height: 1.15;
+  overflow: visible;
 }
-.timeline-cell p {
-  position: absolute;
-  left: 0;
-  margin: 0;
+.timeline-cell .t-copy .t-cap {
+  position: static;
+  margin: 10px 0 0;
   font-size: 36.67px;
   line-height: 1.25;
   color: #111111;
   font-family: var(--sans);
+  overflow: visible;
 }
-.timeline-cell.cell-0 h3,
-.timeline-cell.cell-1 h3,
-.timeline-cell.cell-2 h3,
-.timeline-cell.cell-3 h3 { top: auto; }
-/* labels sit on the plate at y=973.5; cells start at different y */
-.timeline-cell.cell-0 h3 { top: 423.5px; width: 737px; } /* 973.5-550 */
-.timeline-cell.cell-0 p  { top: 517px; width: 737px; }   /* 1067-550 */
-.timeline-cell.cell-1 h3 { top: 566.5px; width: 789px; } /* 973.5-407 */
-.timeline-cell.cell-1 p  { top: 660px; width: 789px; }
-.timeline-cell.cell-2 h3 { top: 687.5px; width: 1750px; } /* 973.5-286 */
-.timeline-cell.cell-2 p  { top: 781px; width: 1750px; }
-.timeline-cell.cell-3 h3 { top: 808.5px; width: 1959px; } /* 973.5-165 */
-.timeline-cell.cell-3 p  { top: 902px; width: 1959px; }
-.timeline-cell h3::before {
+/* labels sit under the photos; cells start at different y. 973.5 - cell.top */
+.timeline-cell.cell-0 .t-copy { top: 423.5px; width: 737px; }
+.timeline-cell.cell-1 .t-copy { top: 566.5px; width: 789px; }
+.timeline-cell.cell-2 .t-copy { top: 687.5px; width: 1750px; }
+.timeline-cell.cell-3 .t-copy { top: 808.5px; width: 1959px; }
+/* Short titles: date on the same line, with a clear gap */
+.timeline-cell.cell-0 .t-copy h3,
+.timeline-cell.cell-1 .t-copy h3,
+.timeline-cell.cell-2 .t-copy h3 { display: inline; }
+.timeline-cell.cell-0 .t-copy .t-date,
+.timeline-cell.cell-1 .t-copy .t-date,
+.timeline-cell.cell-2 .t-copy .t-date {
+  display: inline;
+  margin-left: 0.4em;
+}
+.timeline-cell.cell-0 .t-copy .t-cap,
+.timeline-cell.cell-1 .t-copy .t-cap,
+.timeline-cell.cell-2 .t-copy .t-cap { display: block; }
+/* Cell 1 caption is long; slightly smaller type so it is not clipped */
+.timeline-cell.cell-1 .t-copy .t-cap { font-size: 30px; line-height: 1.25; }
+/* Cell 3: long title wraps; date on its own line above the caption */
+.timeline-cell.cell-3 .t-copy h3 {
+  display: block;
+  font-size: 52px;
+  line-height: 1.15;
+}
+.timeline-cell.cell-3 .t-copy .t-date {
+  display: block;
+  margin: 8px 0 0;
+  font-size: 44px;
+}
+.timeline-cell.cell-3 .t-copy .t-cap { margin-top: 8px; }
+.timeline-cell .t-copy::before {
   content: "";
   position: absolute;
   left: 0;
@@ -1317,6 +1411,16 @@ html { scroll-padding-top: calc(var(--header) + 8px); }
   height: 5.5px;
   width: 100%;
   background: #111111;
+}
+.timeline-yt-hole {
+  margin: 0;
+  border: 0;
+  background: #111;
+  pointer-events: none;
+}
+.timeline-cell.cell-3 .fig:nth-child(2) img {
+  object-fit: contain;
+  object-position: top center;
 }
 
 /* 07 chapter quote */
@@ -1440,8 +1544,7 @@ html { scroll-padding-top: calc(var(--header) + 8px); }
   margin: 0;
   letter-spacing: 0.02em;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow: visible;
 }
 .invite-item .label em { font-style: normal; color: var(--red); }
 .invite-item .label .cyr { font-family: Inter, "Noto Sans", sans-serif; font-weight: 800; }
@@ -1613,8 +1716,9 @@ html { scroll-padding-top: calc(var(--header) + 8px); }
 }
 .plate-statement .plate-headline {
   font-size: 150px;
-  line-height: 1.05;
+  line-height: 1.08;
   max-width: none;
+  overflow: visible;
 }
 /* virtual-world (solo + photos-left) uses a wider copy box and slightly smaller type so the English fits */
 .plate-statement.photos-left .statement-photos.solo + .statement-copy,
@@ -1720,8 +1824,9 @@ html { scroll-padding-top: calc(var(--header) + 8px); }
   top: 176px;
   width: 5236px;
   font-size: 200px;
-  line-height: 1.05;
+  line-height: 1.08;
   max-width: none;
+  overflow: visible;
 }
 .plate-statement-ghost .plate-sub {
   position: absolute;
@@ -1735,20 +1840,25 @@ html { scroll-padding-top: calc(var(--header) + 8px); }
   top: 1056px;
   width: 2200px;
 }
-/* dreams statement (no sub/wordmark) needs a slightly tighter block */
+/* dreams-into-reality statement (no sub/wordmark): wider measure, slightly smaller type so no line is clipped */
 .plate[data-highlight="future"] .plate-statement-ghost:not(:has(.plate-sub)) .plate-headline,
-.plate[data-highlight="dreams"] .plate-statement-ghost .plate-headline {
-  left: 979px;
-  top: 242px;
-  width: 3542px;
-  font-size: 170px;
+.plate[data-highlight="dreams"] .plate-statement-ghost:not(:has(.plate-wordmark)) .plate-headline {
+  left: 154px;
+  top: 220px;
+  width: 5192px;
+  font-size: 132px;
+  line-height: 1.12;
+  overflow: visible;
 }
+/* closing CREATE plate: slightly smaller so the longer second line fits */
 .plate[data-highlight="dreams"] .plate-statement-ghost:has(.plate-wordmark) .plate-headline,
 .plate[data-kind="statement-ghost"][data-highlight="dreams"] .plate-headline {
   left: 154px;
   top: 258.5px;
   width: 5225px;
-  font-size: 200px;
+  font-size: 184px;
+  line-height: 1.08;
+  overflow: visible;
 }
 
 /* 28 world architect */
@@ -1888,4 +1998,256 @@ html { scroll-padding-top: calc(var(--header) + 8px); }
 
 @media (max-width: 640px) {
   .poster-grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+}
+
+
+/* -------- Character bios (definition typography, no magazine card) -------- */
+.character {
+  margin: 0 0 3.2rem;
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+.character:last-child { margin-bottom: 1.6rem; }
+.character-name {
+  font-family: var(--display);
+  font-size: clamp(2rem, 3.4vw, 3.15rem);
+  line-height: 1.05;
+  margin: 0 0 1rem;
+  color: var(--ink);
+}
+[data-lang="zh"] .character-name,
+[data-lang="both"] .character-name .zh {
+  font-family: var(--zh-display);
+  font-weight: 900;
+}
+.character-fields {
+  display: grid;
+  gap: 0.85rem;
+  margin: 0 0 1.5rem;
+}
+.character-field .k {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin: 0 0 0.2rem;
+}
+.character-field .v {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+.char-sheets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+  margin: 0 0 1.4rem;
+}
+.char-sheets .fig {
+  flex: 0 1 auto;
+  max-width: min(100%, 680px);
+  background: #fff;
+}
+.char-sheets .fig img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: #fff;
+}
+.char-posters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0;
+  align-items: start;
+}
+.char-posters .fig img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: #fff;
+}
+@media (max-width: 820px) {
+  .char-posters { grid-template-columns: 1fr; }
+}
+
+/* -------- Unbundled hero title row: trailer / key art / typeset title -------- */
+.hero-title-plate {
+  width: 100%;
+}
+.hero-title-row {
+  display: grid;
+  grid-template-columns: 2.37fr 1fr 2.39fr;
+  gap: 16px;
+  align-items: start;
+  width: 100%;
+}
+.hero-trailer { min-width: 0; }
+.hero-trailer .player {
+  margin-bottom: 0;
+}
+.hero-trailer .player img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #111;
+}
+.hero-key-wrap { min-width: 0; }
+.hero-key-wrap .fig {
+  background: transparent;
+  border: 0;
+  margin: 0;
+}
+.hero-key-wrap .fig img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1086 / 1448;
+  object-fit: contain;
+  background: transparent;
+}
+.hero-key-wrap figcaption { display: none; }
+.hero-film-title {
+  min-width: 0;
+  padding-top: 0.2rem;
+}
+.hero-film-title .plate-official-zh {
+  position: static;
+  font-family: var(--zh-display);
+  font-weight: 900;
+  font-size: clamp(2.2rem, 5vw, 6.4rem);
+  letter-spacing: 0.02em;
+  color: #111111;
+  line-height: 1.05;
+  margin: 0;
+}
+.hero-film-title .plate-official-zh + .plate-wordmark,
+.hero-film-title .plate-wordmark {
+  position: static;
+  display: block;
+  margin-top: 1.15em;
+  letter-spacing: 0.28em;
+  font-size: clamp(0.68rem, 1.05vw, 1.15rem);
+  color: var(--red);
+}
+.hero-film-title .plate-official-zh::after {
+  content: "";
+  display: block;
+  width: 4.2rem;
+  height: 3px;
+  background: #111111;
+  margin: 1.1em 0 0;
+}
+@media (max-width: 900px) {
+  .hero-title-row { grid-template-columns: 1fr; }
+  .hero-key-wrap { max-width: 22rem; }
+}
+
+/* -------- Unscaled YouTube overlay for the 2023 timeline slot -------- */
+.plate-yt-floats { pointer-events: none; }
+.plate-yt-float {
+  position: absolute;
+  z-index: 6;
+  pointer-events: auto;
+  overflow: hidden;
+}
+.plate-yt-float .video-item {
+  margin: 0;
+  height: 100%;
+}
+.plate-yt-float .player {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+}
+.plate-yt-float .player img,
+.plate-yt-float .player iframe {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
+/* -------- Narrow typographic statement (content column, not full 50/11 stage) -------- */
+.plate-narrow-statement {
+  width: min(var(--max), 100%);
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+}
+.plate-narrow-statement .plate-bar {
+  position: relative;
+  left: auto;
+  top: auto;
+  right: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 28px;
+  flex-wrap: wrap;
+  margin: 0 0 1.25rem;
+  z-index: 1;
+}
+.plate-narrow-statement .plate-kicker {
+  position: static;
+  left: auto;
+  top: auto;
+  width: auto;
+  height: auto;
+  font-size: clamp(0.85rem, 1.15vw, 1.1rem);
+  line-height: 1.2;
+}
+.plate-narrow-statement .plate-nav {
+  position: static;
+  left: auto;
+  top: auto;
+  width: auto;
+  height: auto;
+  font-size: clamp(0.68rem, 0.95vw, 0.86rem);
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.plate-narrow-statement .plate-nav span {
+  width: auto;
+  flex: 0 0 auto;
+  flex-basis: auto;
+  height: auto;
+  padding: 0.3em 0.65em;
+  font-size: inherit;
+}
+.plate-narrow-statement .plate-nav .is-current::after {
+  width: 112%;
+  height: 155%;
+  border-width: 2px;
+}
+.plate-narrow-statement .narrow-statement-body {
+  width: 100%;
+}
+.plate-narrow-statement .plate-headline {
+  position: static;
+  left: auto;
+  top: auto;
+  width: auto;
+  max-width: 18em;
+  font-size: clamp(2.2rem, 3.4vw, 3.65rem);
+  line-height: 1.14;
+  letter-spacing: 0;
+  overflow: visible;
+  margin: 0;
+}
+.plate-narrow-statement > .plate-cap {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }

@@ -41,14 +41,28 @@
     return `<div class="${cls}"><div class="en">${en}</div><div class="zh">${zh}</div></div>`;
   }
 
+  function italicize(s) {
+    return esc(s).replace(/\*([^*]+)\*/g, "<em>$1</em>");
+  }
+
   function rich(obj, extraClass) {
     if (!obj) return "";
     return textPair(
       {
-        en: (obj.en || "") + (obj.source ? " " + sourceMark(obj.source, "en") : ""),
-        zh: (obj.zh || "") + (obj.source ? " " + sourceMark(obj.source, "zh") : "")
+        en: italicize(obj.en || "") + (obj.source ? " " + sourceMark(obj.source, "en") : ""),
+        zh: italicize(obj.zh || "") + (obj.source ? " " + sourceMark(obj.source, "zh") : "")
       },
       extraClass
+    );
+  }
+
+  function isNaturalImage(img) {
+    if (!img) return false;
+    if (img.natural || img.modest || img.sheet || img.poster || img.heightSheet) return true;
+    const src = img.src || "";
+    return (
+      src.indexOf("assets/characters/") === 0 ||
+      /goldfish-key-art\.jpg/.test(src)
     );
   }
 
@@ -57,7 +71,12 @@
     if (img.slide) cls.push("slide-plate");
     if (img.portrait) cls.push("portrait");
     if (img.contain) cls.push("contain");
-    if (img.natural) cls.push("natural");
+    const natural = isNaturalImage(img);
+    if (natural) cls.push("natural");
+    if (img.modest) cls.push("modest");
+    if (img.sheet) cls.push("sheet");
+    if (img.poster) cls.push("poster");
+    if (img.heightSheet) cls.push("height-sheet");
     const alt = esc(img.altEn || img.altZh || "");
     const cap = textPair(
       {
@@ -68,10 +87,11 @@
     const hint = img.slide
       ? `<span class="enlarge-hint"><span class="en">Click to enlarge</span><span class="zh">点击放大完整画面</span></span>`
       : "";
-    const w = img.slide ? (img.w || 10000) : (img.w || 1600);
-    const h = img.slide ? (img.h || 2200) : (img.h || 900);
+    const w = img.w || (img.slide ? 10000 : natural ? "" : 1600);
+    const h = img.h || (img.slide ? 2200 : natural ? "" : 900);
+    const wh = (w ? ` width="${w}"` : "") + (h ? ` height="${h}"` : "");
     return `<figure class="${cls.join(" ")}" data-lb="${esc(img.src)}" data-slide="${img.slide ? "1" : ""}" data-idx="${i}" tabindex="0" role="button" aria-label="${alt}">
-      <img src="${esc(img.src)}" alt="${alt}" width="${w}" height="${h}" loading="lazy">
+      <img src="${esc(img.src)}" alt="${alt}"${wh} loading="lazy">
       ${hint}
       <figcaption>${cap}</figcaption>
     </figure>`;
@@ -82,18 +102,24 @@
     const titleZh = esc(v.titleZh);
     const playEn = (window.GM.ui.play && window.GM.ui.play.en) || "Play";
     const playZh = (window.GM.ui.play && window.GM.ui.play.zh) || "播放";
-    return `<div class="video-item">
-      <div class="player" data-yt="${esc(v.id)}">
-        <img src="${esc(v.poster)}" alt="${titleEn}" width="1280" height="720">
-        <button type="button" class="playbtn" aria-label="${playEn}">
-          <span class="tri" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
-          <span class="plab"><span class="en">${esc(playEn)}</span><span class="zh">${esc(playZh)}</span></span>
-        </button>
-      </div>
-      <div class="player-meta">
+    const pw = v.posterW || 1280;
+    const ph = v.posterH || 720;
+    const aria = titleEn || playEn;
+    const meta = v.hideMeta
+      ? ""
+      : `<div class="player-meta">
         <div>${textPair({ en: v.titleEn + (v.source ? " " + sourceMark(v.source, "en") : ""), zh: v.titleZh + (v.source ? " " + sourceMark(v.source, "zh") : "") })}</div>
         <a href="https://www.youtube.com/watch?v=${esc(v.id)}" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+      </div>`;
+    return `<div class="video-item">
+      <div class="player" data-yt="${esc(v.id)}">
+        <img src="${esc(v.poster)}" alt="${titleEn}" width="${pw}" height="${ph}">
+        <button type="button" class="playbtn" aria-label="${aria}">
+          <span class="tri" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="plab">${textPair({ en: playEn, zh: playZh })}</span>
+        </button>
       </div>
+      ${meta}
     </div>`;
   }
 
@@ -203,6 +229,7 @@
   function renderPlate(p, idx) {
     const kind = p.kind || "statement-ghost";
     let body = "";
+    let plateExtras = "";
     if (kind === "intro-awards") {
       const awards = p.awards || [];
       const mid = Math.ceil(awards.length / 2);
@@ -253,14 +280,27 @@
         <div class="plate-photos single">${figs(p.photos, idx)}</div>
       </div>`;
     } else if (kind === "timeline") {
+      const floats = [];
       const cells = (p.moments || [])
         .map((m, i) => {
           const n = (m.photos || []).length;
           const cls = m.layout || (n === 1 ? "solo" : n > 2 ? "sets" : "pair");
+          const photos = (m.photos || [])
+            .map((ph, pi) => {
+              if (ph.youtube) {
+                floats.push(ph);
+                return `<div class="fig timeline-yt-hole" data-yt-slot="${esc(ph.youtube)}" aria-hidden="true"></div>`;
+              }
+              return plateFig(ph, `${idx}-m${i}-${pi}`);
+            })
+            .join("");
           return `<article class="timeline-cell cell-${i} ${esc(cls)}">
-            <div class="t-photos ${esc(cls)}">${figs(m.photos, idx + "-m" + i)}</div>
-            <h3>${esc(m.title)} <span>${esc(m.date || "")}</span></h3>
-            <p>${esc(m.caption)}</p>
+            <div class="t-photos ${esc(cls)}">${photos}</div>
+            <div class="t-copy">
+              <h3>${esc(m.title)}</h3>
+              ${m.date ? `<p class="t-date">${esc(m.date)}</p>` : ""}
+              <p class="t-cap">${esc(m.caption)}</p>
+            </div>
           </article>`;
         })
         .join("");
@@ -268,6 +308,21 @@
         <h3 class="plate-headline">${typo(p.headline)}</h3>
         <div class="timeline-grid">${cells}</div>
       </div>`;
+      plateExtras = floats
+        .map(
+          (ph) =>
+            `<div class="plate-yt-float" data-yt="${esc(ph.youtube)}">${renderVideo({
+              id: ph.youtube,
+              poster: ph.poster || ph.src,
+              posterW: ph.posterW,
+              posterH: ph.posterH,
+              titleEn: ph.titleEn,
+              titleZh: ph.titleZh,
+              source: ph.source || "yt",
+              hideMeta: true
+            })}</div>`
+        )
+        .join("");
     } else if (kind === "chapter-quote") {
       body = `<div class="plate-quote-row">
         <div class="plate-side-word left">${esc(p.leftWord || "")}</div>
@@ -294,14 +349,33 @@
         <div class="invite-grid">${items}</div>
       </div>`;
     } else if (kind === "title") {
-      body = `<div class="plate-title">
-        ${p.photos && p.photos[0] ? plateFig(p.photos[0], idx + "-a") : ""}
-        ${p.photos && p.photos[1] ? plateFig(p.photos[1], idx + "-b") : ""}
-        <div class="title-copy">
-          ${p.officialZh ? `<div class="plate-official-zh">${esc(p.officialZh)}</div>` : ""}
-          ${p.wordmark ? `<div class="plate-wordmark red">${esc(p.wordmark)}</div>` : ""}
+      const trailer = p.trailer || {};
+      const keyArt = p.keyArt || (p.photos && p.photos[1]) || null;
+      const trailerHtml = trailer.id
+        ? renderVideo({
+            id: trailer.id,
+            poster: trailer.poster,
+            posterW: trailer.posterW || 3200,
+            posterH: trailer.posterH || 1800,
+            titleEn: trailer.titleEn,
+            titleZh: trailer.titleZh,
+            source: trailer.source || "yt"
+          })
+        : (p.photos && p.photos[0] ? renderFig(Object.assign({ natural: true }, p.photos[0]), idx + "-a") : "");
+      const keyHtml = keyArt
+        ? renderFig(Object.assign({ natural: true }, keyArt), idx + "-key")
+        : "";
+      return `<article class="plate hero-title-plate" data-kind="title" data-highlight="${esc(p.highlight || "")}">
+        <div class="hero-title-row">
+          <div class="hero-trailer">${trailerHtml}</div>
+          <div class="hero-key-wrap">${keyHtml}</div>
+          <div class="hero-film-title">
+            ${p.officialZh ? `<div class="plate-official-zh">${esc(p.officialZh)}</div>` : ""}
+            ${p.wordmark ? `<div class="plate-wordmark red">${esc(p.wordmark)}</div>` : ""}
+          </div>
         </div>
-      </div>`;
+        ${plateCap(p)}
+      </article>`;
     } else if (kind === "quotes") {
       const cells = (p.quotes || [])
         .map((q, i) => {
@@ -361,6 +435,14 @@
         </div>
         <div class="architect-cols">${cols}</div>
       </div>`;
+    } else if (kind === "statement-ghost" && p.narrow) {
+      return `<article class="plate plate-narrow-statement" data-kind="statement-ghost" data-highlight="${esc(p.highlight || "")}">
+        ${plateChrome(p)}
+        <div class="narrow-statement-body">
+          <h3 class="plate-headline">${typo(p.headline)}</h3>
+        </div>
+        ${plateCap(p)}
+      </article>`;
     } else {
       body = `<div class="plate-statement-ghost">
         <h3 class="plate-headline">${typo(p.headline)}</h3>
@@ -376,8 +458,25 @@
           <div class="plate-body">${body}</div>
         </div>
       </div>
+      ${plateExtras ? `<div class="plate-yt-floats">${plateExtras}</div>` : ""}
       ${plateCap(p)}
     </article>`;
+  }
+
+  function positionPlatePlayers() {
+    $$(".plate-yt-float").forEach((floatEl) => {
+      const id = floatEl.getAttribute("data-yt");
+      const plate = floatEl.closest(".plate");
+      if (!plate || !id) return;
+      const hole = plate.querySelector('.timeline-yt-hole[data-yt-slot="' + id + '"]');
+      if (!hole) return;
+      const pr = plate.getBoundingClientRect();
+      const hr = hole.getBoundingClientRect();
+      floatEl.style.left = hr.left - pr.left + "px";
+      floatEl.style.top = hr.top - pr.top + "px";
+      floatEl.style.width = hr.width + "px";
+      floatEl.style.height = hr.height + "px";
+    });
   }
 
   function scalePlates() {
@@ -390,6 +489,34 @@
       design.style.transform = "scale(" + s + ")";
       lock.style.height = PLATE_H * s + "px";
     });
+    positionPlatePlayers();
+  }
+
+  function renderCharacter(b, idxPrefix) {
+    const fields = (b.fields || [])
+      .map(
+        (f) => `<div class="character-field">
+        <div class="k">${textPair({ en: f.labelEn, zh: f.labelZh })}</div>
+        ${rich({ en: f.en, zh: f.zh }, "v")}
+      </div>`
+      )
+      .join("");
+    const sheets = (b.sheets || [])
+      .map((img, i) =>
+        renderFig(Object.assign({ natural: true, sheet: true }, img), `${idxPrefix}-sheet-${i}`)
+      )
+      .join("");
+    const posters = (b.posters || [])
+      .map((img, i) =>
+        renderFig(Object.assign({ natural: true, poster: true }, img), `${idxPrefix}-poster-${i}`)
+      )
+      .join("");
+    return `<section class="character">
+      <h3 class="character-name">${textPair({ en: b.nameEn, zh: b.nameZh })}</h3>
+      <div class="character-fields">${fields}</div>
+      ${sheets ? `<div class="char-sheets">${sheets}</div>` : ""}
+      ${posters ? `<div class="char-posters">${posters}</div>` : ""}
+    </section>`;
   }
 
   function renderCallout(b) {
@@ -431,6 +558,8 @@
         return `<div class="mod plate-stack">${(b.items || [])
           .map((pl, i) => renderPlate(pl, `${idxPrefix}-plate-${i}`))
           .join("")}</div>`;
+      case "character":
+        return renderCharacter(b, idxPrefix);
       case "callout":
         return renderCallout(b);
       case "compare":
