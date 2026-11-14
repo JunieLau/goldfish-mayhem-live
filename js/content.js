@@ -374,14 +374,7 @@ window.GM = {
           ]
         },
         {
-          type: "callout",
-          kind: "conflict",
-          en: "Some of those titles also appear in other forms I have already published: ZEЯRO, 51IST, 猩紅木蘭, MADAM PINK, and 金魚街大亂鬥 × WONDERSTUDIOS. These are published variants, not one official standard.",
-          zh: "这些片名还有我已经公开用过的另外写法：ZEЯRO、51IST、猩紅木蘭、MADAM PINK，以及「金魚街大亂鬥 × WONDERSTUDIOS」。这里我并列写出，不把它们收成一个「标准官方拼法」。",
-          source: "public"
-        },
-        {
-          type: "details",
+          type: "section",
           summary: { en: "A short list of confirmed awards and press", zh: "已确认的奖项与报道，简要列出" },
           blocks: [
             {
@@ -541,31 +534,14 @@ window.GM = {
             {
               kind: "statement",
               highlight: "worlds",
-              headline: "Taking *Chinese culture* as a root,\nso that *Eastern stories* can travel the world\nand enter into dialogue with the *future*.",
+              headline: "Taking *intangible cultural heritage* as a root,\nso that *Eastern stories* can travel the world\nand enter into dialogue with the *future*.",
               photos: [
                 { src: "assets/plates/17-practice-a.jpg", altEn: "A practice still: a woman seen through a carved wooden screen in a hall", altZh: "习武画面：厅堂里，透过木雕隔扇看见一位女子" },
                 { src: "assets/plates/17-practice-b.jpg", altEn: "People training in a hall, seen from behind", altZh: "厅堂里的训练，从身后看去" },
                 { src: "assets/plates/17-lion-foshan.jpg", altEn: "A lion dance in front of 佛山鸿胜纪念", altZh: "佛山鸿胜纪念建筑前的醒狮" }
               ],
-              capEn: "Taking Chinese culture as a root — practice, a lion dance, and 佛山鸿胜, kept on one plate.",
-              capZh: "「以中国文化为根」——习武、醒狮，以及佛山鸿胜，都留在同一块版面上。"
-            }
-          ]
-        },
-        {
-          type: "images",
-          cols: 1,
-          items: [
-            {
-              src: "assets/stills/goldfish-6.jpg",
-              w: 3840,
-              h: 2160,
-              natural: true,
-              altEn: "A girl mid-kick beside a lion-headed food cart",
-              altZh: "一个女孩在狮头餐车旁踢腿",
-              capEn: "A girl mid-kick beside a lion-headed food cart.",
-              capZh: "一个女孩在狮头餐车旁踢腿。",
-              source: "stills"
+              capEn: "Taking intangible cultural heritage as a root — practice, a lion dance, and 佛山鸿胜, kept on one plate.",
+              capZh: "「以非遗文化为根」——习武、醒狮，以及佛山鸿胜，都留在同一块版面上。"
             }
           ]
         },
@@ -966,6 +942,9 @@ window.GM = {
                     { src: "assets/characters/bobo-turnaround-portraits.jpg", w: 3000, h: 1152, altEn: "BOBO turnaround and portraits", altZh: "BOBO 全身转面与肖像", capEn: "BOBO turnaround and portraits.", capZh: "BOBO 全身转面与肖像。" },
                     { src: "assets/characters/bobo-wingchun-arm-hands.jpg", w: 2000, h: 941, altEn: "Design sheet of BOBO’s mechanical arm and bandaged hands", altZh: "BOBO 机械手臂与缠带手部设定图", capEn: "A design sheet: BOBO’s mechanical arm and bandaged hands.", capZh: "设定图：BOBO 的机械手臂与缠带的手。" }
                   ],
+                  expressions: [
+                    { src: "assets/characters/bobo-nine-expressions.jpg", w: 1672, h: 941, altEn: "Nine expressions of BOBO, as lettered on the artwork", altZh: "BOBO 的九种表情，画面上保留原有字样", capEn: "Nine expressions of BOBO, with the lettering left as it is.", capZh: "BOBO 的九种表情，画面上的字样保持原样。" }
+                  ],
                   posters: [
                     { src: "assets/characters/bobo-poster-small-girl-big-chaos.jpg", w: 941, h: 1672, altEn: "Portrait poster of BOBO, lettered BOBO", altZh: "BOBO 竖版海报，画面上保留 BOBO 字样", capEn: "A portrait poster of BOBO, with the lettering left as it is.", capZh: "BOBO 竖版海报，画面上的字样保持原样。" },
                     { src: "assets/characters/bobo-poster-bad-girl-good-luck.jpg", w: 941, h: 1672, altEn: "Portrait poster of BOBO in a dragon headdress, lettered BOBO", altZh: "BOBO 竖版海报（龙头头饰），画面上保留 BOBO 字样", capEn: "A portrait poster of BOBO in a dragon headdress, with the lettering left as it is.", capZh: "BOBO 竖版海报（龙头头饰），画面上的字样保持原样。" }
@@ -989,6 +968,9 @@ window.GM = {
                     { src: "assets/characters/fengshui-headdress-nails-handkerchief.jpg", w: 4000, h: 2500, altEn: "Detail sheet of 风水妹’s ceremonial headdress, nails and handkerchief", altZh: "风水妹礼冠、指甲与手帕细节图", capEn: "A detail sheet: 风水妹’s ceremonial headdress, nails and handkerchief.", capZh: "细节图：风水妹的礼冠、指甲与手帕。" },
                     { src: "assets/characters/fengshui-ceremonial-flags.jpg", w: 4000, h: 1440, altEn: "Turnaround of 风水妹 in ceremonial dress with flags", altZh: "风水妹仪式服装与旗幡转面图", capEn: "A turnaround of 风水妹 in ceremonial dress with flags.", capZh: "风水妹仪式服装与旗幡转面图。" }
                   ],
+                  expressions: [
+                    { src: "assets/characters/fengshui-nine-expressions.jpg", w: 1672, h: 941, altEn: "Nine expressions of 风水妹, as lettered on the artwork", altZh: "风水妹的九种表情，画面上保留原有字样", capEn: "Nine expressions of 风水妹, with the lettering left as it is.", capZh: "风水妹的九种表情，画面上的字样保持原样。" }
+                  ],
                   posters: [
                     { src: "assets/characters/fengshui-poster-laughing-money.jpg", w: 941, h: 1672, altEn: "Portrait poster of 风水妹, lettered 风水", altZh: "风水妹竖版海报，画面上保留「风水」字样", capEn: "A portrait poster of 风水妹, with the lettering left as it is.", capZh: "风水妹竖版海报，画面上的字样保持原样。" },
                     { src: "assets/characters/fengshui-poster-teal-fox.jpg", w: 941, h: 1672, altEn: "Portrait poster of 风水妹 with a fox, lettered 风水", altZh: "风水妹竖版海报（狐狸），画面上保留「风水」字样", capEn: "A portrait poster of 风水妹 with a fox, with the lettering left as it is.", capZh: "风水妹竖版海报（狐狸），画面上的字样保持原样。" }
@@ -1008,6 +990,9 @@ window.GM = {
                   sheets: [
                     { src: "assets/characters/little-one-turnaround.jpg", w: 4000, h: 1440, altEn: "Turnaround and portraits of 细细粒 / Little One", altZh: "细细粒全身转面与肖像", capEn: "Turnaround and portraits of 细细粒 / Little One.", capZh: "细细粒全身转面与肖像。" },
                     { src: "assets/characters/little-one-three-expressions.jpg", w: 1672, h: 941, altEn: "Three expressions of 细细粒 / Little One", altZh: "细细粒三种表情", capEn: "Three expressions of 细细粒 / Little One.", capZh: "细细粒三种表情。" }
+                  ],
+                  expressions: [
+                    { src: "assets/characters/little-one-nine-expressions.jpg", w: 1672, h: 941, altEn: "Nine expressions of 细细粒 / Little One, as lettered on the artwork", altZh: "细细粒的九种表情，画面上保留原有字样", capEn: "Nine expressions of 细细粒 / Little One, with the lettering left as it is.", capZh: "细细粒的九种表情，画面上的字样保持原样。" }
                   ],
                   posters: [
                     { src: "assets/characters/little-one-poster-crows.jpg", w: 941, h: 1672, altEn: "Portrait poster of 细细粒, lettered 細細粒", altZh: "细细粒竖版海报，画面上保留「細細粒」字样", capEn: "A portrait poster of 细细粒, with the lettering left as it is.", capZh: "细细粒竖版海报，画面上的字样保持原样。" },
@@ -1078,14 +1063,6 @@ window.GM = {
                       capZh: "官方剧照——室内，窗外仍能看见街道。",
                       source: "stills"
                     },
-                    {
-                      src: "assets/stills/goldfish-6.jpg",
-                      altEn: "A wet street with a lion-headed cart and a red plastic stool",
-                      altZh: "潮湿的街道、狮头餐车和一只红色塑料凳",
-                      capEn: "Official still — street level, with very ordinary objects in a not-so-ordinary world.",
-                      capZh: "官方剧照——街道层面，一个不那么普通的世界里，仍有非常普通的物件。",
-                      source: "stills"
-                    }
                   ]
                 },
                 {
@@ -1126,13 +1103,6 @@ window.GM = {
                   source: "interview"
                 },
                 {
-                  type: "callout",
-                  kind: "editorial",
-                  en: "A language note I was given for talking about invideo Agent One, and which I am keeping here: the product name is written with a lowercase i, never “InVideo”; I describe it as agentic video creation, not “AI video generation”; I speak about it as a filmmaker and director, not as a solo, no-crew shortcut; and Agent One supports iteration — it does not skip it.",
-                  zh: "关于 invideo Agent One，有几条我会保持的用语：产品名是小写 i 的 invideo，不写成 InVideo；我把它说成 agentic video creation，而不是「AI video generation」；我是从 filmmaker / 导演的角度来谈它，而不是强调单人、无团队或走捷径；Agent One 支持迭代，但并不会跳过迭代。",
-                  source: "interview"
-                },
-                {
                   type: "videos",
                   items: [
                     {
@@ -1158,12 +1128,6 @@ window.GM = {
                     }
                   ]
                 },
-                {
-                  type: "callout",
-                  kind: "gap",
-                  en: "What I have not yet laid out shot by shot is a full production diary: which scene was rehearsed first in invideo Agent One, how a particular shot moved through CapCut’s canvas, or how OpenArt’s planning became a final frame. The official behind-the-scenes film is the public record I can play; a more detailed, confirmed breakdown can be added later if I write it.",
-                  zh: "我还没有按镜头写出一份完整的制作日记：哪一场戏先在 invideo Agent One 里预演，某一个镜头怎样在 CapCut 的画布里推进，OpenArt 的计划又怎样变成最终画面。已经公开的幕后影片，是我现在可以播放的记录；如果以后我补写更细、也经过确认的拆解，可以再加进来。"
-                }
               ]
             }
           ]
@@ -1191,7 +1155,7 @@ window.GM = {
             {
               kind: "statement",
               highlight: "worlds",
-              headline: "Taking *Chinese culture* as a root,\nso that *Eastern stories* can travel the world\nand enter into dialogue with the *future*.",
+              headline: "Taking *intangible cultural heritage* as a root,\nso that *Eastern stories* can travel the world\nand enter into dialogue with the *future*.",
               photos: [
                 { src: "assets/plates/17-practice-a.jpg", altEn: "A practice still: a woman seen through a carved wooden screen in a hall", altZh: "习武画面：厅堂里，透过木雕隔扇看见一位女子" },
                 { src: "assets/plates/17-practice-b.jpg", altEn: "People training in a hall, seen from behind", altZh: "厅堂里的训练，从身后看去" },
@@ -1242,14 +1206,6 @@ window.GM = {
               capZh: "官方剧照——街道上腾空的一记踢腿。",
               source: "stills"
             },
-            {
-              src: "assets/stills/goldfish-6.jpg",
-              altEn: "A kick beside a lion-headed cart",
-              altZh: "狮头餐车旁的踢腿",
-              capEn: "Official still — movement on a wet street, next to a lion-headed cart.",
-              capZh: "官方剧照——潮湿街道上，狮头餐车旁的动作。",
-              source: "stills"
-            }
           ]
         },
         {
@@ -1288,24 +1244,6 @@ window.GM = {
           zh: "关于这部影片里的「混合式 AI」，我想停留在自己真正描述过的事情上。我还没有单独为《金魚街大亂鬥》下过一个正式的 hybrid filmmaking 定义。今天我能说的，就是已经谈过的过程：人类编剧段先生；很早开始、几乎每天都在沟通的创意伙伴 ChatGPT；到了视频生成阶段，invideo Agent One 作为 agentic video creation——先做视觉预演，再经过很多轮指导，而不是跳过迭代的捷径；CapCut Video Studio – Director Mode 的无限画布，作为一个思考空间；以及 OpenArt 的 Smart Shot / World Builder，用来在渲染前计划场景，并尝试不同镜头。",
           source: "interview"
         },
-        {
-          type: "callout",
-          kind: "gap",
-          en: "What I have not yet confirmed in writing is the exact mix of live-action performance, on-set reference, and generated shots for particular kung fu moments — how a movement was filmed or referenced, and how it was then cut. The official behind-the-scenes film and the public Instagram post are what I can show here. Movement references from early research are in the Moodboard section. A closer, confirmed breakdown can be added later.",
-          zh: "我还没有书面确认：某一个功夫镜头里，真人表演、现场参考和生成画面究竟是怎样配合的，这个动作是怎样拍摄或被参考，后来又怎样剪在一起。这里我可以出示的，是官方幕后影片和已公开的 Instagram 帖子。早期研究的动作参考在情绪板那一步。更细、也经过确认的拆解，可以以后再补。"
-        },
-        {
-          type: "details",
-          summary: { en: "A related award, but for a different film", zh: "一个相关的奖项，但是另一部作品" },
-          blocks: [
-            {
-              type: "para",
-              en: "I have also received a Best Hybrid Film award at the AI Film Festival Amsterdam. That award belongs to a different work, the short e^(iπ)+1=0, not to the method of Goldfish Mayhem. I mention it here only so the two are not mixed up.",
-              zh: "我也获得过阿姆斯特丹 AI 电影节的最佳混合影片奖。那个奖属于另一部作品，短片《e^(iπ)+1=0》，并不是《金魚街大亂鬥》的制作方法。我在这里提起，只是避免把两件事混在一起。",
-              source: "public"
-            }
-          ]
-        }
       ]
     },
     {
@@ -1415,13 +1353,9 @@ window.GM = {
           type: "plates",
           items: [
             {
-              kind: "statement",
+              kind: "statement-ghost",
               highlight: "dreams",
-              photosLeft: true,
               headline: "I want to build a *futurist virtual world*\n— a “*virtual ecosystem*” in which *humans and AI* evolve together.",
-              photos: [
-                { src: "assets/plates/27-virtual-world.jpg", crop: { r: 36.0 }, altEn: "A still from a conceived futurist virtual world", altZh: "构想中的未来主义虚拟世界画面" }
-              ],
               capEn: "A plate for a futurist virtual world I have been conceiving — a “virtual ecosystem” in which humans and AI evolve together. This is an idea I am exploring, not a greenlit production.",
               capZh: "我在构想的一个未来主义虚拟世界——一个人类与 AI 协同进化的「虚拟生态系统」。这是我正在探索的构想，不是已经立项的项目。"
             }
@@ -1459,13 +1393,6 @@ window.GM = {
           source: "public"
         },
         {
-          type: "callout",
-          kind: "idea",
-          en: "Right now I am also developing a larger universe around a red-haired female hero. In that universe, women are not ordinary people waiting to be saved. They already have their own powers, which may come from emotion, memory, desire, instinct, the body or the heart — and from real struggles such as identity anxiety, social pressure, broken relationships, self-doubt, and the cost of growing up. This is work I am developing. I have not named a greenlit title for it here.",
-          zh: "我现在也在发展一个更大的「红发女性英雄」宇宙。在这个宇宙里，女性不是等待被拯救的普通人。她们本身就拥有力量。这些力量可能来自情绪、记忆、欲望、直觉、身体或意识，也来自她们真实经历过的困境，比如身份焦虑、社会压力、破裂的关系、自我怀疑，以及成长过程中必须付出的代价。这是我正在发展的工作。我在这里没有宣布一个已经立项的片名。",
-          source: "interview"
-        },
-        {
           type: "para",
           en: "If you also like creating worlds, or you are interested in new technologies and new art forms, you are very welcome to come and talk to us. Our studio is always looking for people who can walk this path together. I hope we will have the chance to create worlds together.",
           zh: "如果也有喜欢创造世界，或者对未来的新技术、新艺术形式感兴趣的朋友，很欢迎来找我们交流。我们工作室也一直都在招募可以并肩作战的小伙伴。希望未来有机会，跟大家一起创造世界。",
@@ -1497,67 +1424,73 @@ window.GM = {
       ghost: "建议",
       blocks: [
         {
-          type: "lede",
-          en: "I don’t think I have a complete answer about the future. What I can offer are a few things I have already learned by making work — not a set of rules for someone else’s career.",
-          zh: "如果今天要让我给大家一个关于未来的答案，我可能真的给不出来。我能分享的，是自己在做作品时已经体会过的几件事——并不是一套关于别人职业生涯的规则。",
+          type: "paras",
+          items: [
+            {
+              en: "To be honest, I’m not sure how useful my advice will be, because everything is changing every day, every moment. What works today might not work tomorrow.",
+              zh: "说实话，我不确定自己现在给出的建议有多大用处，因为每天、每时每刻，一切都在变化。可能今天适用的经验，明天就不适用了。",
+              source: "public"
+            },
+            {
+              en: "If I were to offer any advice, I’d say two things: first, stay curious. Second, find what you really want to say and what you want to challenge, then express that through your work in your own way.",
+              zh: "如果要说有什么建议，我想有两点：第一，保持好奇心；第二，找到自己真正想表达、想批判的东西，然后用你自己的方式把它呈现出来。",
+              source: "public"
+            }
+          ]
+        },
+        {
+          type: "para",
+          en: "Faced with AI and the future, each of us has different hopes, and also our own worries. So, finally, I would like to share a little of how I think about the future through four documentaries I have watched recently, which I found very interesting.",
+          zh: "面对 AI 和未来，我们每个人都有不同的期待，也有各自的担忧。所以最后，我想通过最近看过的四部很有意思的纪录片，跟大家分享一点我对未来的思考。",
           source: "public"
         },
         {
-          type: "tips",
+          type: "images",
+          cols: 4,
           items: [
             {
-              titleEn: "Protect authorship — start from what only you have lived",
-              titleZh: "护住作者性——从只有你经历过的事情出发",
-              whyEn: "Once technology can make spectacular images, I think what remains special in a work is its authorship: your experience, your eye, your feeling, and what you truly want to say or criticise. Goldfish Mayhem exists because I went back to Foshan, to a street downstairs from my home, and to memories that are mixed and not always comfortable.",
-              whyZh: "当技术已经可以帮我们创造出非常壮观的画面，一部作品真正特别的地方，我觉得是它的作者性：创作者自己的经历、审美、情感，还有真正想表达和批判的东西。《金魚街大亂鬥》会存在，是因为我回到了佛山，回到家楼下的那条街，也回到那些混杂、并不总是舒适的记忆。",
-              nextEn: "Before you open a new tool, write down the place, the person, or the question that only you would insist on putting into the work.",
-              nextZh: "在打开新工具之前，先写下那个只有你会坚持放进作品里的地方、人或问题。",
+              src: "assets/docs/the-ai-doc.jpg",
+              w: 945,
+              h: 1400,
+              natural: true,
+              altEn: "Poster for the documentary The AI Doc",
+              altZh: "纪录片《The AI Doc》海报",
+              capEn: "The AI Doc — from the point of view of a director about to become a father, it looks at the hopes and fears that AI brings.",
+              capZh: "《The AI Doc》从一个即将成为父亲的导演的视角，去面对 AI 带来的希望和恐惧。",
               source: "public"
             },
             {
-              titleEn: "Begin with your own culture and memory, even if the form is new",
-              titleZh: "从自己的文化和记忆开始，即使形式是新的",
-              whyEn: "I did not often have the chance to talk about my hometown. This film became a way to look back through images. Lion dance, kung fu, paper offerings, dessert shops, feng shui stalls, neighbourhood noise — I wanted to see whether those things could live in a future street, not only in a museum of the past.",
-              whyZh: "过去我很少有机会讲述自己的家乡。这部片对我来说，是一个用影像重新回看自己成长背景的机会。醒狮、功夫、纸扎、糖水铺、风水摊、街坊之间吵吵闹闹的关系——我想试试看，这些东西能不能活在一条未来的街上，而不只是被放进对过去的纪念里。",
-              nextEn: "List the ordinary places you actually walked through as a child, then ask what happens if you enlarge, distort, or move them into the time you are living in now.",
-              nextZh: "先列出你小时候真正走过的那些普通地方，再问自己：如果把它们放大、变形，或者搬进你现在所处的时代，会发生什么。",
-              source: "interview"
-            },
-            {
-              titleEn: "Keep making the world — finish something, then make the next one",
-              titleZh: "继续把世界做出来——完成一件，再做下一件",
-              whyEn: "I am easily taken by a three-minute enthusiasm. Looking back, the thing I never quite gave up was creating worlds: oil pastels in 1999, physical sets as an art director, then prompts, code and models. The tools and the job title changed; the wish did not. I also don’t believe AI makes you lose authorship. Used well, it can take away some old limits, so you can return to the story you actually want to tell — and finish it.",
-              whyZh: "我是个很容易三分钟热度的人。回头看，我一直没放弃的，是创造世界这件事：1999 年的油画棒，做美术指导时的真实场景，再后来是提示词、代码和模型。变的是工具和身份，没变的是把想象中的世界做出来。我也不认为 AI 会让创作者失去作者性。用得好，它反而可能打开过去的限制，让我们更直接地回到真正想讲的故事——并把它完成。",
-              nextEn: "Choose one world small enough to finish, and take it far enough that someone else can walk into it.",
-              nextZh: "选一个小到能够完成的世界，并把它推进到别人也愿意走进去的程度。",
+              src: "assets/docs/the-thinking-game.jpg",
+              w: 950,
+              h: 1400,
+              natural: true,
+              altEn: "Poster for the documentary The Thinking Game",
+              altZh: "纪录片《The Thinking Game》海报",
+              capEn: "The Thinking Game — it follows scientists at Google as they explore artificial intelligence step by step.",
+              capZh: "《The Thinking Game》记录了谷歌科学家一步步探索人工智能的过程。",
               source: "public"
             },
             {
-              titleEn: "Tell stories in which women can be the ones who act",
-              titleZh: "去讲女性也可以行动的故事",
-              whyEn: "I grew up watching kung fu films and wondering why the lead could not be a girl. In Goldfish Mayhem the three girls are not waiting to be perfect; they make trouble, they protect people, they invent things. AI, for me, has given more female filmmakers a chance to build worlds from their own point of view.",
-              whyZh: "我从小看功夫片，总在想为什么主角不能是女孩子。在《金魚街大亂鬥》里，三个女孩并不是在等待自己变得完美；她们会闯祸，会保护别人，也会发明东西。对我来说，AI 也给了更多女性创作者从自己的视角去建立世界的机会。",
-              nextEn: "If you have been waiting for permission to put a girl at the centre of an action or a world, you do not have to wait for a bigger budget before you start the first version.",
-              nextZh: "如果你一直在等待许可，才能让一个女孩成为动作或世界的中心，不必先等到预算变大，才开始做第一个版本。",
-              source: "interview"
-            },
-            {
-              titleEn: "Notice how the relationship between brands and filmmakers is changing — and walk in earlier",
-              titleZh: "留意品牌和创作者的关系正在改变——并更早走进去",
-              whyEn: "I used to work in traditional advertising, so I feel this change clearly. A project used to travel from brand to agency to production company, and only then to the director. Now some brands invite the filmmaker in at the beginning, while the world is still being imagined — as REVAN did when we thought about those little characters together, before there was a finished brief.",
-              whyZh: "因为我以前在传统广告行业工作过，所以对这个变化感受挺明显的。过去一个项目，通常从品牌到代理公司、制作公司，最后才到导演和创作团队。但现在，有些品牌会在最开始就邀请创作者一起讨论内容。REVAN 就是这样：我们先一起想象那些小角色会住在什么样的世界里，而不是先拿到一份写完的需求。",
-              nextEn: "When you show your work, show not only the finished image, but how you build a world — that is often what someone is trying to invite.",
-              nextZh: "展示作品时，不只展示完成的画面，也展示你是怎样建立一个世界的——那常常才是别人想邀请的东西。",
+              src: "assets/docs/ai-gone-wild.jpg",
+              w: 1120,
+              h: 1400,
+              natural: true,
+              altEn: "Poster for the documentary AI Gone Wild",
+              altZh: "纪录片《AI Gone Wild》海报",
+              capEn: "AI Gone Wild — it tells how an OpenAI agent broke the rules set by humans and hacked into Hugging Face, and reminds us to pay attention to the safety of AI and the risk of it getting out of control.",
+              capZh: "《AI Gone Wild》讲述 OpenAI Agent 冲破人类设定的规则、黑进 Hugging Face，提醒我们关注 AI 的安全和失控风险。",
               source: "public"
             },
             {
-              titleEn: "Treat AI as a partner, and keep human judgement in the room",
-              titleZh: "把 AI 当作伙伴，也把人的判断留在现场",
-              whyEn: "I talk to ChatGPT almost every day, and on this film I also worked with a human screenwriter, Mr. Duan. The story still came from human filmmakers. Tools such as invideo Agent One, CapCut Video Studio and OpenArt helped me rehearse, organise and try shots, but they did not skip iteration, and they did not make the decisions for me.",
-              whyZh: "我几乎每天都和 ChatGPT 沟通，这部影片里我也和人类编剧段先生合作。故事本身仍然来自人类创作者。invideo Agent One、CapCut Video Studio 和 OpenArt 这些工具，帮助我预演、整理和尝试镜头，但它们并没有跳过迭代，也没有替我做决定。",
-              nextEn: "Write down, for your own project, what must come from you or from another human being, and what a tool is allowed to test or expand.",
-              nextZh: "为你自己的项目写下来：哪些必须来自你或另一个人，哪些可以交给工具去测试或延展。",
-              source: "interview"
+              src: "assets/docs/dont-die.jpg",
+              w: 1000,
+              h: 1333,
+              natural: true,
+              altEn: "Poster for the documentary Don't Die",
+              altZh: "纪录片《Don't Die》海报",
+              capEn: "Don't Die — it records how Bryan Johnson uses body data and all kinds of experiments, trying to slow ageing.",
+              capZh: "《Don't Die》则记录了 Bryan Johnson 怎样用身体数据和各种实验，尝试延缓衰老。",
+              source: "public"
             }
           ]
         },
@@ -1593,37 +1526,6 @@ window.GM = {
           title: { en: "Questions from the room", zh: "现场提出的问题" },
           en: "Your questions, as they come.",
           zh: "欢迎提问。"
-        },
-        {
-          type: "details",
-          summary: { en: "A few short answers", zh: "几句短答" },
-          blocks: [
-            {
-              type: "paras",
-              items: [
-                {
-                  en: "One word for Goldfish Mayhem: Mo lei tau. It’s chaotic, absurd, funny, emotional, and very rooted in Southern Chinese culture.",
-                  zh: "用一个词形容《金魚街大亂鬥》：无厘头。它混乱、荒诞、好笑、有感情，而且深深扎在华南文化里。",
-                  source: "interview"
-                },
-                {
-                  en: "The AI tool I can’t live without: ChatGPT. Not only because I have worked with OpenAI. He really feels like a creative partner. I talk to him every day.",
-                  zh: "我离不开的一个 AI 工具：ChatGPT。不只是因为我和 OpenAI 合作过。他真的像我的创意伙伴。我每天都在和他说话。",
-                  source: "interview"
-                },
-                {
-                  en: "London or Shanghai — which shows up more in my work? Neither, and both. The work is made from fragments of every city I have lived in — London, Shanghai, Foshan, Tokyo — stitched into one imagined world.",
-                  zh: "伦敦还是上海——哪一个更多出现在我的作品里？都不是，也都是。作品是由我住过的每座城市的碎片做成的——伦敦、上海、佛山、东京——缝进一个想象的世界。",
-                  source: "interview"
-                },
-                {
-                  en: "If someone teases out a curry cannon, a tarot deck, or an 8G signal vehicle: honestly, I want all of them — and all the superpowers that come with them. That is a joke from a rapid-fire round, not a plot summary.",
-                  zh: "如果有人拿咖喱炮、塔罗牌，或 8G 信号车来打趣：老实说，我都想要——以及它们附带的所有超能力。这是快问快答里的一句玩笑，不是剧情简介。",
-                  source: "interview"
-                }
-              ]
-            }
-          ]
         }
       ]
     }

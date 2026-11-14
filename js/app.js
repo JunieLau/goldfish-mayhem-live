@@ -58,7 +58,7 @@
 
   function isNaturalImage(img) {
     if (!img) return false;
-    if (img.natural || img.modest || img.sheet || img.poster || img.heightSheet) return true;
+    if (img.natural || img.modest || img.sheet || img.poster || img.expression || img.heightSheet) return true;
     const src = img.src || "";
     return (
       src.indexOf("assets/characters/") === 0 ||
@@ -506,6 +506,11 @@
         renderFig(Object.assign({ natural: true, sheet: true }, img), `${idxPrefix}-sheet-${i}`)
       )
       .join("");
+    const expressions = (b.expressions || [])
+      .map((img, i) =>
+        renderFig(Object.assign({ natural: true, expression: true }, img), `${idxPrefix}-expr-${i}`)
+      )
+      .join("");
     const posters = (b.posters || [])
       .map((img, i) =>
         renderFig(Object.assign({ natural: true, poster: true }, img), `${idxPrefix}-poster-${i}`)
@@ -515,6 +520,7 @@
       <h3 class="character-name">${textPair({ en: b.nameEn, zh: b.nameZh })}</h3>
       <div class="character-fields">${fields}</div>
       ${sheets ? `<div class="char-sheets">${sheets}</div>` : ""}
+      ${expressions ? `<div class="char-expressions">${expressions}</div>` : ""}
       ${posters ? `<div class="char-posters">${posters}</div>` : ""}
     </section>`;
   }
@@ -608,6 +614,11 @@
           <div class="subh">${textPair(b.title)}</div>
           ${rich(b, "para")}
         </div>`;
+      case "section":
+        return `<section class="mod section-block">
+          <div class="subh">${textPair(b.summary || b.title)}</div>
+          <div class="section-body">${(b.blocks || []).map((bb, i) => renderBlock(bb, idxPrefix + "-s" + i)).join("")}</div>
+        </section>`;
       case "details":
         return `<details class="fold">
           <summary>${textPair(b.summary)}</summary>
