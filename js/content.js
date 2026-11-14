@@ -28,8 +28,7 @@ window.GM = {
   },
 
   sourcesMap: {
-    zcool: { en: "Zcool talk", zh: "站酷讲稿" },
-    deck: { en: "Zcool deck", zh: "站酷 PPT" },
+    public: { en: "Publicly stated", zh: "已公开" },
     interview: { en: "Interview", zh: "访谈" },
     site: { en: "Official site", zh: "官网" },
     ig: { en: "Instagram", zh: "Instagram" },
@@ -44,37 +43,25 @@ window.GM = {
     titleZh: "金魚街大亂鬥",
     ghost: "金魚街",
     lead: {
-      en: "Hello — I’m Junie. This page is here so I can walk you through who I am, why I made Goldfish Mayhem, how the film was built, and what I want to explore next.",
-      zh: "Hello，大家好，我是 Junie。这个页面是我在直播里介绍自己、讲述《金魚街大亂鬥》为什么诞生、它是怎样做出来的，以及我接下来想探索什么时，会一起打开的讲稿页。",
-      source: "zcool"
+      en: "My name is Junie Lau. I am a director and creative based between London and Shanghai.",
+      zh: "我叫 Junie Lau，是一名常驻伦敦和上海两地的导演和创意工作者。",
+      source: "interview"
     },
     images: {
-      type: "images",
-      hero: true,
+      type: "slides",
       items: [
         {
-          src: "assets/deck/character-poster.jpg",
-          altEn: "Key art of three girls from Goldfish Mayhem, with the title 金魚街大亂鬥",
-          altZh: "《金魚街大亂鬥》三位女孩主视觉，标题为金魚街大亂鬥",
-          capEn: "Key art from the Zcool talk deck, with the confirmed on-asset title 金魚街大亂鬥.",
-          capZh: "来自站酷演讲PPT的主视觉。片名在画面上的写法是「金魚街大亂鬥」。",
-          source: "deck",
-          contain: true,
-          natural: true
-        },
-        {
-          src: "assets/deck/street-banner.jpg",
-          altEn: "A crowded street under a red banner reading 2026 金魚街小霸王争霸赛",
-          altZh: "一条热闹的街道，横幅上写着2026金魚街小霸王争霸赛",
-          capEn: "A street image from the same deck. I do not treat this as a photograph of the real childhood street downstairs — the film’s Goldfish Street is fictional, even though it grows out of real places.",
-          capZh: "同一份PPT里的街道画面。我不会把它说成家楼下那条真实金鱼街的照片——电影里的金鱼街是虚构的，只是从真实的地方生长出来。",
-          source: "deck"
+          src: "assets/slides/slide-13.jpg",
+          altEn: "A full typographic title page for Goldfish Mayhem — 金魚街大亂鬥 — beside the street and the three-girl key art",
+          altZh: "《金魚街大亂鬥》完整标题页，旁边是街道画面与三位女孩的主视觉",
+          capEn: "The typographic title I use for this film: 金魚街大亂鬥, Goldfish Mayhem.",
+          capZh: "我为这部影片使用的标题页：金魚街大亂鬥，Goldfish Mayhem。"
         }
       ]
     },
     note: {
-      en: "On my official site, the Chinese title is written in simplified characters as 金鱼街大乱斗. In this page I keep 金魚街大亂鬥, the form used on the film’s key art and in the Zcool talk.",
-      zh: "我的官网中文页使用简体写法「金鱼街大乱斗」。这个页面里，影片标题沿用设定图和站酷讲稿中的「金魚街大亂鬥」。",
+      en: "On my official site, the Chinese title is written in simplified characters as 金鱼街大乱斗. On this page I keep 金魚街大亂鬥, the form used on the film’s key art.",
+      zh: "我的官网中文页使用简体写法「金鱼街大乱斗」。这个页面里，影片标题沿用设定图上的「金魚街大亂鬥」。",
       source: "site"
     }
   },
@@ -87,34 +74,74 @@ window.GM = {
       titleZh: "自我介绍",
       navEn: "Introducing myself",
       navZh: "自我介绍",
-      ghost: "创造者",
+      ghost: "导演",
       blocks: [
         {
           type: "lede",
-          en: "Each time someone asks me to introduce myself, I hesitate a little. In recent years people have grown used to calling me a director. If I can choose, I still prefer the word creator — 创造者. I only gradually had the chance to become a director after I started using AI. Before that, I was an art director: the person beside the director, turning the world in their head into something you could actually see — the sets, the costumes, the props, the colour and texture of a whole world.",
-          zh: "其实每次有人让我介绍自己，我都会有点纠结。这几年，大家比较习惯叫我导演，但如果让我自己选，我还是更喜欢「创造者」这个称呼。因为我是开始使用 AI 以后，才慢慢有机会成为导演的。在那之前，我是一名美术指导，就是在导演身边，负责把他脑海里的世界变成现实的人。电影里的场景长什么样，人物穿什么衣服、用什么道具，整个世界是什么颜色和质感，都是我以前做的事情。",
-          source: "zcool"
+          en: "My name is Junie Lau. I am a director and creative based between London and Shanghai.",
+          zh: "我叫 Junie Lau，是一名常驻伦敦和上海两地的导演和创意工作者。",
+          source: "interview"
         },
         {
-          type: "images",
-          cols: 2,
+          type: "paras",
           items: [
             {
-              src: "assets/deck/junie-bookshelf.jpg",
-              altEn: "Junie Lau at a keyboard by a window, with bookshelves behind her",
-              altZh: "Junie Lau 坐在窗边的键盘前，身后是书架",
-              capEn: "A portrait used in the Zcool deck.",
-              capZh: "站酷PPT中使用的肖像。",
-              source: "deck"
+              en: "I create futuristic visual narratives for leading global brands and celebrities across fashion films, music videos, advertising, and AI cinema.",
+              zh: "我为全球领先品牌和名人创作未来感视觉叙事作品，创作领域包括时尚电影、音乐录像和广告。",
+              source: "interview"
             },
             {
-              src: "assets/deck/junie-red.jpg",
-              altEn: "Junie Lau in a red sculptural dress, holding a golden trophy",
-              altZh: "Junie Lau 身穿红色雕塑感礼服，手持金色奖杯",
-              capEn: "Another portrait from the same deck.",
-              capZh: "同一份PPT中的另一张肖像。",
-              source: "deck",
-              portrait: true
+              en: "My films have been shown at the Tribeca Film Festival and many international film festivals, and I have also worked with technology companies such as Google, OpenAI, and ByteDance.",
+              zh: "我的影片曾在 Tribeca Film Festival 以及多个国际电影节展映，我也曾与 Google、OpenAI、ByteDance 等科技公司合作。",
+              source: "interview"
+            },
+            {
+              en: "By integrating AI into moving images, I am trying to develop a post-digital cinematic language — avant-garde, hyper-modern, and deeply exploratory. My work explores digital identity, digital humanities, and digital ontology with both emotional depth and critical reflection.",
+              zh: "通过将 AI 融入动态影像创作，我正在尝试发展一种后数字时代的电影语言——前卫、超现代，并且具有深度探索性。我的作品以情感深度和批判性思考，持续探索数字身份、数字人文学和数字本体论。",
+              source: "interview"
+            },
+            {
+              en: "I am interested in how questions like “Who am I?” and “Where is humanity going?” are changing in a world shaped by new technologies, algorithms, data, and simulation.",
+              zh: "我感兴趣的是，在一个由新技术、算法、数据和模拟塑造的世界里，“我是谁？”以及“人类将走向哪里？”这些问题正在如何发生改变。",
+              source: "interview"
+            }
+          ]
+        },
+        {
+          type: "para",
+          en: "These four pages are how I walk through that introduction. I am showing each one in full, so the typography, the lists and the portraits stay together.",
+          zh: "下面这四页，就是我用来做这段自我介绍的完整画面。每一页我都会整页展开，排版、名单和肖像都保持原样。"
+        },
+        {
+          type: "slides",
+          items: [
+            {
+              src: "assets/slides/slide-01.jpg",
+              altEn: "A complete introduction page headed “我是一名青年导演?”, with a short list of films and awards and a portrait",
+              altZh: "完整的自我介绍页，标题为「我是一名青年导演?」，旁边是影片、奖项与一张肖像",
+              capEn: "The first page I walk through in this introduction: I am a director, with a short list of films and awards I can already share.",
+              capZh: "这段自我介绍翻开的第一页：我是一名导演，上面有我已经可以分享的影片和奖项。"
+            },
+            {
+              src: "assets/slides/slide-02.jpg",
+              altEn: "A complete page of international film-festival invitations and creative milestones, including Tribeca",
+              altZh: "完整一页：国际电影节邀请与创作里程碑，其中包括 Tribeca",
+              capEn: "Festivals and milestones I have already reached, including invitations to the Tribeca Film Festival, and work as a co-director on Our T2 Remake.",
+              capZh: "我已经走到的电影节和创作里程碑，包括受邀前往 Tribeca Film Festival，以及担任《Our T2 Remake》的联合导演。"
+            },
+            {
+              src: "assets/slides/slide-03.jpg",
+              altEn: "A complete page headed “我是一名艺术家?”, with collaborations, a Forbes profile, and university invitations",
+              altZh: "完整一页，标题为「我是一名艺术家?」，上面有合作、福布斯专访和高校邀请",
+              capEn: "I also work as an artist. This page brings together collaborations with Google and OpenAI, a Forbes profile, and invitations to speak at universities including Tsinghua University and Peking University.",
+              capZh: "我也做艺术家的工作。这一页把与 Google、OpenAI 的合作、《福布斯》专访，以及包括清华、北大在内的高校邀请放在一起。"
+            },
+            {
+              src: "assets/slides/slide-04.jpg",
+              altEn: "A complete page of figures — 10+, 30+, 40+, 50 — beside a portrait",
+              altZh: "完整一页：10+、30+、40+、50 这些数字，旁边是一张肖像",
+              capEn: "A snapshot of the scale of that work, together with a portrait, as I continue this introduction.",
+              capZh: "这份工作体量的一个速写，旁边是一张肖像。自我介绍从这里再往下走。"
             }
           ]
         },
@@ -122,19 +149,14 @@ window.GM = {
           type: "paras",
           items: [
             {
-              en: "I am a director and creative based between London and Shanghai. I make futuristic visual work across fashion films, music videos, advertising, and AI cinema.",
-              zh: "我是一名常驻伦敦和上海两地的导演和创意工作者。我的创作领域包括时尚电影、音乐录像、广告，以及 AI 电影。",
-              source: "interview"
+              en: "The path there still feels quite ordinary to me. I grew up in Guangdong, later studied in London, worked in fashion and advertising, and only then, because of AI, found my way into directing. When Forbes came to interview me, I was genuinely surprised. The title they chose, in September 2026, was “How AI And Peter Gabriel Changed Junie Lau’s Path To Directing.”",
+              zh: "前段时间，《福布斯》给我做了一篇专访。我收到邀请的时候很惊讶，因为我一直觉得自己的经历挺普通的：一个在广东长大的女孩，后来去伦敦读书，在时尚和广告影视行业摸爬滚打，最后因为 AI，走上了导演这条路。2026 年 9 月刊出的标题是：《How AI And Peter Gabriel Changed Junie Lau’s Path To Directing》。",
+              source: "public"
             },
             {
-              en: "The path there still feels quite ordinary to me. I grew up in Guangdong, later studied in London, worked in fashion and advertising, and only then, because of AI, found my way into directing. When Forbes came to interview me, I was genuinely surprised.",
-              zh: "前段时间，《福布斯》给我做了一篇专访。我收到邀请的时候很惊讶，因为我一直觉得自己的经历挺普通的：一个在广东长大的女孩，后来去伦敦读书，在时尚和广告影视行业摸爬滚打，最后因为 AI，走上了导演这条路。",
-              source: "zcool"
-            },
-            {
-              en: "Apart from “director”, some people have also started calling me an artist. I still feel a certain awe for that word. As a child I loved the photographer Chen Man, because she had such a distinct personal eye. So today I would rather talk about how I actually got here than recite a list of results.",
-              zh: "不过，除了导演，最近也有人开始叫我艺术家。我对这个词其实一直挺敬畏的。小时候我很喜欢摄影师陈漫，因为她有特别鲜明的个人审美。所以比起列举成绩，我更想聊聊自己到底是怎么走到这里的。",
-              source: "zcool"
+              en: "Apart from “director”, some people have also started calling me an artist. I still feel a certain awe for that word. As a child I loved the photographer Chen Man, because she had such a distinct personal eye. So I would rather talk about how I actually got here than only recite a list of results.",
+              zh: "不过，除了导演，最近也有人开始叫我艺术家。我对这个词其实一直挺敬畏的。小时候我很喜欢摄影师陈漫，因为她有特别鲜明的个人审美。所以比起只列举成绩，我更想聊聊自己到底是怎么走到这里的。",
+              source: "public"
             }
           ]
         },
@@ -142,37 +164,17 @@ window.GM = {
           type: "para",
           en: "In 2018, during my master’s at University of the Arts London, I started working with early artificial intelligence, virtual reality, mixed reality, and interactive art. In 2020, during the pandemic, I returned to China. I had few industry contacts then, and becoming a director overnight was not realistic, so I chose a job close to directing: art direction. On set I worked with carpenters, prop makers, gaffers and cinematographers, and learned how to make an idea physically real.",
           zh: "2018 年，我在伦敦艺术大学读硕士，开始接触早期的人工智能、虚拟现实、混合现实，还有交互艺术。2020 年疫情期间，我回到中国。那时候没有什么行业人脉，想直接当导演不太现实，所以我选择了一个离导演很近的工作：美术指导。在片场，我跟木工、道具师、灯光师、摄影师一起工作，学习怎么把一个想法真正做出来。",
-          source: "zcool"
+          source: "public"
         },
         {
-          type: "images",
-          cols: 3,
+          type: "slides",
           items: [
             {
-              src: "assets/deck/drawing-1999.jpg",
-              altEn: "A childhood oil-pastel drawing of a sun, a house and a yellow winged creature",
-              altZh: "一幅儿童油画棒画，上面有太阳、房子和一只黄色的长翅膀生物",
-              capEn: "A drawing from Children’s Day in 1999 — sun, house, and all kinds of strange things, made with oil pastels.",
-              capZh: "1999 年六一儿童节的画：太阳、房子，还有各种奇奇怪怪的东西，是用油画棒画的。",
-              source: "zcool",
-              natural: true
-            },
-            {
-              src: "assets/deck/child-1999.jpg",
-              altEn: "A childhood photograph of Junie Lau",
-              altZh: "Junie Lau 童年照片",
-              capEn: "A childhood photograph shown in the Zcool deck beside that drawing.",
-              capZh: "站酷PPT里，和那幅画放在一起的童年照片。",
-              source: "deck",
-              portrait: true
-            },
-            {
-              src: "assets/deck/art-director.jpg",
-              altEn: "Film-set photographs from art-direction work: built streets, monitors and a studio floor",
-              altZh: "美术指导工作中的片场照片：搭建的街道、监视器和摄影棚",
-              capEn: "Later, as an art director, I built worlds with timber frames, metal structures, fibreglass, 3D printing, LED screens and physical props.",
-              capZh: "后来做美术指导时，我开始用木结构、金属骨架、玻璃钢、3D 打印、LED 屏幕和实体道具，搭建真实的场景。",
-              source: "zcool"
+              src: "assets/slides/slide-06.jpg",
+              altEn: "A complete timeline page: a 1999 drawing and childhood photograph, art-direction work in 2020, Disco Diffusion in February 2022, and The Court for Peter Gabriel in May 2023",
+              altZh: "完整的时间线页：1999 年的画和童年照片、2020 年的美术指导、2022 年 2 月的 Disco Diffusion，以及 2023 年 5 月为 Peter Gabriel 创作的《The Court》",
+              capEn: "This page keeps the whole path on one layout: a drawing from Children’s Day in 1999, art direction in July 2020, making worlds with Disco Diffusion in February 2022, and The Court, the AI music video for Peter Gabriel, in May 2023.",
+              capZh: "这一页把整条路径放在同一张版式上：1999 年六一儿童节的画，2020 年 7 月的美术指导，2022 年 2 月用 Disco Diffusion 创造世界，以及 2023 年 5 月为 Peter Gabriel 创作的 AI MV《The Court》。"
             }
           ]
         },
@@ -182,42 +184,12 @@ window.GM = {
             {
               en: "In February 2022 I began using an early tool called Disco Diffusion. You had to generate an image in a way that felt almost like writing code, and each picture was slow. But it was the first time I felt that the strange, abstract images in my head could appear in this way.",
               zh: "直到 2022 年 2 月，我开始使用一个叫 Disco Diffusion 的早期 AI 工具。那时候生成一张图很慢，操作方式也有点像写代码。但我第一次觉得，原来脑子里那些很奇怪、很抽象的画面，可以用这种方式呈现出来。",
-              source: "zcool"
+              source: "public"
             },
             {
               en: "I am easily taken by a three-minute enthusiasm, and I like trying new things. Looking back, though, one thing I never quite gave up: a love of art, and the work of creating worlds. The tools changed — from oil pastels, to sets, to prompts, code and models — but the wish stayed the same: to make the world in my imagination exist.",
               zh: "我其实是个很容易三分钟热度的人，喜欢不断尝试新东西。但最近回头看，我发现这么多年，好像只有一件事一直没有放弃：就是对艺术的热爱，还有创造世界这件事。变的是工具和身份，没变的是我一直想把想象中的世界做出来。",
-              source: "zcool"
-            }
-          ]
-        },
-        {
-          type: "images",
-          cols: 3,
-          items: [
-            {
-              src: "assets/deck/disco-diffusion.jpg",
-              altEn: "A screenshot of an early Disco Diffusion interface",
-              altZh: "早期 Disco Diffusion 界面截图",
-              capEn: "Disco Diffusion, from the Zcool deck’s “creating worlds” timeline.",
-              capZh: "站酷PPT「创造世界」时间线中的 Disco Diffusion。",
-              source: "deck"
-            },
-            {
-              src: "assets/deck/the-court-still.jpg",
-              altEn: "A still from The Court, the AI music video for Peter Gabriel",
-              altZh: "为 Peter Gabriel 创作的 AI 音乐录像《The Court》剧照",
-              capEn: "A still from The Court, made for Peter Gabriel.",
-              capZh: "为 Peter Gabriel 创作的《The Court》画面。",
-              source: "deck"
-            },
-            {
-              src: "assets/deck/the-court-grid.jpg",
-              altEn: "A grid of stills from The Court",
-              altZh: "《The Court》画面拼图",
-              capEn: "More frames from The Court, as shown in the talk deck.",
-              capZh: "站酷PPT中《The Court》的更多画面。",
-              source: "deck"
+              source: "public"
             }
           ]
         },
@@ -225,40 +197,71 @@ window.GM = {
           type: "para",
           en: "What really changed the direction of my career was an AI music video I made for Peter Gabriel in 2023. It won the global championship of Stability AI’s #DiffuseTogether competition. The work later received a silver award at an international AI film festival — in a later interview I said this was the Silver Award at the second Runway International AI Film Festival — and more people began to come to me for collaborations. Slowly I moved from art direction into directing.",
           zh: "真正改变我职业方向的，是 2023 年为音乐人 Peter Gabriel 创作的一支 AI MV。它获得了 Stability AI 举办的比赛全球冠军。后来作品又拿到了国际 AI Film Festival 的银奖；在后来的访谈里，我说明这是第二届 Runway 国际 AI 电影节的银奖。越来越多人开始找我合作，我也慢慢从美术指导走到了导演的位置。",
-          source: "zcool"
+          source: "public"
+        },
+        {
+          type: "slides",
+          items: [
+            {
+              src: "assets/slides/slide-07.jpg",
+              altEn: "A complete typographic page: “The best way to predict the future is to create it.” / 「预测未来最好的方式，是创造它。」",
+              altZh: "完整的标题页：「预测未来最好的方式，是创造它。」 / The best way to predict the future is to create it.",
+              capEn: "A line I come back to: the best way to predict the future is to create it.",
+              capZh: "我常回到的一句话：预测未来最好的方式，是创造它。"
+            },
+            {
+              src: "assets/slides/slide-08.jpg",
+              altEn: "A complete chapter page headed 创造世界, a figure walking through a red forest of flowers",
+              altZh: "完整的章节页，标题为「创造世界」，一个人走在红色的花林里",
+              capEn: "Creating worlds — the thread I keep returning to.",
+              capZh: "创造世界——我一直回到的那条线。"
+            }
+          ]
         },
         {
           type: "quote",
           en: "The best way to predict the future is to create it.",
           zh: "预测未来最好的方式，是创造它。",
-          citeEn: "The theme I shared on the Zcool stage.",
-          citeZh: "我在站酷台上分享的主题。",
-          source: "zcool"
+          citeEn: "A line I often return to.",
+          citeZh: "我常回到的一句话。",
+          source: "public"
         },
         {
           type: "para",
           en: "After I began making work with AI, I was invited to collaborate with OpenAI, Google and ByteDance. Some of those partners gave me enough room not only to finish a film, but to put in questions I really care about. What If, Mother, made with OpenAI, comes from a question I had been carrying: if I had never existed, what kind of life would my mother have lived? Dear “Stranger”, made with Google, is about my grandmother. I almost never told her “I love you” to her face; after she was gone, I tried to finish, on screen, a conversation that never happened in life.",
           zh: "开始使用 AI 创作以后，我陆续收到一些合作邀请，包括和 OpenAI、Google、字节跳动的项目。很幸运，有些合作方给了我比较大的创作空间。我和 OpenAI 合作的《What If, Mother》，来自一个我一直在想的问题：如果这个世界上从来没有我，我的妈妈会过着怎样的人生？和 Google 合作的《Dear “Stranger”》，则是关于我奶奶的故事。以前我很少当面跟她说「我爱你」，等她离开以后，我试着用影像去完成一段现实里没能发生的对话。",
-          source: "zcool"
+          source: "public"
         },
         {
           type: "para",
           en: "The fashion brand REVAN later invited me to make images for a new season, taking inspiration from a blind box. I was not handed a brief first; we imagined together what kind of world those little characters might live in. The work also became an exhibition, and I appeared as an artist in their campaign. I feel AI is changing the old client–agency relationship: a filmmaker is no longer only the person who executes at the end, but can be invited earlier, when a world is still being built.",
           zh: "时尚品牌 REVAN 邀请我为一个新季度时尚系列，以盲盒为灵感创作影像。我不是先拿到一份需求，而是一起想象：这些小角色如果有自己的生活，会住在什么样的世界里？最后作品也做成了线下展览，而我也作为艺术家出现在他们新系列的时尚大片里面。我觉得 AI 让甲乙方关系正在改变。创作者不只是最后负责执行的人，也有机会更早地参与一个世界的构建。",
-          source: "zcool"
+          source: "public"
         },
         {
           type: "para",
           en: "From the beginning of last year I also started to receive invitations from independent film companies overseas, to develop original film IPs with writers and production teams. There is the science-fiction story ZERO, the youth road story 51IT, the women’s revenge action film 猩红木兰, the cyber police story MADAM P!NK, and, most recently, Goldfish Mayhem — 金魚街大亂鬥. They often share one thing: the heroines are not necessarily perfect. They can be impulsive, rebellious, even make a complete mess. I like characters who feel alive in that way.",
           zh: "从去年年初开始，我也陆续收到海外独立电影公司的邀请，和编剧、制作团队一起开发原创电影 IP。这里有科幻故事《ZERO》，青春爱情公路故事《51IT》，女性复仇动作片《猩红木兰》，还有赛博女警故事《MADAM P!NK》，以及最近推出的《金魚街大亂鬥》。它们经常有一个共同点：女主角不一定完美。她们可能冲动、叛逆，甚至把事情搞得一团糟。我反而很喜欢这样鲜活的角色。",
-          source: "zcool"
+          source: "public"
+        },
+        {
+          type: "slides",
+          items: [
+            {
+              src: "assets/slides/slide-12.jpg",
+              altEn: "A complete page of original film IPs, including ZEЯRO, 51IST, 猩紅木蘭, MADAM PINK, and 金魚街大亂鬥 × WONDERSTUDIOS",
+              altZh: "完整一页原创电影 IP，包括 ZEЯRO、51IST、猩紅木蘭、MADAM PINK，以及「金魚街大亂鬥 × WONDERSTUDIOS」",
+              capEn: "Original film IPs I have been developing with production teams, including Goldfish Mayhem — 金魚街大亂鬥 × WONDERSTUDIOS.",
+              capZh: "我和制作团队一起开发的原创电影 IP，其中包括《金魚街大亂鬥》——金魚街大亂鬥 × WONDERSTUDIOS。"
+            }
+          ]
         },
         {
           type: "callout",
           kind: "conflict",
-          en: "On the Zcool slides, some of those titles appear in other forms: ZEЯRO, 51IST, 猩紅木蘭, MADAM PINK, and 金魚街大亂鬥 × WONDERSTUDIOS. I am not collapsing them into a single official spelling here.",
-          zh: "在站酷PPT里，这些片名还有另外的写法：ZEЯRO、51IST、猩紅木蘭、MADAM PINK，以及「金魚街大亂鬥 × WONDERSTUDIOS」。这里我并列写出，不把它们收成一个「标准官方拼法」。",
-          source: "deck"
+          en: "Some of those titles also appear in other forms I have already published: ZEЯRO, 51IST, 猩紅木蘭, MADAM PINK, and 金魚街大亂鬥 × WONDERSTUDIOS. I am not collapsing them into a single official spelling here.",
+          zh: "这些片名还有我已经公开用过的另外写法：ZEЯRO、51IST、猩紅木蘭、MADAM PINK，以及「金魚街大亂鬥 × WONDERSTUDIOS」。这里我并列写出，不把它们收成一个「标准官方拼法」。",
+          source: "public"
         },
         {
           type: "details",
@@ -268,8 +271,8 @@ window.GM = {
               type: "paras",
               items: [
                 {
-                  en: "I won’t read a long honours list in the live talk. The facts below are only those already in the Zcool talk, my interview, or the confirmed notes on my official site’s SOURCES.md (LinkedIn is treated there as the biographical source of record).",
-                  zh: "直播里我不会把奖项从头念到尾。下面只列出已经出现在站酷讲稿、访谈，或官网 SOURCES.md 确认记录里的事实（那里把 LinkedIn 作为履历的权威来源）。",
+                  en: "I won’t read a long honours list in the live conversation. The facts below are only those already in my public first-person account, my interview, or the confirmed notes on my official site’s SOURCES.md (LinkedIn is treated there as the biographical source of record).",
+                  zh: "直播里我不会把奖项从头念到尾。下面只列出已经出现在我公开的第一人称讲述、访谈，或官网 SOURCES.md 确认记录里的事实（那里把 LinkedIn 作为履历的权威来源）。",
                   source: "sources"
                 },
                 {
@@ -319,7 +322,7 @@ window.GM = {
           type: "lede",
           en: "Goldfish Mayhem is a cyber-folk action comedy. The story is set in 2035, on a noisy, chaotic future Goldfish Street. People there work frantically and modify their bodies, hoping one day to reach the Cloud world high above. Our three leads are three girls who keep getting into trouble. To rescue their foster mother, 芬姨, who is about to be sacrificed, they break into that Cloud world — and find a secret experiment about data immortality.",
           zh: "今天想跟大家分享一下《金魚街大亂鬥》。它是一部赛博民俗动作喜剧，故事发生在 2035 年一条热闹又混乱的未来金鱼街。街坊们拼命赚钱、改造身体，都希望有一天能去到高高在上的「云端」世界。但我们的三个主角，是三个爱闯祸的女孩。她们为了救回即将被献祭的养母芬姨，闯进云端世界，结果发现了一个关于数据永生的秘密实验。",
-          source: "zcool"
+          source: "public"
         },
         {
           type: "videos",
@@ -343,22 +346,26 @@ window.GM = {
         {
           type: "callout",
           kind: "conflict",
-          en: "Two public introductions sit side by side here; I am not merging them into one invented sentence. On the Zcool stage I called it a cyber-folk action comedy set in 2035, about three troublemaking girls rescuing their foster mother 芬姨 from being sacrificed, entering the Cloud, and discovering a secret experiment about data immortality. My official site’s one-liner is: “Cantonese cyberpunk world of kung fu and robo-cops: three sisters save their aunt from cyber elites.” / 「粤式赛博朋克世界，功夫与机械警察：三姐妹从赛博精英手中救出姑妈。」 The site also lists Year 2026 and my role as Director — that is the work year of the film, not necessarily the story year. The story year I used in the talk is 2035.",
-          zh: "这里并列两则已经公开的介绍，我不会把它们合成一句新的故事。站酷台上，我把它说成一部发生在 2035 年的赛博民俗动作喜剧：三个爱闯祸的女孩，为了救回即将被献祭的养母芬姨，闯进云端，发现了关于数据永生的秘密实验。官网的一句话是：「粤式赛博朋克世界，功夫与机械警察：三姐妹从赛博精英手中救出姑妈。」官网同时标注年份 2026、职务为导演——那是作品年份，不一定是故事发生的年份。讲稿里我使用的故事年份是 2035。",
+          en: "Two public introductions sit side by side here; I am not merging them into one invented sentence. I have described it as a cyber-folk action comedy set in 2035, about three troublemaking girls rescuing their foster mother 芬姨 from being sacrificed, entering the Cloud, and discovering a secret experiment about data immortality. My official site’s one-liner is: “Cantonese cyberpunk world of kung fu and robo-cops: three sisters save their aunt from cyber elites.” / 「粤式赛博朋克世界，功夫与机械警察：三姐妹从赛博精英手中救出姑妈。」 The site also lists Year 2026 and my role as Director — that is the work year of the film, not necessarily the story year. The story year I have used when telling this story is 2035.",
+          zh: "这里并列两则已经公开的介绍，我不会把它们合成一句新的故事。我把它说成一部发生在 2035 年的赛博民俗动作喜剧：三个爱闯祸的女孩，为了救回即将被献祭的养母芬姨，闯进云端，发现了关于数据永生的秘密实验。官网的一句话是：「粤式赛博朋克世界，功夫与机械警察：三姐妹从赛博精英手中救出姑妈。」官网同时标注年份 2026、职务为导演——那是作品年份，不一定是故事发生的年份。我讲述这个故事时使用的故事年份是 2035。",
           source: "site"
         },
         {
-          type: "images",
-          cols: 2,
+          type: "slides",
           items: [
             {
-              src: "assets/deck/street-banner.jpg",
-              altEn: "Crowded Goldfish Street under a festival banner",
-              altZh: "横幅下热闹的金鱼街",
-              capEn: "A Goldfish Street image from the talk deck.",
-              capZh: "站酷PPT中的金鱼街画面。",
-              source: "deck"
-            },
+              src: "assets/slides/slide-16.jpg",
+              altEn: "A complete page headed “我是谁?”, mapping the film’s world, the three girls, and ideas such as cyber-folk and data immortality",
+              altZh: "完整一页，标题为「我是谁?」，把影片世界、三个女孩，以及赛博民俗、数据永生等想法放在一起",
+              capEn: "A page I use when I ask “Who am I?” of this world — the three girls, the street, the Cloud, and the ideas around them, kept on one layout.",
+              capZh: "我问「我是谁?」时用的一页：三个女孩、金鱼街、云端，以及旁边那些想法，都留在同一张版式上。"
+            }
+          ]
+        },
+        {
+          type: "images",
+          cols: 1,
+          items: [
             {
               src: "assets/stills/goldfish-3.jpg",
               altEn: "Three girls gathered around a glowing device in a garden courtyard",
@@ -375,7 +382,7 @@ window.GM = {
             {
               en: "It sounds like science fiction, but it starts in my childhood. Goldfish Mayhem is actually the first short film I have made that truly comes from my hometown. I am from Foshan, Guangdong, a small city very close to Hong Kong. At the age of eight I went with my mother to 鸿胜武馆, and saw people practise kung fu at close range for the first time. Downstairs from my childhood home there really was a street called Goldfish Street. And I grew up watching a great many Hong Kong films, especially Stephen Chow’s comedies.",
               zh: "听上去很科幻，但它的起点其实是我的童年。《金魚街大亂鬥》其实是我第一部真正从自己家乡出发创作的短片。我来自广东佛山，一个离香港很近的小城市。八岁时我跟妈妈去过鸿胜武馆，第一次近距离看人练功夫。我小时候家楼下也真的有一条金鱼街。再加上我从小看了很多香港电影，特别喜欢周星驰的喜剧。",
-              source: "zcool"
+              source: "public"
             },
             {
               en: "Guangdong is quite different from many other parts of China. We grew up speaking Cantonese, not Mandarin, as our main language. Because Foshan is close to Hong Kong, and because part of my family is from Hong Kong, the culture I grew up with was mixed: Guangdong culture, Hong Kong culture, British influence, Japanese pop culture, and different parts of Chinese culture. I think that mixture slowly shaped my visual style, and made me want to invent a visual language rather than only follow existing ones.",
@@ -390,17 +397,21 @@ window.GM = {
           ]
         },
         {
-          type: "images",
-          cols: 2,
+          type: "slides",
           items: [
             {
-              src: "assets/deck/foshan-lion.jpg",
-              altEn: "A lion-dance head in front of a building inscribed 佛山鸿胜纪念",
-              altZh: "佛山鸿胜纪念建筑前的醒狮",
-              capEn: "A lion dance photographed in front of 佛山鸿胜 — from the Zcool deck, beside the line about taking Chinese culture as a root.",
-              capZh: "站酷PPT中，佛山鸿胜纪念建筑前的醒狮，和「以中国文化为根」放在一起。",
-              source: "deck"
-            },
+              src: "assets/slides/slide-17.jpg",
+              altEn: "A complete page: “以中国文化为根，让东方故事走向世界，与未来对话,” with practice stills and a lion dance in front of 佛山鸿胜纪念",
+              altZh: "完整一页：「以中国文化为根，让东方故事走向世界，与未来对话。」旁边是习武画面，以及佛山鸿胜纪念建筑前的醒狮",
+              capEn: "Taking Chinese culture as a root — practice, a lion dance, and 佛山鸿胜, kept on one full page.",
+              capZh: "「以中国文化为根」——习武、醒狮，以及佛山鸿胜，都留在完整的一页上。"
+            }
+          ]
+        },
+        {
+          type: "images",
+          cols: 1,
+          items: [
             {
               src: "assets/stills/goldfish-6.jpg",
               altEn: "A girl mid-kick beside a lion-headed food cart on a wet street",
@@ -464,7 +475,7 @@ window.GM = {
               titleEn: "BOBO",
               titleZh: "BOBO",
               variantsEn: "Published form: BOBO (talk deck, interview, Instagram).",
-              variantsZh: "已公开的写法：BOBO（站酷PPT、访谈、Instagram）。",
+              variantsZh: "已公开的写法：BOBO（访谈、Instagram）。",
               en: "BOBO carries my angry and rebellious side, and the part of me that wants to protect the people around me.",
               zh: "BOBO 有我暴躁、叛逆，也想保护身边人的一面。",
               source: "interview"
@@ -473,7 +484,7 @@ window.GM = {
               titleEn: "风水妹 / Fengshui Girl",
               titleZh: "风水妹",
               variantsEn: "Talk deck and Xiaohongshu: 风水妹. Interview: Fengshui Girl. Instagram: FENG SHUI GIRL. These are published variants, not one official standard.",
-              variantsZh: "站酷PPT和小红书：风水妹。访谈英文：Fengshui Girl。Instagram：FENG SHUI GIRL。这些都是已公开的不同写法，我不会把它们收成一个标准官方名。",
+              variantsZh: "小红书：风水妹。访谈英文：Fengshui Girl。Instagram：FENG SHUI GIRL。这些都是已公开的不同写法，我不会把它们收成一个标准官方名。",
               en: "She carries the part of me that has to perform in social situations, and sometimes wear another face.",
               zh: "风水妹有我在社交场合里需要表演、需要戴上另一种面具的一面。",
               source: "interview"
@@ -482,7 +493,7 @@ window.GM = {
               titleEn: "细细粒 / Xixili",
               titleZh: "细细粒",
               variantsEn: "Talk deck and Xiaohongshu: 细细粒. Interview: Xixili. Instagram: LITTLE ONE. Again, published variants only.",
-              variantsZh: "站酷PPT和小红书：细细粒。访谈英文：Xixili。Instagram：LITTLE ONE。同样只并列已公开的写法。",
+              variantsZh: "小红书：细细粒。访谈英文：Xixili。Instagram：LITTLE ONE。同样只并列已公开的写法。",
               en: "She carries my curiosity about new technology, strange inventions, different dimensions, and the unknown.",
               zh: "细细粒则有我对新科技、奇怪发明、多维度世界和未知事物的好奇心。",
               source: "interview"
@@ -493,7 +504,7 @@ window.GM = {
           type: "callout",
           kind: "editorial",
           en: "On Xiaohongshu, in a public reply on episode two, I already mixed the forms 「BOBO、风水妹、细细粒」. The official site describes “three sisters” saving their “aunt”; in the talk and the interview I call 芬姨 our foster mother (养母). I am leaving those public wordings as they are.",
-          zh: "我在小红书第二集的公开回复里，已经混用过「BOBO、风水妹、细细粒」这种写法。官网说的是「三姐妹」救出「姑妈」；在讲稿和访谈里，我称芬姨为养母。这些已经公开的用词，我都保留原样。",
+          zh: "我在小红书第二集的公开回复里，已经混用过「BOBO、风水妹、细细粒」这种写法。官网说的是「三姐妹」救出「姑妈」；在我已经公开说过的讲述和访谈里，我称芬姨为养母。这些已经公开的用词，我都保留原样。",
           source: "xhs"
         },
         {
@@ -516,7 +527,7 @@ window.GM = {
                 {
                   en: "Another reason I wanted to make this film is that I wanted to shoot the kind of women’s stories I longed to watch as a child. Growing up with kung fu films, I always wondered: why couldn’t the lead be a girl? Girls can be the superheroes who save the world as well. AI has given me a freedom I did not have when budget and scale stood in the way, so I can finally try to put the place I grew up, the culture I love, and a female filmmaker’s point of view into a film world.",
                   zh: "还有一个很重要的原因，是我想拍一些自己小时候特别想看的女性故事。从小看功夫片，我就总在想：为什么主角不能是女孩子？她们也可以是拯救世界的超级英雄。以前很多画面，我受限于预算和制作规模，没有机会真正做出来。现在 AI 给了我过去没有的自由，让我终于可以试着把自己成长的地方、喜欢的文化，以及作为女性创作者的视角放到电影世界里。",
-                  source: "zcool"
+                  source: "public"
                 }
               ]
             }
@@ -526,7 +537,26 @@ window.GM = {
           type: "para",
           en: "This September we held a small invitation-only screening in Los Angeles. The film company invited friends from the local industry, including people from Disney, Netflix, A24 and Fox Animation. It was the first time I sat in a room like that and watched my own work with people from those companies. Afterwards, some of the audience said they had never seen a world like this before. I was happy, because a strange imagination I had kept since childhood had really been seen by someone else. And after finishing the film I also began to ask: once the technology grows stronger and stronger, what stories do I actually want to tell? I think the special thing in a work is its authorship — the filmmaker’s own experience, taste, feeling, and what they truly want to express or criticise.",
           zh: "今年九月，我们在洛杉矶办了一场小型邀请制放映。电影公司邀请了一些当地影视行业的朋友，有来自迪士尼、Netflix、A24、福克斯动画等公司的从业者。那是我第一次坐在这样的放映现场，跟来自不同顶级电影公司的从业者一起看自己的作品。放映结束以后，有观众说，他们以前没有见过这样的世界。我听到的时候很开心，因为一个小时候藏在脑子里的奇怪想象，真的被别人看见了。但做完这部电影，我也开始思考：技术越来越强之后，我究竟想讲什么故事？我觉得，是它的作者性。创作者自己的经历、审美、情感，还有他真正想表达和批判的东西。",
-          source: "zcool"
+          source: "public"
+        },
+        {
+          type: "slides",
+          items: [
+            {
+              src: "assets/slides/slide-14.jpg",
+              altEn: "A complete page of remarks from A24 and Fox Animation after a screening",
+              altZh: "完整一页：放映后 A24 与福克斯动画的评价",
+              capEn: "Remarks I have already shared from that Los Angeles screening, including words from A24 and Fox Animation, kept on one full page.",
+              capZh: "那场洛杉矶放映之后，我已经分享过的评价，包括来自 A24 和福克斯动画的话，留在完整的一页上。"
+            },
+            {
+              src: "assets/slides/slide-15.jpg",
+              altEn: "A complete page of remarks from Disney and Netflix after a screening",
+              altZh: "完整一页：放映后迪士尼与 Netflix 的评价",
+              capEn: "The facing page, with remarks from Disney and Netflix.",
+              capZh: "相对的一页，是来自迪士尼和 Netflix 的评价。"
+            }
+          ]
         },
         {
           type: "links",
@@ -591,8 +621,8 @@ window.GM = {
               kindZh: "Instagram",
               labelEn: "Wonder Studios collaboration reel",
               labelZh: "与 Wonder Studios 的合作短视频",
-              noteEn: "Posted 2026.10.06. The Zcool deck also writes 金魚街大亂鬥 × WONDERSTUDIOS.",
-              noteZh: "发布于 2026.10.06。站酷PPT中也写有「金魚街大亂鬥 × WONDERSTUDIOS」。"
+              noteEn: "Posted 2026.10.06. I have also written this collaboration as 金魚街大亂鬥 × WONDERSTUDIOS.",
+              noteZh: "发布于 2026.10.06。我也把这次合作写为「金魚街大亂鬥 × WONDERSTUDIOS」。"
             }
           ]
         }
@@ -688,20 +718,12 @@ window.GM = {
                   type: "para",
                   en: "I wanted to try placing the things I know — lion dance, kung fu, paper offerings, sweet-soup shops, hawkers, feng shui stalls, and that close, slightly noisy way neighbours live in Guangdong — into a future street. What happens when a lion dance has a mechanical body, or when a Cantonese old street starts to take up cyber prosthetics and memory upload? The Cloud above that street, as I have said, grew out of a rotating restaurant I could only visit if I did well enough at school: a “higher place.”",
                   zh: "我想试试看，能不能把这些我熟悉的东西放进一个未来世界：醒狮、功夫、纸扎、糖水铺、街头小贩、风水摊，还有广东街坊之间那种很亲近、又有点吵吵闹闹的关系。比如醒狮有了机械身体，一条广东老街开始流行赛博义肢和记忆上传，会发生什么事情？而那条街上方的云端，如我所说，来自我小时候只有考好了才有机会去的旋转餐厅：一个「更高的地方」。",
-                  source: "zcool"
+                  source: "public"
                 },
                 {
                   type: "images",
-                  cols: 2,
+                  cols: 1,
                   items: [
-                    {
-                      src: "assets/deck/street-banner.jpg",
-                      altEn: "The crowded street of the film world",
-                      altZh: "影片世界里热闹的街道",
-                      capEn: "Street-level Goldfish Street, from the talk deck.",
-                      capZh: "站酷PPT中，落在地面上的金鱼街。",
-                      source: "deck"
-                    },
                     {
                       src: "assets/stills/goldfish-8.jpg",
                       altEn: "A gilded hall under a red sky",
@@ -782,18 +804,8 @@ window.GM = {
                 },
                 {
                   type: "images",
-                  cols: 3,
+                  cols: 2,
                   items: [
-                    {
-                      src: "assets/deck/character-poster.jpg",
-                      altEn: "Key art of the three girls",
-                      altZh: "三位女孩的主视觉",
-                      capEn: "Key art of the three girls, from the Zcool deck.",
-                      capZh: "站酷PPT中三位女孩的主视觉。",
-                      source: "deck",
-                      contain: true,
-                      natural: true
-                    },
                     {
                       src: "assets/stills/goldfish-3.jpg",
                       altEn: "Three girls around a glowing device",
@@ -945,24 +957,21 @@ window.GM = {
           source: "interview"
         },
         {
-          type: "images",
-          cols: 2,
+          type: "slides",
           items: [
             {
-              src: "assets/deck/foshan-lion.jpg",
-              altEn: "A lion-dance performance in front of 佛山鸿胜",
-              altZh: "佛山鸿胜前的醒狮",
-              capEn: "Lion dance in front of 佛山鸿胜, from the Zcool deck.",
-              capZh: "站酷PPT中，佛山鸿胜前的醒狮。",
-              source: "deck"
+              src: "assets/slides/slide-17.jpg",
+              altEn: "A complete page: taking Chinese culture as a root, with practice stills and a lion dance in front of 佛山鸿胜纪念",
+              altZh: "完整一页：「以中国文化为根」，旁边是习武画面，以及佛山鸿胜纪念建筑前的醒狮",
+              capEn: "The same full page again, here in a closer look at kung fu: practice, the lion dance, and 佛山鸿胜, uncropped.",
+              capZh: "还是完整的这一页，在这里把它放到功夫这一章里再看一遍：习武、醒狮，以及佛山鸿胜，都不裁切。"
             },
             {
-              src: "assets/deck/kungfu-practice.jpg",
-              altEn: "People practising martial movement in a traditional courtyard",
-              altZh: "人们在传统庭院里练习武术动作",
-              capEn: "Practice images shown in the same deck, beside the line about taking Chinese culture as a root.",
-              capZh: "同一份PPT里，和「以中国文化为根」放在一起的习武画面。",
-              source: "deck"
+              src: "assets/slides/slide-18.jpg",
+              altEn: "A complete page: “以女性导演的视角，携手 AI 开拓影像表达的新边界,” with portraits in a study and a workspace",
+              altZh: "完整一页：「以女性导演的视角，携手 AI 开拓影像表达的新边界。」旁边是书房和创作空间里的肖像",
+              capEn: "From the point of view of a woman director, working with AI to open a new edge of moving-image expression.",
+              capZh: "以女性导演的视角，携手 AI 开拓影像表达的新边界。"
             }
           ]
         },
@@ -977,7 +986,7 @@ window.GM = {
             {
               en: "In Goldfish Mayhem, kung fu is not a decoration I added afterwards. It belongs to the street I grew up with, together with lion dance and neighbourhood life, and it is also how I wanted girl heroes to exist in this world.",
               zh: "在《金魚街大亂鬥》里，功夫不是我事后加上的装饰。它属于我成长中的那条街，和醒狮、街坊生活在一起，也是我希望女性英雄能够存在于这个世界的方式。",
-              source: "zcool"
+              source: "public"
             }
           ]
         },
@@ -1056,9 +1065,9 @@ window.GM = {
           blocks: [
             {
               type: "para",
-              en: "On the Zcool deck I list a Best Hybrid Film award at the AI Film Festival Amsterdam. That award belongs to a different work, the short e^(iπ)+1=0, not to the method of Goldfish Mayhem. I mention it here only so the two are not mixed up.",
-              zh: "在站酷PPT里，我列出了阿姆斯特丹 AI 电影节的最佳混合影片奖。那个奖属于另一部作品，短片《e^(iπ)+1=0》，并不是《金魚街大亂鬥》的制作方法。我在这里提起，只是避免把两件事混在一起。",
-              source: "deck"
+              en: "I have also received a Best Hybrid Film award at the AI Film Festival Amsterdam. That award belongs to a different work, the short e^(iπ)+1=0, not to the method of Goldfish Mayhem. I mention it here only so the two are not mixed up.",
+              zh: "我也获得过阿姆斯特丹 AI 电影节的最佳混合影片奖。那个奖属于另一部作品，短片《e^(iπ)+1=0》，并不是《金魚街大亂鬥》的制作方法。我在这里提起，只是避免把两件事混在一起。",
+              source: "public"
             }
           ]
         }
@@ -1077,27 +1086,17 @@ window.GM = {
           type: "lede",
           en: "What we have talked about so far is work I have already made. I also want to share a little of how I imagine the future — and to keep a clear line between plans I have already named, and ideas I am still exploring.",
           zh: "前面聊的是我已经做过的事情。接下来，想跟大家分享一点我对未来的想象——也会分清：哪些是我已经说过的愿望，哪些还只是仍在探索的构想。",
-          source: "zcool"
+          source: "public"
         },
         {
-          type: "images",
-          cols: 2,
+          type: "slides",
           items: [
             {
-              src: "assets/deck/studio-work.jpg",
-              altEn: "A workspace with screens and reference images",
-              altZh: "一间有屏幕和参考图的工作空间",
-              capEn: "A workspace image from the Zcool deck.",
-              capZh: "站酷PPT中的工作空间画面。",
-              source: "deck"
-            },
-            {
-              src: "assets/deck/ai-world-2022.jpg",
-              altEn: "A dense, colourful imagined garden-world",
-              altZh: "一个浓密、色彩丰富的想象中的花园世界",
-              capEn: "From the deck’s “creating worlds” timeline, when I began making worlds with AI.",
-              capZh: "来自PPT「创造世界」时间线，我开始用 AI 创造世界的阶段。",
-              source: "deck"
+              src: "assets/slides/slide-21.jpg",
+              altEn: "A complete chapter page headed 畅想未来, a figure walking through a field of pink flowers",
+              altZh: "完整的章节页，标题为「畅想未来」，一个人走在粉红色的花田里",
+              capEn: "Imagining the future — the page I open when I move from work already made to what I want to explore next.",
+              capZh: "畅想未来——从已经做过的事情，走到我接下来想探索的事情时，我会翻开的这一页。"
             }
           ]
         },
@@ -1107,22 +1106,48 @@ window.GM = {
             {
               en: "We often discuss AI film, or how much it can lower the cost of production. Those questions matter. But if AI only helps us produce the old forms of media at a higher speed, I think that would be a little wasteful. After the internet arrived, it did not merely move newspapers onto a computer; it slowly changed how people talk, make and share. I am curious whether AI might also give birth to a kind of media we have not yet seen.",
               zh: "我们今天经常讨论 AI 电影、AI 短剧，或者它能把制作成本降低多少。这些都很重要，但我总觉得，如果 AI 只是让我们用更快的速度生产原来就有的内容形式，好像还有点可惜。就像互联网出现以后，它不只是让我们把报纸搬到电脑上，而是慢慢改变了人与人交流、创作和传播的方式。我很好奇，AI 会不会也催生一种我们今天还没见到的媒体？",
-              source: "zcool"
+              source: "public"
             },
             {
               en: "I have been thinking about what I call Neural Media. In the last fifteen years we have watched artificial intelligence, deep learning and online algorithms rise. These systems sense and model our behaviour, predict what we might want, and can now generate content that folds into the media around us. New sensing tools — from smart rings and brain–computer interfaces to the gyroscope in a phone — are also reading the body in different ways. I think we are in the middle of Neural Media’s development, and that this is already changing the relationship between the filmmaker, the work and the audience.",
               zh: "所以我觉得，我们现在正处于神经媒体，Neural Media 的发展中段。过去十五年，我们见证了人工智能、深度学习以及各种在线算法的崛起。这些系统不断地感知和分析我们的行为，为我们建立模型，预测我们可能想要什么。生成式媒体出现后，系统甚至可以直接生成与我们相关的内容。与此同时，智能戒指、脑机接口 BCI，甚至智能手机里的陀螺仪，也在通过不同方式感知我们的身体。而这种新的媒体形态，也正在逐渐改变创作者、内容和观众之间的关系。",
-              source: "zcool"
+              source: "public"
             },
             {
               en: "If you ask me what I most want to do in the future, my answer is: I want to bring dreams into reality. Everyone has a world in their head that no one else can see. I want to know whether a new art form could let us walk into someone else’s imagined world — to feel it, explore it, even leave a trace.",
               zh: "如果大家问我，未来最想做什么，我的答案是：我想把梦境带进现实。每个人脑海里都有一个别人看不到的世界。我很想知道，有没有一种新的艺术形式，可以让我们走进别人想象的世界，可以在里面感受、探索，甚至留下自己的痕迹。",
-              source: "zcool"
+              source: "public"
             },
             {
               en: "I have been researching questions like this since 2023. This September, in Los Angeles, I visited DATALAND, which is called the world’s first AI art museum, and found that their work on multi-sensory art was close to some of what I had imagined. You wear a device that can sense signals from the body — heartbeat, movement, position in space — and those data become part of the art system. The images, sounds, even smells, change with the environment and with the people inside it. I became more sure that future moving-image media will slowly change from a fixed work into a world that can keep changing.",
               zh: "其实从 2023 年开始，我就一直在研究类似的课题。今年九月，我在美国洛杉矶参观了被称为世界首座 AI 艺术博物馆 DATALAND，发现他们对多感官艺术的探索，跟我的想象有一些相似的地方。进入这个空间时，你会佩戴一个能够感知身体信号的装置，采集心跳、身体运动和空间位置，这些数据也会成为整个艺术系统的一部分。你看到的影像、听到的声音，甚至闻到的气味，都会随着环境数据和观众的参与不断变化。我更加确定，未来的动态媒体，会逐渐从一个固定的作品，变成一个能够持续变化的世界。",
-              source: "zcool"
+              source: "public"
+            }
+          ]
+        },
+        {
+          type: "slides",
+          items: [
+            {
+              src: "assets/slides/slide-23.jpg",
+              altEn: "A complete page, a media evolution table from Broadcast to Immersive, Network, and Neural",
+              altZh: "完整一页：传播模式演化表，从广播、沉浸式、网络，到神经",
+              capEn: "How I have laid out a change in media forms, arriving at what I call Neural Media.",
+              capZh: "我怎样把媒体形式的变化排在一页上，走到我所说的神经媒体。"
+            },
+            {
+              src: "assets/slides/slide-24.jpg",
+              altEn: "A complete typographic page: “我们正站在信息传播新时代的入口——神经媒体时代的到来.”",
+              altZh: "完整的标题页：「我们正站在信息传播新时代的入口——神经媒体时代的到来。」",
+              capEn: "A line I use when I talk about Neural Media: we are standing at the entrance of a new age of communication.",
+              capZh: "我谈到神经媒体时用的一句：我们正站在信息传播新时代的入口——神经媒体时代的到来。"
+            },
+            {
+              src: "assets/slides/slide-25.jpg",
+              altEn: "A complete typographic page: “我想把梦境带进现实”",
+              altZh: "完整的标题页：「我想把梦境带进现实」",
+              capEn: "I want to bring dreams into reality, and let imagination and the real world meet.",
+              capZh: "我想把梦境带进现实，让想象与真实碰撞、交融。"
             }
           ]
         },
@@ -1131,19 +1156,43 @@ window.GM = {
           kind: "idea",
           en: "I have recently been conceiving a futurist virtual ecosystem. It might combine AI agents, real-time generation, XR, and future sensing technologies such as brain–computer interfaces. In that world, humans and AI agents could talk and work together; the world itself would keep changing with what different characters do; some stories would not need every detail written in advance, but could keep generating inside rules, relationships, visual assets and narrative boundaries we have set. I am exploring this. It is not a greenlit production I can announce.",
           zh: "我最近一直在构想一个未来主义的虚拟生态系统。它可能结合 AI 智能体、实时生成、XR，以及脑机接口等未来的感知技术。在这个世界里，人类和 AI 智能体可以相互交流、合作；整个世界也会随着不同角色的行为持续发生变化；其中一些故事，也不需要由人类创作者提前写好每一个细节，而是可以在我们设定好的世界规则、人物关系、视觉资产和叙事边界之内，由 AI 持续生成和演化。这是我正在探索的构想，并不是一个已经立项、可以宣布开拍的项目。",
-          source: "zcool"
+          source: "public"
+        },
+        {
+          type: "slides",
+          items: [
+            {
+              src: "assets/slides/slide-27.jpg",
+              altEn: "A complete page about conceiving a futurist virtual ecosystem in which humans and AI evolve together",
+              altZh: "完整一页：构想一个未来主义的虚拟生态系统，人类与 AI 协同进化",
+              capEn: "A page for a futurist virtual world I have been conceiving — a “virtual ecosystem” in which humans and AI evolve together. This is an idea I am exploring, not a greenlit production.",
+              capZh: "我在构想的一个未来主义虚拟世界——一个人类与 AI 协同进化的「虚拟生态系统」。这是我正在探索的构想，不是已经立项的项目。"
+            }
+          ]
         },
         {
           type: "para",
           en: "I hope, in the future, I can become a new kind of artist: a World Architect. What I am after is not merely “AI-generated film” or “AI-generated fiction”, but a form of dynamic, interactive, generative media we cannot yet fully imagine.",
           zh: "我希望未来，自己可以成为一种新型的艺术家。World Architect，世界建筑师。我所追求的，并不仅仅是「AI 生成的电影」，或者「AI 生成的小说」，而是探索一种我们今天还无法完全想象的，动态的、交互式的、生成型媒体的新形式。",
-          source: "zcool"
+          source: "public"
+        },
+        {
+          type: "slides",
+          items: [
+            {
+              src: "assets/slides/slide-28.jpg",
+              altEn: "A complete page: “我希望成为一种全新的艺术家——世界建筑师 (World Architect).”",
+              altZh: "完整一页：「我希望成为一种全新的艺术家——世界建筑师（World Architect）。」",
+              capEn: "I hope to become a new kind of artist: a World Architect.",
+              capZh: "我希望成为一种全新的艺术家——世界建筑师（World Architect）。"
+            }
+          ]
         },
         {
           type: "para",
           en: "A Forbes reporter once asked me what matters most to me at this stage. I thought: in the age of AI, we may forget faster than we remember. So rather than only making entertainment that holds attention for a short time, I hope I will have the chance to make works of art that can last.",
           zh: "《福布斯》的记者曾经问我，现阶段对我来说，最重要的是什么。我当时就在想，在 AI 时代，我们遗忘的速度，可能比记住的速度还要快。所以，比起创作一部在短时间内受到很多关注的娱乐作品，我更希望自己有机会创造出一些真正能够留下来的艺术作品。",
-          source: "zcool"
+          source: "public"
         },
         {
           type: "callout",
@@ -1155,8 +1204,20 @@ window.GM = {
         {
           type: "para",
           en: "If you also like creating worlds, or you are interested in new technologies and new art forms, you are very welcome to come and talk to us. Our studio is always looking for people who can walk this path together. I hope we will have the chance to create worlds together.",
-          zh: "如果在座也有喜欢创造世界，或者对未来的新技术、新艺术形式感兴趣的朋友，很欢迎来找我们交流。我们工作室也一直都在招募可以并肩作战的小伙伴。希望未来有机会，跟大家一起创造世界。",
-          source: "zcool"
+          zh: "如果也有喜欢创造世界，或者对未来的新技术、新艺术形式感兴趣的朋友，很欢迎来找我们交流。我们工作室也一直都在招募可以并肩作战的小伙伴。希望未来有机会，跟大家一起创造世界。",
+          source: "public"
+        },
+        {
+          type: "slides",
+          items: [
+            {
+              src: "assets/slides/slide-33.jpg",
+              altEn: "A complete typographic page: “我不是末日乐观主义者。但我想继续创造世界.” / CREATE THE WORLD",
+              altZh: "完整的标题页：「我不是末日乐观主义者。但我想继续创造世界。」 / CREATE THE WORLD",
+              capEn: "I am not a doom-and-gloom optimist. But I want to keep creating worlds.",
+              capZh: "我不是末日乐观主义者。但我想继续创造世界。"
+            }
+          ]
         }
       ]
     },
@@ -1173,7 +1234,7 @@ window.GM = {
           type: "lede",
           en: "I don’t think I have a complete answer about the future. What I can offer are a few things I have already learned by making work — not a set of rules for someone else’s career.",
           zh: "如果今天要让我给大家一个关于未来的答案，我可能真的给不出来。我能分享的，是自己在做作品时已经体会过的几件事——并不是一套关于别人职业生涯的规则。",
-          source: "zcool"
+          source: "public"
         },
         {
           type: "tips",
@@ -1185,7 +1246,7 @@ window.GM = {
               whyZh: "当技术已经可以帮我们创造出非常壮观的画面，一部作品真正特别的地方，我觉得是它的作者性：创作者自己的经历、审美、情感，还有真正想表达和批判的东西。《金魚街大亂鬥》会存在，是因为我回到了佛山，回到家楼下的那条街，也回到那些混杂、并不总是舒适的记忆。",
               nextEn: "Before you open a new tool, write down the place, the person, or the question that only you would insist on putting into the work.",
               nextZh: "在打开新工具之前，先写下那个只有你会坚持放进作品里的地方、人或问题。",
-              source: "zcool"
+              source: "public"
             },
             {
               titleEn: "Begin with your own culture and memory, even if the form is new",
@@ -1203,7 +1264,7 @@ window.GM = {
               whyZh: "我是个很容易三分钟热度的人。回头看，我一直没放弃的，是创造世界这件事：1999 年的油画棒，做美术指导时的真实场景，再后来是提示词、代码和模型。变的是工具和身份，没变的是把想象中的世界做出来。我也不认为 AI 会让创作者失去作者性。用得好，它反而可能打开过去的限制，让我们更直接地回到真正想讲的故事——并把它完成。",
               nextEn: "Choose one world small enough to finish, and take it far enough that someone else can walk into it.",
               nextZh: "选一个小到能够完成的世界，并把它推进到别人也愿意走进去的程度。",
-              source: "zcool"
+              source: "public"
             },
             {
               titleEn: "Tell stories in which women can be the ones who act",
@@ -1221,7 +1282,7 @@ window.GM = {
               whyZh: "因为我以前在传统广告行业工作过，所以对这个变化感受挺明显的。过去一个项目，通常从品牌到代理公司、制作公司，最后才到导演和创作团队。但现在，有些品牌会在最开始就邀请创作者一起讨论内容。REVAN 就是这样：我们先一起想象那些小角色会住在什么样的世界里，而不是先拿到一份写完的需求。",
               nextEn: "When you show your work, show not only the finished image, but how you build a world — that is often what someone is trying to invite.",
               nextZh: "展示作品时，不只展示完成的画面，也展示你是怎样建立一个世界的——那常常才是别人想邀请的东西。",
-              source: "zcool"
+              source: "public"
             },
             {
               titleEn: "Treat AI as a partner, and keep human judgement in the room",
@@ -1238,7 +1299,7 @@ window.GM = {
           type: "para",
           en: "And if you like building worlds, you are welcome to find us. That is an invitation from the studio, not a piece of career advice I am handing down.",
           zh: "如果也有喜欢创造世界的朋友，很欢迎来找我们。这是工作室发出的邀请，而不是我在对别人的职业道路下指导。",
-          source: "zcool"
+          source: "public"
         }
       ]
     },
@@ -1259,7 +1320,7 @@ window.GM = {
           type: "lede",
           en: "I would like to stay with you here and talk about the film, the way it was made, and AI filmmaking. The questions below are only prompts to open the room. They are not a substitute for the questions you actually want to ask.",
           zh: "我想在这里停下来，和大家一起聊聊这部电影、它的制作方式，以及 AI filmmaking。下面这些问题只是用来打开讨论的引导，并不能代替你们真正想问的问题。",
-          source: "zcool"
+          source: "public"
         },
         {
           type: "prompts",
@@ -1269,7 +1330,7 @@ window.GM = {
               qZh: "当画面可以被很快做出来时，作者性对你来说还意味着什么？",
               noteEn: "I talked about this after the Los Angeles screening: once the technology grows stronger, the special thing is still the filmmaker’s own experience, taste and questions.",
               noteZh: "洛杉矶放映之后，我谈过这件事：技术越来越强之后，真正特别的，仍是创作者自己的经历、审美和问题。",
-              source: "zcool"
+              source: "public"
             },
             {
               qEn: "What, for you, is the difference between the real Goldfish Street downstairs and the Goldfish Street in the film?",
@@ -1311,7 +1372,7 @@ window.GM = {
               qZh: "你谈到了神经媒体、DATALAND，以及成为世界建筑师。哪些已经在发生，哪些仍是构想？",
               noteEn: "The visit to DATALAND and the wish to make work that lasts are things I have already done or clearly named. The virtual ecosystem of agents, XR and BCI is still exploration.",
               noteZh: "探访 DATALAND，以及希望做出能够留下来的作品，是我已经做过或明确说过的。而智能体、XR 和 BCI 组成的虚拟生态系统，仍是探索中的构想。",
-              source: "zcool"
+              source: "public"
             },
             {
               qEn: "You are developing a larger universe around a red-haired female hero. What can you say about it today?",
@@ -1371,24 +1432,24 @@ window.GM = {
   sourceSection: {
     summary: { en: "Sources", zh: "来源" },
     intro: {
-      en: "Important facts on this page carry a short source mark. The full list is here. I have only used material that is already public, or that I have already spoken in the first person in the Zcool talk or in an interview.",
-      zh: "这个页面上的重要事实带有简短的来源标记。完整列表在这里。我只使用了已经公开的材料，或我已经在站酷讲稿和访谈里用第一人称说过的内容。"
+      en: "Important facts on this page carry a short source mark. The full list is here. I have only used material that is already public, or that I have already spoken in the first person in an interview or in a public first-person account.",
+      zh: "这个页面上的重要事实带有简短的来源标记。完整列表在这里。我只使用了已经公开的材料，或我已经在访谈和公开的第一人称讲述里说过的内容。"
     },
     endZh: "一起创造世界",
     endLead: {
       en: "If you like creating worlds, you are welcome to come and talk to us.",
       zh: "如果也有喜欢创造世界的朋友，很欢迎来找我们交流。",
-      source: "zcool"
+      source: "public"
     }
   },
   sourceList: [
     {
-      en: "Zcool talk / prompter — first-person spoken spine, including the 2035 cyber-folk logline, childhood in Foshan, 鸿胜武馆, authorship, Neural Media, DATALAND, World Architect, and the studio invitation.",
-      zh: "站酷讲稿——第一人称讲述的主线，包括 2035 年赛博民俗故事简介、佛山童年、鸿胜武馆、作者性、神经媒体、DATALAND、世界建筑师，以及工作室邀请。"
+      en: "A public first-person account — including the 2035 cyber-folk logline, childhood in Foshan, 鸿胜武馆, authorship, Neural Media, DATALAND, World Architect, and the studio invitation.",
+      zh: "已公开的第一人称讲述——包括 2035 年赛博民俗故事简介、佛山童年、鸿胜武馆、作者性、神经媒体、DATALAND、世界建筑师，以及工作室邀请。"
     },
     {
-      en: "Zcool 34-slide deck — visual language, key art, 1999 drawing and portraits, 金魚街大亂鬥 × WONDERSTUDIOS, and title forms.",
-      zh: "站酷 34 页 PPT——视觉风格、主视觉、1999 年的画和肖像、「金魚街大亂鬥 × WONDERSTUDIOS」，以及片名写法。"
+      en: "Presentation slides used when introducing this work — visual language, key art, the 1999–2023 creating-worlds timeline, 金魚街大亂鬥 × WONDERSTUDIOS, and title forms.",
+      zh: "介绍这部作品时使用的演示文稿——视觉风格、主视觉、1999 至 2023 的创造世界时间线、「金魚街大亂鬥 × WONDERSTUDIOS」，以及片名写法。"
     },
     {
       en: "Interview Q&A — hometown and mixed culture, fictional Goldfish Street and the real street downstairs, the rotating restaurant, the three girls as mirrors, themes, tools (ChatGPT, Mr. Duan, invideo Agent One, CapCut Video Studio – Director Mode, OpenArt Smart Shot / World Builder), the red-haired hero universe still in development, and rapid-fire lines.",

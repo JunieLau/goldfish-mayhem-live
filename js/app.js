@@ -48,6 +48,7 @@
 
   function renderFig(img, i) {
     const cls = ["fig"];
+    if (img.slide) cls.push("slide-plate");
     if (img.portrait) cls.push("portrait");
     if (img.contain) cls.push("contain");
     if (img.natural) cls.push("natural");
@@ -58,8 +59,14 @@
         zh: (img.capZh || "") + (img.source ? " " + sourceMark(img.source, "zh") : "")
       }
     );
-    return `<figure class="${cls.join(" ")}" data-lb="${esc(img.src)}" data-idx="${i}" tabindex="0" role="button" aria-label="${alt}">
-      <img src="${esc(img.src)}" alt="${alt}" width="${img.w || 1600}" height="${img.h || 900}" loading="lazy">
+    const hint = img.slide
+      ? `<span class="enlarge-hint"><span class="en">Click to enlarge</span><span class="zh">点击放大完整画面</span></span>`
+      : "";
+    const w = img.slide ? (img.w || 10000) : (img.w || 1600);
+    const h = img.slide ? (img.h || 2200) : (img.h || 900);
+    return `<figure class="${cls.join(" ")}" data-lb="${esc(img.src)}" data-slide="${img.slide ? "1" : ""}" data-idx="${i}" tabindex="0" role="button" aria-label="${alt}">
+      <img src="${esc(img.src)}" alt="${alt}" width="${w}" height="${h}" loading="lazy">
+      ${hint}
       <figcaption>${cap}</figcaption>
     </figure>`;
   }
@@ -123,6 +130,10 @@
           .map((img, i) => renderFig(img, `${idxPrefix}-img-${i}`))
           .join("")}</div>`;
       }
+      case "slides":
+        return `<div class="mod slide-stack">${(b.items || [])
+          .map((img, i) => renderFig(Object.assign({ slide: true }, img), `${idxPrefix}-slide-${i}`))
+          .join("")}</div>`;
       case "videos":
         return `<div class="mod video-grid">${(b.items || []).map(renderVideo).join("")}</div>`;
       case "links":
@@ -380,7 +391,8 @@
         src: fig.dataset.lb,
         alt: img ? img.alt : "",
         capEn: capEn ? capEn.textContent : "",
-        capZh: capZh ? capZh.textContent : ""
+        capZh: capZh ? capZh.textContent : "",
+        slide: fig.dataset.slide === "1"
       };
     });
   }
@@ -392,6 +404,7 @@
     const item = lbItems[lbIndex];
     const box = $(".lb");
     box.classList.add("open");
+    box.classList.toggle("slide-view", !!item.slide);
     box.setAttribute("aria-hidden", "false");
     $(".lb img").src = item.src;
     $(".lb img").alt = item.alt;

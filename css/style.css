@@ -1,7 +1,7 @@
-/* Goldfish Mayhem livestream site — visual language from the 站酷 / Zcool deck */
+/* Goldfish Mayhem livestream site — paper field, red #C8102E, Abril Fatface / Noto Serif SC / Libre Baskerville */
 :root {
-  --paper: #F5F1EA;
-  --paper-2: #EDE7DC;
+  --paper: #F4F3F1;
+  --paper-2: #F5F4F2;
   --ink: #14110F;
   --ink-soft: #3A342E;
   --muted: #6A6258;
@@ -9,7 +9,7 @@
   --line-strong: rgba(20, 17, 15, 0.28);
   --red: #C8102E;
   --red-soft: rgba(200, 16, 46, 0.12);
-  --cream-card: #FFFBF5;
+  --cream-card: #FFFFFF;
   --display: "Abril Fatface", "Noto Serif SC", "Songti SC", serif;
   --serif: "Libre Baskerville", "Noto Serif SC", "Songti SC", Georgia, serif;
   --zh-display: "Noto Serif SC", "Songti SC", serif;
@@ -29,9 +29,9 @@ html { scroll-behavior: smooth; }
 html, body { margin: 0; padding: 0; }
 body {
   background-color: var(--paper);
-  background-image:
-    linear-gradient(180deg, rgba(255,255,255,0.35), transparent 220px),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cpath d='M0 70h140M70 0v140' stroke='%2314110F' stroke-opacity='0.035' stroke-width='1'/%3E%3Cpath d='M0 0l140 140M140 0L0 140' stroke='%2314110F' stroke-opacity='0.025' stroke-width='1'/%3E%3C/svg%3E");
+  background-image: url("../assets/deco/paper-grain.png");
+  background-size: 320px 320px;
+  background-repeat: repeat;
   color: var(--ink);
   font-family: var(--serif);
   font-size: 1.15rem;
@@ -55,7 +55,7 @@ a:hover { color: var(--red); }
 /* -------- header -------- */
 .top {
   position: sticky; top: 0; z-index: 80;
-  background: rgba(245, 241, 234, 0.96);
+  background: rgba(244, 243, 241, 0.96);
   backdrop-filter: saturate(1.1) blur(8px);
   border-bottom: 1px solid var(--line-strong);
 }
@@ -588,3 +588,45 @@ html { scroll-padding-top: calc(var(--header) + 8px); }
   grid-template-columns: none;
 }
 .callout { overflow: hidden; overflow-wrap: break-word; }
+
+
+/* Full uncropped presentation slides (50:11) */
+.slide-stack { display: flex; flex-direction: column; gap: 18px; margin: 0 0 2rem; }
+.fig.slide-plate {
+  width: 100%;
+  background: #fff;
+  border: 1px solid var(--line);
+  cursor: zoom-in;
+  position: relative;
+}
+.fig.slide-plate img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 10000 / 2200;
+  object-fit: contain;
+  object-position: center center;
+  background: #fff;
+  display: block;
+}
+.fig.slide-plate figcaption { padding-top: 8px; }
+.enlarge-hint {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  background: rgba(20,17,15,0.72);
+  color: #fff;
+  padding: 4px 8px;
+  pointer-events: none;
+}
+.fig.slide-plate figcaption { position: relative; }
+.lb.slide-view { padding: 24px 16px 72px; }
+.lb.slide-view img {
+  max-width: 96vw;
+  width: 96vw;
+  height: auto;
+  max-height: calc(100vh - 96px);
+  object-fit: contain;
+}

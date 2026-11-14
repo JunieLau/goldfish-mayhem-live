@@ -21,10 +21,10 @@ There is no build step. All paths in the page are relative.
 ## Files
 
 - `index.html` — single entry page
-- `css/style.css` — visual language taken from the 站酷 / Zcool deck (paper field, red `#C8102E`, Abril Fatface / Noto Serif SC / Libre Baskerville)
+- `css/style.css` — paper field (`#F4F3F1` / `#F5F4F2`), red `#C8102E`, Abril Fatface / Noto Serif SC / Libre Baskerville
 - `js/content.js` — all bilingual copy, captions, links and media paths (edit this to update wording or assets)
 - `js/app.js` — language switch, chapter nav, lightbox, expanders, click-to-play video
-- `assets/` — official stills, YouTube posters, and crops from the public Zcool deck
+- `assets/` — official stills, YouTube posters, and complete uncropped presentation slides (10000×2200, shown full-width with `object-fit: contain`)
 - `GAPS.md` — remaining gaps and source differences
 
 ## Language
