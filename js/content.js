@@ -352,12 +352,6 @@ window.GM = {
         },
         {
           type: "para",
-          en: "The fashion brand REVAN later invited me to make images for a new season, taking inspiration from a blind box. I was not handed a brief first; we imagined together what kind of world those little characters might live in. The work also became an exhibition, and I appeared as an artist in their campaign. I feel AI is changing the old client–agency relationship: a filmmaker is no longer only the person who executes at the end, but can be invited earlier, when a world is still being built.",
-          zh: "时尚品牌 REVAN 邀请我为一个新季度时尚系列，以盲盒为灵感创作影像。我不是先拿到一份需求，而是一起想象：这些小角色如果有自己的生活，会住在什么样的世界里？最后作品也做成了线下展览，而我也作为艺术家出现在他们新系列的时尚大片里面。我觉得 AI 让甲乙方关系正在改变。创作者不只是最后负责执行的人，也有机会更早地参与一个世界的构建。",
-          source: "public"
-        },
-        {
-          type: "para",
           en: "From the beginning of last year I also started to receive invitations from independent film companies overseas, to develop original film IPs with writers and production teams. There is the science-fiction story ZERO, the youth road story 51IT, the women’s revenge action film 猩红木兰, the cyber police story MADAM P!NK, and, most recently, Goldfish Mayhem — 金魚街大亂鬥. They often share one thing: the heroines are not necessarily perfect. They can be impulsive, rebellious, even make a complete mess. I like characters who feel alive in that way.",
           zh: "从去年年初开始，我也陆续收到海外独立电影公司的邀请，和编剧、制作团队一起开发原创电影 IP。这里有科幻故事《ZERO》，青春爱情公路故事《51IT》，女性复仇动作片《猩红木兰》，还有赛博女警故事《MADAM P!NK》，以及最近推出的《金魚街大亂鬥》。它们经常有一个共同点：女主角不一定完美。她们可能冲动、叛逆，甚至把事情搞得一团糟。我反而很喜欢这样鲜活的角色。",
           source: "public"
