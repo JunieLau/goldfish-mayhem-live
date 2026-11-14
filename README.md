@@ -1,8 +1,8 @@
-# Goldfish Mayhem / 金魚街大亂鬥 — livestream companion
+# Goldfish Mayhem / 金魚街大亂鬥
 
-A standalone, static page for Junie Lau to screen-share while introducing herself, walking through *Goldfish Mayhem*, and talking with an audience.
+A standalone, static page for Junie Lau: an introduction, the story and making of *Goldfish Mayhem*, and conversation with an audience.
 
-This is **not** a replacement for [junielau.com](https://junielau.com), and it should **not** be published into the `JunieLau/JunieLau.github.io` official-site repository.
+The official homepage remains [junielau.com](https://junielau.com), in the `JunieLau/JunieLau.github.io` repository. Do not publish this site into that repository.
 
 ## Open locally
 
@@ -35,7 +35,7 @@ The default mode is **English + 中文**. Use the top bar to switch to English o
 
 This folder is ready to deploy as the root of a **separate** GitHub repository’s GitHub Pages site (`index.html` at the root, relative asset paths, no localhost dependencies).
 
-Do not push the `_internal/` directory to a public repo. It is listed in `.gitignore` and holds unpublished source material that is not part of the livestream page.
+Do not push the `_internal/` directory to a public repo. It is listed in `.gitignore` and holds unpublished source material that is not part of this site.
 
 ## Credit
 

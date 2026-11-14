@@ -1,4 +1,4 @@
-/* Goldfish Mayhem livestream site */
+/* Goldfish Mayhem site */
 (function () {
   const DEFAULT_LANG = "both";
   const LANGS = ["en", "zh", "both"];

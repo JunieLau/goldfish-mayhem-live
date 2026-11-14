@@ -1,4 +1,4 @@
-/* All bilingual copy and media paths for the Goldfish Mayhem livestream site.
+/* All bilingual copy and media paths for the Goldfish Mayhem site.
    Edit this file to update wording, captions, or assets. */
 window.GM = {
   ui: {
@@ -22,8 +22,8 @@ window.GM = {
       idea: { en: "What I am exploring", zh: "构想 / 仍在探索" }
     },
     footer: {
-      en: "Goldfish Mayhem — by Junie Lau. A livestream companion site, not a replacement for junielau.com.",
-      zh: "Goldfish Mayhem — by Junie Lau. 这是一份直播讲解用的配套页面，并不是 junielau.com 的替代网站。"
+      en: "Goldfish Mayhem — by Junie Lau.",
+      zh: "Goldfish Mayhem — by Junie Lau."
     }
   },
 
@@ -66,8 +66,8 @@ window.GM = {
       ]
     },
     note: {
-      en: "On my official site, the Chinese title is written in simplified characters as 金鱼街大乱斗. On this page I keep 金魚街大亂鬥, the form used on the film’s key art.",
-      zh: "我的官网中文页使用简体写法「金鱼街大乱斗」。这个页面里，影片标题沿用设定图上的「金魚街大亂鬥」。",
+      en: "On my official site, the Chinese title is written in simplified characters as 金鱼街大乱斗. The form used on the film’s key art is 金魚街大亂鬥.",
+      zh: "我的官网中文页使用简体写法「金鱼街大乱斗」。影片设定图上的写法是「金魚街大亂鬥」。",
       source: "site"
     }
   },
@@ -97,8 +97,8 @@ window.GM = {
               kindZh: "官网",
               labelEn: "junielau.com",
               labelZh: "junielau.com",
-              noteEn: "My official homepage. This livestream companion page is a separate page, not the homepage.",
-              noteZh: "我的官方主页。本次直播配套页是另一个页面，并不是官网首页。"
+              noteEn: "My official homepage.",
+              noteZh: "我的官方主页。"
             }
           ]
         },
@@ -129,8 +129,8 @@ window.GM = {
         },
         {
           type: "para",
-          en: "These four plates are how I walk through that introduction — typography, lists and portraits kept together.",
-          zh: "下面这四块版面，就是我用来做这段自我介绍的完整画面：标题、名单和肖像都放在一起。"
+          en: "These four plates are my introduction — typography, lists and portraits kept together.",
+          zh: "下面这四块版面是我的自我介绍：标题、名单和肖像都放在一起。"
         },
         {
           type: "plates",
@@ -152,8 +152,8 @@ window.GM = {
               photos: [
                 { src: "assets/plates/01-forbes-portrait.jpg", altEn: "The Forbes profile “How AI And Peter Gabriel Changed Junie Lau’s Path To Directing”, beside a portrait of Junie Lau in a red sculptural dress, holding a golden trophy next to a gold astronaut helmet", altZh: "《福布斯》人物专访《How AI And Peter Gabriel Changed Junie Lau’s Path To Directing》，旁为 Junie Lau 的肖像：穿着红色雕塑感礼服，手持金色奖杯，身旁是金色宇航头盔" }
               ],
-              capEn: "The first plate I walk through in this introduction: I am a director, with a short list of films and awards I can already share.",
-              capZh: "这段自我介绍翻开的第一块版面：我是一名导演，上面有我已经可以分享的影片和奖项。"
+              capEn: "I am a director, with a short list of films and awards.",
+              capZh: "我是一名导演，上面有我的影片和奖项。"
             },
             {
               kind: "milestones",
@@ -205,8 +205,8 @@ window.GM = {
               photos: [
                 { src: "assets/plates/04-interview.jpg", altEn: "Junie Lau seated in a pale pink jacket, introduced as a film director and multidisciplinary creative, above a still from the Google I/O 2025 keynote in which her work appears", altZh: "Junie Lau 坐着，穿着浅粉色外套，介绍为电影导演与跨界创作者；下方是 2025 年 Google I/O 主题演讲中出现她作品的画面" }
               ],
-              capEn: "A snapshot of the scale of that work, together with a portrait, as I continue this introduction.",
-              capZh: "这份工作体量的一个速写，旁边是一张肖像。自我介绍从这里再往下走。"
+              capEn: "A snapshot of the scale of that work, together with a portrait.",
+              capZh: "这份工作体量的一个速写，旁边是一张肖像。"
             }
           ]
         },
@@ -382,20 +382,20 @@ window.GM = {
         {
           type: "callout",
           kind: "conflict",
-          en: "Some of those titles also appear in other forms I have already published: ZEЯRO, 51IST, 猩紅木蘭, MADAM PINK, and 金魚街大亂鬥 × WONDERSTUDIOS. I am not collapsing them into a single official spelling here.",
+          en: "Some of those titles also appear in other forms I have already published: ZEЯRO, 51IST, 猩紅木蘭, MADAM PINK, and 金魚街大亂鬥 × WONDERSTUDIOS. These are published variants, not one official standard.",
           zh: "这些片名还有我已经公开用过的另外写法：ZEЯRO、51IST、猩紅木蘭、MADAM PINK，以及「金魚街大亂鬥 × WONDERSTUDIOS」。这里我并列写出，不把它们收成一个「标准官方拼法」。",
           source: "public"
         },
         {
           type: "details",
-          summary: { en: "A short list of confirmed awards and press I may mention", zh: "我可能会提到的、已确认的奖项与报道，简要列出" },
+          summary: { en: "A short list of confirmed awards and press", zh: "已确认的奖项与报道，简要列出" },
           blocks: [
             {
               type: "paras",
               items: [
                 {
-                  en: "I won’t read a long honours list in the live conversation. The facts below are only those already in my public first-person account, my interview, or the confirmed notes on my official site’s SOURCES.md (LinkedIn is treated there as the biographical source of record).",
-                  zh: "直播里我不会把奖项从头念到尾。下面只列出已经出现在我公开的第一人称讲述、访谈，或官网 SOURCES.md 确认记录里的事实（那里把 LinkedIn 作为履历的权威来源）。",
+                  en: "The facts below already appear in my public first-person account, my interview, or the confirmed notes on my official site.",
+                  zh: "下面这些事实，已经出现在我公开的第一人称讲述、访谈，或官网的确认记录里。",
                   source: "sources"
                 },
                 {
@@ -469,8 +469,8 @@ window.GM = {
         {
           type: "callout",
           kind: "conflict",
-          en: "Two public introductions sit side by side here; I am not merging them into one invented sentence. I have described it as a cyber-folk action comedy set in 2035, about three troublemaking girls rescuing their foster mother 芬姨 from being sacrificed, entering the Cloud, and discovering a secret experiment about data immortality. My official site’s one-liner is: “Cantonese cyberpunk world of kung fu and robo-cops: three sisters save their aunt from cyber elites.” / 「粤式赛博朋克世界，功夫与机械警察：三姐妹从赛博精英手中救出姑妈。」 The site also lists Year 2026 and my role as Director — that is the work year of the film, not necessarily the story year. The story year I have used when telling this story is 2035.",
-          zh: "这里并列两则已经公开的介绍，我不会把它们合成一句新的故事。我把它说成一部发生在 2035 年的赛博民俗动作喜剧：三个爱闯祸的女孩，为了救回即将被献祭的养母芬姨，闯进云端，发现了关于数据永生的秘密实验。官网的一句话是：「粤式赛博朋克世界，功夫与机械警察：三姐妹从赛博精英手中救出姑妈。」官网同时标注年份 2026、职务为导演——那是作品年份，不一定是故事发生的年份。我讲述这个故事时使用的故事年份是 2035。",
+          en: "I have described it as a cyber-folk action comedy set in 2035, about three troublemaking girls rescuing their foster mother 芬姨 from being sacrificed, entering the Cloud, and discovering a secret experiment about data immortality. My official site’s one-liner is: “Cantonese cyberpunk world of kung fu and robo-cops: three sisters save their aunt from cyber elites.” / 「粤式赛博朋克世界，功夫与机械警察：三姐妹从赛博精英手中救出姑妈。」 The site also lists Year 2026 and my role as Director — that is the work year of the film, not necessarily the story year. The story year I have used when telling this story is 2035.",
+          zh: "我把它说成一部发生在 2035 年的赛博民俗动作喜剧：三个爱闯祸的女孩，为了救回即将被献祭的养母芬姨，闯进云端，发现了关于数据永生的秘密实验。官网的一句话是：「粤式赛博朋克世界，功夫与机械警察：三姐妹从赛博精英手中救出姑妈。」官网同时标注年份 2026、职务为导演——那是作品年份，不一定是故事发生的年份。我讲述这个故事时使用的故事年份是 2035。",
           source: "site"
         },
         {
@@ -819,8 +819,8 @@ window.GM = {
       blocks: [
         {
           type: "lede",
-          en: "I can walk through this film in the order I actually use when I talk about making it: moodboards, world-building, character design, set design, then video generation. Some of the boards live on outside links — I will open them in a new tab rather than try to embed a login wall. The tools I describe here are the ones I have already talked about in an interview for this film.",
-          zh: "我可以按照自己讲述这部片子时的顺序，走一遍制作过程：情绪板、世界观、角色设计、场景设计，然后才到视频生成。有些参考板放在外部链接里——我会在新标签页打开，而不是把需要登录的页面嵌进来。这里提到的工具，都是我已经在访谈里，针对这部影片谈过的。",
+          en: "I usually talk about making this film in this order: moodboards, world-building, character design, set design, then video generation.",
+          zh: "我讲述这部片子的制作，通常是这个顺序：情绪板、世界观、角色设计、场景设计，然后才到视频生成。",
           source: "interview"
         },
         {
@@ -833,8 +833,8 @@ window.GM = {
               blocks: [
                 {
                   type: "para",
-                  en: "The first thing I need is a place to hold the feeling of the world — colour, street life, the clash between something very local and something already speeding toward the future. These four official links belong here, in the order of early process: from the first idea to the final moodboard. They are early design, early inspiration and early research — not later making. I open each one in a new tab rather than try to embed a login wall.",
-                  zh: "首先我需要一个地方，把这个世界的感觉放下——颜色、市井生活，以及非常本地的事物和已经冲向未来的事物怎样撞在一起。这四个正式链接都放在情绪板这一步，顺序是早期过程：从最初的想法，到最终情绪板。它们是早期设计、早期灵感和早期研究，而不是后面的制作环节。我会在新标签页打开，而不是把需要登录的页面嵌进来。",
+                  en: "The first thing I need is a place to hold the feeling of the world — colour, street life, the clash between something very local and something already speeding toward the future. These four official links belong here, in the order of early process: from the first idea to the final moodboard. They are early design, early inspiration and early research — not later making.",
+                  zh: "首先我需要一个地方，把这个世界的感觉放下——颜色、市井生活，以及非常本地的事物和已经冲向未来的事物怎样撞在一起。这四个正式链接都放在情绪板这一步，顺序是早期过程：从最初的想法，到最终情绪板。它们是早期设计、早期灵感和早期研究，而不是后面的制作环节。",
                   source: "interview"
                 },
                 {
@@ -846,8 +846,8 @@ window.GM = {
                       kindZh: "Google 文档 — 正式链接",
                       labelEn: "Project document (first IDEA)",
                       labelZh: "项目文档（最初的想法）",
-                      noteEn: "A production-reference link only. I am not quoting unpublished plot from it on this public page. Opens in a new tab.",
-                      noteZh: "仅作为制作参考链接。这个公开页面不会从中摘录尚未公开的情节。将在新标签页打开。"
+                      noteEn: "Project document, and the first idea.",
+                      noteZh: "项目文档，也是最初的想法。"
                     },
                     {
                       href: "https://www.figma.com/board/VrMF8IULPUp7JQ9RESBTzx/GOLDFISH-MAYHEM?node-id=0-1&t=ZSduhjK4uau2P4OO-1",
@@ -855,8 +855,8 @@ window.GM = {
                       kindZh: "Figma — 正式链接",
                       labelEn: "Character and Environment references (Moodboard 1)",
                       labelZh: "角色与场景参考（情绪板 1）",
-                      noteEn: "Early character and environment references. Opens in a new tab. I am not embedding the board here.",
-                      noteZh: "早期的角色与场景参考。将在新标签页打开。这里不嵌入看板。"
+                      noteEn: "Early character and environment references.",
+                      noteZh: "早期的角色与场景参考。"
                     },
                     {
                       href: "https://boardmix.cn/app/share/CAE.COXspA8gASoQsqc7K6je5x5Cr_JW2E5n3DAFQAE/uySoI0",
@@ -864,8 +864,8 @@ window.GM = {
                       kindZh: "Boardmix — 正式链接",
                       labelEn: "Movement references (Moodboard 2)",
                       labelZh: "动作参考（情绪板 2）",
-                      noteEn: "Early movement references. Opens in a new tab. I am not logging in or embedding the board.",
-                      noteZh: "早期的动作参考。将在新标签页打开。这里不登录，也不嵌入看板。"
+                      noteEn: "Early movement references.",
+                      noteZh: "早期的动作参考。"
                     },
                     {
                       href: "https://miro.com/app/board/uXjVGg8zP5k=/?share_link_id=713540723386",
@@ -873,8 +873,8 @@ window.GM = {
                       kindZh: "Miro — 正式链接",
                       labelEn: "Final moodboard (FINAL FINAL)",
                       labelZh: "最终情绪板（FINAL FINAL）",
-                      noteEn: "The final moodboard. Opens in a new tab. I am not embedding the board here.",
-                      noteZh: "最终情绪板。将在新标签页打开。这里不嵌入看板。"
+                      noteEn: "The final moodboard.",
+                      noteZh: "最终情绪板。"
                     }
                   ]
                 },
@@ -907,12 +907,6 @@ window.GM = {
                       source: "stills"
                     }
                   ]
-                },
-                {
-                  type: "callout",
-                  kind: "gap",
-                  en: "I have not placed screenshots of the Miro, Figma or Boardmix boards, or of the project document, on this page. If we want a few still frames from a board itself for a later version, they will need to be exported on purpose.",
-                  zh: "这个页面上没有放 Miro、Figma、Boardmix 看板或项目文档的截图。如果以后版本需要从看板里导出几张静帧，需要另外专门导出。"
                 }
               ]
             },
@@ -956,8 +950,8 @@ window.GM = {
                       kindZh: "Luma — 正式看板",
                       labelEn: "World building and Character design",
                       labelZh: "世界观与角色设计",
-                      noteEn: "The official board I am using for these two later steps. Opens in a new tab. I am not logging in or embedding it here.",
-                      noteZh: "这两步我指定使用的正式看板。将在新标签页打开。这里不登录，也不嵌入。"
+                      noteEn: "The official board for world-building and character design.",
+                      noteZh: "世界观与角色设计的正式看板。"
                     }
                   ]
                 }
@@ -983,8 +977,8 @@ window.GM = {
                       kindZh: "Luma — 正式看板",
                       labelEn: "World building and Character design",
                       labelZh: "世界观与角色设计",
-                      noteEn: "The official board I am using for these two later steps. Opens in a new tab.",
-                      noteZh: "这两步我指定使用的正式看板。将在新标签页打开。"
+                      noteEn: "The official board for world-building and character design.",
+                      noteZh: "世界观与角色设计的正式看板。"
                     }
                   ]
                 },
@@ -1608,12 +1602,12 @@ window.GM = {
         {
           type: "live-slot",
           title: { en: "Questions from the room", zh: "现场提出的问题" },
-          en: "This space is left empty on purpose, so I can write down or stay with the questions that actually arrive during the livestream.",
-          zh: "这一块是故意留空的，方便我在直播里记下、或停在大家真正问出来的问题上。"
+          en: "Your questions, as they come.",
+          zh: "欢迎提问。"
         },
         {
           type: "details",
-          summary: { en: "A few rapid-fire lines I can use lightly, if useful", zh: "如果需要，我可以轻轻用到的几句快问快答" },
+          summary: { en: "A few short answers", zh: "几句短答" },
           blocks: [
             {
               type: "paras",
@@ -1639,12 +1633,6 @@ window.GM = {
                   source: "interview"
                 }
               ]
-            },
-            {
-              type: "callout",
-              kind: "editorial",
-              en: "An optional line I can say to camera, because the official film is already public on YouTube: “I’m Junie and my new film, Goldfish Mayhem, is out now.” Beyond the Loop, Season 2 is out now.",
-              zh: "因为官方影片已经在 YouTube 上公开，我可以对着镜头选用这句：「I’m Junie and my new film, Goldfish Mayhem, is out now.」Beyond the Loop 第二季现在已经上线。"
             }
           ]
         }
@@ -1654,8 +1642,8 @@ window.GM = {
   sourceSection: {
     summary: { en: "Sources", zh: "来源" },
     intro: {
-      en: "Important facts on this page carry a short source mark. The full list is here. I have only used material that is already public, or that I have already spoken in the first person in an interview or in a public first-person account.",
-      zh: "这个页面上的重要事实带有简短的来源标记。完整列表在这里。我只使用了已经公开的材料，或我已经在访谈和公开的第一人称讲述里说过的内容。"
+      en: "Important facts carry a short source mark. The full list is here. I have only used material that is already public, or that I have already spoken in the first person in an interview or in a public first-person account.",
+      zh: "重要事实带有简短的来源标记。完整列表在这里。我只使用了已经公开的材料，或我已经在访谈和公开的第一人称讲述里说过的内容。"
     },
     endZh: "一起创造世界",
     endLead: {
@@ -1670,8 +1658,8 @@ window.GM = {
       zh: "已公开的第一人称讲述——包括 2035 年赛博民俗故事简介、佛山童年、鸿胜武馆、作者性、神经媒体、DATALAND、世界建筑师，以及工作室邀请。"
     },
     {
-      en: "Typographic plates typeset from the presentation used when introducing this work — visual language, key art, the 1999–2023 creating-worlds timeline, Goldfish Mayhem × WONDERSTUDIOS, and title forms. The typography on the page is live English type, not a screenshot of the original slides.",
-      zh: "由介绍这部作品时使用的演示文稿重新排版的字体版面——视觉风格、主视觉、1999 至 2023 的创造世界时间线、「Goldfish Mayhem × WONDERSTUDIOS」，以及片名写法。页面上的英文是可排版的活字，不是原演示文稿的截图。"
+      en: "Typographic plates drawn from the presentation used when introducing this work — visual language, key art, the 1999–2023 creating-worlds timeline, Goldfish Mayhem × WONDERSTUDIOS, and title forms.",
+      zh: "由介绍这部作品时使用的演示文稿重新排版的字体版面——视觉风格、主视觉、1999 至 2023 的创造世界时间线、「Goldfish Mayhem × WONDERSTUDIOS」，以及片名写法。"
     },
     {
       en: "Interview Q&A — hometown and mixed culture, fictional Goldfish Street and the real street downstairs, the rotating restaurant, the three girls as mirrors, themes, tools (ChatGPT, Mr. Duan, invideo Agent One, CapCut Video Studio – Director Mode, OpenArt Smart Shot / World Builder), the red-haired hero universe still in development, and rapid-fire lines.",
@@ -1698,12 +1686,12 @@ window.GM = {
       zh: "小红书——已公开的第一集、第二集，以及幕后制作特辑。"
     },
     {
-      en: "Production-reference links placed but not quoted for unpublished plot. In the Moodboard section, in early-process order: the project document (Google Doc, first IDEA), character and environment references (Figma, Moodboard 1), movement references (Boardmix, Moodboard 2), and the final moodboard (Miro, FINAL FINAL). Later, the official world-building and character-design board (Luma).",
-      zh: "已放置、但未从中摘录未公开情节的制作参考链接。情绪板一步按早期过程排列：项目文档（Google 文档，最初的想法）、角色与场景参考（Figma，情绪板 1）、动作参考（Boardmix，情绪板 2），以及最终情绪板（Miro，FINAL FINAL）。再往后，是正式的世界观与角色设计看板（Luma）。"
+      en: "Official board links, in early-process order in the Moodboard section: the project document (Google Doc, first IDEA), character and environment references (Figma, Moodboard 1), movement references (Boardmix, Moodboard 2), and the final moodboard (Miro, FINAL FINAL). Later, the official world-building and character-design board (Luma).",
+      zh: "正式看板链接。情绪板一步按早期过程排列：项目文档（Google 文档，最初的想法）、角色与场景参考（Figma，情绪板 1）、动作参考（Boardmix，情绪板 2），以及最终情绪板（Miro，FINAL FINAL）。再往后，是正式的世界观与角色设计看板（Luma）。"
     },
     {
-      en: "Official stills already used on the public site, copied into this folder for the livestream page.",
-      zh: "已经在公开网站使用过的官方剧照，复制到这个文件夹，供直播页使用。"
+      en: "Official stills already used on the public site.",
+      zh: "已经在公开网站使用过的官方剧照。"
     }
   ]
 };
