@@ -150,8 +150,7 @@ window.GM = {
                 { n: "06", text: "Project Odyssey Global AI Film Festival | Silver" }
               ],
               photos: [
-                { src: "assets/plates/01-portrait.jpg", altEn: "A portrait of Junie Lau in a red sculptural dress, holding a golden trophy beside a gold astronaut helmet", altZh: "Junie Lau 的肖像：穿着红色雕塑感礼服，手持金色奖杯，身旁是金色宇航头盔" },
-                { src: "assets/plates/01-forbes.jpg", altEn: "A clipping of the Forbes profile “How AI And Peter Gabriel Changed Junie Lau’s Path To Directing”", altZh: "《福布斯》人物专访剪报：《How AI And Peter Gabriel Changed Junie Lau’s Path To Directing》" }
+                { src: "assets/plates/01-forbes-portrait.jpg", altEn: "The Forbes profile “How AI And Peter Gabriel Changed Junie Lau’s Path To Directing”, beside a portrait of Junie Lau in a red sculptural dress, holding a golden trophy next to a gold astronaut helmet", altZh: "《福布斯》人物专访《How AI And Peter Gabriel Changed Junie Lau’s Path To Directing》，旁为 Junie Lau 的肖像：穿着红色雕塑感礼服，手持金色奖杯，身旁是金色宇航头盔" }
               ],
               capEn: "The first plate I walk through in this introduction: I am a director, with a short list of films and awards I can already share.",
               capZh: "这段自我介绍翻开的第一块版面：我是一名导演，上面有我已经可以分享的影片和奖项。"
@@ -167,9 +166,9 @@ window.GM = {
                 { n: "08", title: "Our T2 Remake", text: "Co-director of the world’s first AI feature film" }
               ],
               photos: [
-                { src: "assets/plates/02-tribeca-google.jpg", altEn: "Junie Lau with colleagues in front of a Tribeca Festival and Google step-and-repeat", altZh: "Junie Lau 与同行站在 Tribeca Festival 与 Google 的背景板前" },
-                { src: "assets/plates/02-events.jpg", altEn: "A festival stage at WAIC, and Junie Lau at the Beyond the Loop 2 premiere", altZh: "WAIC 的舞台，以及 Junie Lau 在 Beyond the Loop 2 首映现场" },
-                { src: "assets/plates/02-tribeca-25.jpg", altEn: "An aerial view of a city with the Tribeca Festival 25 mark", altZh: "城市航拍，上面有 Tribeca Festival 25 的标识" }
+                { src: "assets/plates/02-tribeca-people.jpg", altEn: "Junie Lau with colleagues in front of a Tribeca Festival and Google step-and-repeat", altZh: "Junie Lau 与同行站在 Tribeca Festival 与 Google 的背景板前" },
+                { src: "assets/plates/02-waic.jpg", altEn: "A festival stage at the World Artificial Intelligence Conference (WAIC)", altZh: "世界人工智能大会（WAIC）的舞台" },
+                { src: "assets/plates/02-tribeca-premiere.jpg", altEn: "An aerial view of a city with the Tribeca Festival 25 mark, above a portrait of Junie Lau at the Beyond the Loop 2 Los Angeles premiere", altZh: "城市航拍与 Tribeca Festival 25 标识，下方是 Junie Lau 在 Beyond the Loop 2 洛杉矶首映的肖像" }
               ],
               capEn: "Festivals and milestones I have already reached, including invitations to the Tribeca Film Festival, and work as a co-director on Our T2 Remake.",
               capZh: "我已经走到的电影节和创作里程碑，包括受邀前往 Tribeca Film Festival，以及担任《Our T2 Remake》的联合导演。"
@@ -204,7 +203,7 @@ window.GM = {
                 { num: "50", text: "Twice selected for the Global Top 50 Women AI Filmmakers", circled: true }
               ],
               photos: [
-                { src: "assets/plates/04-portrait.jpg", altEn: "Junie Lau seated in a pale pink jacket, introduced as a film director and multidisciplinary creative", altZh: "Junie Lau 坐着，穿着浅粉色外套，介绍为电影导演与跨界创作者" }
+                { src: "assets/plates/04-interview.jpg", altEn: "Junie Lau seated in a pale pink jacket, introduced as a film director and multidisciplinary creative, above a still from the Google I/O 2025 keynote in which her work appears", altZh: "Junie Lau 坐着，穿着浅粉色外套，介绍为电影导演与跨界创作者；下方是 2025 年 Google I/O 主题演讲中出现她作品的画面" }
               ],
               capEn: "A snapshot of the scale of that work, together with a portrait, as I continue this introduction.",
               capZh: "这份工作体量的一个速写，旁边是一张肖像。自我介绍从这里再往下走。"
@@ -244,6 +243,7 @@ window.GM = {
                   title: "Hand-drawn",
                   date: "1999",
                   caption: "Creating worlds with oil pastels from childhood",
+                  layout: "pair",
                   photos: [
                     { src: "assets/plates/06-drawing-1999.jpg", altEn: "A childhood oil-pastel drawing of a yellow rabbit, a house and a sun", altZh: "一幅童年油画棒作品：黄色的兔子、房子和太阳" },
                     { src: "assets/plates/06-childhood-1999.jpg", altEn: "A childhood photograph of Junie as a young girl, standing in front of drawings, holding a balloon", altZh: "Junie 童年的照片：小女孩站在画作前，手里拿着气球" }
@@ -253,27 +253,31 @@ window.GM = {
                   title: "Art direction",
                   date: "2020.07",
                   caption: "Creating worlds with timber structures, metal frameworks, fibreglass, scenic painting, 3D printing, LED screens and physical props",
+                  layout: "sets",
                   photos: [
-                    { src: "assets/plates/06-art-direction.jpg", altEn: "Art-direction stills from a set: a built street, an LED wall, and a studio floor with cameras and costumes", altZh: "美术指导现场：搭景街道、LED 屏，以及有摄影机和服装的棚内" },
-                    { src: "assets/plates/06-set-floral.jpg", altEn: "A densely built floral and architectural set", altZh: "一座铺满花卉与建筑细节的场景" }
+                    { src: "assets/plates/06-set-01.jpg", altEn: "A built street set, seen during art direction", altZh: "美术指导期间搭建的街道场景" },
+                    { src: "assets/plates/06-set-02.jpg", altEn: "A studio floor with cameras, costumes and an LED wall", altZh: "有摄影机、服装和 LED 屏的棚内" },
+                    { src: "assets/plates/06-art-direction.jpg", altEn: "A densely built floral and architectural set", altZh: "一座铺满花卉与建筑细节的场景" }
                   ]
                 },
                 {
                   title: "Creating with AI",
                   date: "2022.02",
                   caption: "Creating worlds with Disco Diffusion",
+                  layout: "pair-wide",
                   photos: [
-                    { src: "assets/plates/06-disco-diffusion.jpg", altEn: "A Google Colab window running Disco Diffusion v5.6, with prompt settings visible", altZh: "正在运行 Disco Diffusion v5.6 的 Google Colab 窗口，可见提示词设置" }
+                    { src: "assets/plates/06-disco-world.jpg", altEn: "An image made with Disco Diffusion", altZh: "用 Disco Diffusion 创作的画面" },
+                    { src: "assets/plates/06-disco-ui.jpg", altEn: "A Google Colab window running Disco Diffusion v5.6, with prompt settings visible", altZh: "正在运行 Disco Diffusion v5.6 的 Google Colab 窗口，可见提示词设置" }
                   ]
                 },
                 {
                   title: "Grammy-winning musician Peter Gabriel AI music video",
                   date: "2023.05",
                   caption: "Made with Stable Diffusion and Midjourney",
+                  layout: "pair-wide",
                   photos: [
                     { src: "assets/plates/06-the-court.jpg", altEn: "A still from The Court: a man in sunglasses moving through a city street", altZh: "《The Court》剧照：一个戴墨镜的人走在城市街道上" },
-                    { src: "assets/plates/06-diffuse-together.jpg", altEn: "A #DiffuseTogether winners screen, with Junie’s name marked", altZh: "#DiffuseTogether 获奖画面，标有 Junie 的名字" },
-                    { src: "assets/plates/06-the-court-still.jpg", altEn: "A still from The Court, with the title on the image", altZh: "《The Court》剧照，画面上有片名" }
+                    { src: "assets/plates/06-the-court-winners.jpg", altEn: "A #DiffuseTogether winners screen, with Junie’s name marked, above a still from The Court", altZh: "#DiffuseTogether 获奖画面（标有 Junie 的名字），下方是《The Court》剧照" }
                   ]
                 }
               ],
@@ -322,7 +326,7 @@ window.GM = {
               headline: "Creating worlds",
               chapter: "C H A P T E R   0 2",
               photos: [
-                { src: "assets/plates/08-red-forest.jpg", altEn: "A figure in white walking through a forest of red flowers", altZh: "一个穿白衣的人走在红色的花林里" }
+                { src: "assets/plates/08-creating-worlds.jpg", altEn: "Official artwork: a figure in white walking through a forest of red flowers, with the title 创造世界 on the image", altZh: "官方设定图：一个穿白衣的人走在红色的花林里，画面上保留「创造世界」标题" }
               ],
               capEn: "Creating worlds — the thread I keep returning to.",
               capZh: "创造世界——我一直回到的那条线。"
@@ -368,7 +372,7 @@ window.GM = {
                 { src: "assets/plates/12-51ist.jpg", altEn: "Poster for 51IST, a PROMISE title", altZh: "51IST 海报，PROMISE 出品", left: "51IST", right: "PROMISE" },
                 { src: "assets/plates/12-mulan.jpg", altEn: "Poster for 猩紅木蘭, a PROMISE title", altZh: "猩紅木蘭海报，PROMISE 出品", left: "猩紅木蘭", right: "PROMISE" },
                 { src: "assets/plates/12-madam-pink.jpg", altEn: "Poster for MADAM PINK, with 幕间映画", altZh: "MADAM PINK 海报，幕间映画", left: "MADAM PINK", right: "幕间映画" },
-                { src: "assets/plates/12-goldfish-mayhem.jpg", altEn: "Poster for Goldfish Mayhem with Wonder Studios", altZh: "《金魚街大亂鬥》海报，Wonder Studios", left: "Goldfish Mayhem", right: "WONDERSTUDIOS" }
+                { src: "assets/plates/12-goldfish-mayhem.jpg", altEn: "Poster for Goldfish Mayhem — 金魚街大亂鬥 — with Wonder Studios", altZh: "《金魚街大亂鬥》海报，Wonder Studios", left: "金魚街大亂鬥", right: "WONDERSTUDIOS" }
               ],
               capEn: "Original film IPs I have been developing with production teams, including Goldfish Mayhem — Goldfish Mayhem × WONDERSTUDIOS.",
               capZh: "我和制作团队一起开发的原创电影 IP，其中包括《金魚街大亂鬥》——Goldfish Mayhem × WONDERSTUDIOS。"
@@ -476,17 +480,19 @@ window.GM = {
               kind: "who",
               highlight: "worlds",
               headline: "Who am I?",
-              tagsLeft: ["cyber-folk", "street myth", "Lingnan aesthetics", "action comedy", "Xixili", "BOBO"],
-              tagsRight: ["Fengshui Girl", "data immortality", "Goldfish Street", "the Cloud"],
-              photosLeft: [
-                { src: "assets/plates/16-laundry.jpg", altEn: "A night street in the Goldfish Mayhem world, with laundry hanging above red plastic chairs", altZh: "《金魚街大亂鬥》世界里的夜街，红色塑料椅上方晾着衣服" },
-                { src: "assets/plates/16-bobo-art.jpg", altEn: "Key art of BOBO", altZh: "BOBO 的角色主视觉" },
-                { src: "assets/plates/16-rooftop.jpg", altEn: "A figure lying on a rooftop above a brightly lit Goldfish Street", altZh: "一个人躺在屋顶上，下面是灯火通明的金鱼街" }
-              ],
-              photosRight: [
-                { src: "assets/plates/16-offerings.jpg", altEn: "A wet street lined with paper offerings", altZh: "一条摆满纸扎的潮湿街道" },
-                { src: "assets/plates/16-shops.jpg", altEn: "A glowing shop street at night", altZh: "夜里灯火通明的店铺街" },
-                { src: "assets/plates/16-mahjong.jpg", altEn: "An old man playing mahjong with robots under a tree", altZh: "一位老人在树下和机器人打麻将" }
+              titlePos: { x: 35.6, y: 28.0, w: 28.8 },
+              photo: { src: "assets/plates/16-whoami-network.jpg", altEn: "A network of stills from the Goldfish Mayhem world, arranged around a central space for the question “Who am I?”", altZh: "《金魚街大亂鬥》世界里的一组剧照，环绕在「我是谁？」的中心留白周围" },
+              tags: [
+                { label: "+ cyber-folk", x: 1.6, y: 8.1 },
+                { label: "+ Lingnan aesthetics", x: 1.8, y: 79.7 },
+                { label: "+ action comedy", x: 17.2, y: 92.0 },
+                { label: "+ street myth", x: 28.8, y: 22.3 },
+                { label: "+ BOBO", x: 42.8, y: 11.2 },
+                { label: "+ Xixili", x: 44.4, y: 84.8 },
+                { label: "+ the Cloud", x: 68.4, y: 80.2 },
+                { label: "+ Goldfish Street", x: 72.0, y: 55.3 },
+                { label: "+ Fengshui Girl", x: 64.0, y: 3.0 },
+                { label: "+ data immortality", x: 82.0, y: 3.0 }
               ],
               capEn: "A plate I use when I ask “Who am I?” of this world — the three girls, the street, the Cloud, and the ideas around them, kept on one layout.",
               capZh: "我问「我是谁?」时用的版面：三个女孩、金鱼街、云端，以及旁边那些想法，都留在同一张版式上。"
@@ -535,7 +541,8 @@ window.GM = {
               highlight: "worlds",
               headline: "Taking Chinese culture as a root,\nso that Eastern stories can travel the world\nand enter into dialogue with the future.",
               photos: [
-                { src: "assets/plates/17-practice.jpg", altEn: "Practice stills — people training in a hall", altZh: "习武画面——厅堂里的训练" },
+                { src: "assets/plates/17-practice-a.jpg", altEn: "A practice still: a woman seen through a carved wooden screen in a hall", altZh: "习武画面：厅堂里，透过木雕隔扇看见一位女子" },
+                { src: "assets/plates/17-practice-b.jpg", altEn: "People training in a hall, seen from behind", altZh: "厅堂里的训练，从身后看去" },
                 { src: "assets/plates/17-lion-foshan.jpg", altEn: "A lion dance in front of 佛山鸿胜纪念", altZh: "佛山鸿胜纪念建筑前的醒狮" }
               ],
               capEn: "Taking Chinese culture as a root — practice, a lion dance, and 佛山鸿胜, kept on one plate.",
@@ -684,16 +691,16 @@ window.GM = {
                 {
                   text: "We've never seen anything quite like this before.",
                   cite: "A24",
+                  logo: { src: "assets/plates/14-logo-a24.png", altEn: "A24", altZh: "A24" },
                   photo: { src: "assets/plates/14-still-a24.jpg", altEn: "A still shown beside the A24 remark", altZh: "放在 A24 评价旁的一张剧照" }
                 },
                 {
                   text: "We would love to explore opportunities to collaborate with you.",
                   cite: "FOX ANIMATION",
-                  photo: { src: "assets/plates/14-still-fox.jpg", altEn: "A still shown beside the Fox Animation remark", altZh: "放在 Fox Animation 评价旁的一张剧照" }
+                  logo: { src: "assets/plates/14-logo-fox.png", altEn: "Fox Animation Studios", altZh: "福克斯动画" },
+                  photo: { src: "assets/plates/14-still-fox.jpg", altEn: "A still shown beside the Fox Animation remark: an old man playing mahjong with robots", altZh: "放在 Fox Animation 评价旁的一张剧照：一位老人与机器人打麻将" }
                 }
-              ],
-              capEn: "Remarks I have already shared from that Los Angeles screening, including words from A24 and Fox Animation.",
-              capZh: "那场洛杉矶放映之后，我已经分享过的评价，包括来自 A24 和福克斯动画的话。"
+              ]
             },
             {
               kind: "quotes",
@@ -702,16 +709,16 @@ window.GM = {
                 {
                   text: "We absolutely love your work. It truly feels like stepping into a video game.",
                   cite: "DISNEY",
+                  logo: { src: "assets/plates/15-logo-disney.png", altEn: "Disney", altZh: "迪士尼" },
                   photo: { src: "assets/plates/15-still-disney.jpg", altEn: "A still shown beside the Disney remark", altZh: "放在迪士尼评价旁的一张剧照" }
                 },
                 {
                   text: "Your film is truly remarkable. An exceptional piece of work.",
                   cite: "NETFLIX",
+                  logo: { src: "assets/plates/15-logo-netflix.png", altEn: "Netflix", altZh: "Netflix" },
                   photo: { src: "assets/plates/15-still-netflix.jpg", altEn: "A still shown beside the Netflix remark", altZh: "放在 Netflix 评价旁的一张剧照" }
                 }
-              ],
-              capEn: "The facing plate, with remarks from Disney and Netflix.",
-              capZh: "相对的一块版面，是来自迪士尼和 Netflix 的评价。"
+              ]
             }
           ]
         },
@@ -1143,7 +1150,8 @@ window.GM = {
               highlight: "worlds",
               headline: "Taking Chinese culture as a root,\nso that Eastern stories can travel the world\nand enter into dialogue with the future.",
               photos: [
-                { src: "assets/plates/17-practice.jpg", altEn: "Practice stills — people training in a hall", altZh: "习武画面——厅堂里的训练" },
+                { src: "assets/plates/17-practice-a.jpg", altEn: "A practice still: a woman seen through a carved wooden screen in a hall", altZh: "习武画面：厅堂里，透过木雕隔扇看见一位女子" },
+                { src: "assets/plates/17-practice-b.jpg", altEn: "People training in a hall, seen from behind", altZh: "厅堂里的训练，从身后看去" },
                 { src: "assets/plates/17-lion-foshan.jpg", altEn: "A lion dance in front of 佛山鸿胜纪念", altZh: "佛山鸿胜纪念建筑前的醒狮" }
               ],
               capEn: "The same plate again, here in a closer look at kung fu: practice, the lion dance, and 佛山鸿胜.",
@@ -1155,9 +1163,9 @@ window.GM = {
               photosLeft: true,
               headline: "From the point of view of a woman director,\nworking with AI to open a new edge\nof moving-image expression.",
               photos: [
-                { src: "assets/plates/18-bookshelf.jpg", altEn: "Junie Lau in a study, standing before a wall of books", altZh: "Junie Lau 在书房里，站在书架前" },
-                { src: "assets/plates/18-workspace-a.jpg", altEn: "A portrait in a workspace", altZh: "创作空间里的肖像" },
-                { src: "assets/plates/18-workspace-b.jpg", altEn: "Another portrait in the same workspace", altZh: "同一创作空间里的另一张肖像" }
+                { src: "assets/plates/18-bookshelf.jpg", altEn: "Junie Lau at a desk by the window, in front of a wall of books", altZh: "Junie Lau 坐在窗边书桌前，身后是书架" },
+                { src: "assets/plates/18-workspace-a.jpg", altEn: "Junie Lau standing in a purple-lit workspace, looking at a handheld device", altZh: "Junie Lau 站在紫色灯光的创作空间里，看着一只手持设备" },
+                { src: "assets/plates/18-workspace-b.jpg", altEn: "An overhead view of Junie Lau working at a desk with several screens", altZh: "俯拍：Junie Lau 在有多块屏幕的书桌前工作" }
               ],
               capEn: "From the point of view of a woman director, working with AI to open a new edge of moving-image expression.",
               capZh: "以女性导演的视角，携手 AI 开拓影像表达的新边界。"
@@ -1281,7 +1289,7 @@ window.GM = {
               headline: "Imagining the future",
               chapter: "C H A P T E R   0 3",
               photos: [
-                { src: "assets/plates/21-pink-field.jpg", altEn: "A figure walking through a field of pink flowers", altZh: "一个人走在粉红色的花田里" }
+                { src: "assets/plates/21-imagining-future.jpg", altEn: "Official artwork: a figure walking through a field of pink flowers, with the title 畅想未来 on the image", altZh: "官方设定图：一个人走在粉红色的花田里，画面上保留「畅想未来」标题" }
               ],
               capEn: "Imagining the future — the plate I open when I move from work already made to what I want to explore next.",
               capZh: "畅想未来——从已经做过的事情，走到我接下来想探索的事情时，我会翻开的这块版面。"

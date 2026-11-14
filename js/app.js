@@ -178,13 +178,16 @@
     const kind = p.kind || "statement-ghost";
     let body = "";
     if (kind === "intro-awards") {
-      const awards = (p.awards || [])
-        .map((a) => `<li><span class="n">${esc(a.n)}</span><span>${esc(a.text)}</span></li>`)
-        .join("");
+      const awards = p.awards || [];
+      const mid = Math.ceil(awards.length / 2);
+      const item = (a) => `<li><span class="n">${esc(a.n)}</span><span>${esc(a.text)}</span></li>`;
       body = `<div class="plate-intro">
         <div>
           <h3 class="plate-headline">${typo(p.headline)}</h3>
-          <ul class="plate-awards">${awards}<li class="more" aria-hidden="true">······</li></ul>
+          <div class="plate-awards">
+            <ul>${awards.slice(0, mid).map(item).join("")}</ul>
+            <ul>${awards.slice(mid).map(item).join("")}<li class="more" aria-hidden="true">······</li></ul>
+          </div>
           ${p.wordmark ? `<div class="plate-wordmark">${esc(p.wordmark)}</div>` : ""}
         </div>
         <div class="plate-photos">${figs(p.photos, idx)}</div>
@@ -226,9 +229,10 @@
     } else if (kind === "timeline") {
       const cells = (p.moments || [])
         .map((m, i) => {
-          const cls = (m.photos || []).length === 1 ? "solo" : (m.photos || []).length > 2 ? "triple" : "";
+          const n = (m.photos || []).length;
+          const cls = m.layout || (n === 1 ? "solo" : n > 2 ? "sets" : "pair");
           return `<article class="timeline-cell">
-            <div class="t-photos ${cls}">${figs(m.photos, idx + "-m" + i)}</div>
+            <div class="t-photos ${esc(cls)}">${figs(m.photos, idx + "-m" + i)}</div>
             <h3>${esc(m.title)} <span>${esc(m.date || "")}</span></h3>
             <p>${esc(m.caption)}</p>
           </article>`;
@@ -275,34 +279,42 @@
       </div>`;
     } else if (kind === "quotes") {
       const cells = (p.quotes || [])
-        .map(
-          (q, i) => `<article class="quote-cell">${q.photo ? plateFig(q.photo, idx + "-q" + i) : ""}
-            <blockquote>“${esc(q.text)}”<cite>${esc(q.cite)}</cite></blockquote>
-          </article>`
-        )
+        .map((q, i) => {
+          const logo = q.logo
+            ? `<img class="quote-logo" src="${esc(q.logo.src)}" alt="${esc(q.logo.altEn || q.cite || "")}">`
+            : "";
+          return `<article class="quote-cell">${q.photo ? plateFig(q.photo, idx + "-q" + i) : ""}
+            <div class="quote-copy">${logo}<blockquote>“${esc(q.text)}”<cite>── ${esc(q.cite)}</cite></blockquote></div>
+          </article>`;
+        })
         .join("");
       body = `<div class="quote-pair">${cells}</div>`;
     } else if (kind === "who") {
-      const tagsL = (p.tagsLeft || []).map((t) => `<span class="who-tag">${esc(t)}</span>`).join("");
-      const tagsR = (p.tagsRight || []).map((t) => `<span class="who-tag">${esc(t)}</span>`).join("");
-      body = `<div class="plate-who"><div class="who-layout">
-        <div>
-          <div class="who-tags">${tagsL}</div>
-          <div class="who-photos">${figs(p.photosLeft, idx + "-l")}</div>
+      const tags = (p.tags || [])
+        .map(
+          (t) =>
+            `<span class="who-tag" style="left:${Number(t.x)}%;top:${Number(t.y)}%">${esc(t.label)}</span>`
+        )
+        .join("");
+      const tp = p.titlePos || { x: 35, y: 28, w: 30 };
+      body = `<div class="plate-who">
+        <div class="who-stage">
+          ${p.photo ? plateFig(p.photo, idx) : ""}
+          <div class="who-overlay">
+            ${tags}
+            <h3 class="plate-headline who-title" style="left:${Number(tp.x)}%;top:${Number(tp.y)}%;width:${Number(tp.w)}%">${typo(p.headline)}</h3>
+          </div>
         </div>
-        <div class="who-center"><h3 class="plate-headline">${typo(p.headline)}</h3></div>
-        <div>
-          <div class="who-tags">${tagsR}</div>
-          <div class="who-photos">${figs(p.photosRight, idx + "-r")}</div>
-        </div>
-      </div></div>`;
+      </div>`;
     } else if (kind === "statement") {
       const side = p.photosLeft ? "photos-left" : "";
+      const n = (p.photos || []).length;
+      const photoCls = n === 1 ? " solo" : n >= 3 ? " trio" : "";
       body = `<div class="plate-statement ${side}">
         <div class="statement-copy">
           <h3 class="plate-headline">${typo(p.headline)}</h3>
         </div>
-        <div class="statement-photos${(p.photos || []).length === 1 ? " solo" : ""}">${figs(p.photos, idx)}</div>
+        <div class="statement-photos${photoCls}">${figs(p.photos, idx)}</div>
       </div>`;
     } else if (kind === "media-table") {
       const eras = (p.eras || [])
