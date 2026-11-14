@@ -218,7 +218,7 @@ window.GM = {
         },
         {
           type: "para",
-          en: "In 2018, during my master’s at University of the Arts London, I started working with early artificial intelligence, virtual reality, mixed reality, and interactive art. In 2020, during the pandemic, I returned to China. I had few industry contacts then, and becoming a director overnight was not realistic, so I chose a job close to directing: art direction. On set I worked with carpenters, prop makers, gaffers and cinematographers, and learned how to make an idea physically real.",
+          en: "In 2018, during my master’s at University of the Arts London, I started working with early artificial intelligence, virtual reality, mixed reality, and interactive art. In 2020, during the pandemic, I returned to China. I had few industry contacts then, and becoming a director overnight was not realistic, so I chose a job close to directing: production design. On set I worked with carpenters, prop makers, gaffers and cinematographers, and learned how to make an idea physically real.",
           zh: "2018 年，我在伦敦艺术大学读硕士，开始接触早期的人工智能、虚拟现实、混合现实，还有交互艺术。2020 年疫情期间，我回到中国。那时候没有什么行业人脉，想直接当导演不太现实，所以我选择了一个离导演很近的工作：美术指导。在片场，我跟木工、道具师、灯光师、摄影师一起工作，学习怎么把一个想法真正做出来。",
           source: "public"
         },
@@ -242,12 +242,12 @@ window.GM = {
                   ]
                 },
                 {
-                  title: "Art direction",
+                  title: "Production Design",
                   date: "2020.07",
                   caption: "Creating worlds with timber structures, metal frameworks, fibreglass, scenic painting, 3D printing, LED screens and physical props",
                   layout: "sets",
                   photos: [
-                    { src: "assets/plates/06-set-01.jpg", crop: { t: 4.63, b: 4.63 }, altEn: "A built street set, seen during art direction", altZh: "美术指导期间搭建的街道场景" },
+                    { src: "assets/plates/06-set-01.jpg", crop: { t: 4.63, b: 4.63 }, altEn: "A built street set, seen during production design", altZh: "美术指导期间搭建的街道场景" },
                     { src: "assets/plates/06-set-02.jpg", crop: { l: 12.43, t: 34.653, r: 18.726, b: 30.208 }, altEn: "A studio floor with cameras, costumes and an LED wall", altZh: "有摄影机、服装和 LED 屏的棚内" },
                     { src: "assets/plates/06-art-direction.jpg", altEn: "A densely built floral and architectural set", altZh: "一座铺满花卉与建筑细节的场景" }
                   ]
@@ -281,7 +281,7 @@ window.GM = {
                   ]
                 }
               ],
-              capEn: "The path on one plate: a drawing from 1999, art direction in July 2020, making worlds with Disco Diffusion in February 2022, and The Court, the AI music video for Peter Gabriel, in May 2023.",
+              capEn: "The path on one plate: a drawing from 1999, production design in July 2020, making worlds with Disco Diffusion in February 2022, and The Court, the AI music video for Peter Gabriel, in May 2023.",
               capZh: "整条路径放在同一块版面上：1999 年的画，2020 年 7 月的美术指导，2022 年 2 月用 Disco Diffusion 创造世界，以及 2023 年 5 月为 Peter Gabriel 创作的 AI MV《The Court》。"
             }
           ]
@@ -303,7 +303,7 @@ window.GM = {
         },
         {
           type: "para",
-          en: "What really changed the direction of my career was an AI music video I made for Peter Gabriel in 2023. It won the global championship of Stability AI’s #DiffuseTogether competition. The work later received a silver award at an international AI film festival — in a later interview I said this was the Silver Award at the second Runway International AI Film Festival — and more people began to come to me for collaborations. Slowly I moved from art direction into directing.",
+          en: "What really changed the direction of my career was an AI music video I made for Peter Gabriel in 2023. It won the global championship of Stability AI’s #DiffuseTogether competition. The work later received a silver award at an international AI film festival — in a later interview I said this was the Silver Award at the second Runway International AI Film Festival — and more people began to come to me for collaborations. Slowly I moved from production design into directing.",
           zh: "真正改变我职业方向的，是 2023 年为音乐人 Peter Gabriel 创作的一支 AI MV。它获得了 Stability AI 举办的比赛全球冠军。后来作品又拿到了国际 AI Film Festival 的银奖；在后来的访谈里，我说明这是第二届 Runway 国际 AI 电影节的银奖。越来越多人开始找我合作，我也慢慢从美术指导走到了导演的位置。",
           source: "public"
         },
@@ -316,7 +316,6 @@ window.GM = {
               leftWord: "Creating Worlds",
               rightWord: "Imagining the Future",
               headline: "The best way to predict the future is to *create it.*",
-              chapter: "C H A P T E R   0 1",
               capEn: "A line I come back to: the best way to predict the future is to create it.",
               capZh: "我常回到的一句话：预测未来最好的方式，是创造它。"
             },
@@ -346,6 +345,24 @@ window.GM = {
           en: "After I began making work with AI, I was invited to collaborate with OpenAI, Google and ByteDance. Some of those partners gave me enough room not only to finish a film, but to put in questions I really care about. What If, Mother, made with OpenAI, comes from a question I had been carrying: if I had never existed, what kind of life would my mother have lived? Dear “Stranger”, made with Google, is about my grandmother. I almost never told her “I love you” to her face; after she was gone, I tried to finish, on screen, a conversation that never happened in life.",
           zh: "开始使用 AI 创作以后，我陆续收到一些合作邀请，包括和 OpenAI、Google、字节跳动的项目。很幸运，有些合作方给了我比较大的创作空间。我和 OpenAI 合作的《What If, Mother》，来自一个我一直在想的问题：如果这个世界上从来没有我，我的妈妈会过着怎样的人生？和 Google 合作的《Dear “Stranger”》，则是关于我奶奶的故事。以前我很少当面跟她说「我爱你」，等她离开以后，我试着用影像去完成一段现实里没能发生的对话。",
           source: "public"
+        },
+        {
+          type: "plates",
+          items: [
+            {
+              kind: "collaborations",
+              highlight: "worlds",
+              partners: [
+                { src: "assets/plates/09-runway.jpg", altEn: "Poster from the Runway AI Film Festival, with Junie Lau", altZh: "Runway AI Film Festival 海报，Junie Lau 作品", partner: "RUNWAY AI FILM FESTIVAL" },
+                { src: "assets/plates/09-openai.jpg", altEn: "Poster for Love from Void, a collaboration with OpenAI", altZh: "《Love from Void》海报，与 OpenAI 的合作", partner: "OPENAI" },
+                { src: "assets/plates/09-google.jpg", altEn: "Poster for Dear “Stranger”, a collaboration with Google", altZh: "《Dear “Stranger”》海报，与 Google 的合作", partner: "GOOGLE" },
+                { src: "assets/plates/09-bytedance.jpg", altEn: "A collaboration poster with ByteDance: a red-haired figure in fire", altZh: "与字节跳动合作的海报：火焰中的红发人物", partner: "BYTEDANCE" },
+                { src: "assets/plates/09-360.jpg", altEn: "Poster for 无限帧率, a collaboration with 360", altZh: "《无限帧率》海报，与 360 的合作", partner: "360" }
+              ],
+              capEn: "Collaborations I have been invited into, with Runway AI Film Festival, OpenAI, Google, ByteDance, and 360.",
+              capZh: "我收到的一些合作邀请，包括 Runway AI Film Festival、OpenAI、Google、字节跳动，以及 360。"
+            }
+          ]
         },
         {
           type: "para",
@@ -622,13 +639,6 @@ window.GM = {
               source: "interview"
             }
           ]
-        },
-        {
-          type: "callout",
-          kind: "editorial",
-          en: "On Xiaohongshu, in a public reply on episode two, I already mixed the forms 「BOBO、风水妹、细细粒」.",
-          zh: "我在小红书第二集的公开回复里，已经混用过「BOBO、风水妹、细细粒」这种写法。",
-          source: "xhs"
         },
         {
           type: "details",
@@ -1047,7 +1057,7 @@ window.GM = {
               blocks: [
                 {
                   type: "para",
-                  en: "Because I spent years as an art director, I care a great deal about whether a place feels lived in. Goldfish Street had to carry street life, Lingnan culture, and the story at the same time: a fish-ball stand, a feng shui stall, a paper-offering shop, a dessert shop, a wishing tree, dai pai dong. The Luma board above is the official world-building and character-design board I can point to today. Earlier character and environment references live in the Moodboard section.",
+                  en: "Because I spent years as a production designer, I care a great deal about whether a place feels lived in. Goldfish Street had to carry street life, Lingnan culture, and the story at the same time: a fish-ball stand, a feng shui stall, a paper-offering shop, a dessert shop, a wishing tree, dai pai dong. The Luma board above is the official world-building and character-design board I can point to today. Earlier character and environment references live in the Moodboard section.",
                   zh: "因为我做过很多年美术指导，我很在意一个地方看起来是否像有人真正生活过。金鱼街需要同时装下市井生活、岭南文化和故事本身：鱼蛋档、风水摊、纸扎店、糖水铺、许愿树、大排档。今天我能够指给大家看的正式世界观与角色设计看板，是上面的 Luma 看板。更早的角色与场景参考，在情绪板那一步。",
                   source: "interview"
                 },

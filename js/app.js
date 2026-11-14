@@ -348,7 +348,22 @@
         <div class="plate-kicker-line">${esc(p.kickerLine || "Invitations from film companies")}</div>
         <div class="invite-grid">${items}</div>
       </div>`;
+    } else if (kind === "collaborations") {
+      const items = (p.partners || [])
+        .map(
+          (it, i) => `<article class="collab-item">${plateFig(it, idx + "-c" + i)}<div class="label">JUNIE LAU <em>X</em> ${esc(it.partner)}</div></article>`
+        )
+        .join("");
+      body = `<div class="plate-collab">
+        <div class="collab-ghost" aria-hidden="true">JUNIE LAU</div>
+        <div class="collab-name">JUNIE LAU</div>
+        <img class="collab-x" src="assets/deco/collab-x.png" alt="">
+        <img class="collab-scribble" src="assets/deco/collab-scribble.png" alt="">
+        <img class="collab-spider" src="assets/deco/spider.svg" alt="">
+        <div class="collab-grid">${items}</div>
+      </div>`;
     } else if (kind === "title") {
+
       const trailer = p.trailer || {};
       const keyArt = p.keyArt || (p.photos && p.photos[1]) || null;
       const trailerHtml = trailer.id
