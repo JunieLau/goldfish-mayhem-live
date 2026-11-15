@@ -90,11 +90,19 @@
     const w = img.w || (img.slide ? 10000 : natural ? "" : 1600);
     const h = img.h || (img.slide ? 2200 : natural ? "" : 900);
     const wh = (w ? ` width="${w}"` : "") + (h ? ` height="${h}"` : "");
-    return `<figure class="${cls.join(" ")}" data-lb="${esc(img.src)}" data-slide="${img.slide ? "1" : ""}" data-idx="${i}" tabindex="0" role="button" aria-label="${alt}">
+    const ar = img.w && img.h ? (img.w / img.h) : "";
+    const arStyle = ar ? ` style="--ar:${Number(ar).toFixed(4)}"` : "";
+    const go = img.href
+      ? `<div class="doc-go">${textPair({ en: (img.hrefKindEn || "Open") + " ↗", zh: (img.hrefKindZh || "打开") + " ↗" })}</div>`
+      : "";
+    const fig = `<figure class="${cls.join(" ")}" ${img.href ? "" : `data-lb="${esc(img.src)}" data-slide="${img.slide ? "1" : ""}" data-idx="${i}" tabindex="0" role="button"`} aria-label="${alt}"${arStyle}>
       <img src="${esc(img.src)}" alt="${alt}"${wh} loading="lazy">
       ${hint}
-      <figcaption>${cap}</figcaption>
+      <figcaption>${cap}${go}</figcaption>
     </figure>`;
+    return img.href
+      ? `<a class="doc-link" href="${esc(img.href)}" target="_blank" rel="noopener noreferrer">${fig}</a>`
+      : fig;
   }
 
   function renderVideo(v) {
@@ -154,7 +162,7 @@
   }
 
   const PLATE_NAV = [
-    { key: "director", label: "Young Director" },
+    { key: "director", label: "Film Director" },
     { key: "artist", label: "Artist" },
     { key: "worlds", label: "Creating Worlds" },
     { key: "future", label: "Imagining the Future" },
@@ -324,12 +332,22 @@
         )
         .join("");
     } else if (kind === "chapter-quote") {
+      const burst = `<svg class="quote-burst" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="#111111" stroke-linecap="round">
+          <path d="M32 5.5v53" stroke-width="2.2"/>
+          <path d="M6.5 33.5h51" stroke-width="2.2"/>
+          <path d="M13 13.5l38.5 38" stroke-width="1.7"/>
+          <path d="M51 12.5L12.5 51.5" stroke-width="1.7"/>
+          <path d="M32 16.5c1.2 6.5 2.2 9.2 8.8 12.2-6.4 2.2-8.2 4.6-9.2 11.4-1.2-6.6-3.2-8.8-9.6-11 6.2-2.4 8-5.6 10-12.6z" stroke-width="1.35"/>
+        </g>
+      </svg>`;
       body = `<div class="plate-quote-row">
         <div class="plate-side-word left">${esc(p.leftWord || "")}</div>
+        <div class="quote-bridge quote-bridge-left" aria-hidden="true"><span class="quote-rule"></span>${burst}</div>
         <div class="quote-main">
           <h3 class="plate-headline">${typo(p.headline)}</h3>
         </div>
-        ${p.chapter ? `<div class="plate-chapter">${esc(p.chapter)}</div>` : ""}
+        <div class="quote-bridge quote-bridge-right" aria-hidden="true"><span class="quote-rule"></span></div>
         <div class="plate-side-word right">${esc(p.rightWord || "")}</div>
       </div>`;
     } else if (kind === "chapter-art") {
@@ -527,10 +545,29 @@
       </div>`
       )
       .join("");
-    const sheets = (b.sheets || [])
-      .map((img, i) =>
-        renderFig(Object.assign({ natural: true, sheet: true }, img), `${idxPrefix}-sheet-${i}`)
-      )
+    const arOf = (img) => (img.w && img.h ? img.w / img.h : 1);
+    const sheetList = b.sheets || [];
+    let sheetRows = [sheetList];
+    if (sheetList.length >= 5) {
+      let best = Math.ceil(sheetList.length / 2), bestDiff = Infinity;
+      for (let i = 1; i < sheetList.length; i++) {
+        const left = sheetList.slice(0, i).reduce((s, x) => s + arOf(x), 0);
+        const right = sheetList.slice(i).reduce((s, x) => s + arOf(x), 0);
+        const d = Math.abs(left - right);
+        if (d < bestDiff) { bestDiff = d; best = i; }
+      }
+      sheetRows = [sheetList.slice(0, best), sheetList.slice(best)];
+    }
+    const sheets = sheetRows
+      .filter((row) => row.length)
+      .map((row, r) => {
+        const figs = row
+          .map((img, i) =>
+            renderFig(Object.assign({ natural: true, sheet: true }, img), `${idxPrefix}-sheet-${r}-${i}`)
+          )
+          .join("");
+        return `<div class="char-sheets">${figs}</div>`;
+      })
       .join("");
     const expressions = (b.expressions || [])
       .map((img, i) =>
@@ -542,12 +579,14 @@
         renderFig(Object.assign({ natural: true, poster: true }, img), `${idxPrefix}-poster-${i}`)
       )
       .join("");
+    const showcase = (expressions || posters)
+      ? `<div class="char-showcase">${expressions ? `<div class="char-expressions">${expressions}</div>` : ""}${posters ? `<div class="char-posters">${posters}</div>` : ""}</div>`
+      : "";
     return `<section class="character">
       <h3 class="character-name">${textPair({ en: b.nameEn, zh: b.nameZh })}</h3>
       <div class="character-fields">${fields}</div>
-      ${sheets ? `<div class="char-sheets">${sheets}</div>` : ""}
-      ${expressions ? `<div class="char-expressions">${expressions}</div>` : ""}
-      ${posters ? `<div class="char-posters">${posters}</div>` : ""}
+      ${sheets}
+      ${showcase}
     </section>`;
   }
 
@@ -568,6 +607,18 @@
         return `<div class="mod">${rich(b, "lede")}</div>`;
       case "para":
         return `<div class="mod">${rich(b, "para")}</div>`;
+      case "advice-points": {
+        const intro = b.intro ? rich(b.intro, "para") : "";
+        const items = (b.items || [])
+          .map(
+            (it) => `<article class="advice-point">
+            <div class="advice-k">${textPair({ en: it.nEn, zh: it.nZh })}</div>
+            ${textPair({ en: it.en, zh: it.zh }, "advice-line")}
+          </article>`
+          )
+          .join("");
+        return `<div class="mod advice-points">${intro}<div class="advice-list">${items}</div></div>`;
+      }
       case "paras":
         return `<div class="mod">${(b.items || [])
           .map((p) => rich(p, "para"))

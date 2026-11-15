@@ -132,7 +132,7 @@ window.GM = {
               kind: "intro-awards",
               highlight: "director",
               ghost: "DIRECTOR",
-              headline: "I am a *young director*?",
+              headline: "I am a *Film Director*?",
               wordmark: "D I R E C T O R",
               awards: [
                 { n: "01", text: "Stable Diffusion AI Short Film Contest | Global Champion" },
@@ -313,6 +313,7 @@ window.GM = {
             {
               kind: "chapter-quote",
               highlight: "worlds",
+              ghost: "PREDICTTHEFUTURE",
               leftWord: "Creating Worlds",
               rightWord: "Imagining the Future",
               headline: "The best way to predict the future is to *create it.*",
@@ -542,23 +543,6 @@ window.GM = {
               en: "So I took Foshan, Hong Kong, Lingnan culture, and all those messy childhood memories, enlarged them, distorted them, put them back together, and added a few questions I have about the future. That is how today’s Goldfish Street arrived. The Goldfish Street in the film is fictional, but it is inspired by the real street downstairs from my home. That street was also called Goldfish Street, though it was not really selling goldfish — it had wallpaper shops, hardware stores, restaurants, and everyday neighbourhood life. There is also a Goldfish Street near Mong Kok in Hong Kong. So for me it is not one specific street. It is a collection of memories from Guangdong, Hong Kong, and my childhood.",
               zh: "所以我把佛山、香港、岭南文化，还有小时候那些乱七八糟的记忆混在一起，放大、变形、重组，再加上一点我对未来的想象和提问，才有了今天这个金鱼街的世界。电影里的金鱼街是虚构的，但它的灵感来自我家楼下真实存在的一条街。那条街也叫金鱼街，但它并不是卖金鱼的，而是有很多墙纸店、五金店、餐饮店，还有很日常的街坊生活。同时，香港旺角附近也有一条金鱼街。所以对我来说，金鱼街不是某一条具体的街，而更像是一种关于广东、香港和童年记忆的集合。",
               source: "interview"
-            }
-          ]
-        },
-        {
-          type: "plates",
-          items: [
-            {
-              kind: "statement",
-              highlight: "worlds",
-              headline: "Taking *intangible cultural heritage* as a root,\nso that *Eastern stories* can travel the world\nand enter into dialogue with the *future*.",
-              photos: [
-                { src: "assets/plates/17-practice-a.jpg", altEn: "A practice still: a woman seen through a carved wooden screen in a hall", altZh: "习武画面：厅堂里，透过木雕隔扇看见一位女子" },
-                { src: "assets/plates/17-practice-b.jpg", altEn: "People training in a hall, seen from behind", altZh: "厅堂里的训练，从身后看去" },
-                { src: "assets/plates/17-lion-foshan.jpg", altEn: "A lion dance in front of 佛山鸿胜纪念", altZh: "佛山鸿胜纪念建筑前的醒狮" }
-              ],
-              capEn: "Taking intangible cultural heritage as a root — practice, a lion dance, and 佛山鸿胜, kept on one plate.",
-              capZh: "「以非遗文化为根」——习武、醒狮，以及佛山鸿胜，都留在同一块版面上。"
             }
           ]
         },
@@ -1336,16 +1320,17 @@ window.GM = {
               kind: "statement-ghost",
               highlight: "future",
               ghost: "NEURAL MEDIA",
-              headline: "We are standing at the entrance of a *new age of communication* —\nthe arrival of the *Neural Media* era.",
+              headline: "We are already in the midst of a *new age of communication* —\nthe era of *Neural Media*.",
               sub: "High-dimensional space, hallucinated content, and embedded identity",
               wordmark: "N E U R A L   M E D I A",
-              capEn: "A line I use when I talk about Neural Media: we are standing at the entrance of a new age of communication.",
-              capZh: "我谈到神经媒体时用的一句：我们正站在信息传播新时代的入口——神经媒体时代的到来。"
+              capEn: "A line I use when I talk about Neural Media: we are already in the midst of a new age of communication — the era of Neural Media.",
+              capZh: "我谈到神经媒体时用的一句：我们已经身处一个全新的传播时代之中——神经媒体时代。"
             },
             {
               kind: "statement-ghost",
               highlight: "future",
               narrow: true,
+              ghost: "DREAMS",
               headline: "I want to bring *dreams into reality*,\nlet *imagination* and the *real world*\ncollide and intertwine,\nand create a *sensory world*\nunlike any before.",
               capEn: "I want to bring dreams into reality, and let imagination and the real world meet.",
               capZh: "我想把梦境带进现实，让想象与真实碰撞、交融。"
@@ -1365,6 +1350,7 @@ window.GM = {
             {
               kind: "statement-ghost",
               highlight: "dreams",
+              ghost: "ECOSYSTEM",
               headline: "I want to build a *futurist virtual world*\n— a “*virtual ecosystem*” in which *humans and AI* evolve together.",
               capEn: "A plate for a futurist virtual world I have been conceiving — a “virtual ecosystem” in which humans and AI evolve together. This is an idea I am exploring, not a greenlit production.",
               capZh: "我在构想的一个未来主义虚拟世界——一个人类与 AI 协同进化的「虚拟生态系统」。这是我正在探索的构想，不是已经立项的项目。"
@@ -1434,17 +1420,30 @@ window.GM = {
       ghost: "建议",
       blocks: [
         {
-          type: "paras",
+          type: "para",
+          en: "To be honest, I’m not sure how useful my advice will be, because everything is changing every day, every moment. What works today might not work tomorrow.",
+          zh: "说实话，我不确定自己现在给出的建议有多大用处，因为每天、每时每刻，一切都在变化。可能今天适用的经验，明天就不适用了。",
+          source: "public"
+        },
+        {
+          type: "advice-points",
+          intro: {
+            en: "If I were to offer any advice, I’d say two things:",
+            zh: "如果要说有什么建议，我想有两点：",
+            source: "public"
+          },
           items: [
             {
-              en: "To be honest, I’m not sure how useful my advice will be, because everything is changing every day, every moment. What works today might not work tomorrow.",
-              zh: "说实话，我不确定自己现在给出的建议有多大用处，因为每天、每时每刻，一切都在变化。可能今天适用的经验，明天就不适用了。",
-              source: "public"
+              nEn: "First",
+              nZh: "第一",
+              en: "Stay curious.",
+              zh: "保持好奇心。"
             },
             {
-              en: "If I were to offer any advice, I’d say two things: first, stay curious. Second, find what you really want to say and what you want to challenge, then express that through your work in your own way.",
-              zh: "如果要说有什么建议，我想有两点：第一，保持好奇心；第二，找到自己真正想表达、想批判的东西，然后用你自己的方式把它呈现出来。",
-              source: "public"
+              nEn: "Second",
+              nZh: "第二",
+              en: "Find what you really want to say and what you want to challenge, then express that through your work in your own way.",
+              zh: "找到自己真正想表达、想批判的东西，然后用你自己的方式把它呈现出来。"
             }
           ]
         },
@@ -1460,6 +1459,9 @@ window.GM = {
           items: [
             {
               src: "assets/docs/the-ai-doc.jpg",
+              href: "https://www.focusfeatures.com/the-ai-doc-or-how-i-became-an-apocaloptimist",
+              hrefKindEn: "Official site",
+              hrefKindZh: "官方网站",
               w: 945,
               h: 1400,
               natural: true,
@@ -1471,6 +1473,9 @@ window.GM = {
             },
             {
               src: "assets/docs/the-thinking-game.jpg",
+              href: "https://thinkinggamefilm.com/",
+              hrefKindEn: "Official site",
+              hrefKindZh: "官方网站",
               w: 950,
               h: 1400,
               natural: true,
@@ -1482,6 +1487,9 @@ window.GM = {
             },
             {
               src: "assets/docs/ai-gone-wild.jpg",
+              href: "https://www.imdb.com/title/tt48437216/",
+              hrefKindEn: "IMDb",
+              hrefKindZh: "IMDb",
               w: 1120,
               h: 1400,
               natural: true,
@@ -1493,6 +1501,9 @@ window.GM = {
             },
             {
               src: "assets/docs/dont-die.jpg",
+              href: "https://dontdie.com/",
+              hrefKindEn: "Official site",
+              hrefKindZh: "官方网站",
               w: 1000,
               h: 1333,
               natural: true,
