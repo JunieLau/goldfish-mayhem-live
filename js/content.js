@@ -172,9 +172,9 @@ window.GM = {
               highlight: "artist",
               ghost: "ARTIST",
               headline: "I am an *artist*?",
-              wordmark: "G O O G L E  ·  O P E N A I",
+              wordmark: "G O O G L E  ·  O P E N A I  ·  B Y T E D A N C E",
               credits: [
-                "Google, OpenAI | Official collaborating artist",
+                "Google, OpenAI, ByteDance | Official collaborating artist",
                 "Forbes | Profile of a woman AI artist",
                 "Among the world’s leading AI filmmakers | Highly regarded by the industry",
                 "Leading universities worldwide | Guest lecturer, including Tsinghua University and Peking University"
