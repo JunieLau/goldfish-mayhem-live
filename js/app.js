@@ -154,7 +154,7 @@
   }
 
   const PLATE_NAV = [
-    { key: "director", label: "Young Director" },
+    { key: "director", label: "Film Director" },
     { key: "artist", label: "Artist" },
     { key: "worlds", label: "Creating Worlds" },
     { key: "future", label: "Imagining the Future" },

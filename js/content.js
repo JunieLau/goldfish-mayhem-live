@@ -132,7 +132,7 @@ window.GM = {
               kind: "intro-awards",
               highlight: "director",
               ghost: "DIRECTOR",
-              headline: "I am a *young director*?",
+              headline: "I am a *Film Director*?",
               wordmark: "D I R E C T O R",
               awards: [
                 { n: "01", text: "Stable Diffusion AI Short Film Contest | Global Champion" },
