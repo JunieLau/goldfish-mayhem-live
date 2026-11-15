@@ -133,9 +133,11 @@
 
   function renderLinkCard(l) {
     return `<a class="link-card" href="${esc(l.href)}" target="_blank" rel="noopener noreferrer">
-        <div class="k">${textPair({ en: l.kindEn || "Link", zh: l.kindZh || "链接" })}</div>
-        <div class="t">${textPair({ en: l.labelEn, zh: l.labelZh })}</div>
-        ${l.noteEn || l.noteZh ? `<div class="d">${textPair({ en: l.noteEn || "", zh: l.noteZh || "" })}</div>` : ""}
+        <div class="link-card-copy">
+          <div class="k">${textPair({ en: l.kindEn || "Link", zh: l.kindZh || "链接" })}</div>
+          <div class="t">${textPair({ en: l.labelEn, zh: l.labelZh })}</div>
+          ${l.noteEn || l.noteZh ? `<div class="d">${textPair({ en: l.noteEn || "", zh: l.noteZh || "" })}</div>` : ""}
+        </div>
         <div class="go">${textPair({ en: "Open ↗", zh: "打开 ↗" })}</div>
       </a>`;
   }

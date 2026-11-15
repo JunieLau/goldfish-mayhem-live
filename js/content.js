@@ -88,6 +88,7 @@ window.GM = {
         },
         {
           type: "links",
+          layout: "solo",
           items: [
             {
               href: "https://junielau.com/",

@@ -460,10 +460,22 @@ main { padding: 0 0 16px; }
 }
 .link-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
 .link-grid.solo {
-  width: min(100%, max(280px, calc((100% - 16px) / 2)));
+  width: 100%;
+  max-width: none;
   grid-template-columns: minmax(0, 1fr);
-  justify-content: start;
 }
+.link-grid.solo .link-card {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 16px 10px 18px;
+  min-height: 0;
+}
+.link-grid.solo .link-card .link-card-copy { min-width: 0; }
+.link-grid.solo .link-card .k { margin-bottom: 2px; }
+.link-grid.solo .link-card .d { margin-top: 2px; }
+.link-grid.solo .link-card .go { margin-top: 0; flex: 0 0 auto; }
 
 /* names / process / tips */
 .name-card, .step, .tip, .live-slot {
