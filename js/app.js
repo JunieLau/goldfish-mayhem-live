@@ -484,7 +484,8 @@
         ${p.photos ? `<div class="plate-photos" style="margin-top:1rem">${figs(p.photos, idx)}</div>` : ""}
       </div>`;
     }
-    return `<article class="plate" data-kind="${esc(kind)}" data-highlight="${esc(p.highlight || "")}">
+    const sideClass = kind === "statement" && p.photosLeft ? " photos-left" : "";
+    return `<article class="plate${sideClass}" data-kind="${esc(kind)}" data-highlight="${esc(p.highlight || "")}">
       <div class="plate-lock">
         <div class="plate-design">
           ${plateChrome(p)}
@@ -548,7 +549,7 @@
     const arOf = (img) => (img.w && img.h ? img.w / img.h : 1);
     const sheetList = b.sheets || [];
     let sheetRows = [sheetList];
-    if (sheetList.length >= 5) {
+    if (sheetList.length >= 4) {
       let best = Math.ceil(sheetList.length / 2), bestDiff = Infinity;
       for (let i = 1; i < sheetList.length; i++) {
         const left = sheetList.slice(0, i).reduce((s, x) => s + arOf(x), 0);

@@ -382,7 +382,7 @@ window.GM = {
               invites: [
                 { src: "assets/plates/12-zero.jpg", crop: { t: 2.576, b: 2.576 }, altEn: "Poster for ZEЯRO, a PROMISE title", altZh: "ZEЯRO 海报，PROMISE 出品", left: "ZEЯRO", right: "PROMISE" },
                 { src: "assets/plates/12-51ist.jpg", crop: { t: 2.409, b: 2.409 }, altEn: "Poster for 51IST, a PROMISE title", altZh: "51IST 海报，PROMISE 出品", left: "51IST", right: "PROMISE" },
-                { src: "assets/plates/12-mulan.jpg", crop: { t: 2.726, b: 2.726 }, altEn: "Poster for 猩紅木蘭, a PROMISE title", altZh: "猩紅木蘭海报，PROMISE 出品", left: "猩紅木蘭", right: "PROMISE" },
+                { src: "assets/plates/12-mulan.jpg", crop: { t: 2.726, b: 2.726 }, altEn: "Poster for Scarlet Magnolia (猩紅木蘭), a PROMISE title", altZh: "猩紅木蘭海报，PROMISE 出品", left: "SCARLET MAGNOLIA", right: "PROMISE" },
                 { src: "assets/plates/12-madam-pink.jpg", crop: { t: 2.803, b: 2.803 }, altEn: "Poster for MADAM PINK, with 幕间映画", altZh: "MADAM PINK 海报，幕间映画", left: "MADAM PINK", right: "幕间映画" },
                 { src: "assets/plates/12-goldfish-mayhem.jpg", crop: { t: 2.803, b: 2.803 }, altEn: "Poster for Goldfish Mayhem — 金魚街大亂鬥 — with Wonder Studios", altZh: "《金魚街大亂鬥》海报，Wonder Studios", left: "金魚街大亂鬥", right: "WONDERSTUDIOS" }
               ],
@@ -398,11 +398,6 @@ window.GM = {
             {
               type: "paras",
               items: [
-                {
-                  en: "The facts below already appear in my public first-person account, my interview, or the confirmed notes on my official site.",
-                  zh: "下面这些事实，已经出现在我公开的第一人称讲述、访谈，或官网的确认记录里。",
-                  source: "sources"
-                },
                 {
                   en: "The Court — global championship, Stability AI #DiffuseTogether, 2023. Silver at the second Runway International AI Film Festival. Work shown at the Tribeca Film Festival, and collaborations with Google, OpenAI and ByteDance. Dear “Stranger” premiered on Google Flow TV at Google I/O 2025. Forbes published a profile in September 2026: “How AI And Peter Gabriel Changed Junie Lau’s Path To Directing.”",
                   zh: "《The Court》——2023 年 Stability AI #DiffuseTogether 全球冠军。第二届 Runway 国际 AI 电影节银奖。作品在 Tribeca Film Festival 展映，并与 Google、OpenAI、ByteDance 合作。《Dear “Stranger”》作为 Google Flow TV 影片在 2025 年 Google I/O 上线。Forbes 于 2026 年 9 月刊出人物专访：《How AI And Peter Gabriel Changed Junie Lau’s Path To Directing》。",
@@ -587,45 +582,7 @@ window.GM = {
           source: "interview"
         },
         {
-          type: "para",
-          en: "There are three girls in the film. They are more like three different mirrors, each reflecting a different part of who I am, rather than any one of them standing in for me completely.",
-          zh: "片子里有三个主要女孩。我不会说哪一个角色完全代表我。她们更像是三面不同的镜子，分别折射出我性格里的不同部分。",
-          source: "interview"
-        },
-        {
-          type: "names",
-          items: [
-            {
-              titleEn: "BOBO",
-              titleZh: "BOBO",
-              variantsEn: "Published form: BOBO (talk deck, interview, Instagram).",
-              variantsZh: "已公开的写法：BOBO（访谈、Instagram）。",
-              en: "BOBO carries my angry and rebellious side, and the part of me that wants to protect the people around me.",
-              zh: "BOBO 有我暴躁、叛逆，也想保护身边人的一面。",
-              source: "interview"
-            },
-            {
-              titleEn: "风水妹 / Fengshui Girl",
-              titleZh: "风水妹",
-              variantsEn: "Talk deck and Xiaohongshu: 风水妹. Interview: Fengshui Girl. Instagram: FENG SHUI GIRL. These are published variants, not one official standard.",
-              variantsZh: "小红书：风水妹。访谈英文：Fengshui Girl。Instagram：FENG SHUI GIRL。这些都是已公开的不同写法，我不会把它们收成一个标准官方名。",
-              en: "She carries the part of me that has to perform in social situations, and sometimes wear another face.",
-              zh: "风水妹有我在社交场合里需要表演、需要戴上另一种面具的一面。",
-              source: "interview"
-            },
-            {
-              titleEn: "细细粒 / Xixili",
-              titleZh: "细细粒",
-              variantsEn: "Talk deck and Xiaohongshu: 细细粒. Interview: Xixili. Instagram: LITTLE ONE. Again, published variants only.",
-              variantsZh: "小红书：细细粒。访谈英文：Xixili。Instagram：LITTLE ONE。同样只并列已公开的写法。",
-              en: "She carries my curiosity about new technology, strange inventions, different dimensions, and the unknown.",
-              zh: "细细粒则有我对新科技、奇怪发明、多维度世界和未知事物的好奇心。",
-              source: "interview"
-            }
-          ]
-        },
-        {
-          type: "details",
+          type: "section",
           summary: { en: "What the film is asking — themes I have already spoken about", zh: "这部影片在问什么——我已经公开谈过的主题" },
           blocks: [
             {
@@ -679,58 +636,6 @@ window.GM = {
               labelZh: "幕后制作特辑",
               noteEn: "Public entry. Opens in a new tab.",
               noteZh: "已公开的条目，将在新标签页打开。"
-            },
-            {
-              href: "https://www.instagram.com/junielaux/reel/Dd876e-hI6l/",
-              kindEn: "Instagram",
-              kindZh: "Instagram",
-              labelEn: "Goldfish Street: BOBO",
-              labelZh: "金鱼街：BOBO",
-              noteEn: "Character reel, 2026.10.01. Opens the official post in a new tab.",
-              noteZh: "角色短视频，2026.10.01。将在新标签页打开官方帖子。",
-              poster: "assets/ig/Dd876e-hI6l.jpg",
-              posterW: 360,
-              posterH: 640,
-              altEn: "Cover of the Goldfish Street: BOBO Instagram reel"
-            },
-            {
-              href: "https://www.instagram.com/junielaux/reel/Dd5_GT6B8f-/",
-              kindEn: "Instagram",
-              kindZh: "Instagram",
-              labelEn: "Goldfish Street: FENG SHUI GIRL",
-              labelZh: "金鱼街：FENG SHUI GIRL",
-              noteEn: "Character reel, 2026.09.30. Opens the official post in a new tab.",
-              noteZh: "角色短视频，2026.09.30。将在新标签页打开官方帖子。",
-              poster: "assets/ig/Dd5_GT6B8f-.jpg",
-              posterW: 360,
-              posterH: 640,
-              altEn: "Cover of the Goldfish Street: FENG SHUI GIRL Instagram reel"
-            },
-            {
-              href: "https://www.instagram.com/junielaux/reel/Dd3bIc3uqDZ/",
-              kindEn: "Instagram",
-              kindZh: "Instagram",
-              labelEn: "Goldfish Street: LITTLE ONE",
-              labelZh: "金鱼街：LITTLE ONE",
-              noteEn: "Character reel, 2026.09.29. Opens the official post in a new tab.",
-              noteZh: "角色短视频，2026.09.29。将在新标签页打开官方帖子。",
-              poster: "assets/ig/Dd3bIc3uqDZ.jpg",
-              posterW: 360,
-              posterH: 640,
-              altEn: "Cover of the Goldfish Street: LITTLE ONE Instagram reel"
-            },
-            {
-              href: "https://www.instagram.com/wearewonderstudios/reel/DeJsNDlImjg/",
-              kindEn: "Instagram",
-              kindZh: "Instagram",
-              labelEn: "Wonder Studios collaboration reel",
-              labelZh: "与 Wonder Studios 的合作短视频",
-              noteEn: "Posted 2026.10.06. I have also written this collaboration as 金魚街大亂鬥 × WONDERSTUDIOS. Opens the official post in a new tab.",
-              noteZh: "发布于 2026.10.06。我也把这次合作写为「金魚街大亂鬥 × WONDERSTUDIOS」。将在新标签页打开官方帖子。",
-              poster: "assets/ig/DeJsNDlImjg.jpg",
-              posterW: 360,
-              posterH: 640,
-              altEn: "Cover of the Wonder Studios collaboration Instagram reel"
             }
           ]
         }
@@ -755,14 +660,20 @@ window.GM = {
           type: "steps",
           items: [
             {
-              id: "moodboards",
-              titleEn: "Moodboards",
-              titleZh: "情绪板",
+              id: "worldbuilding",
+              titleEn: "World-building",
+              titleZh: "世界观构建",
               blocks: [
                 {
                   type: "para",
+                  en: "I wanted to try placing the things I know — lion dance, kung fu, paper offerings, sweet-soup shops, hawkers, feng shui stalls, and that close, slightly noisy way neighbours live in Guangdong — into a future street. What happens when a lion dance has a mechanical body, or when a Cantonese old street starts to take up cyber prosthetics and memory upload? The Cloud above that street, as I have said, grew out of a rotating restaurant I could only visit if I did well enough at school: a “higher place.”",
+                  zh: "我想试试看，能不能把这些我熟悉的东西放进一个未来世界：醒狮、功夫、纸扎、糖水铺、街头小贩、风水摊，还有广东街坊之间那种很亲近、又有点吵吵闹闹的关系。比如醒狮有了机械身体，一条广东老街开始流行赛博义肢和记忆上传，会发生什么事情？而那条街上方的云端，如我所说，来自我小时候只有考好了才有机会去的旋转餐厅：一个「更高的地方」。",
+                  source: "public"
+                },
+                {
+                  type: "para",
                   en: "The first thing I need is a place to hold the feeling of the world — colour, street life, the clash between something very local and something already speeding toward the future. These four official links belong here, in the order of early process: from the first idea to the final moodboard. They are early design, early inspiration and early research — not later making.",
-                  zh: "首先我需要一个地方，把这个世界的感觉放下——颜色、市井生活，以及非常本地的事物和已经冲向未来的事物怎样撞在一起。这四个正式链接都放在情绪板这一步，顺序是早期过程：从最初的想法，到最终情绪板。它们是早期设计、早期灵感和早期研究，而不是后面的制作环节。",
+                  zh: "首先我需要一个地方，把这个世界的感觉放下——颜色、市井生活，以及非常本地的事物和已经冲向未来的事物怎样撞在一起。这四个正式链接都放在这里，顺序是早期过程：从最初的想法，到最终情绪板。它们是早期设计、早期灵感和早期研究，而不是后面的制作环节。",
                   source: "interview"
                 },
                 {
@@ -836,19 +747,7 @@ window.GM = {
                     }
                   ]
                 }
-              ]
-            },
-            {
-              id: "worldbuilding",
-              titleEn: "World-building",
-              titleZh: "世界观构建",
-              blocks: [
-                {
-                  type: "para",
-                  en: "I wanted to try placing the things I know — lion dance, kung fu, paper offerings, sweet-soup shops, hawkers, feng shui stalls, and that close, slightly noisy way neighbours live in Guangdong — into a future street. What happens when a lion dance has a mechanical body, or when a Cantonese old street starts to take up cyber prosthetics and memory upload? The Cloud above that street, as I have said, grew out of a rotating restaurant I could only visit if I did well enough at school: a “higher place.”",
-                  zh: "我想试试看，能不能把这些我熟悉的东西放进一个未来世界：醒狮、功夫、纸扎、糖水铺、街头小贩、风水摊，还有广东街坊之间那种很亲近、又有点吵吵闹闹的关系。比如醒狮有了机械身体，一条广东老街开始流行赛博义肢和记忆上传，会发生什么事情？而那条街上方的云端，如我所说，来自我小时候只有考好了才有机会去的旋转餐厅：一个「更高的地方」。",
-                  source: "public"
-                },
+              ,
                 {
                   type: "images",
                   cols: 1,
@@ -862,12 +761,6 @@ window.GM = {
                       source: "stills"
                     }
                   ]
-                },
-                {
-                  type: "para",
-                  en: "Earlier project documents and character, environment and movement references live in the Moodboard section, in the order of early process.",
-                  zh: "更早的项目文档，以及角色、场景和动作参考，都放在情绪板那一步，按早期过程的顺序排列。",
-                  source: "interview"
                 },
                 {
                   type: "links",
@@ -890,10 +783,105 @@ window.GM = {
               titleEn: "Character design",
               titleZh: "角色设计",
               blocks: [
-                {
+                        {
                   type: "para",
-                  en: "The three girls are not perfect heroines. They can be impulsive, rebellious, and make a mess — and I like that. As I said earlier, they are also three mirrors of myself: BOBO, 风水妹 / FENG SHUI GIRL, and 细细粒 / Little One. Fengshui Girl and XIXILI also appear as published variants — XIXILI, for example, on the height sheet. I am not treating any one English form as the single official standard. The official board I am using for world-building and character design is the Luma board below. The official character-design slides are in the Google Slides link below. Earlier character and environment references are in the Moodboard section. The Instagram reels in the previous chapter are the character introductions already published.",
-                  zh: "这三个女孩不是完美的女英雄。她们可能冲动、叛逆，把事情搞得一团糟——我反而喜欢这样。如我前面所说，她们也是我的三面镜子：BOBO、风水妹 / FENG SHUI GIRL，以及细细粒 / Little One。Fengshui Girl 和 XIXILI 也作为已公开的异写出现——例如身高对照图上的 XIXILI。我不会把某一种英文写法收成唯一的官方标准。世界观与角色设计，我指定使用的正式看板是下面这块 Luma 看板。正式的角色设计演示文稿在下面的 Google 幻灯片链接里。更早的角色与场景参考在情绪板那一步。上一章里的 Instagram 短视频，则是已经公开的角色介绍。",
+                  en: "There are three girls in the film. They are more like three different mirrors, each reflecting a different part of who I am, rather than any one of them standing in for me completely.",
+                  zh: "片子里有三个主要女孩。我不会说哪一个角色完全代表我。她们更像是三面不同的镜子，分别折射出我性格里的不同部分。",
+                  source: "interview"
+                },
+        {
+                  type: "names",
+                  items: [
+                    {
+                      titleEn: "BOBO",
+                      titleZh: "BOBO",
+                      variantsEn: "Published form: BOBO (talk deck, interview, Instagram).",
+                      variantsZh: "已公开的写法：BOBO（访谈、Instagram）。",
+                      en: "BOBO carries my angry and rebellious side, and the part of me that wants to protect the people around me.",
+                      zh: "BOBO 有我暴躁、叛逆，也想保护身边人的一面。",
+                      source: "interview"
+                    },
+                    {
+                      titleEn: "风水妹 / Fengshui Girl",
+                      titleZh: "风水妹",
+                      variantsEn: "Talk deck and Xiaohongshu: 风水妹. Interview: Fengshui Girl. Instagram: FENG SHUI GIRL. These are published variants, not one official standard.",
+                      variantsZh: "小红书：风水妹。访谈英文：Fengshui Girl。Instagram：FENG SHUI GIRL。这些都是已公开的不同写法，我不会把它们收成一个标准官方名。",
+                      en: "She carries the part of me that has to perform in social situations, and sometimes wear another face.",
+                      zh: "风水妹有我在社交场合里需要表演、需要戴上另一种面具的一面。",
+                      source: "interview"
+                    },
+                    {
+                      titleEn: "细细粒 / Xixili",
+                      titleZh: "细细粒",
+                      variantsEn: "Talk deck and Xiaohongshu: 细细粒. Interview: Xixili. Instagram: LITTLE ONE. Again, published variants only.",
+                      variantsZh: "小红书：细细粒。访谈英文：Xixili。Instagram：LITTLE ONE。同样只并列已公开的写法。",
+                      en: "She carries my curiosity about new technology, strange inventions, different dimensions, and the unknown.",
+                      zh: "细细粒则有我对新科技、奇怪发明、多维度世界和未知事物的好奇心。",
+                      source: "interview"
+                    }
+                  ]
+                },
+                {
+                  type: "links",
+                  items: [
+        {
+                      href: "https://www.instagram.com/junielaux/reel/Dd876e-hI6l/",
+                      kindEn: "Instagram",
+                      kindZh: "Instagram",
+                      labelEn: "Goldfish Street: BOBO",
+                      labelZh: "金鱼街：BOBO",
+                      noteEn: "Character reel, 2026.10.01. Opens the official post in a new tab.",
+                      noteZh: "角色短视频，2026.10.01。将在新标签页打开官方帖子。",
+                      poster: "assets/ig/Dd876e-hI6l.jpg",
+                      posterW: 360,
+                      posterH: 640,
+                      altEn: "Cover of the Goldfish Street: BOBO Instagram reel"
+                    },
+                    {
+                      href: "https://www.instagram.com/junielaux/reel/Dd5_GT6B8f-/",
+                      kindEn: "Instagram",
+                      kindZh: "Instagram",
+                      labelEn: "Goldfish Street: FENG SHUI GIRL",
+                      labelZh: "金鱼街：FENG SHUI GIRL",
+                      noteEn: "Character reel, 2026.09.30. Opens the official post in a new tab.",
+                      noteZh: "角色短视频，2026.09.30。将在新标签页打开官方帖子。",
+                      poster: "assets/ig/Dd5_GT6B8f-.jpg",
+                      posterW: 360,
+                      posterH: 640,
+                      altEn: "Cover of the Goldfish Street: FENG SHUI GIRL Instagram reel"
+                    },
+                    {
+                      href: "https://www.instagram.com/junielaux/reel/Dd3bIc3uqDZ/",
+                      kindEn: "Instagram",
+                      kindZh: "Instagram",
+                      labelEn: "Goldfish Street: LITTLE ONE",
+                      labelZh: "金鱼街：LITTLE ONE",
+                      noteEn: "Character reel, 2026.09.29. Opens the official post in a new tab.",
+                      noteZh: "角色短视频，2026.09.29。将在新标签页打开官方帖子。",
+                      poster: "assets/ig/Dd3bIc3uqDZ.jpg",
+                      posterW: 360,
+                      posterH: 640,
+                      altEn: "Cover of the Goldfish Street: LITTLE ONE Instagram reel"
+                    },
+                    {
+                      href: "https://www.instagram.com/wearewonderstudios/reel/DeJsNDlImjg/",
+                      kindEn: "Instagram",
+                      kindZh: "Instagram",
+                      labelEn: "Wonder Studios collaboration reel",
+                      labelZh: "与 Wonder Studios 的合作短视频",
+                      noteEn: "Posted 2026.10.06. I have also written this collaboration as 金魚街大亂鬥 × WONDERSTUDIOS. Opens the official post in a new tab.",
+                      noteZh: "发布于 2026.10.06。我也把这次合作写为「金魚街大亂鬥 × WONDERSTUDIOS」。将在新标签页打开官方帖子。",
+                      poster: "assets/ig/DeJsNDlImjg.jpg",
+                      posterW: 360,
+                      posterH: 640,
+                      altEn: "Cover of the Wonder Studios collaboration Instagram reel"
+                    }
+                  ]
+                },
+{
+                  type: "para",
+                  en: "The three girls are not perfect heroines. They can be impulsive, rebellious, and make a mess — and I like that. As I said earlier, they are also three mirrors of myself: BOBO, 风水妹 / FENG SHUI GIRL, and 细细粒 / Little One. Fengshui Girl and XIXILI also appear as published variants — XIXILI, for example, on the height sheet. I am not treating any one English form as the single official standard. The official board I am using for world-building and character design is the Luma board below. The official character-design slides are in the Google Slides link below. Earlier character and environment references are in the Moodboard section. The Instagram reels above are the character introductions already published.",
+                  zh: "这三个女孩不是完美的女英雄。她们可能冲动、叛逆，把事情搞得一团糟——我反而喜欢这样。如我前面所说，她们也是我的三面镜子：BOBO、风水妹 / FENG SHUI GIRL，以及细细粒 / Little One。Fengshui Girl 和 XIXILI 也作为已公开的异写出现——例如身高对照图上的 XIXILI。我不会把某一种英文写法收成唯一的官方标准。世界观与角色设计，我指定使用的正式看板是下面这块 Luma 看板。正式的角色设计演示文稿在下面的 Google 幻灯片链接里。更早的角色与场景参考在情绪板那一步。上面这些 Instagram 短视频，则是已经公开的角色介绍。",
                   source: "interview"
                 },
                 {
@@ -1078,23 +1066,29 @@ window.GM = {
                   zh: "AI 很早就进入了我的创作过程，但不是先作为一个「生成按钮」。我几乎每天都会和 ChatGPT 沟通，所以当我有一个想法的时候，我通常会马上跟它描述：我想创造一个什么样的世界、什么样的人物、什么样的视觉氛围，以及这个故事背后的设定。对我来说，AI 更像是一个创意伙伴。最初的想法、情感和观点仍然来自我自己。这次影片我也和一位人类编剧段先生合作，所以故事本身仍然来自人类创作者。AI 并没有取代 storytelling，但它帮助我延展想法、思考细节、测试方向，并把脑海里模糊的画面变成更具体、更可视化的内容。",
                   source: "interview"
                 },
-                {
-                  type: "para",
-                  en: "invideo Agent One enters my workflow at the video-generation stage. I use it as a form of agentic video creation. Because I have quite high expectations for my characters and visual details, it usually cannot give me exactly what I want in one attempt. The process still needs many rounds of testing, changing and adjustment. I can communicate with it in natural language — upload the story, the script, character backgrounds and character designs — and it helps me organise that material into context. It feels more like working with a creative teammate than only using a tool. I usually let it make a first pass of the video, more like a visual rehearsal, so I can see the structure, the connection between scenes, and the general visual flow. After that I give it more specific direction and guide it closer to the cut I have in my head. I can also work with it in Mandarin, Cantonese and English.",
-                  zh: "invideo Agent One 是在视频生成阶段进入我的工作流的。我把它用在 agentic video creation 这个环节。因为我对角色和视觉细节的要求比较高，所以它通常没有办法一次就生成我真正想要的结果。这个过程仍然需要很多迭代、测试和调整。我可以用自然语言和它沟通，比如上传故事、剧本、人物背景和角色设计，它会帮助我把这些内容整理成上下文。它给我的感觉更像是一个创意工作伙伴，而不只是一个工具。通常我会先让它帮我生成第一阶段的视频，这一版对我来说更像是一次视觉预演，让我很快看到故事结构、场景之间的连接，以及整体的画面流动。之后我会再给它更具体的指导，让它慢慢接近我脑海中的剪辑版本。我也可以用普通话、粤语和英文跟它沟通。",
-                  source: "interview"
-                },
-                {
-                  type: "para",
-                  en: "This year I became very interested in an infinite canvas, because it can fix many problems in a filmmaking workflow. In the past we often had to organise everything into different folders — characters, scenes, references, generated clips. With CapCut Video Studio – Director Mode, the biggest advantage of the infinite canvas is that the whole thought process becomes visible. You can see how an idea develops from earlier stages, character settings and scene designs into the result you have now; and if you get stuck, you can trace it back. For me the canvas is not only for organising materials. It is a thinking space. I can upload the script, character background, and the character and scene images I have already made, describe their relationships in natural language, and it helps organise them into a video brief: theme, characters, timeline, story outline, and direction. The agent can also help organise materials, generate shots, and let me control scene creation through conversation.",
-                  zh: "今年我对使用无限画布产生了很大的兴趣，因为它可以解决创作流程里的很多问题。过去我们经常需要把所有素材整理到不同的文件夹里，比如人物、场景、参考图、生成的视频片段。但在 CapCut Video Studio – Director Mode 的无限画布里，最大的好处是整个思考过程会变得更可视化。你可以很清楚地看到一个想法是如何从早期阶段、人物设定、场景设计，一步一步发展到现在这个结果的；如果在某个地方卡住了，也可以反过来追溯。对我来说，无限画布不只是一个整理素材的工具，它更像是一个帮助我思考的创作空间。我可以先上传剧本、人物背景，以及已经生成好的人物图和场景图，再用自然语言描述这些素材之间的关系，它就会帮助我整理出一个 video brief，里面包括主题、人物、时间线、故事 outline，以及创作方向。AI agent 也可以帮助整理素材、生成镜头，并让我通过对话来控制场景生成。",
-                  source: "interview"
-                },
-                {
-                  type: "para",
-                  en: "OpenArt’s Smart Shot is useful because it helps me plan the scene before it is rendered — including the characters, the environment, the storyboard, camera angles and lighting. As a filmmaker I find it helpful because it lets me try different shots, expand the scene, and discover visual ideas I may not have thought of at the beginning. I also used OpenArt World Builder as part of this work.",
-                  zh: "对我来说，OpenArt 的 Smart Shot 有用，是因为它帮助我在渲染之前先把场景计划好——包括人物、环境、分镜、机位和光线。作为 filmmaker，我觉得它很有帮助，因为它让我可以尝试不同镜头、把场景展开，并发现一些一开始未必想到的视觉想法。这次我也使用了 OpenArt World Builder。",
-                  source: "interview"
+                                {
+                  type: "details",
+                  summary: { en: "invideo Agent One, CapCut Video Studio – Director Mode, and OpenArt", zh: "invideo Agent One、CapCut Video Studio – Director Mode，以及 OpenArt" },
+                  blocks: [
+    {
+                      type: "para",
+                      en: "invideo Agent One enters my workflow at the video-generation stage. I use it as a form of agentic video creation. Because I have quite high expectations for my characters and visual details, it usually cannot give me exactly what I want in one attempt. The process still needs many rounds of testing, changing and adjustment. I can communicate with it in natural language — upload the story, the script, character backgrounds and character designs — and it helps me organise that material into context. It feels more like working with a creative teammate than only using a tool. I usually let it make a first pass of the video, more like a visual rehearsal, so I can see the structure, the connection between scenes, and the general visual flow. After that I give it more specific direction and guide it closer to the cut I have in my head. I can also work with it in Mandarin, Cantonese and English.",
+                      zh: "invideo Agent One 是在视频生成阶段进入我的工作流的。我把它用在 agentic video creation 这个环节。因为我对角色和视觉细节的要求比较高，所以它通常没有办法一次就生成我真正想要的结果。这个过程仍然需要很多迭代、测试和调整。我可以用自然语言和它沟通，比如上传故事、剧本、人物背景和角色设计，它会帮助我把这些内容整理成上下文。它给我的感觉更像是一个创意工作伙伴，而不只是一个工具。通常我会先让它帮我生成第一阶段的视频，这一版对我来说更像是一次视觉预演，让我很快看到故事结构、场景之间的连接，以及整体的画面流动。之后我会再给它更具体的指导，让它慢慢接近我脑海中的剪辑版本。我也可以用普通话、粤语和英文跟它沟通。",
+                      source: "interview"
+                    },
+    {
+                      type: "para",
+                      en: "This year I became very interested in an infinite canvas, because it can fix many problems in a filmmaking workflow. In the past we often had to organise everything into different folders — characters, scenes, references, generated clips. With CapCut Video Studio – Director Mode, the biggest advantage of the infinite canvas is that the whole thought process becomes visible. You can see how an idea develops from earlier stages, character settings and scene designs into the result you have now; and if you get stuck, you can trace it back. For me the canvas is not only for organising materials. It is a thinking space. I can upload the script, character background, and the character and scene images I have already made, describe their relationships in natural language, and it helps organise them into a video brief: theme, characters, timeline, story outline, and direction. The agent can also help organise materials, generate shots, and let me control scene creation through conversation.",
+                      zh: "今年我对使用无限画布产生了很大的兴趣，因为它可以解决创作流程里的很多问题。过去我们经常需要把所有素材整理到不同的文件夹里，比如人物、场景、参考图、生成的视频片段。但在 CapCut Video Studio – Director Mode 的无限画布里，最大的好处是整个思考过程会变得更可视化。你可以很清楚地看到一个想法是如何从早期阶段、人物设定、场景设计，一步一步发展到现在这个结果的；如果在某个地方卡住了，也可以反过来追溯。对我来说，无限画布不只是一个整理素材的工具，它更像是一个帮助我思考的创作空间。我可以先上传剧本、人物背景，以及已经生成好的人物图和场景图，再用自然语言描述这些素材之间的关系，它就会帮助我整理出一个 video brief，里面包括主题、人物、时间线、故事 outline，以及创作方向。AI agent 也可以帮助整理素材、生成镜头，并让我通过对话来控制场景生成。",
+                      source: "interview"
+                    },
+    {
+                      type: "para",
+                      en: "OpenArt’s Smart Shot is useful because it helps me plan the scene before it is rendered — including the characters, the environment, the storyboard, camera angles and lighting. As a filmmaker I find it helpful because it lets me try different shots, expand the scene, and discover visual ideas I may not have thought of at the beginning. I also used OpenArt World Builder as part of this work.",
+                      zh: "对我来说，OpenArt 的 Smart Shot 有用，是因为它帮助我在渲染之前先把场景计划好——包括人物、环境、分镜、机位和光线。作为 filmmaker，我觉得它很有帮助，因为它让我可以尝试不同镜头、把场景展开，并发现一些一开始未必想到的视觉想法。这次我也使用了 OpenArt World Builder。",
+                      source: "interview"
+                    }
+                  ]
                 },
                 {
                   type: "videos",
@@ -1149,7 +1143,8 @@ window.GM = {
             {
               kind: "statement",
               highlight: "worlds",
-              headline: "Taking *intangible cultural heritage* as a root,\nso that *Eastern stories* can travel the world\nand enter into dialogue with the *future*.",
+              ghost: "CULTURE",
+              headline: "Taking *intangible cultural heritage*\nas a root, so that *Eastern stories*\ncan travel the world and enter\ninto dialogue with the *future*.",
               photos: [
                 { src: "assets/plates/17-practice-a.jpg", altEn: "A practice still: a woman seen through a carved wooden screen in a hall", altZh: "习武画面：厅堂里，透过木雕隔扇看见一位女子" },
                 { src: "assets/plates/17-practice-b.jpg", altEn: "People training in a hall, seen from behind", altZh: "厅堂里的训练，从身后看去" },
@@ -1161,8 +1156,9 @@ window.GM = {
             {
               kind: "statement",
               highlight: "worlds",
+              ghost: "DIRECTOR",
               photosLeft: true,
-              headline: "From the point of view of a *woman director*,\nworking with *AI* to open a new edge\nof *moving-image expression*.",
+              headline: "From the point of view\nof a *woman director*,\nworking with *AI* to open\na new edge of\n*moving-image expression*.",
               photos: [
                 { src: "assets/plates/18-bookshelf.jpg", altEn: "Junie Lau at a desk by the window, in front of a wall of books", altZh: "Junie Lau 坐在窗边书桌前，身后是书架" },
                 { src: "assets/plates/18-workspace-a.jpg", altEn: "Junie Lau standing in a purple-lit workspace, looking at a handheld device", altZh: "Junie Lau 站在紫色灯光的创作空间里，看着一只手持设备" },
@@ -1387,26 +1383,6 @@ window.GM = {
           en: "A Forbes reporter once asked me what matters most to me at this stage. I thought: in the age of AI, we may forget faster than we remember. So rather than only making entertainment that holds attention for a short time, I hope I will have the chance to make works of art that can last.",
           zh: "《福布斯》的记者曾经问我，现阶段对我来说，最重要的是什么。我当时就在想，在 AI 时代，我们遗忘的速度，可能比记住的速度还要快。所以，比起创作一部在短时间内受到很多关注的娱乐作品，我更希望自己有机会创造出一些真正能够留下来的艺术作品。",
           source: "public"
-        },
-        {
-          type: "para",
-          en: "If you also like creating worlds, or you are interested in new technologies and new art forms, you are very welcome to come and talk to us. Our studio is always looking for people who can walk this path together. I hope we will have the chance to create worlds together.",
-          zh: "如果也有喜欢创造世界，或者对未来的新技术、新艺术形式感兴趣的朋友，很欢迎来找我们交流。我们工作室也一直都在招募可以并肩作战的小伙伴。希望未来有机会，跟大家一起创造世界。",
-          source: "public"
-        },
-        {
-          type: "plates",
-          items: [
-            {
-              kind: "statement-ghost",
-              highlight: "dreams",
-              ghost: "CREATE",
-              headline: "I'm not an apocaloptimist.\nBut I still choose to keep *creating worlds*.",
-              wordmark: "C R E A T E   T H E   W O R L D",
-              capEn: "I'm not an apocaloptimist. But I still choose to keep creating worlds.",
-              capZh: "我并不是末日乐观主义者，但我仍然选择继续创造世界。"
-            }
-          ]
         }
       ]
     },
@@ -1515,11 +1491,25 @@ window.GM = {
             }
           ]
         },
-        {
+{
           type: "para",
-          en: "And if you like building worlds, you are welcome to find us. That is an invitation from the studio, not a piece of career advice I am handing down.",
-          zh: "如果也有喜欢创造世界的朋友，很欢迎来找我们。这是工作室发出的邀请，而不是我在对别人的职业道路下指导。",
+          en: "If you also like creating worlds, or you are interested in new technologies and new art forms, you are very welcome to come and talk to us. Our studio is always looking for people who can walk this path together. I hope we will have the chance to create worlds together.",
+          zh: "如果也有喜欢创造世界，或者对未来的新技术、新艺术形式感兴趣的朋友，很欢迎来找我们交流。我们工作室也一直都在招募可以并肩作战的小伙伴。希望未来有机会，跟大家一起创造世界。",
           source: "public"
+        },
+{
+          type: "plates",
+          items: [
+            {
+              kind: "statement-ghost",
+              highlight: "dreams",
+              ghost: "CREATE",
+              headline: "I'm not an apocaloptimist.\nBut I still choose to keep *creating worlds*.",
+              wordmark: "C R E A T E   T H E   W O R L D",
+              capEn: "I'm not an apocaloptimist. But I still choose to keep creating worlds.",
+              capZh: "我并不是末日乐观主义者，但我仍然选择继续创造世界。"
+            }
+          ]
         }
       ]
     },
@@ -1541,12 +1531,6 @@ window.GM = {
           en: "I would like to stay with you here and talk about the film, the way it was made, and AI filmmaking.",
           zh: "我想在这里停下来，和大家一起聊聊这部电影、它的制作方式，以及 AI filmmaking。",
           source: "public"
-        },
-        {
-          type: "live-slot",
-          title: { en: "Questions from the room", zh: "现场提出的问题" },
-          en: "Your questions, as they come.",
-          zh: "欢迎提问。"
         }
       ]
     }
