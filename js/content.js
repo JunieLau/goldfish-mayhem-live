@@ -481,29 +481,11 @@ window.GM = {
           ]
         },
         {
-          type: "images",
-          cols: 1,
-          items: [
-            {
-              src: "assets/stills/goldfish-key-art.jpg",
-              w: 1448,
-              h: 1086,
-              natural: true,
-              modest: true,
-              altEn: "Official key art",
-              altZh: "官方主视觉",
-              capEn: "Official key art.",
-              capZh: "官方主视觉。",
-              source: "stills"
-            }
-          ]
-        },
-        {
           type: "paras",
           items: [
             {
-              en: "It sounds like science fiction, but it starts in my childhood. Goldfish Mayhem is actually the first short film I have made that truly comes from my hometown. I am from Foshan, Guangdong, a small city very close to Hong Kong. At the age of eight I went with my mother to 鸿胜武馆, and saw people practise kung fu at close range for the first time. Downstairs from my childhood home there really was a street called Goldfish Street. And I grew up watching a great many Hong Kong films, especially Stephen Chow’s comedies.",
-              zh: "听上去很科幻，但它的起点其实是我的童年。《金魚街大亂鬥》其实是我第一部真正从自己家乡出发创作的短片。我来自广东佛山，一个离香港很近的小城市。八岁时我跟妈妈去过鸿胜武馆，第一次近距离看人练功夫。我小时候家楼下也真的有一条金鱼街。再加上我从小看了很多香港电影，特别喜欢周星驰的喜剧。",
+              en: "It starts in my childhood. Goldfish Mayhem is actually the first short film I have made that truly comes from my hometown. I am from Foshan, Guangdong, a small city very close to Hong Kong. At the age of eight I went with my mother to 鸿胜武馆, and saw people practise kung fu at close range for the first time. Downstairs from my childhood home there really was a street called Goldfish Street. And I grew up watching a great many Hong Kong films, especially Stephen Chow’s comedies.",
+              zh: "它的起点其实是我的童年。《金魚街大亂鬥》其实是我第一部真正从自己家乡出发创作的短片。我来自广东佛山，一个离香港很近的小城市。八岁时我跟妈妈去过鸿胜武馆，第一次近距离看人练功夫。我小时候家楼下也真的有一条金鱼街。再加上我从小看了很多香港电影，特别喜欢周星驰的喜剧。",
               source: "public"
             },
             {
