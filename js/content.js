@@ -1223,13 +1223,13 @@ window.GM = {
               highlight: "worlds",
               ghost: "DIRECTOR",
               photosLeft: true,
-              headline: "From the point of view\nof a *woman director*,\nworking with *AI* to open\na new edge of\n*moving-image expression*.",
+              headline: "Pushing the boundaries of\n*visual storytelling* through\na *female director’s lens*,\nin collaboration with *AI*.",
               photos: [
                 { src: "assets/plates/18-bookshelf.jpg", altEn: "Junie Lau at a desk by the window, in front of a wall of books", altZh: "Junie Lau 坐在窗边书桌前，身后是书架" },
                 { src: "assets/plates/18-workspace-a.jpg", altEn: "Junie Lau standing in a purple-lit workspace, looking at a handheld device", altZh: "Junie Lau 站在紫色灯光的创作空间里，看着一只手持设备" },
                 { src: "assets/plates/18-workspace-b.jpg", altEn: "An overhead view of Junie Lau working at a desk with several screens", altZh: "俯拍：Junie Lau 在有多块屏幕的书桌前工作" }
               ],
-              capEn: "From the point of view of a woman director, working with AI to open a new edge of moving-image expression.",
+              capEn: "Pushing the boundaries of visual storytelling through a female director’s lens, in collaboration with AI.",
               capZh: "以女性导演的视角，携手 AI 开拓影像表达的新边界。"
             }
           ]
