@@ -542,7 +542,7 @@ window.GM = {
         },
         {
           type: "section",
-          summary: { en: "What the film is asking — themes I have already spoken about", zh: "这部影片在问什么——我已经公开谈过的主题" },
+          summary: { en: "What the film is asking", zh: "这部影片在问什么" },
           blocks: [
             {
               type: "paras",
