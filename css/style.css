@@ -1518,10 +1518,11 @@ html { scroll-padding-top: calc(var(--header) + 8px); }
   position: absolute;
   left: 154px;
   top: 148.5px;
-  width: 2420px;
+  width: 2760px;
   height: 297px;
   font-size: 140px;
   line-height: 1;
+  white-space: nowrap;
 }
 .invite-grid {
   position: absolute;
