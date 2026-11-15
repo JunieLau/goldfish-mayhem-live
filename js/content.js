@@ -350,14 +350,6 @@ window.GM = {
           ]
         },
         {
-          type: "quote",
-          en: "The best way to predict the future is to create it.",
-          zh: "预测未来最好的方式，是创造它。",
-          citeEn: "A line I often return to.",
-          citeZh: "我常回到的一句话。",
-          source: "public"
-        },
-        {
           type: "para",
           en: "After I began making work with AI, I was invited to collaborate with OpenAI, Google and ByteDance. Some of those partners gave me enough room not only to finish a film, but to put in questions I really care about. What If, Mother, made with OpenAI, comes from a question I had been carrying: if I had never existed, what kind of life would my mother have lived? Dear “Stranger”, made with Google, is about my grandmother. I almost never told her “I love you” to her face; after she was gone, I tried to finish, on screen, a conversation that never happened in life.",
           zh: "开始使用 AI 创作以后，我陆续收到一些合作邀请，包括和 OpenAI、Google、字节跳动的项目。很幸运，有些合作方给了我比较大的创作空间。我和 OpenAI 合作的《What If, Mother》，来自一个我一直在想的问题：如果这个世界上从来没有我，我的妈妈会过着怎样的人生？和 Google 合作的《Dear “Stranger”》，则是关于我奶奶的故事。以前我很少当面跟她说「我爱你」，等她离开以后，我试着用影像去完成一段现实里没能发生的对话。",
@@ -513,6 +505,12 @@ window.GM = {
           source: "interview"
         },
         {
+          type: "para",
+          en: "Another reason I wanted to make this film is that I wanted to shoot the kind of women’s stories I longed to watch as a child. Growing up with kung fu films, I always wondered: why couldn’t the lead be a girl? Girls can be the superheroes who save the world as well. AI has given me a freedom I did not have when budget and scale stood in the way, so I can finally try to put the place I grew up, the culture I love, and a female filmmaker’s point of view into a film world.",
+          zh: "还有一个很重要的原因，是我想拍一些自己小时候特别想看的女性故事。从小看功夫片，我就总在想：为什么主角不能是女孩子？她们也可以是拯救世界的超级英雄。以前很多画面，我受限于预算和制作规模，没有机会真正做出来。现在 AI 给了我过去没有的自由，让我终于可以试着把自己成长的地方、喜欢的文化，以及作为女性创作者的视角放到电影世界里。",
+          source: "public"
+        },
+        {
           type: "images",
           cols: 2,
           items: [
@@ -556,11 +554,6 @@ window.GM = {
                   en: "Through the contrast between the Cloud and Goldfish Street, I also wanted to ask whether new waves of technology, politics and economics are slowly separating people into different classes — and who will be defined as the new human. At the same time, through this community and the three girls, the film explores friendship, family, memory and belonging. Goldfish Street feels chaotic and absurd because memory itself is like a dream — blurry, unstable, not always reliable. But it is also warm and alive, because the emotional connection between people is real. Everyone has their own Goldfish Street. As long as you believe in it, that universe will continue to exist, and it belongs to you.",
                   zh: "通过云端和金鱼街的对照，我也想问：新的科技、政治和经济浪潮，是否正在慢慢把人类分成不同的阶层？谁又会被定义为新的人类？同时，通过这个社区和三个女孩的故事，影片也探讨了友情、家人、记忆和归属感。金鱼街显得混乱、荒诞，是因为记忆本来就像梦一样模糊、不稳定，也不完全可靠。但它也是温暖的、鲜活的，因为人与人之间的情感连接是真实存在的。每个人都有自己的金鱼街。只要你相信它，那个宇宙就会继续存在，而且它只属于你。",
                   source: "interview"
-                },
-                {
-                  en: "Another reason I wanted to make this film is that I wanted to shoot the kind of women’s stories I longed to watch as a child. Growing up with kung fu films, I always wondered: why couldn’t the lead be a girl? Girls can be the superheroes who save the world as well. AI has given me a freedom I did not have when budget and scale stood in the way, so I can finally try to put the place I grew up, the culture I love, and a female filmmaker’s point of view into a film world.",
-                  zh: "还有一个很重要的原因，是我想拍一些自己小时候特别想看的女性故事。从小看功夫片，我就总在想：为什么主角不能是女孩子？她们也可以是拯救世界的超级英雄。以前很多画面，我受限于预算和制作规模，没有机会真正做出来。现在 AI 给了我过去没有的自由，让我终于可以试着把自己成长的地方、喜欢的文化，以及作为女性创作者的视角放到电影世界里。",
-                  source: "public"
                 }
               ]
             }
@@ -610,10 +603,13 @@ window.GM = {
       ghost: "创造",
       blocks: [
         {
-          type: "lede",
-          en: "I usually talk about making this film in this order: moodboards, world-building, character design, set design, then video generation.",
-          zh: "我讲述这部片子的制作，通常是这个顺序：情绪板、世界观、角色设计、场景设计，然后才到视频生成。",
-          source: "interview"
+          type: "process-graphic",
+          steps: [
+            { num: "01", en: "World-building", zh: "世界观构建" },
+            { num: "02", en: "Character design", zh: "角色设计" },
+            { num: "03", en: "Set design", zh: "场景设计" },
+            { num: "04", en: "Video generation", zh: "视频生成" }
+          ]
         },
         {
           type: "steps",
@@ -631,12 +627,13 @@ window.GM = {
                 },
                 {
                   type: "para",
-                  en: "The first thing I need is a place to hold the feeling of the world — colour, street life, the clash between something very local and something already speeding toward the future. These four official links belong here, in the order of early process: from the first idea to the final moodboard. They are early design, early inspiration and early research — not later making.",
-                  zh: "首先我需要一个地方，把这个世界的感觉放下——颜色、市井生活，以及非常本地的事物和已经冲向未来的事物怎样撞在一起。这四个正式链接都放在这里，顺序是早期过程：从最初的想法，到最终情绪板。它们是早期设计、早期灵感和早期研究，而不是后面的制作环节。",
+                  en: "The first thing I need is a place to hold the feeling of the world — colour, street life, the clash between something very local and something already speeding toward the future. These official links belong here, in the order of early process: from the first idea to the final moodboard. Two private pages, the screenplay and character design, sit with them here. They are early design, early inspiration and early research — not later making.",
+                  zh: "首先我需要一个地方，把这个世界的感觉放下——颜色、市井生活，以及非常本地的事物和已经冲向未来的事物怎样撞在一起。这些正式链接都放在这里，顺序是早期过程：从最初的想法，到最终情绪板。剧本和角色设计两页是不公开内页，也放在这里。它们是早期设计、早期灵感和早期研究，而不是后面的制作环节。",
                   source: "interview"
                 },
                 {
                   type: "links",
+                  layout: "grid-3",
                   items: [
                     {
                       href: "https://docs.google.com/document/d/1VcMepSYRJIBV8J73Q2OGmHHfble0TXMi_-3V2NyDFGQ/edit?usp=sharing",
@@ -673,6 +670,24 @@ window.GM = {
                       labelZh: "最终情绪板（FINAL FINAL）",
                       noteEn: "The final moodboard.",
                       noteZh: "最终情绪板。"
+                    },
+                    {
+                      href: "screenplay.html",
+                      kindEn: "Private page",
+                      kindZh: "不公开内页",
+                      labelEn: "Screenplay",
+                      labelZh: "剧本",
+                      noteEn: "A private page. The full text is not on the public site.",
+                      noteZh: "不公开内页，全文不在公开站点。"
+                    },
+                    {
+                      href: "character-design.html",
+                      kindEn: "Private page",
+                      kindZh: "不公开内页",
+                      labelEn: "Character design",
+                      labelZh: "角色设计",
+                      noteEn: "A private page. The full text is not on the public site.",
+                      noteZh: "不公开内页，全文不在公开站点。"
                     }
                   ]
                 },
@@ -707,34 +722,7 @@ window.GM = {
                   ]
                 }
               ,
-                {
-                  type: "images",
-                  cols: 1,
-                  items: [
-                    {
-                      src: "assets/stills/goldfish-8.jpg",
-                      altEn: "A gilded hall under a red sky",
-                      altZh: "红天下的金色殿堂",
-                      capEn: "An official still from a very different, elevated space.",
-                      capZh: "官方剧照：另一处完全不同的、高处的空间。",
-                      source: "stills"
-                    }
-                  ]
-                },
-                {
-                  type: "links",
-                  items: [
-                    {
-                      href: "https://app.lumalabs.ai/board/c8442ab4-5e14-4bb3-a93d-fdcb806d5c1a",
-                      kindEn: "Luma — official board",
-                      kindZh: "Luma — 正式看板",
-                      labelEn: "World building and Character design",
-                      labelZh: "世界观与角色设计",
-                      noteEn: "The official board for world-building and character design.",
-                      noteZh: "世界观与角色设计的正式看板。"
-                    }
-                  ]
-                }
+
               ]
             },
             {
@@ -884,8 +872,10 @@ window.GM = {
                   ]
                 },
                 {
-                  type: "links",
-                  layout: "solo",
+                  type: "reel-copy",
+                  source: "interview",
+                  en: "The three girls are not perfect heroines. They can be impulsive, rebellious, and make a mess — and I like that. As I said earlier, they are also three mirrors of myself: BOBO, 风水妹 / FENG SHUI GIRL, and 细细粒 / Little One.",
+                  zh: "这三个女孩不是完美的女英雄。她们可能冲动、叛逆，把事情搞得一团糟——我反而喜欢这样。如我前面所说，她们也是我的三面镜子：BOBO、风水妹 / FENG SHUI GIRL，以及细细粒 / Little One。",
                   items: [
                     {
                       href: "https://www.instagram.com/wearewonderstudios/reel/DeJsNDlImjg/",
@@ -901,12 +891,6 @@ window.GM = {
                       altEn: "Cover of the Wonder Studios collaboration Instagram reel"
                     }
                   ]
-                },
-{
-                  type: "para",
-                  en: "The three girls are not perfect heroines. They can be impulsive, rebellious, and make a mess — and I like that. As I said earlier, they are also three mirrors of myself: BOBO, 风水妹 / FENG SHUI GIRL, and 细细粒 / Little One.",
-                  zh: "这三个女孩不是完美的女英雄。她们可能冲动、叛逆，把事情搞得一团糟——我反而喜欢这样。如我前面所说，她们也是我的三面镜子：BOBO、风水妹 / FENG SHUI GIRL，以及细细粒 / Little One。",
-                  source: "interview"
                 },
                 {
                   type: "links",
@@ -945,7 +929,18 @@ window.GM = {
                   sheets: [
                     { src: "assets/characters/bobo-dragon-details-shoes.jpg", w: 3200, h: 3000, altEn: "Design sheet of BOBO’s dragon headdress, shoes and details", altZh: "BOBO 龙头头饰、鞋子与细节设定图", capEn: "A design sheet: BOBO’s dragon headdress, shoes and details.", capZh: "设定图：BOBO 的龙头头饰、鞋子与细节。" },
                     { src: "assets/characters/bobo-mech-arm-angles.jpg", w: 1672, h: 941, altEn: "Design sheet of BOBO’s mechanical right arm, from several angles", altZh: "BOBO 机械右臂多角度设定图", capEn: "A design sheet: BOBO’s mechanical right arm, from several angles.", capZh: "设定图：BOBO 的机械右臂，多个角度。" },
-                    { src: "assets/characters/bobo-turnaround-portraits.jpg", w: 3000, h: 1152, altEn: "BOBO turnaround and portraits", altZh: "BOBO 全身转面与肖像", capEn: "BOBO turnaround and portraits.", capZh: "BOBO 全身转面与肖像。" },
+                    { src: "assets/characters/bobo-turnaround-portraits.jpg", w: 3000, h: 1152, altEn: "BOBO turnaround and portraits", altZh: "BOBO 全身转面与肖像", capEn: "BOBO turnaround and portraits.", capZh: "BOBO 全身转面与肖像。",
+                      child: {
+                        src: "assets/characters/xiao-bobo.png", w: 2048, h: 1152,
+                        altEn: "Turnaround of 小BOBO",
+                        altZh: "小BOBO 全身转面",
+                        capEn: "小BOBO 130 cm",
+                        capZh: "小BOBO 130 cm",
+                        head: 15, feet: 1102,
+                        adultHead: 39, adultFeet: 1101,
+                        ratio: 130 / 176
+                      }
+                    },
                     { src: "assets/characters/bobo-wingchun-arm-hands.jpg", w: 2000, h: 941, altEn: "Design sheet of BOBO’s mechanical arm and bandaged hands", altZh: "BOBO 机械手臂与缠带手部设定图", capEn: "A design sheet: BOBO’s mechanical arm and bandaged hands.", capZh: "设定图：BOBO 的机械手臂与缠带的手。" }
                   ],
                   expressions: [
@@ -968,7 +963,18 @@ window.GM = {
                     { labelEn: "Skills", labelZh: "技能", en: "Qigong, feng shui arts, and ritual work; talismans, a peach-wood sword, a luopan.", zh: "气功、风水术法与法事；符咒、桃木剑、罗盘等。" }
                   ],
                   sheets: [
-                    { src: "assets/characters/fengshui-pink-turnaround.jpg", w: 2560, h: 1440, altEn: "Turnaround of 风水妹 in a pink dress", altZh: "风水妹粉色造型转面图", capEn: "A turnaround of 风水妹 in a pink dress.", capZh: "风水妹粉色造型转面图。" },
+                    { src: "assets/characters/fengshui-pink-turnaround.jpg", w: 2560, h: 1440, altEn: "Turnaround of 风水妹 in a pink dress", altZh: "风水妹粉色造型转面图", capEn: "A turnaround of 风水妹 in a pink dress.", capZh: "风水妹粉色造型转面图。",
+                      child: {
+                        src: "assets/characters/xiao-fengshui.png", w: 2048, h: 1152,
+                        altEn: "Turnaround of 小风水妹",
+                        altZh: "小风水妹全身转面",
+                        capEn: "小风水妹 128 cm",
+                        capZh: "小风水妹 128 cm",
+                        head: 43, feet: 1099,
+                        adultHead: 26, adultFeet: 1386,
+                        ratio: 128 / 173
+                      }
+                    },
                     { src: "assets/characters/fengshui-smiles-braces-hands.jpg", w: 4000, h: 2000, altEn: "Detail sheet of 风水妹’s smile, braces and hands", altZh: "风水妹笑容、牙套与手部细节图", capEn: "A detail sheet: 风水妹’s smile, braces and hands.", capZh: "细节图：风水妹的笑容、牙套与手。" },
                     { src: "assets/characters/fengshui-shorts-legs-shoes.jpg", w: 1647, h: 1903, altEn: "Detail sheet of 风水妹’s shorts, legs and shoes", altZh: "风水妹短裤、腿部与鞋子细节图", capEn: "A detail sheet: 风水妹’s shorts, legs and shoes.", capZh: "细节图：风水妹的短裤、腿部与鞋子。" },
                     { src: "assets/characters/fengshui-headdress-nails-handkerchief.jpg", w: 4000, h: 2500, altEn: "Detail sheet of 风水妹’s ceremonial headdress, nails and handkerchief", altZh: "风水妹礼冠、指甲与手帕细节图", capEn: "A detail sheet: 风水妹’s ceremonial headdress, nails and handkerchief.", capZh: "细节图：风水妹的礼冠、指甲与手帕。" },
@@ -994,7 +1000,18 @@ window.GM = {
                     { labelEn: "Skills", labelZh: "技能", en: "Not a close-combat fighter; gadgets and remote weapons.", zh: "不近身搏击，使用机关与远程武器。" }
                   ],
                   sheets: [
-                    { src: "assets/characters/little-one-turnaround.jpg", w: 4000, h: 1440, altEn: "Turnaround and portraits of 细细粒 / Little One", altZh: "细细粒全身转面与肖像", capEn: "Turnaround and portraits of 细细粒 / Little One.", capZh: "细细粒全身转面与肖像。" },
+                    { src: "assets/characters/little-one-turnaround.jpg", w: 4000, h: 1440, altEn: "Turnaround and portraits of 细细粒 / Little One", altZh: "细细粒全身转面与肖像", capEn: "Turnaround and portraits of 细细粒 / Little One.", capZh: "细细粒全身转面与肖像。",
+                      child: {
+                        src: "assets/characters/xiao-little-one.png", w: 2048, h: 1152,
+                        altEn: "Turnaround of 小细细粒",
+                        altZh: "小细细粒全身转面",
+                        capEn: "小细细粒 105 cm",
+                        capZh: "小细细粒 105 cm",
+                        head: 76, feet: 1073,
+                        adultHead: 16, adultFeet: 1372,
+                        ratio: 105 / 195
+                      }
+                    },
                     { src: "assets/characters/little-one-three-expressions.jpg", w: 1672, h: 941, altEn: "Three expressions of 细细粒 / Little One", altZh: "细细粒三种表情", capEn: "Three expressions of 细细粒 / Little One.", capZh: "细细粒三种表情。" }
                   ],
                   expressions: [
@@ -1072,10 +1089,18 @@ window.GM = {
                   ]
                 },
                 {
-                  type: "callout",
-                  kind: "gap",
-                  en: "I have not yet added a set-by-set note — which locations were designed first, which details were kept or invented — beyond what I have already said about real-life roots and the stills above.",
-                  zh: "除了前面已经说过的现实来源，以及这些剧照，我还没有补上一份按场景拆开的说明：哪些地方先被设计出来，哪些细节是保留的，哪些是想象的。"
+                  type: "links",
+                  items: [
+                    {
+                      href: "https://app.lumalabs.ai/board/c8442ab4-5e14-4bb3-a93d-fdcb806d5c1a",
+                      kindEn: "Luma — official board",
+                      kindZh: "Luma — 正式看板",
+                      labelEn: "World building and Character design",
+                      labelZh: "世界观与角色设计",
+                      noteEn: "The official board for world-building and character design.",
+                      noteZh: "世界观与角色设计的正式看板。"
+                    }
+                  ]
                 }
               ]
             },
@@ -1200,11 +1225,6 @@ window.GM = {
               en: "Traditionally, many stories about kung fu, heroes and saving the world have been told from a male point of view. When I began using AI to make moving images, I felt a responsibility to talk about kung fu, the future, the idea of living forever through data, and ordinary street-level women trying to move upward — all from a female perspective.",
               zh: "但传统上，很多关于功夫、英雄和拯救世界的故事，都是从男性视角出发的。所以当我开始用 AI 创作动态影像时，我觉得自己有一种责任，去从女性视角讨论功夫、未来、通过数据实现永生的想法，以及那些在变化的世界里努力向上爬、充满市井气息的普通女性。",
               source: "interview"
-            },
-            {
-              en: "In Goldfish Mayhem, kung fu is not a decoration I added afterwards. It belongs to the street I grew up with, together with lion dance and neighbourhood life, and it is also how I wanted girl heroes to exist in this world.",
-              zh: "在《金魚街大亂鬥》里，功夫不是我事后加上的装饰。它属于我成长中的那条街，和醒狮、街坊生活在一起，也是我希望女性英雄能够存在于这个世界的方式。",
-              source: "public"
             }
           ]
         },
@@ -1235,29 +1255,40 @@ window.GM = {
           ]
         },
         {
-          type: "links",
-          items: [
-            {
-              href: "https://www.instagram.com/junielaux/p/DefAdokAb9G/",
-              kindEn: "Instagram",
-              kindZh: "Instagram",
-              labelEn: "Kung fu behind-the-scenes, 2026.10.14",
-              labelZh: "功夫幕后，2026.10.14",
-              noteEn: "A public Instagram post. Opens the official post in a new tab.",
-              noteZh: "已公开的 Instagram 帖子。将在新标签页打开官方帖子。",
-              poster: "assets/ig/DefAdokAb9G.jpg",
-              posterW: 480,
-              posterH: 640,
-              altEn: "Cover of the kung fu behind-the-scenes Instagram post, 2026.10.14"
-            }
+          type: "kungfu-media",
+          instagram: {
+            href: "https://www.instagram.com/junielaux/p/DefAdokAb9G/",
+            kindEn: "Instagram",
+            kindZh: "Instagram",
+            labelEn: "Kung fu behind-the-scenes, 2026.10.14",
+            labelZh: "功夫幕后，2026.10.14",
+            noteEn: "A public Instagram post. Opens the official post in a new tab.",
+            noteZh: "已公开的 Instagram 帖子。将在新标签页打开官方帖子。",
+            poster: "assets/ig/DefAdokAb9G.jpg",
+            posterW: 480,
+            posterH: 640,
+            altEn: "Cover of the kung fu behind-the-scenes Instagram post, 2026.10.14"
+          },
+          invideo: {
+            href: "https://invideo.io/@jujuju/third-part/notebook/seq-2599.2",
+            kindEn: "invideo — official link",
+            kindZh: "invideo — 正式链接",
+            labelEn: "invideo notebook",
+            labelZh: "invideo 项目",
+            noteEn: "Opens the official invideo page in a new tab.",
+            noteZh: "将在新标签页打开官方 invideo 页面。"
+          },
+          rowA: [
+            { kicker: "叮叮车", titleEn: "Original kung fu footage", titleZh: "原始功夫素材", src: "assets/video/dingdingche.mp4", poster: "assets/video/dingdingche.jpg" },
+            { kicker: "叮叮车", titleEn: "Depth map", titleZh: "深度图", src: "assets/video/dingdingche-depth.mp4", poster: "assets/video/dingdingche-depth.jpg" }
+          ],
+          rowB: [
+            { kicker: "打鱼蛋", titleEn: "Original kung fu footage", titleZh: "原始功夫素材", src: "assets/video/dayudan.mp4", poster: "assets/video/dayudan.jpg" },
+            { kicker: "打鱼蛋", titleEn: "Depth map", titleZh: "深度图", src: "assets/video/dayudan-depth.mp4", poster: "assets/video/dayudan-depth.jpg" },
+            { kicker: "打鱼蛋", titleEn: "3D White Model", titleZh: "3D 白模", src: "assets/video/dayudan-white-model.mp4", poster: "assets/video/dayudan-white-model.jpg" }
           ]
         },
-        {
-          type: "para",
-          en: "About “hybrid AI” on this film, I want to stay with what I have actually described. I have not given a separate, formal definition of hybrid filmmaking just for Goldfish Mayhem. What I can say today is the process I have already spoken about: a human screenwriter, Mr. Duan; ChatGPT as a daily creative partner from very early on; then, at the video-generation stage, invideo Agent One as agentic video creation — a visual rehearsal first, then many rounds of direction, never a shortcut that skips iteration; CapCut Video Studio – Director Mode as an infinite canvas and a thinking space; and OpenArt Smart Shot / World Builder to plan a scene before it is rendered, and to try different shots.",
-          zh: "关于这部影片里的「混合式 AI」，我想停留在自己真正描述过的事情上。我还没有单独为《金魚街大亂鬥》下过一个正式的 hybrid filmmaking 定义。今天我能说的，就是已经谈过的过程：人类编剧段先生；很早开始、几乎每天都在沟通的创意伙伴 ChatGPT；到了视频生成阶段，invideo Agent One 作为 agentic video creation——先做视觉预演，再经过很多轮指导，而不是跳过迭代的捷径；CapCut Video Studio – Director Mode 的无限画布，作为一个思考空间；以及 OpenArt 的 Smart Shot / World Builder，用来在渲染前计划场景，并尝试不同镜头。",
-          source: "interview"
-        },
+
       ]
     },
     {
@@ -1298,10 +1329,26 @@ window.GM = {
               en: "We often discuss AI film, or how much it can lower the cost of production. Those questions matter. But if AI only helps us produce the old forms of media at a higher speed, I think that would be a little wasteful. After the internet arrived, it did not merely move newspapers onto a computer; it slowly changed how people talk, make and share. I am curious whether AI might also give birth to a kind of media we have not yet seen.",
               zh: "我们今天经常讨论 AI 电影、AI 短剧，或者它能把制作成本降低多少。这些都很重要，但我总觉得，如果 AI 只是让我们用更快的速度生产原来就有的内容形式，好像还有点可惜。就像互联网出现以后，它不只是让我们把报纸搬到电脑上，而是慢慢改变了人与人交流、创作和传播的方式。我很好奇，AI 会不会也催生一种我们今天还没见到的媒体？",
               source: "public"
-            },
+            }
+          ]
+        },
+        {
+          type: "details",
+          summary: { en: "A framework for the evolution of media", zh: "传播媒介演化框架" },
+          blocks: [
             {
-              en: "I have been thinking about what I call Neural Media. In the last fifteen years we have watched artificial intelligence, deep learning and online algorithms rise. These systems sense and model our behaviour, predict what we might want, and can now generate content that folds into the media around us. New sensing tools — from smart rings and brain–computer interfaces to the gyroscope in a phone — are also reading the body in different ways. I think we are in the middle of Neural Media’s development, and that this is already changing the relationship between the filmmaker, the work and the audience.",
-              zh: "所以我觉得，我们现在正处于神经媒体，Neural Media 的发展中段。过去十五年，我们见证了人工智能、深度学习以及各种在线算法的崛起。这些系统不断地感知和分析我们的行为，为我们建立模型，预测我们可能想要什么。生成式媒体出现后，系统甚至可以直接生成与我们相关的内容。与此同时，智能戒指、脑机接口 BCI，甚至智能手机里的陀螺仪，也在通过不同方式感知我们的身体。而这种新的媒体形态，也正在逐渐改变创作者、内容和观众之间的关系。",
+              type: "para",
+              en: 'A framework for the evolution of media. We have moved from radio and television, to immersive experience, and then to the internet and network media. Each change is not only a change of screens and devices; the way audiences take part in content has changed too. Take broadcast media as an example. Radio broadcasting appeared around 1919, and gradually matured from the 1920s to the 1950s. Television then gradually replaced radio as the dominant medium. By the 1950s, immersive media had also begun to develop. From early museum exhibitions, art shows and concerts, to forms we know today such as XR and the Apple Vision Pro, you can see how immersive media has taken shape in different periods. Later came network media. It rose with the early development of the internet in the 1980s, and gradually matured around 2010. This includes internet memes as we know them today — content that can be endlessly imitated and copied, and that spreads like a virus. Later forms such as NFTs, Web3 and the metaverse also appeared in the course of network media’s development.',
+              zh: '传播媒介演化框架。我们从广播、电视，走到沉浸式体验，再到互联网和网络媒体。每一次变化，都不只是屏幕和设备变了，观众参与内容的方式也变了。以广播媒体为例。无线电广播大约在1919年出现，从1920年代到1950年代逐渐发展成熟。随后，电视逐渐取代广播，成为主导性的媒介。到了1950年代，沉浸式媒体也开始逐步发展。从早期的博物馆展览、艺术展、演唱会，到今天我们熟悉的XR、Apple Vision Pro等等，都可以看到沉浸式媒体在不同时期的发展形式。再后来，就是网络媒体。它伴随着1980年代早期互联网的发展逐渐兴起，并在2010年前后逐渐成熟。其中包括我们今天非常熟悉的网络迷因，也就是那些可以被不断模仿、复制，并且像病毒一样迅速传播的内容。还有后来出现的NFT、Web3、元宇宙等等，也都是网络媒体发展过程中出现的新形式。'
+            }
+          ]
+        },
+        {
+          type: "paras",
+          items: [
+            {
+              en: "I have been thinking about what I call Neural Media. In the last fifteen years we have watched artificial intelligence, deep learning and online algorithms rise. These systems sense and model our behaviour, predict what we might want, and can now generate content that folds into the media around us. New sensing tools — from smart rings and brain–computer interfaces to the gyroscope in a phone — are also reading the body in different ways. We are in the middle of Neural Media’s development, and this is already changing the relationship between the filmmaker, the work and the audience.",
+              zh: "所以，我们现在正处于神经媒体，Neural Media 的发展中段。过去十五年，我们见证了人工智能、深度学习以及各种在线算法的崛起。这些系统不断地感知和分析我们的行为，为我们建立模型，预测我们可能想要什么。生成式媒体出现后，系统甚至可以直接生成与我们相关的内容。与此同时，智能戒指、脑机接口 BCI，甚至智能手机里的陀螺仪，也在通过不同方式感知我们的身体。而这种新的媒体形态，也正在逐渐改变创作者、内容和观众之间的关系。",
               source: "public"
             },
             {
@@ -1325,11 +1372,13 @@ window.GM = {
               headline: "*Media Evolution Table*",
               wordmark: "M E D I A   E V O L U T I O N   T A B L E",
               eras: [
-                { name: "Broadcast", dates: "1920–1950" },
-                { name: "Immersive", dates: "1950–1980" },
-                { name: "Network", dates: "1980–2010" },
-                { name: "Neural", dates: "2010–2040" }
+                { name: "Broadcast（广播）", dates: "1920–1950" },
+                { name: "Immersive（沉浸式）", dates: "1950–1980" },
+                { name: "Network（网络）", dates: "1980–2010" },
+                { name: "Neural（神经式）", dates: "2010–2040" }
               ],
+              creditEn: "Researcher: K Allado-McDowell",
+              creditZh: "研究者：K Allado-McDowell",
               photos: [
                 { src: "assets/plates/23-media-evolution.jpg", altEn: "A media-evolution graphic, from Broadcast through Immersive and Network to Neural", altZh: "传播模式演化图，从广播、沉浸式、网络，到神经" }
               ],
@@ -1350,6 +1399,7 @@ window.GM = {
               kind: "statement-ghost",
               highlight: "future",
               narrow: true,
+              formula: true,
               ghost: "DREAMS",
               headline: "I want to bring *dreams into reality*,\nlet *imagination* and the *real world*\ncollide and intertwine,\nand create a *sensory world*\nunlike any before.",
               capEn: "I want to bring dreams into reality, and let imagination and the real world meet.",

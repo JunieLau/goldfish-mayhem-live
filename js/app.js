@@ -105,6 +105,46 @@
       : fig;
   }
 
+  function segmentWrap(raw) {
+    return String(raw || "").split(/([\u3400-\u9FFF\uF900-\uFAFF]+)/).map((part) => {
+      if (!part) return "";
+      if (/^[\u3400-\u9FFF\uF900-\uFAFF]+$/.test(part)) return `<span class="seg-cjk">${esc(part)}</span>`;
+      return `<span class="seg-lat">${esc(part)}</span>`;
+    }).join("");
+  }
+
+  function renderLocalShot(v) {
+    const playEn = (window.GM.ui.play && window.GM.ui.play.en) || "Play";
+    const playZh = (window.GM.ui.play && window.GM.ui.play.zh) || "播放";
+    const titleEn = esc(v.titleEn || "");
+    const titleZh = esc(v.titleZh || "");
+    return `<figure class="kf-shot">
+      <div class="player" data-local="${esc(v.src)}">
+        <img src="${esc(v.poster)}" alt="${titleEn}" width="1280" height="720">
+        <button type="button" class="playbtn" aria-label="${titleEn}">
+          <span class="tri" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="plab">${textPair({ en: playEn, zh: playZh })}</span>
+        </button>
+      </div>
+      <div class="shot-kicker">${esc(v.kicker || "")}</div>
+      <h3 class="kf-title pair"><span class="en">${titleEn}</span><span class="zh">${titleZh}</span></h3>
+    </figure>`;
+  }
+
+  function renderKungfuMedia(b) {
+    const row = (items, cls) => `<div class="${cls}">${(items || []).map(renderLocalShot).join("")}</div>`;
+    return `<div class="mod kf-block">
+      <div class="kf-beside">
+        <div class="poster-solo">${renderPosterCard(b.instagram || {})}</div>
+        <div class="kf-right">
+          ${row(b.rowA, "kf-two")}
+          <div class="link-grid solo">${renderLinkCard(b.invideo || {})}</div>
+        </div>
+      </div>
+      ${row(b.rowB, "kf-three")}
+    </div>`;
+  }
+
   function renderVideo(v) {
     const titleEn = esc(v.titleEn);
     const titleZh = esc(v.titleZh);
@@ -196,7 +236,7 @@
     const posters = (links || []).filter((l) => l.poster);
     const texts = (links || []).filter((l) => !l.poster);
     const posterClass = layout === "solo" ? "poster-solo" : "poster-grid";
-    const textClass = layout === "solo" ? "link-grid solo" : "link-grid";
+    const textClass = layout === "solo" ? "link-grid solo" : layout === "grid-3" ? "link-grid cols-3" : "link-grid";
     return `${posters.length ? `<div class="${posterClass}">${posters.map(renderPosterCard).join("")}</div>` : ""}${
       texts.length ? `<div class="${textClass}">${texts.map(renderLinkCard).join("")}</div>` : ""
     }`;
@@ -242,8 +282,13 @@
   }
 
   function plateCap(p) {
-    if (!p.capEn && !p.capZh) return "";
-    return `<div class="plate-cap">${textPair({ en: p.capEn || "", zh: p.capZh || "" })}</div>`;
+    const credit = (p.creditEn || p.creditZh)
+      ? `<div class="plate-credit-line">${textPair({ en: p.creditEn || "", zh: p.creditZh || "" })}</div>`
+      : "";
+    const cap = (p.capEn || p.capZh)
+      ? `<div class="plate-cap">${textPair({ en: p.capEn || "", zh: p.capZh || "" })}</div>`
+      : "";
+    return credit + cap;
   }
 
   function plateFig(img, i) {
@@ -510,10 +555,31 @@
         <div class="architect-cols">${cols}</div>
       </div>`;
     } else if (kind === "statement-ghost" && p.narrow) {
-      return `<article class="plate plate-narrow-statement" data-kind="statement-ghost" data-highlight="${esc(p.highlight || "")}">
+      const formula = p.formula
+        ? `<div class="formula-col" aria-label="BCI × AI × Web 4.0 × XR × ？ = Neural Media">
+            <p class="formula-line">
+              <span class="ft">BCI</span>
+              <span class="fop">×</span>
+              <span class="ft">AI</span>
+              <span class="fop">×</span>
+              <span class="ft">Web 4.0</span>
+              <span class="fop">×</span>
+              <span class="ft">XR</span>
+              <span class="fop">×</span>
+              <span class="fq">？</span>
+              <span class="feq">=</span>
+              <span class="fres">Neural Media</span>
+            </p>
+          </div>`
+        : "";
+      const bodyClass = p.formula ? "narrow-statement-body has-formula" : "narrow-statement-body";
+      return `<article class="plate plate-narrow-statement${p.formula ? " has-formula" : ""}" data-kind="statement-ghost" data-highlight="${esc(p.highlight || "")}">
         ${plateChrome(p)}
-        <div class="narrow-statement-body">
-          <h3 class="plate-headline">${typo(p.headline)}</h3>
+        <div class="${bodyClass}">
+          ${formula}
+          <div class="dreams-col">
+            <h3 class="plate-headline">${typo(p.headline)}</h3>
+          </div>
         </div>
         ${plateCap(p)}
       </article>`;
@@ -589,29 +655,46 @@
       .join("");
     const arOf = (img) => (img.w && img.h ? img.w / img.h : 1);
     const sheetList = b.sheets || [];
-    let sheetRows = [sheetList];
-    if (sheetList.length >= 4) {
-      let best = Math.ceil(sheetList.length / 2), bestDiff = Infinity;
-      for (let i = 1; i < sheetList.length; i++) {
-        const left = sheetList.slice(0, i).reduce((s, x) => s + arOf(x), 0);
-        const right = sheetList.slice(i).reduce((s, x) => s + arOf(x), 0);
-        const d = Math.abs(left - right);
-        if (d < bestDiff) { bestDiff = d; best = i; }
+    const renderPlainRow = (row, r) => {
+      if (!row.length) return "";
+      const figs = row
+        .map((img, i) =>
+          renderFig(Object.assign({ natural: true, sheet: true }, img), `${idxPrefix}-sheet-${r}-${i}`)
+        )
+        .join("");
+      return `<div class="char-sheets">${figs}</div>`;
+    };
+    const renderPair = (img, i) => {
+      const ch = img.child;
+      const adultFig = renderFig(Object.assign({ natural: true, sheet: true }, img, { child: undefined }), `${idxPrefix}-sheet-adult-${i}`);
+      const childFig = renderFig(Object.assign({ natural: true, sheet: true, childSheet: true }, ch), `${idxPrefix}-sheet-child-${i}`);
+      return `<div class="char-pair"
+        data-adult-w="${img.w}" data-adult-h="${img.h}"
+        data-adult-head="${ch.adultHead}" data-adult-feet="${ch.adultFeet}"
+        data-child-w="${ch.w}" data-child-h="${ch.h}"
+        data-child-head="${ch.head}" data-child-feet="${ch.feet}"
+        data-ratio="${ch.ratio}">
+        <div class="char-pair-adult">${adultFig}</div>
+        <div class="char-pair-child">${childFig}</div>
+      </div>`;
+    };
+    let sheets = "";
+    let buffer = [];
+    let rowN = 0;
+    sheetList.forEach((img, i) => {
+      if (img.child) {
+        if (buffer.length) {
+          sheets += renderPlainRow(buffer, rowN++);
+          buffer = [];
+        }
+        sheets += renderPair(img, i);
+      } else {
+        buffer.push(img);
       }
-      sheetRows = [sheetList.slice(0, best), sheetList.slice(best)];
-    }
-    const sheets = sheetRows
-      .filter((row) => row.length)
-      .map((row, r) => {
-        const figs = row
-          .map((img, i) =>
-            renderFig(Object.assign({ natural: true, sheet: true }, img), `${idxPrefix}-sheet-${r}-${i}`)
-          )
-          .join("");
-        return `<div class="char-sheets">${figs}</div>`;
-      })
-      .join("");
-    const expressions = (b.expressions || [])
+    });
+    if (buffer.length) sheets += renderPlainRow(buffer, rowN);
+
+        const expressions = (b.expressions || [])
       .map((img, i) =>
         renderFig(Object.assign({ natural: true, expression: true }, img), `${idxPrefix}-expr-${i}`)
       )
@@ -679,6 +762,24 @@
         return `<div class="mod video-grid">${(b.items || []).map(renderVideo).join("")}</div>`;
       case "links":
         return `<div class="mod">${renderLinks(b.items || [], b.layout)}</div>`;
+      case "reel-copy":
+        return `<div class="mod reel-copy">${renderLinks(b.items || [], "solo")}${textPair({
+          en: segmentWrap(b.en || "") + (b.source ? " " + sourceMark(b.source, "en") : ""),
+          zh: segmentWrap(b.zh || "") + (b.source ? " " + sourceMark(b.source, "zh") : "")
+        }, "para")}</div>`;
+      case "kungfu-media":
+        return renderKungfuMedia(b);
+      case "process-graphic": {
+        const steps = (b.steps || []).map((st, i) => {
+          const rule = i < (b.steps.length - 1) ? `<div class="pg-rule" aria-hidden="true"></div>` : "";
+          return `<div class="pg-step">
+            <div class="pg-num">${esc(st.num)}</div>
+            <div class="pg-en">${esc(st.en)}</div>
+            <div class="pg-zh zh">${esc(st.zh)}</div>
+          </div>${rule}`;
+        }).join("");
+        return `<div class="mod process-graphic" role="list">${steps}</div>`;
+      }
       case "plates":
         return `<div class="mod plate-stack">${(b.items || [])
           .map((pl, i) => renderPlate(pl, `${idxPrefix}-plate-${i}`))
@@ -846,6 +947,64 @@
     $(".toc").innerHTML = toc;
   }
 
+  function layoutCharPairs() {
+    $$(".char-pair").forEach((el) => {
+      const aw = +el.dataset.adultW;
+      const ah = +el.dataset.adultH;
+      const aHead = +el.dataset.adultHead;
+      const aFeet = +el.dataset.adultFeet;
+      const cw = +el.dataset.childW;
+      const ch = +el.dataset.childH;
+      const cHead = +el.dataset.childHead;
+      const cFeet = +el.dataset.childFeet;
+      const ratio = +el.dataset.ratio;
+      if (!aw || !ah || !cw || !ch || !ratio) return;
+      const aFig = aFeet - aHead;
+      const cFig = cFeet - cHead;
+      if (aFig <= 0 || cFig <= 0) return;
+      const gap = 20;
+      const contentW = el.clientWidth || el.parentElement.clientWidth;
+      if (!contentW) return;
+      // W_c = W_a * (aFig/aw) * ratio * (cw/cFig)
+      const k = (aFig / aw) * ratio * (cw / cFig);
+      const Wa = Math.max(40, (contentW - gap) / (1 + k));
+      const Ha = Wa * (ah / aw);
+      const Wc = Wa * k;
+      const Hc = Wc * (ch / cw);
+      const aFeetY = Ha * (aFeet / ah);
+      const cFeetY = Hc * (cFeet / ch);
+      const baseline = Math.max(aFeetY, cFeetY);
+      const aTop = baseline - aFeetY;
+      const cTop = baseline - cFeetY;
+      const totalH = Math.max(aTop + Ha, cTop + Hc);
+      el.style.setProperty("--pair-h", totalH + "px");
+      const adultWrap = el.querySelector(".char-pair-adult");
+      const childWrap = el.querySelector(".char-pair-child");
+      if (adultWrap) {
+        adultWrap.style.width = Wa + "px";
+        adultWrap.style.paddingTop = aTop + "px";
+      }
+      if (childWrap) {
+        childWrap.style.width = Wc + "px";
+        childWrap.style.paddingTop = cTop + "px";
+      }
+      const adultImg = el.querySelector(".char-pair-adult img");
+      const childImg = el.querySelector(".char-pair-child img");
+      if (adultImg) {
+        adultImg.style.width = Wa + "px";
+        adultImg.style.height = Ha + "px";
+        adultImg.style.maxWidth = "none";
+        adultImg.style.objectFit = "contain";
+      }
+      if (childImg) {
+        childImg.style.width = Wc + "px";
+        childImg.style.height = Hc + "px";
+        childImg.style.maxWidth = "none";
+        childImg.style.objectFit = "contain";
+      }
+    });
+  }
+
   function renderAll() {
     const main = $("#main");
     main.innerHTML =
@@ -855,6 +1014,7 @@
     $("#foot-credit").innerHTML = textPair(window.GM.ui.footer);
     bindMedia();
     scalePlates();
+    layoutCharPairs();
   }
 
   /* language */
@@ -990,6 +1150,21 @@
 
   function loadPlayer(player) {
     if (!player || player.dataset.loaded) return;
+    if (player.dataset.local) {
+      player.dataset.loaded = "1";
+      const video = document.createElement("video");
+      video.controls = true;
+      video.playsInline = true;
+      video.preload = "metadata";
+      video.src = player.dataset.local;
+      video.setAttribute("width", "1280");
+      video.setAttribute("height", "720");
+      player.innerHTML = "";
+      player.appendChild(video);
+      const started = video.play();
+      if (started && started.catch) started.catch(() => {});
+      return;
+    }
     const id = player.dataset.yt;
     player.dataset.loaded = "1";
     const iframe = document.createElement("iframe");
@@ -1026,10 +1201,14 @@
     window.addEventListener("scroll", updateSpy, { passive: true });
     window.addEventListener("resize", () => {
       scalePlates();
+      layoutCharPairs();
       updateSpy();
     });
     if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(() => scalePlates());
+      document.fonts.ready.then(() => {
+        scalePlates();
+        layoutCharPairs();
+      });
     }
     updateSpy();
 
