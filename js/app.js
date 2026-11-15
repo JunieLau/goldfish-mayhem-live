@@ -324,12 +324,22 @@
         )
         .join("");
     } else if (kind === "chapter-quote") {
+      const burst = `<svg class="quote-burst" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="#111111" stroke-linecap="round">
+          <path d="M32 5.5v53" stroke-width="2.2"/>
+          <path d="M6.5 33.5h51" stroke-width="2.2"/>
+          <path d="M13 13.5l38.5 38" stroke-width="1.7"/>
+          <path d="M51 12.5L12.5 51.5" stroke-width="1.7"/>
+          <path d="M32 16.5c1.2 6.5 2.2 9.2 8.8 12.2-6.4 2.2-8.2 4.6-9.2 11.4-1.2-6.6-3.2-8.8-9.6-11 6.2-2.4 8-5.6 10-12.6z" stroke-width="1.35"/>
+        </g>
+      </svg>`;
       body = `<div class="plate-quote-row">
         <div class="plate-side-word left">${esc(p.leftWord || "")}</div>
+        <div class="quote-bridge quote-bridge-left" aria-hidden="true"><span class="quote-rule"></span>${burst}</div>
         <div class="quote-main">
           <h3 class="plate-headline">${typo(p.headline)}</h3>
         </div>
-        ${p.chapter ? `<div class="plate-chapter">${esc(p.chapter)}</div>` : ""}
+        <div class="quote-bridge quote-bridge-right" aria-hidden="true"><span class="quote-rule"></span></div>
         <div class="plate-side-word right">${esc(p.rightWord || "")}</div>
       </div>`;
     } else if (kind === "chapter-art") {

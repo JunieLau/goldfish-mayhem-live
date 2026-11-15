@@ -313,6 +313,7 @@ window.GM = {
             {
               kind: "chapter-quote",
               highlight: "worlds",
+              ghost: "PREDICTTHEFUTURE",
               leftWord: "Creating Worlds",
               rightWord: "Imagining the Future",
               headline: "The best way to predict the future is to *create it.*",

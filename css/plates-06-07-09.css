@@ -212,39 +212,108 @@
   margin-top: 96px;
 }
 
-/* ---------- 07 quote ---------- */
+/* ---------- 07 quote ----------
+   Sentence is the dominant line. Side words recede on the same axis,
+   joined by hairline rules. The red ghost carries the large scale. */
+#intro article.plate[data-kind="chapter-quote"] .plate-ghost {
+  left: 50%;
+  top: 390px;
+  right: auto;
+  width: max-content;
+  font-size: 730px;
+  line-height: 0.7;
+  letter-spacing: 0.006em;
+  text-align: center;
+  color: #c8102e;
+  opacity: 1;
+  filter: blur(78px);
+  text-shadow: 0 0 20px #c8102e;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+#intro article.plate[data-kind="chapter-quote"] .plate-quote-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding: 0 128px;
+  box-sizing: border-box;
+}
+
 #intro article.plate[data-kind="chapter-quote"] .plate-quote-row .plate-side-word {
-  top: 486px;
+  position: relative;
+  left: auto;
+  right: auto;
+  top: auto;
   width: auto;
   height: auto;
-  font-size: 104px;
-  line-height: 0.9;
+  flex: 0 0 auto;
+  font-size: 70px;
+  line-height: 1;
+  letter-spacing: 0;
   white-space: nowrap;
-}
-
-#intro article.plate[data-kind="chapter-quote"] .plate-quote-row .plate-side-word.left {
-  left: 154px;
-  text-align: left;
-}
-
-#intro article.plate[data-kind="chapter-quote"] .plate-quote-row .plate-side-word.right {
-  left: auto;
-  right: 140px;
-  width: auto;
-  text-align: right;
+  text-align: center;
+  color: #1a1a1a;
 }
 
 #intro article.plate[data-kind="chapter-quote"] .plate-quote-row .quote-main {
-  left: 798px;
-  top: 448px;
-  width: 3720px;
+  position: relative;
+  left: auto;
+  top: auto;
+  width: auto;
+  flex: 0 0 auto;
   text-align: center;
 }
 
 #intro article.plate[data-kind="chapter-quote"] .plate-quote-row .plate-headline {
-  font-size: 176px;
+  font-size: 188px;
   line-height: 0.92;
+  letter-spacing: 0;
   text-align: center;
+  white-space: nowrap;
+}
+
+#intro article.plate[data-kind="chapter-quote"] .plate-headline .accent {
+  position: relative;
+  display: inline-block;
+  color: #111111;
+  z-index: 1;
+}
+
+#intro article.plate[data-kind="chapter-quote"] .plate-headline .accent::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  width: 124%;
+  height: 1.72em;
+  transform: translate(-50%, -50%) rotate(-6deg);
+  background: url("../assets/deco/scribble-circle.svg") center / 100% 100% no-repeat;
+  pointer-events: none;
+  z-index: 2;
+}
+
+#intro article.plate[data-kind="chapter-quote"] .quote-bridge {
+  flex: 1 1 180px;
+  display: flex;
+  align-items: center;
+  min-width: 140px;
+  height: 72px;
+}
+
+#intro article.plate[data-kind="chapter-quote"] .quote-rule {
+  flex: 1 1 auto;
+  height: 5px;
+  background: #111111;
+}
+
+#intro article.plate[data-kind="chapter-quote"] .quote-burst {
+  width: 72px;
+  height: 72px;
+  flex: 0 0 72px;
+  display: block;
+  margin-left: 2px;
 }
 
 /* ---------- 09 collaborations (posters untouched) ---------- */
