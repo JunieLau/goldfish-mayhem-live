@@ -194,8 +194,9 @@
     const posters = (links || []).filter((l) => l.poster);
     const texts = (links || []).filter((l) => !l.poster);
     const posterClass = layout === "solo" ? "poster-solo" : "poster-grid";
+    const textClass = layout === "solo" ? "link-grid solo" : "link-grid";
     return `${posters.length ? `<div class="${posterClass}">${posters.map(renderPosterCard).join("")}</div>` : ""}${
-      texts.length ? `<div class="link-grid">${texts.map(renderLinkCard).join("")}</div>` : ""
+      texts.length ? `<div class="${textClass}">${texts.map(renderLinkCard).join("")}</div>` : ""
     }`;
   }
 

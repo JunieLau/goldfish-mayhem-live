@@ -459,6 +459,11 @@ main { padding: 0 0 16px; }
   text-decoration-thickness: 2px;
 }
 .link-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.link-grid.solo {
+  width: min(100%, max(280px, calc((100% - 16px) / 2)));
+  grid-template-columns: minmax(0, 1fr);
+  justify-content: start;
+}
 
 /* names / process / tips */
 .name-card, .step, .tip, .live-slot {

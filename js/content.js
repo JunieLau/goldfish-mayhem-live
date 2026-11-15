@@ -217,6 +217,21 @@ window.GM = {
           ]
         },
         {
+          type: "links",
+          layout: "solo",
+          items: [
+            {
+                  href: "https://www.forbes.com/sites/maureenkerr/2026/09/04/how-ai-and-peter-gabriel-changed-junie-laus-path-to-directing/",
+                  kindEn: "Press",
+                  kindZh: "报道",
+                  labelEn: "Forbes profile, September 2026",
+                  labelZh: "《福布斯》专访，2026年9月",
+                  noteEn: "Opens in a new tab.",
+                  noteZh: "将在新标签页打开。"
+                }
+          ]
+        },
+        {
           type: "para",
           en: "In 2018, during my master’s at University of the Arts London, I started working with early artificial intelligence, virtual reality, mixed reality, and interactive art. In 2020, during the pandemic, I returned to China. I had few industry contacts then, and becoming a director overnight was not realistic, so I chose a job close to directing: production design. On set I worked with carpenters, prop makers, gaffers and cinematographers, and learned how to make an idea physically real.",
           zh: "2018 年，我在伦敦艺术大学读硕士，开始接触早期的人工智能、虚拟现实、混合现实，还有交互艺术。2020 年疫情期间，我回到中国。那时候没有什么行业人脉，想直接当导演不太现实，所以我选择了一个离导演很近的工作：美术指导。在片场，我跟木工、道具师、灯光师、摄影师一起工作，学习怎么把一个想法真正做出来。",
