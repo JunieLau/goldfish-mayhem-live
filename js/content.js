@@ -383,7 +383,7 @@ window.GM = {
         },
         {
           type: "para",
-          en: "From the beginning of last year I also started to receive invitations from AI-native entertainment studios overseas, to develop original film IPs with writers and production teams. There is the science-fiction story ZERO, the youth road story 51IT, the women’s revenge action film 猩红木兰, the cyber police story MADAM P!NK, and, most recently, Goldfish Mayhem — 金魚街大亂鬥. They often share one thing: the heroines are not necessarily perfect. They can be impulsive, rebellious, even make a complete mess. I like characters who feel alive in that way.",
+          en: "From the beginning of last year I also started to receive invitations from AI-native entertainment studios overseas, to develop original film IPs with writers and production teams. There is the science-fiction story ZERO, the youth road story 51IT, the women’s revenge action film SCARLET MAGNOLIA, the cyber police story MADAM P!NK, and, most recently, Goldfish Mayhem — 金魚街大亂鬥. They often share one thing: the heroines are not necessarily perfect. They can be impulsive, rebellious, even make a complete mess. I like characters who feel alive in that way.",
           zh: "从去年年初开始，我也陆续收到海外 AI 原生娱乐工作室的邀请，和编剧、制作团队一起开发原创电影 IP。这里有科幻故事《ZERO》，青春爱情公路故事《51IT》，女性复仇动作片《猩红木兰》，还有赛博女警故事《MADAM P!NK》，以及最近推出的《金魚街大亂鬥》。它们经常有一个共同点：女主角不一定完美。她们可能冲动、叛逆，甚至把事情搞得一团糟。我反而很喜欢这样鲜活的角色。",
           source: "public"
         },
