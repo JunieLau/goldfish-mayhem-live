@@ -2974,22 +2974,22 @@ a.doc-link:focus-visible .doc-go {
 
 /* in-chapter thesis headings (story 01–03) */
 .block-heading {
-  margin: 2.6rem 0 1.15rem;
+  margin: 3.4rem 0 1.35rem;
 }
 .block-heading .hk {
   font-family: var(--mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.16em;
+  font-size: 0.92rem;
+  letter-spacing: 0.18em;
   color: var(--red);
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.55rem;
 }
 .block-heading .block-heading-line .en,
 .block-heading .block-heading-line .zh {
   font-family: var(--serif);
   font-weight: 700;
-  font-size: clamp(1.45rem, 2.05vw, 1.9rem);
-  line-height: 1.32;
-  letter-spacing: -0.01em;
+  font-size: clamp(1.95rem, 2.85vw, 2.7rem);
+  line-height: 1.28;
+  letter-spacing: 0;
   color: var(--ink);
   margin: 0;
 }
