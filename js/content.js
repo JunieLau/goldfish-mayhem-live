@@ -945,8 +945,8 @@ window.GM = {
                 },
 {
                   type: "para",
-                  en: "The three girls are not perfect heroines. They can be impulsive, rebellious, and make a mess — and I like that. As I said earlier, they are also three mirrors of myself: BOBO, 风水妹 / FENG SHUI GIRL, and 细细粒 / Little One. Fengshui Girl and XIXILI also appear as published variants — XIXILI, for example, on the height sheet. I am not treating any one English form as the single official standard. The official board I am using for world-building and character design is the Luma board below. The official character-design slides are in the Google Slides link below. Earlier character and environment references are in the Moodboard section. The Instagram reels above are the character introductions already published.",
-                  zh: "这三个女孩不是完美的女英雄。她们可能冲动、叛逆，把事情搞得一团糟——我反而喜欢这样。如我前面所说，她们也是我的三面镜子：BOBO、风水妹 / FENG SHUI GIRL，以及细细粒 / Little One。Fengshui Girl 和 XIXILI 也作为已公开的异写出现——例如身高对照图上的 XIXILI。我不会把某一种英文写法收成唯一的官方标准。世界观与角色设计，我指定使用的正式看板是下面这块 Luma 看板。正式的角色设计演示文稿在下面的 Google 幻灯片链接里。更早的角色与场景参考在情绪板那一步。上面这些 Instagram 短视频，则是已经公开的角色介绍。",
+                  en: "The three girls are not perfect heroines. They can be impulsive, rebellious, and make a mess — and I like that. As I said earlier, they are also three mirrors of myself: BOBO, 风水妹 / FENG SHUI GIRL, and 细细粒 / Little One.",
+                  zh: "这三个女孩不是完美的女英雄。她们可能冲动、叛逆，把事情搞得一团糟——我反而喜欢这样。如我前面所说，她们也是我的三面镜子：BOBO、风水妹 / FENG SHUI GIRL，以及细细粒 / Little One。",
                   source: "interview"
                 },
                 {
