@@ -92,7 +92,7 @@
     const wh = (w ? ` width="${w}"` : "") + (h ? ` height="${h}"` : "");
     const ar = img.w && img.h ? (img.w / img.h) : "";
     const arStyle = ar ? ` style="--ar:${Number(ar).toFixed(4)}"` : "";
-    const go = img.href
+    const go = img.href && !img.hideGo
       ? `<div class="doc-go">${textPair({ en: (img.hrefKindEn || "Open") + " ↗", zh: (img.hrefKindZh || "打开") + " ↗" })}</div>`
       : "";
     const loading = img.sheet ? "eager" : "lazy";
@@ -236,7 +236,7 @@
   function renderLinks(links, layout) {
     const posters = (links || []).filter((l) => l.poster);
     const texts = (links || []).filter((l) => !l.poster);
-    const posterClass = layout === "solo" ? "poster-solo" : "poster-grid";
+    const posterClass = layout === "solo" ? "poster-solo" : layout === "grid-4" ? "poster-grid cols-4" : "poster-grid";
     const textClass = layout === "solo" ? "link-grid solo" : layout === "grid-3" ? "link-grid cols-3" : "link-grid";
     return `${posters.length ? `<div class="${posterClass}">${posters.map(renderPosterCard).join("")}</div>` : ""}${
       texts.length ? `<div class="${textClass}">${texts.map(renderLinkCard).join("")}</div>` : ""
@@ -593,7 +593,9 @@
       </div>`;
     }
     const sideClass = kind === "statement" && p.photosLeft ? " photos-left" : "";
-    return `<article class="plate${sideClass}" data-kind="${esc(kind)}" data-highlight="${esc(p.highlight || "")}">
+    const compactClass = p.compact ? " is-compact" : "";
+    const wordmarkClass = p.compact && p.wordmark ? " has-wordmark" : "";
+    return `<article class="plate${sideClass}${compactClass}${wordmarkClass}" data-kind="${esc(kind)}" data-highlight="${esc(p.highlight || "")}">
       <div class="plate-lock">
         <div class="plate-design">
           ${plateChrome(p)}
@@ -744,7 +746,7 @@
           .map(
             (it) => `<article class="advice-point">
             <div class="advice-k">${textPair({ en: it.nEn, zh: it.nZh })}</div>
-            ${textPair({ en: it.en, zh: it.zh }, "advice-line")}
+            ${textPair({ en: typo(it.en), zh: typo(it.zh) }, "advice-line")}
           </article>`
           )
           .join("");
@@ -900,9 +902,11 @@
 
   function renderSources() {
     const s = window.GM.sourceSection;
+    const card = s.endCard ? renderLinks([s.endCard], "solo") : "";
     return `<section class="end-band" id="join">
       <h2>${esc(s.endZh)}<em>JOIN US</em></h2>
       ${rich(s.endLead, "para")}
+      ${card}
     </section>`;
   }
 

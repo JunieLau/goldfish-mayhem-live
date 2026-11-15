@@ -471,34 +471,33 @@ window.GM = {
         {
           type: "heading",
           num: "01",
-          en: "The future world I created grew out of my childhood in my hometown and my memories of Goldfish Street, just outside my home.",
-          zh: "我创造的未来世界，源于我在家乡的童年生活，以及楼下的那条金鱼街。"
+          en: "The future world I created grew out of my childhood in Foshan and the Goldfish Street just outside my home.",
+          zh: "我创造的未来世界，源于我在家乡的童年生活，以及楼下那条金鱼街。"
         },
         {
           type: "paras",
           items: [
             {
-              en: "It starts in my childhood. Goldfish Mayhem is actually the first short film I have made that truly comes from my hometown. I am from Foshan, Guangdong, a small city very close to Hong Kong. At the age of eight I went with my mother to 鸿胜武馆, and saw people practise kung fu at close range for the first time. Downstairs from my childhood home there really was a street called Goldfish Street. And I grew up watching a great many Hong Kong films, especially Stephen Chow’s comedies.",
-              zh: "它的起点其实是我的童年。《金魚街大亂鬥》其实是我第一部真正从自己家乡出发创作的短片。我来自广东佛山，一个离香港很近的小城市。八岁时我跟妈妈去过鸿胜武馆，第一次近距离看人练功夫。我小时候家楼下也真的有一条金鱼街。再加上我从小看了很多香港电影，特别喜欢周星驰的喜剧。",
+              en: "*Goldfish Mayhem* is the first short film I have made that is truly rooted in my hometown. I am from Foshan, Guangdong, and there really was a Goldfish Street just outside my childhood home. Despite its name, there were no goldfish for sale. It was lined with wallpaper shops, hardware stores and restaurants, with local people going about their daily lives. There is also a Goldfish Street near Mong Kok in Hong Kong. The street in the film brings together my impressions of these places and my childhood memories.",
+              zh: "《金魚街大亂鬥》是我第一部真正从家乡出发创作的短片。我来自广东佛山，小时候住的楼下，真的有一条金鱼街。那里并不卖金鱼，而是开着墙纸店、五金店和餐饮店，有着我熟悉的街坊生活。香港旺角附近也有一条金鱼街。电影中的金鱼街，融合了我对这些地方的印象，以及自己的童年记忆。",
               source: "public"
             },
             {
-              en: "Guangdong is quite different from many other parts of China. We grew up speaking Cantonese, not Mandarin, as our main language. Because Foshan is close to Hong Kong, and because part of my family is from Hong Kong, the culture I grew up with was mixed: Guangdong culture, Hong Kong culture, British influence, Japanese pop culture, and different parts of Chinese culture. I think that mixture slowly shaped my visual style, and made me want to invent a visual language rather than only follow existing ones.",
-              zh: "广东和中国很多其他地方不太一样。我们从小主要讲粤语，而不是普通话。因为佛山离香港很近，再加上我家里也有一部分家人是香港人，所以我成长中接触到的文化其实是混合的：广东文化、香港文化、英国文化影响、日本流行文化，以及中国不同地区的文化影响。我觉得这种混合感慢慢形成了我现在的视觉风格，也让我一直想创造一种新的视觉语言，而不是只去沿用已经存在的视觉体系。",
+              en: "I grew up speaking Cantonese and watching Hong Kong comedies, especially Stephen Chow’s films. My upbringing brought together Guangdong and Hong Kong culture, British influences, Japanese pop culture and cultures from other parts of China. These different influences gradually shaped my visual style and made me want to develop a visual language of my own.",
+              zh: "我从小主要讲粤语，也看了很多香港喜剧电影，尤其喜欢周星驰的作品。我的成长受到多种文化的影响，包括广东文化、香港文化、英国文化、日本流行文化，以及中国其他地区的文化。这些不同的影响慢慢塑造了我的视觉风格，也让我想创造属于自己的视觉语言。",
               source: "interview"
             },
             {
-              en: "So I took Foshan, Hong Kong, Lingnan culture, and all those messy childhood memories, enlarged them, distorted them, put them back together, and added a few questions I have about the future. That is how today’s Goldfish Street arrived. The Goldfish Street in the film is fictional, but it is inspired by the real street downstairs from my home. That street was also called Goldfish Street, though it was not really selling goldfish — it had wallpaper shops, hardware stores, restaurants, and everyday neighbourhood life. There is also a Goldfish Street near Mong Kok in Hong Kong. So for me it is not one specific street. It is a collection of memories from Guangdong, Hong Kong, and my childhood.",
-              zh: "所以我把佛山、香港、岭南文化，还有小时候那些乱七八糟的记忆混在一起，放大、变形、重组，再加上一点我对未来的想象和提问，才有了今天这个金鱼街的世界。电影里的金鱼街是虚构的，但它的灵感来自我家楼下真实存在的一条街。那条街也叫金鱼街，但它并不是卖金鱼的，而是有很多墙纸店、五金店、餐饮店，还有很日常的街坊生活。同时，香港旺角附近也有一条金鱼街。所以对我来说，金鱼街不是某一条具体的街，而更像是一种关于广东、香港和童年记忆的集合。",
+              en: "After seeing more of the world, I found myself looking back at the small community where I grew up, asking what stories and perspectives were distinctly my own. I feel that the kind of Hong Kong comedy I grew up with has become less common, and that some aspects of local Cantonese culture are becoming less widely known. This has given me a sense of responsibility as a filmmaker: to bring the world in my memory to the screen and reimagine it.",
+              zh: "接触到更大的世界之后，我反而开始回望自己成长的那个小社区，思考什么才是独属于我的故事与表达。我也感觉，过去熟悉的港式喜剧越来越少见，一些粤语地区的本土文化，也似乎越来越少被人了解。这让我觉得，作为电影创作者，我有责任通过影像，把记忆中的那个世界重新呈现、重新想象。",
+              source: "interview"
+            },
+            {
+              en: "The fish ball stalls, feng shui stalls, shops selling paper offerings, dessert shops, wishing tree, dai pai dong and other street stalls in the film all come from things I saw and experienced growing up. So do the lion dancing, martial arts and everyday neighbourhood life. I magnified, distorted and reassembled these memories, adding my own ideas and questions about the future to create a more fantastical, cyberpunk version of Goldfish Street.",
+              zh: "所以，电影里的鱼蛋档、风水摊、纸扎店、糖水铺、许愿树、大排档和街头摊档，以及醒狮、武术和街坊生活，都来自我成长过程中见过、感受过的东西。我把这些记忆放大、变形、重组，再加入对未来的想象和提问，构建出一个更奇幻、更赛博的金鱼街。",
               source: "interview"
             }
           ]
-        },
-        {
-          type: "para",
-          en: "Many places in the film come from real life: the fish-ball stand, the feng shui stall, the paper-offering shop, the dessert shop, the wishing tree, dai pai dong and other street stalls, lion dance, martial arts, and neighbourhood life. I enlarged and transformed them into a more fantastic cyber world, but their emotional roots all come from things I saw and felt while growing up. After seeing more of the world, I started to look back at that small community. Today that kind of Hong Kong comedy appears less often, and some local Cantonese cultures seem to be known by fewer people. As a filmmaker, I feel a responsibility to show and reimagine the world that exists in my memory.",
-          zh: "片子里的很多地方都来自现实生活，比如鱼蛋档、风水摊、纸扎店、糖水铺、许愿树、大排档和街头摊档，还有醒狮、武术和街坊生活。我把它们放大、变形，变成一个更奇幻、更赛博的世界，但它们最开始的情感来源，都是我成长过程中见过、感受过的东西。也正是因为接触到了更大的世界，我反而开始回看自己成长里的那个小社区。现在，那种香港喜剧已经不像以前那么频繁地出现了，很多粤语地区的本土文化，也好像慢慢被更少的人知道。作为一个 filmmaker，我可以用影像，把我记忆中的那个世界重新呈现出来、重新想象出来。",
-          source: "interview"
         },
         {
           type: "heading",
@@ -507,22 +506,56 @@ window.GM = {
           zh: "在金鱼街的市井温情与云端的冰冷秩序之间，我想问：什么才是更好的生活？"
         },
         {
+          type: "paras",
+          items: [
+            {
+              en: "The Cloud was inspired by a revolving restaurant I visited with my parents as a child. It was expensive, and I could only go if I worked hard at school and got good grades. In my childhood memories, it represented a “better place”: higher up, more expensive and harder to reach.",
+              zh: "云端的灵感，来自小时候和父母去过的一家旋转餐厅。那里消费比较高，只有努力学习、拿到好成绩，我才有机会去。在童年的记忆里，它代表着一个“更好的地方”：更高、更贵，也更难抵达。",
+              source: "interview"
+            },
+            {
+              en: "That memory became the starting point for the world of the Cloud. In the film, it stands in sharp contrast to Goldfish Street, which is rooted in everyday neighbourhood life: lively, chaotic and full of emotion and human connection. The Cloud sits high above it, cold and orderly, with life defined by success and constant upgrades.",
+              zh: "这段记忆后来成为云端世界的起点。在电影里，它与金鱼街形成了鲜明的对照：金鱼街扎根于街坊的日常，热闹、混乱，充满情感和人情；云端则高高在上，冰冷而有秩序，生活由成功和不断升级来定义。",
+              source: "interview"
+            },
+            {
+              en: "Through this contrast, I want to explore the relationship between technology and a “better life”. As we upgrade and modify our bodies, and even pursue digital immortality, we may become a new kind of human. But will these changes truly lead us towards a better future?",
+              zh: "我想通过这两个世界的对照，探索科技与“更好的生活”之间的关系。未来，当我们不断升级、改造身体，甚至追求数字永生，成为某种“新人类”时，这些变化是否真的会把我们带向更好的未来？",
+              source: "interview"
+            }
+          ]
+        },
+        {
           type: "para",
-          en: "The upper world, the Cloud, was inspired by a rotating restaurant I visited with my parents when I was very young. It was expensive, and I could only go if I worked hard and got good grades. In my memory it stood for a higher place — upper, costly, and difficult to reach. In the film, Goldfish Street and the Cloud became two opposite worlds: one grounded, chaotic, emotional, and full of human connection; the other high above, cold, controlled, and defined by success and upgrading.",
-          zh: "而片子里上方的云端，灵感来自我小时候和父母去过的一家旋转餐厅。那是一个比较贵的地方，小时候我只有很努力、拿到好成绩，才有机会去那里。所以在我的记忆里，它代表着一个「更高的地方」——一个更上层、更昂贵、也更难抵达的空间。金鱼街和云端就变成了两个相反的世界：一个是落地的、混乱的、充满情感和人情味的；另一个是高高在上的、冰冷的、被成功和升级定义的。",
+          en: "I also wanted to use the film to think about something very real. In Asia, people are often under great pressure to compete — to become stronger, richer, more successful, more visible. We keep trying to move upward. But what are we really chasing? If one day we reach that higher place, will we still keep our original heart, our sense of right and wrong, and our ability to love? I don’t want the film to feel too heavy, though. I hope you can simply enjoy Goldfish Street as a funny, chaotic, strange, and warm world full of love.",
+          zh: "我也想通过这部片去思考一些很现实的问题。在亚洲，大家常常处在一种很「卷」的状态里，每个人都想变得更强、更有钱、更成功，也更被看见。我们不断往上爬。但我有时候会想：我们到底在追求什么？如果有一天我们真的到达了那个更高的地方，我们还会不会保留原来的心，还会不会保有责任、良心和爱人的能力？但同时，我并不希望这部片让观众觉得太沉重。我希望大家可以单纯地享受金鱼街这个世界。它是好笑的、混乱的、奇怪的，但也是温暖的、充满爱的。",
           source: "interview"
         },
         {
           type: "heading",
           num: "03",
-          en: "With AI, I can bring to life the stories I wanted to see as a child: stories in which girls become heroes, save others and save the world.",
+          en: "With AI, I can bring to life the stories I wanted to see as a child: girls becoming heroes, saving others and saving the world.",
           zh: "借助 AI，我可以拍出小时候就想看的故事：女孩成为英雄，拯救他人，也拯救世界。"
         },
         {
-          type: "para",
-          en: "Another reason I wanted to make this film is that I wanted to shoot the kind of women’s stories I longed to watch as a child. Growing up with kung fu films, I always wondered: why couldn’t the lead be a girl? Girls can be the superheroes who save the world as well. AI has given me a freedom I did not have when budget and scale stood in the way, so I can finally try to put the place I grew up, the culture I love, and a female filmmaker’s point of view into a film world.",
-          zh: "还有一个很重要的原因，是我想拍一些自己小时候特别想看的女性故事。从小看功夫片，我就总在想：为什么主角不能是女孩子？她们也可以是拯救世界的超级英雄。以前很多画面，我受限于预算和制作规模，没有机会真正做出来。现在 AI 给了我过去没有的自由，让我终于可以试着把自己成长的地方、喜欢的文化，以及作为女性创作者的视角放到电影世界里。",
-          source: "public"
+          type: "paras",
+          items: [
+            {
+              en: "When I was eight, my mother took me to the Hongsheng martial arts school, where I saw people practise kung fu up close for the first time. I also grew up watching kung fu films, but many of the stories I knew about martial arts, heroes and saving the world were told from a male perspective. I often wondered: why couldn’t the lead be a girl?",
+              zh: "八岁时，妈妈带我去鸿胜武馆，那是我第一次近距离看人练功夫。我也从小看功夫片长大，但我熟悉的许多关于功夫、英雄和拯救世界的故事，都是从男性视角讲述的。我常常想：为什么主角不能是女孩？",
+              source: "public"
+            },
+            {
+              en: "I wanted to put girls at the centre of the story and bring my own perspective as a female filmmaker to the screen. This has always been an important reason for wanting to make *Goldfish Mayhem*. In the past, however, budget and production constraints made these ideas difficult for me to realise. AI has given me a level of creative freedom I did not have before, allowing me to finally turn the images in my head into a film.",
+              zh: "我想让女孩站在故事的中心，把自己作为女性创作者的视角带进电影。这一直是我想拍《金魚街大亂鬥》的重要原因。但在过去，预算和制作规模限制了我实现这些想象的可能。AI 给了我过去没有的创作自由，让那些留在脑海里的画面终于有机会变成电影。",
+              source: "public"
+            },
+            {
+              en: "With that creative freedom comes a stronger desire to explore kung fu, the future and digital immortality from a female perspective, focusing on ordinary women striving for a better life in a changing world. I also believe AI can give more female creators the opportunity to make their voices heard, build worlds of their own and tell stories from their own unique points of view.",
+              zh: "有了这种创作自由，我也更希望从女性视角出发，讲述关于功夫、未来与数字永生的故事，关注普通市井女性如何在一个不断变化的世界里努力向上、争取更好的生活。我相信，AI 也能让更多女性创作者有机会发声，构建自己的世界，用各自独特的视角讲述故事。",
+              source: "public"
+            }
+          ]
         },
         {
           type: "images",
@@ -547,12 +580,6 @@ window.GM = {
           ]
         },
         {
-          type: "para",
-          en: "I also wanted to use the film to think about something very real. In Asia, people are often under great pressure to compete — to become stronger, richer, more successful, more visible. We keep trying to move upward. But what are we really chasing? If one day we reach that higher place, will we still keep our original heart, our sense of right and wrong, and our ability to love? I don’t want the film to feel too heavy, though. I hope you can simply enjoy Goldfish Street as a funny, chaotic, strange, and warm world full of love.",
-          zh: "我也想通过这部片去思考一些很现实的问题。在亚洲，大家常常处在一种很「卷」的状态里，每个人都想变得更强、更有钱、更成功，也更被看见。我们不断往上爬。但我有时候会想：我们到底在追求什么？如果有一天我们真的到达了那个更高的地方，我们还会不会保留原来的心，还会不会保有责任、良心和爱人的能力？但同时，我并不希望这部片让观众觉得太沉重。我希望大家可以单纯地享受金鱼街这个世界。它是好笑的、混乱的、奇怪的，但也是温暖的、充满爱的。",
-          source: "interview"
-        },
-        {
           type: "section",
           summary: { en: "What the film is asking", zh: "这部影片在问什么" },
           blocks: [
@@ -575,6 +602,7 @@ window.GM = {
         },
         {
           type: "links",
+          layout: "grid-4",
           items: [
             {
               href: "https://www.xiaohongshu.com/explore/6aedce5000000000090116f9",
@@ -582,8 +610,11 @@ window.GM = {
               kindZh: "小红书",
               labelEn: "Episode 1 ｜ Prologue",
               labelZh: "第一集｜序",
-              noteEn: "Public entry. Opens in a new tab.",
-              noteZh: "已公开的条目，将在新标签页打开。"
+              poster: "media/xhs/ep1.jpg",
+              posterW: 1086,
+              posterH: 1448,
+              altEn: "Episode 1 ｜ Prologue",
+              altZh: "第一集｜序"
             },
             {
               href: "https://www.xiaohongshu.com/explore/6af1b6610000000033021bb4",
@@ -591,8 +622,23 @@ window.GM = {
               kindZh: "小红书",
               labelEn: "Episode 2 ｜ One (three little tyrants)",
               labelZh: "第二集｜壹（三位小霸王）",
-              noteEn: "Public entry. Opens in a new tab.",
-              noteZh: "已公开的条目，将在新标签页打开。"
+              poster: "media/xhs/ep2.jpg",
+              posterW: 1680,
+              posterH: 2240,
+              altEn: "Episode 2 ｜ One (three little tyrants)",
+              altZh: "第二集｜壹（三位小霸王）"
+            },
+            {
+              href: "https://www.xiaohongshu.com/explore/6af9b924000000002a02f1ae?xsec_token=CBg_iBgLOAuYecGpVJirIQPQIRN74hqG1A5QVLYw8bnYU=&xsec_source=app_share",
+              kindEn: "Xiaohongshu",
+              kindZh: "小红书",
+              labelEn: "Episode 3 ｜ Two",
+              labelZh: "第三集｜贰",
+              poster: "media/xhs/ep3.jpg",
+              posterW: 1086,
+              posterH: 1448,
+              altEn: "Episode 3 ｜ Two",
+              altZh: "第三集｜贰"
             },
             {
               href: "https://www.xiaohongshu.com/explore/6af431e500000000230134f4",
@@ -600,8 +646,11 @@ window.GM = {
               kindZh: "小红书",
               labelEn: "Behind-the-scenes special",
               labelZh: "幕后制作特辑",
-              noteEn: "Public entry. Opens in a new tab.",
-              noteZh: "已公开的条目，将在新标签页打开。"
+              poster: "media/xhs/bts.jpg",
+              posterW: 2160,
+              posterH: 2880,
+              altEn: "Behind-the-scenes special",
+              altZh: "幕后制作特辑"
             }
           ]
         }
@@ -703,31 +752,18 @@ window.GM = {
                 },
                 {
                   type: "images",
-                  cols: 3,
+                  cols: 1,
                   items: [
                     {
-                      src: "assets/stills/goldfish-2.jpg",
-                      altEn: "Four dancers with feather fans around a giant cocktail glass",
-                      altZh: "四名拿着羽扇的舞者围绕着一只巨大的鸡尾酒杯",
-                      capEn: "Official still — a richly coloured interior.",
-                      capZh: "官方剧照——色彩浓烈的室内。",
-                      source: "stills"
-                    },
-                    {
-                      src: "assets/stills/goldfish-7.jpg",
-                      altEn: "An extreme close-up of a mechanical eye with a glowing green ring",
-                      altZh: "一只带有绿色光环的机械眼睛特写",
-                      capEn: "Official still — a mechanical close-up.",
-                      capZh: "官方剧照——机械细节的特写。",
-                      source: "stills"
-                    },
-                    {
-                      src: "assets/stills/goldfish-8.jpg",
-                      altEn: "A gilded ceremonial hall",
-                      altZh: "一座金色的礼仪殿堂",
-                      capEn: "Official still — an elevated hall.",
-                      capZh: "官方剧照——一处高高在上的殿堂。",
-                      source: "stills"
+                      src: "media/miro/final-moodboard.png",
+                      natural: true,
+                      modest: true,
+                      href: "https://miro.com/app/board/uXjVGg8zP5k=/?share_link_id=713540723386",
+                      hideGo: true,
+                      altEn: "Overview of the official final moodboard, with the character and set-design frames",
+                      altZh: "最终情绪板全貌，含人物与场景两个画框",
+                      capEn: "Final moodboard.",
+                      capZh: "最终情绪板。"
                     }
                   ]
                 }
@@ -937,8 +973,6 @@ window.GM = {
                     { labelEn: "Skills", labelZh: "技能", en: "South-Chinese martial arts — Wing Chun, the Huang Feihong / Wong Fei-hung lineage, Choy Li Fut, Hung Kuen (咏春、黄飞鸿、蔡李佛、洪拳); a comic, Stephen Chow kind of rhythm; and a curry fish-ball cannon as a skill/prop.", zh: "南派武术（咏春、黄飞鸿、蔡李佛、洪拳），喜剧／周星驰式节奏，以及咖喱鱼蛋炮作为技能／道具。" }
                   ],
                   sheets: [
-                    { src: "assets/characters/bobo-dragon-details-shoes.jpg", w: 3200, h: 3000, altEn: "Design sheet of BOBO’s dragon headdress, shoes and details", altZh: "BOBO 龙头头饰、鞋子与细节设定图", capEn: "A design sheet: BOBO’s dragon headdress, shoes and details.", capZh: "设定图：BOBO 的龙头头饰、鞋子与细节。" },
-                    { src: "assets/characters/bobo-mech-arm-angles.jpg", w: 1672, h: 941, altEn: "Design sheet of BOBO’s mechanical right arm, from several angles", altZh: "BOBO 机械右臂多角度设定图", capEn: "A design sheet: BOBO’s mechanical right arm, from several angles.", capZh: "设定图：BOBO 的机械右臂，多个角度。" },
                     { src: "assets/characters/bobo-turnaround-portraits.jpg", w: 3000, h: 1152, altEn: "BOBO turnaround and portraits", altZh: "BOBO 全身转面与肖像", capEn: "BOBO turnaround and portraits.", capZh: "BOBO 全身转面与肖像。",
                       child: {
                         src: "assets/characters/xiao-bobo.png", w: 2048, h: 1152,
@@ -951,7 +985,9 @@ window.GM = {
                         ratio: 130 / 176
                       }
                     },
-                    { src: "assets/characters/bobo-wingchun-arm-hands.jpg", w: 2000, h: 941, altEn: "Design sheet of BOBO’s mechanical arm and bandaged hands", altZh: "BOBO 机械手臂与缠带手部设定图", capEn: "A design sheet: BOBO’s mechanical arm and bandaged hands.", capZh: "设定图：BOBO 的机械手臂与缠带的手。" }
+                    { src: "assets/characters/bobo-wingchun-arm-hands.jpg", w: 2000, h: 941, altEn: "Design sheet of BOBO’s mechanical arm and bandaged hands", altZh: "BOBO 机械手臂与缠带手部设定图", capEn: "A design sheet: BOBO’s mechanical arm and bandaged hands.", capZh: "设定图：BOBO 的机械手臂与缠带的手。" },
+                    { src: "assets/characters/bobo-dragon-details-shoes.jpg", w: 3200, h: 3000, altEn: "Design sheet of BOBO’s dragon headdress, shoes and details", altZh: "BOBO 龙头头饰、鞋子与细节设定图", capEn: "A design sheet: BOBO’s dragon headdress, shoes and details.", capZh: "设定图：BOBO 的龙头头饰、鞋子与细节。" },
+                    { src: "assets/characters/bobo-mech-arm-angles.jpg", w: 1672, h: 941, altEn: "Design sheet of BOBO’s mechanical right arm, from several angles", altZh: "BOBO 机械右臂多角度设定图", capEn: "A design sheet: BOBO’s mechanical right arm, from several angles.", capZh: "设定图：BOBO 的机械右臂，多个角度。" }
                   ],
                   expressions: [
                     { src: "assets/characters/bobo-nine-expressions.jpg", w: 1672, h: 941, altEn: "Nine expressions of BOBO, as lettered on the artwork", altZh: "BOBO 的九种表情，画面上保留原有字样", capEn: "Nine expressions of BOBO, with the lettering left as it is.", capZh: "BOBO 的九种表情，画面上的字样保持原样。" }
@@ -1049,28 +1085,7 @@ window.GM = {
                     }
                   ]
                 },
-                {
-                  type: "images",
-                  cols: 2,
-                  items: [
-                    {
-                      src: "assets/stills/goldfish-3.jpg",
-                      altEn: "Three girls around a glowing device",
-                      altZh: "三个女孩围在发光装置旁",
-                      capEn: "Official still — the three of them together.",
-                      capZh: "官方剧照——三个人在一起。",
-                      source: "stills"
-                    },
-                    {
-                      src: "assets/stills/goldfish-4.jpg",
-                      altEn: "A girl with mechanical finger-barrels reaching toward the camera",
-                      altZh: "一个手指是机械管的女孩伸向镜头",
-                      capEn: "Official still — a close-up of one of the girls.",
-                      capZh: "官方剧照——其中一个女孩的特写。",
-                      source: "stills"
-                    }
-                  ]
-                }
+
               ]
             },
             {
@@ -1086,16 +1101,29 @@ window.GM = {
                 },
                 {
                   type: "images",
-                  cols: 2,
+                  cols: 4,
+                  items: [
+                    { src: "media/set-design/set-01.jpg", w: 1920, h: 1080, natural: true, altEn: "A dense Goldfish Street shop interior with hanging goldfish lanterns", altZh: "金鱼街店内，悬挂着金鱼灯饰" },
+                    { src: "media/set-design/set-02.jpg", w: 1920, h: 1080, natural: true, altEn: "A neon-lit Goldfish Street market looking down the lane", altZh: "霓虹灯下的金鱼街市集" },
+                    { src: "media/set-design/set-03.jpg", w: 1920, h: 1080, natural: true, altEn: "The wishing tree standing over a pond", altZh: "许愿树下" },
+                    { src: "media/set-design/set-04.jpg", w: 1672, h: 941, natural: true, altEn: "A narrow street with a long enclosed escalator running through it", altZh: "一条窄街，中间有封闭的长扶梯" },
+                    { src: "media/set-design/set-05.jpg", w: 1920, h: 1080, natural: true, altEn: "A small temple pavilion on the street", altZh: "街边的一座小庙" },
+                    { src: "media/set-design/set-06.jpg", w: 1920, h: 1072, natural: true, altEn: "The Fan Kee sweet-soup stall on the street", altZh: "街边的芬記糖水档" },
+                    { src: "media/set-design/set-07.jpg", w: 1672, h: 941, natural: true, altEn: "A ceremonial hall seen from below, with a central golden figure", altZh: "从下仰看的礼仪殿堂，中央有金色人像" },
+                    { src: "media/set-design/set-08.jpg", w: 1672, h: 941, natural: true, altEn: "A night view of festival lights stretching into the distance", altZh: "夜间延伸向远处的灯海" }
+                  ]
+                },
+                {
+                  type: "links",
+                  layout: "solo",
                   items: [
                     {
-                      src: "assets/stills/goldfish-1.jpg",
-                      altEn: "A salon interior with a street outside the window",
-                      altZh: "窗外是街道的厅堂室内",
-                      capEn: "Official still — an interior, with the street still visible outside.",
-                      capZh: "官方剧照——室内，窗外仍能看见街道。",
-                      source: "stills"
-                    },
+                      href: "https://drive.google.com/drive/folders/1xp3U_ISNZ43yfYSiE-ARFpMlv52V6QJZ?usp=drive_link",
+                      kindEn: "Google Drive — official folder",
+                      kindZh: "Google 云端硬盘 — 正式文件夹",
+                      labelEn: "STILLS",
+                      labelZh: "STILLS"
+                    }
                   ]
                 },
                 {
@@ -1236,20 +1264,6 @@ window.GM = {
               zh: "但传统上，很多关于功夫、英雄和拯救世界的故事，都是从男性视角出发的。所以当我开始用 AI 创作动态影像时，我觉得自己有一种责任，去从女性视角讨论功夫、未来、通过数据实现永生的想法，以及那些在变化的世界里努力向上爬、充满市井气息的普通女性。",
               source: "interview"
             }
-          ]
-        },
-        {
-          type: "images",
-          cols: 2,
-          items: [
-            {
-              src: "assets/stills/goldfish-5.jpg",
-              altEn: "A girl in a lion-dance headdress leaping, mid-kick, beside a woman with a cooking rig on her back",
-              altZh: "一个戴着狮头的女孩腾空踢腿，旁边是背着炊具的女人",
-              capEn: "Official still — a kick in mid-air on the street.",
-              capZh: "官方剧照——街道上腾空的一记踢腿。",
-              source: "stills"
-            },
           ]
         },
         {
@@ -1428,6 +1442,7 @@ window.GM = {
               kind: "statement-ghost",
               highlight: "dreams",
               ghost: "ECOSYSTEM",
+              compact: true,
               headline: "I want to build a *futurist virtual world*\n— a “*virtual ecosystem*” in which *humans and AI* evolve together.",
               capEn: "A plate for a futurist virtual world I have been conceiving — a “virtual ecosystem” in which humans and AI evolve together. This is an idea I am exploring, not a greenlit production.",
               capZh: "我在构想的一个未来主义虚拟世界——一个人类与 AI 协同进化的「虚拟生态系统」。这是我正在探索的构想，不是已经立项的项目。"
@@ -1500,8 +1515,8 @@ window.GM = {
             {
               nEn: "First",
               nZh: "第一",
-              en: "Stay curious.",
-              zh: "保持好奇心。"
+              en: "Stay curious.\nThink critically.",
+              zh: "保持好奇心，\n保持批判性思考。"
             },
             {
               nEn: "Second",
@@ -1586,6 +1601,7 @@ window.GM = {
               kind: "statement-ghost",
               highlight: "dreams",
               ghost: "CREATE",
+              compact: true,
               headline: "I'm not an apocaloptimist.\nBut I still choose to keep *creating worlds*.",
               wordmark: "C R E A T E   T H E   W O R L D",
               capEn: "I'm not an apocaloptimist. But I still choose to keep creating worlds.",
