@@ -1624,6 +1624,7 @@ window.GM = {
       titleZh: "现场问答",
       navEn: "Live Q&A",
       navZh: "现场问答",
+      hideTitle: true,
       ghost: "问答",
       blocks: [
         {
@@ -1646,11 +1647,6 @@ window.GM = {
       zh: "重要事实带有简短的来源标记。完整列表在这里。我只使用了已经公开的材料，或我已经在访谈和公开的第一人称讲述里说过的内容。"
     },
     endZh: "一起创造世界",
-    endLead: {
-      en: "If you like creating worlds, you are welcome to come and talk to us.",
-      zh: "如果也有喜欢创造世界的朋友，很欢迎来找我们交流。",
-      source: "public"
-    },
     endCard: {
       href: "https://junielau.com/",
       kindEn: "Official website",

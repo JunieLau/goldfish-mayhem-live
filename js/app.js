@@ -871,16 +871,19 @@
     const prev = all[i - 1];
     const next = all[i + 1];
     const ghost = ch.ghost || "";
+    const title = ch.hideTitle
+      ? ""
+      : `<h2 class="chapter-title">
+        <span class="ghost" aria-hidden="true">${esc(ghost)}</span>
+        <span class="t en">${esc(ch.titleEn)}</span>
+        <span class="t zh">${esc(ch.titleZh)}</span>
+      </h2>`;
     return `<section class="chapter" id="${esc(ch.id)}" data-idx="${i}">
       <div class="chapter-kicker"><img class="spider" src="assets/deco/spider.svg" alt="">${esc(ch.num)}
         <span class="en">${esc((window.GM.ui.chapterOf && window.GM.ui.chapterOf.en) || "Chapter")}</span>
         <span class="zh">${esc((window.GM.ui.chapterOf && window.GM.ui.chapterOf.zh) || "章节")}</span>
       </div>
-      <h2 class="chapter-title">
-        <span class="ghost" aria-hidden="true">${esc(ghost)}</span>
-        <span class="t en">${esc(ch.titleEn)}</span>
-        <span class="t zh">${esc(ch.titleZh)}</span>
-      </h2>
+      ${title}
       ${(ch.blocks || []).map((b, bi) => renderBlock(b, ch.id + "-" + bi)).join("")}
     </section>`;
   }
@@ -905,7 +908,7 @@
     const card = s.endCard ? renderLinks([s.endCard], "solo") : "";
     return `<section class="end-band" id="join">
       <h2>${esc(s.endZh)}<em>JOIN US</em></h2>
-      ${rich(s.endLead, "para")}
+      ${s.endLead ? rich(s.endLead, "para") : ""}
       ${card}
     </section>`;
   }
