@@ -483,7 +483,7 @@ window.GM = {
             {
               kind: "who",
               highlight: "worlds",
-              headline: "WHO AM I？",
+              headline: "WHO AM I?",
               titlePos: { x: 35.6, y: 42.0, w: 28.8 },
               photo: { src: "assets/plates/16-whoami-network.jpg", altEn: "A network of stills from the Goldfish Mayhem world, arranged around a central space for the question “Who am I?”", altZh: "《金魚街大亂鬥》世界里的一组剧照，环绕在「我是谁？」的中心留白周围" },
               tags: [
