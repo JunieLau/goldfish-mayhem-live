@@ -1,0 +1,271 @@
+/* Isolated geometry override for plates 06 / 07 / 09.
+   Scoped to #intro and one data-kind each. Does not restyle other plates.
+   Design space remains 5500 × 1210. */
+
+/* ---------- 06 timeline ----------
+   Full source frames, original aspect, object-fit contain.
+   This departs from the PPT crop windows on purpose: childhood is the
+   whole landscape scan, set-01 the whole 4:3, set-02 the whole portrait
+   monitor, and the Disco UI the whole Colab frame.
+   Headline is two lines at 100px. Titles 56px, dates 48px, captions 36px. */
+#intro article.plate[data-kind="timeline"] {
+  container-type: inline-size;
+  container-name: plate06;
+}
+
+#intro article.plate[data-kind="timeline"] .plate-timeline .plate-headline {
+  left: 120px;
+  top: 150px;
+  width: 3920px;
+  height: auto;
+  font-size: 100px;
+  line-height: 0.96;
+  margin: 0;
+}
+
+#intro article.plate[data-kind="timeline"] .plate-timeline .plate-headline .accent {
+  display: block;
+  white-space: nowrap;
+}
+
+#intro article.plate[data-kind="timeline"] .plate-design .fig img,
+#intro article.plate[data-kind="timeline"] .plate-design .fig.is-cropped img {
+  position: static;
+  left: auto;
+  top: auto;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+  object-position: center center;
+  background: #fff;
+}
+
+/* Shared caption baseline y=976. Image groups sit just above it, each frame
+   sized to its source aspect. Columns: 48 / 1157 / 2497 / 3730. */
+#intro article.plate[data-kind="timeline"] .timeline-cell.cell-0 {
+  left: 48px;
+  top: 576px;
+  width: 1085px;
+  height: 384px;
+}
+#intro article.plate[data-kind="timeline"] .timeline-cell.cell-0 .fig:nth-child(1) {
+  left: 0;
+  top: 0;
+  width: 512px;
+  height: 384px;
+}
+#intro article.plate[data-kind="timeline"] .timeline-cell.cell-0 .fig:nth-child(2) {
+  left: 524px;
+  top: 0;
+  width: 561px;
+  height: 384px;
+}
+
+#intro article.plate[data-kind="timeline"] .timeline-cell.cell-1 {
+  left: 1157px;
+  top: 504px;
+  width: 1316px;
+  height: 456px;
+}
+#intro article.plate[data-kind="timeline"] .timeline-cell.cell-1 .fig:nth-child(1) {
+  left: 0;
+  top: 0;
+  width: 608px;
+  height: 456px;
+}
+#intro article.plate[data-kind="timeline"] .timeline-cell.cell-1 .fig:nth-child(2) {
+  left: 620px;
+  top: 0;
+  width: 342px;
+  height: 456px;
+}
+#intro article.plate[data-kind="timeline"] .timeline-cell.cell-1 .fig:nth-child(3) {
+  left: 974px;
+  top: 0;
+  width: 342px;
+  height: 456px;
+}
+
+#intro article.plate[data-kind="timeline"] .timeline-cell.cell-2 {
+  left: 2497px;
+  top: 624px;
+  width: 1209px;
+  height: 336px;
+}
+#intro article.plate[data-kind="timeline"] .timeline-cell.cell-2 .fig:nth-child(1) {
+  left: 0;
+  top: 0;
+  width: 600px;
+  height: 336px;
+}
+#intro article.plate[data-kind="timeline"] .timeline-cell.cell-2 .fig:nth-child(2) {
+  left: 612px;
+  top: 0;
+  width: 597px;
+  height: 336px;
+}
+
+#intro article.plate[data-kind="timeline"] .timeline-cell.cell-3 {
+  left: 3730px;
+  top: 384px;
+  width: 1750px;
+  height: 576px;
+}
+#intro article.plate[data-kind="timeline"] .timeline-cell.cell-3 .fig:nth-child(1) {
+  left: 0;
+  top: 0;
+  width: 1024px;
+  height: 576px;
+}
+#intro article.plate[data-kind="timeline"] .timeline-cell.cell-3 .fig:nth-child(2) {
+  left: 1040px;
+  top: 0;
+  width: 432px;
+  height: 576px;
+}
+
+#intro article.plate[data-kind="timeline"] .timeline-cell .t-copy h3 {
+  display: inline;
+  font-size: 56px;
+  line-height: 1.05;
+  vertical-align: baseline;
+}
+
+#intro article.plate[data-kind="timeline"] .timeline-cell .t-copy .t-date {
+  display: inline;
+  position: static;
+  margin: 0 0 0 0.42em;
+  font-size: 48px;
+  line-height: 1;
+  vertical-align: baseline;
+}
+
+#intro article.plate[data-kind="timeline"] .timeline-cell .t-copy .t-cap {
+  display: block;
+  margin-top: 8px;
+  font-size: 36px;
+  line-height: 1.25;
+}
+
+#intro article.plate[data-kind="timeline"] .timeline-cell.cell-0 .t-copy { top: 400px; width: 1085px; }
+#intro article.plate[data-kind="timeline"] .timeline-cell.cell-1 .t-copy { top: 472px; width: 1316px; }
+#intro article.plate[data-kind="timeline"] .timeline-cell.cell-2 .t-copy { top: 352px; width: 1209px; }
+#intro article.plate[data-kind="timeline"] .timeline-cell.cell-3 .t-copy { top: 592px; width: 1750px; }
+
+/* Court still fills the existing hole. The play control sits outside the frame. */
+#intro article.plate[data-kind="timeline"] .plate-yt-float {
+  overflow: visible;
+}
+
+#intro article.plate[data-kind="timeline"] .plate-yt-float .player {
+  overflow: visible;
+  background: transparent;
+  border: 0;
+}
+
+#intro article.plate[data-kind="timeline"] .plate-yt-float .player img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  background: #fff;
+}
+
+#intro article.plate[data-kind="timeline"] .plate-yt-float .playbtn {
+  inset: auto;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  width: max-content;
+  height: auto;
+  padding: 6px 14px 6px 6px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  background: #111111;
+  color: #fff;
+  z-index: 4;
+}
+
+#intro article.plate[data-kind="timeline"] .plate-yt-float .playbtn .tri {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+}
+
+#intro article.plate[data-kind="timeline"] .plate-yt-float .playbtn .tri svg {
+  width: 18px;
+  height: 18px;
+}
+
+#intro article.plate[data-kind="timeline"] .plate-yt-float .playbtn .plab {
+  background: transparent;
+  padding: 0;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+}
+
+#intro article.plate[data-kind="timeline"] > .plate-cap {
+  margin-top: 96px;
+}
+
+/* ---------- 07 quote ---------- */
+#intro article.plate[data-kind="chapter-quote"] .plate-quote-row .plate-side-word {
+  top: 486px;
+  width: auto;
+  height: auto;
+  font-size: 104px;
+  line-height: 0.9;
+  white-space: nowrap;
+}
+
+#intro article.plate[data-kind="chapter-quote"] .plate-quote-row .plate-side-word.left {
+  left: 154px;
+  text-align: left;
+}
+
+#intro article.plate[data-kind="chapter-quote"] .plate-quote-row .plate-side-word.right {
+  left: auto;
+  right: 140px;
+  width: auto;
+  text-align: right;
+}
+
+#intro article.plate[data-kind="chapter-quote"] .plate-quote-row .quote-main {
+  left: 798px;
+  top: 448px;
+  width: 3720px;
+  text-align: center;
+}
+
+#intro article.plate[data-kind="chapter-quote"] .plate-quote-row .plate-headline {
+  font-size: 176px;
+  line-height: 0.92;
+  text-align: center;
+}
+
+/* ---------- 09 collaborations (posters untouched) ---------- */
+/* Original black letters sit near y=174–422 (height ~248, width ~1048).
+   The previous 286px setting already matched that width; it sat too high
+   and ran into the small JUNIE LAU kicker. Keep the weight, move it down. */
+#intro article.plate[data-kind="collaborations"] .collab-name {
+  left: 155px;
+  top: 153px;
+  font-size: 292px;
+  line-height: 1;
+}
+
+#intro article.plate[data-kind="collaborations"] .collab-ghost {
+  top: 143px;
+}
+
+#intro article.plate[data-kind="collaborations"] .collab-spider {
+  left: 1764px;
+  top: 524px;
+  width: 96px;
+  height: 110px;
+  object-fit: contain;
+}

@@ -238,7 +238,7 @@ window.GM = {
                   layout: "pair",
                   photos: [
                     { src: "assets/plates/06-drawing-1999.jpg", altEn: "A childhood oil-pastel drawing of a yellow rabbit, a house and a sun", altZh: "一幅童年油画棒作品：黄色的兔子、房子和太阳" },
-                    { src: "assets/plates/06-childhood-1999.jpg", crop: { l: 60.908, t: 2.963, r: 3.144, b: 2.519 }, altEn: "A childhood photograph of Junie as a young girl, standing in front of drawings, holding a balloon", altZh: "Junie 童年的照片：小女孩站在画作前，手里拿着气球" }
+                    { src: "assets/plates/06-childhood-1999.jpg", altEn: "A childhood photograph of Junie as a young girl, standing in front of drawings, holding a balloon", altZh: "Junie 童年的照片：小女孩站在画作前，手里拿着气球" }
                   ]
                 },
                 {
@@ -247,8 +247,8 @@ window.GM = {
                   caption: "Creating worlds with timber structures, metal frameworks, fibreglass, scenic painting, 3D printing, LED screens and physical props",
                   layout: "sets",
                   photos: [
-                    { src: "assets/plates/06-set-01.jpg", crop: { t: 4.63, b: 4.63 }, altEn: "A built street set, seen during production design", altZh: "美术指导期间搭建的街道场景" },
-                    { src: "assets/plates/06-set-02.jpg", crop: { l: 12.43, t: 34.653, r: 18.726, b: 30.208 }, altEn: "A studio floor with cameras, costumes and an LED wall", altZh: "有摄影机、服装和 LED 屏的棚内" },
+                    { src: "assets/plates/06-set-01.jpg", altEn: "A built street set, seen during production design", altZh: "美术指导期间搭建的街道场景" },
+                    { src: "assets/plates/06-set-02.jpg", altEn: "A studio floor with cameras, costumes and an LED wall", altZh: "有摄影机、服装和 LED 屏的棚内" },
                     { src: "assets/plates/06-art-direction.jpg", altEn: "A densely built floral and architectural set", altZh: "一座铺满花卉与建筑细节的场景" }
                   ]
                 },
@@ -259,7 +259,7 @@ window.GM = {
                   layout: "pair-wide",
                   photos: [
                     { src: "assets/plates/06-disco-world.jpg", altEn: "An image made with Disco Diffusion", altZh: "用 Disco Diffusion 创作的画面" },
-                    { src: "assets/plates/06-disco-ui.jpg", crop: { l: 4.434, t: 8.056, r: 57.402, b: 15.191 }, altEn: "A Google Colab window running Disco Diffusion v5.6, with prompt settings visible", altZh: "正在运行 Disco Diffusion v5.6 的 Google Colab 窗口，可见提示词设置" }
+                    { src: "assets/plates/06-disco-ui.jpg", altEn: "A Google Colab window running Disco Diffusion v5.6, with prompt settings visible", altZh: "正在运行 Disco Diffusion v5.6 的 Google Colab 窗口，可见提示词设置" }
                   ]
                 },
                 {
@@ -270,9 +270,9 @@ window.GM = {
                   photos: [
                     {
                       youtube: "6chvzqAVCnI",
-                      poster: "assets/yt-6chvzqAVCnI.jpg",
-                      posterW: 1280,
-                      posterH: 720,
+                      poster: "assets/plates/06-the-court.jpg",
+                      posterW: 1920,
+                      posterH: 1080,
                       titleEn: "Peter Gabriel - The Court (Dark-Side Mix) (Junie Lau Official Video)",
                       titleZh: "《The Court》（Dark-Side Mix）｜Junie Lau 官方影像，Peter Gabriel",
                       source: "yt"

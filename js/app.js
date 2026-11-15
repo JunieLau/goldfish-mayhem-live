@@ -359,7 +359,7 @@
         <div class="collab-name">JUNIE LAU</div>
         <img class="collab-x" src="assets/deco/collab-x.png" alt="">
         <img class="collab-scribble" src="assets/deco/collab-scribble.png" alt="">
-        <img class="collab-spider" src="assets/deco/spider.svg" alt="">
+        <img class="collab-spider" src="assets/deco/spider-collab.svg" alt="">
         <div class="collab-grid">${items}</div>
       </div>`;
     } else if (kind === "title") {
@@ -491,6 +491,17 @@
       floatEl.style.top = hr.top - pr.top + "px";
       floatEl.style.width = hr.width + "px";
       floatEl.style.height = hr.height + "px";
+      if (plate.getAttribute("data-kind") === "timeline") {
+        const btn = floatEl.querySelector(".playbtn");
+        const lock = plate.querySelector(".plate-lock");
+        if (btn && lock) {
+          const lr = lock.getBoundingClientRect();
+          btn.style.top = (lr.bottom - hr.top + 8) + "px";
+          btn.style.left = "0px";
+          btn.style.right = "auto";
+          btn.style.bottom = "auto";
+        }
+      }
     });
   }
 
