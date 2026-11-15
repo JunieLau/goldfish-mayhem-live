@@ -406,45 +406,6 @@ window.GM = {
               capZh: "我和制作团队一起开发的原创电影 IP，其中包括《金魚街大亂鬥》——Goldfish Mayhem × WONDERSTUDIOS。"
             }
           ]
-        },
-        {
-          type: "section",
-          summary: { en: "A short list of confirmed awards and press", zh: "已确认的奖项与报道，简要列出" },
-          blocks: [
-            {
-              type: "paras",
-              items: [
-                {
-                  en: "The Court — global championship, Stability AI #DiffuseTogether, 2023. Silver at the second Runway International AI Film Festival. Work shown at the Tribeca Film Festival, and collaborations with Google, OpenAI and ByteDance. Dear “Stranger” premiered on Google Flow TV at Google I/O 2025. Forbes published a profile in September 2026: “How AI And Peter Gabriel Changed Junie Lau’s Path To Directing.”",
-                  zh: "《The Court》——2023 年 Stability AI #DiffuseTogether 全球冠军。第二届 Runway 国际 AI 电影节银奖。作品在 Tribeca Film Festival 展映，并与 Google、OpenAI、ByteDance 合作。《Dear “Stranger”》作为 Google Flow TV 影片在 2025 年 Google I/O 上线。Forbes 于 2026 年 9 月刊出人物专访：《How AI And Peter Gabriel Changed Junie Lau’s Path To Directing》。",
-                  source: "sources"
-                }
-              ]
-            },
-            {
-              type: "links",
-              items: [
-                {
-                  href: "https://www.forbes.com/sites/maureenkerr/2026/09/04/how-ai-and-peter-gabriel-changed-junie-laus-path-to-directing/",
-                  kindEn: "Press",
-                  kindZh: "报道",
-                  labelEn: "Forbes profile, September 2026",
-                  labelZh: "《福布斯》专访，2026年9月",
-                  noteEn: "Opens in a new tab.",
-                  noteZh: "将在新标签页打开。"
-                },
-                {
-                  href: "https://linkedin.com/in/junielau",
-                  kindEn: "Biography",
-                  kindZh: "履历",
-                  labelEn: "LinkedIn",
-                  labelZh: "LinkedIn",
-                  noteEn: "The biographical source of record used on my official site.",
-                  noteZh: "官网资料所依据的履历来源。"
-                }
-              ]
-            }
-          ]
         }
       ]
     },
