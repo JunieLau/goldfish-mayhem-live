@@ -95,8 +95,9 @@
     const go = img.href
       ? `<div class="doc-go">${textPair({ en: (img.hrefKindEn || "Open") + " ↗", zh: (img.hrefKindZh || "打开") + " ↗" })}</div>`
       : "";
+    const loading = img.sheet ? "eager" : "lazy";
     const fig = `<figure class="${cls.join(" ")}" ${img.href ? "" : `data-lb="${esc(img.src)}" data-slide="${img.slide ? "1" : ""}" data-idx="${i}" tabindex="0" role="button"`} aria-label="${alt}"${arStyle}>
-      <img src="${esc(img.src)}" alt="${alt}"${wh} loading="lazy">
+      <img src="${esc(img.src)}" alt="${alt}"${wh} loading="${loading}">
       ${hint}
       <figcaption>${cap}${go}</figcaption>
     </figure>`;

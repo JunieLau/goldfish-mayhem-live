@@ -3013,7 +3013,7 @@ a.doc-link:focus-visible .doc-go {
   }
   .char-sheets .fig img {
     width: auto;
-    height: auto;
+    height: calc((min(100vw, var(--max)) - (2 * var(--pad)) - 48px) / 7.2433);
     max-height: calc((min(100vw, var(--max)) - (2 * var(--pad)) - 48px) / 7.2433);
   }
 }
