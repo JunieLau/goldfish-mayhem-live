@@ -2013,6 +2013,117 @@ html { scroll-padding-top: calc(var(--header) + 8px); }
   color: #111111;
 }
 
+/* Character introductions: poster beside Junie's copy */
+.cast-set {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  margin: 8px 0 2.6rem;
+}
+.cast-feature {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 52px;
+  align-items: start;
+}
+.cast-feature .poster-card {
+  width: 100%;
+  min-height: 0;
+  height: auto;
+  align-self: start;
+}
+.cast-feature .poster-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
+  object-position: center top;
+  background: var(--paper);
+}
+.cast-copy { min-width: 0; }
+[data-lang="both"] .cast-copy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 48px;
+  align-items: start;
+}
+.cast-eyebrow {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin: 0 0 0.75rem;
+}
+.cast-title {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(1.9rem, 2.5vw, 2.85rem);
+  line-height: 1.12;
+  margin: 0 0 0.55em;
+  color: #111;
+}
+.cast-copy .zh .cast-title {
+  font-family: var(--zh-display);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+.cast-key { color: var(--red); font-style: normal; }
+.cast-tagline {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.22rem;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+  margin: 0 0 1em;
+  color: var(--ink);
+}
+.cast-copy .zh .cast-tagline {
+  font-family: var(--zh-display);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+.cast-body p {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ink);
+  margin: 0 0 0.75em;
+}
+.cast-body p:last-child { margin-bottom: 0; }
+.cast-quote {
+  margin: 1.15em 0 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+.cast-variants {
+  margin: 0.45em 0 0;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+.poster-solo {
+  margin: 0 0 2rem;
+  max-width: 300px;
+}
+.poster-solo .poster-card img {
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
+  object-position: center top;
+  background: var(--paper);
+}
+@media (max-width: 980px) {
+  [data-lang="both"] .cast-copy { grid-template-columns: 1fr; gap: 28px; }
+}
+@media (max-width: 860px) {
+  .cast-feature { grid-template-columns: 1fr; gap: 22px; }
+  .cast-feature .poster-card { max-width: 320px; }
+}
+
 /* Instagram / rich poster cards */
 .poster-grid {
   display: grid;

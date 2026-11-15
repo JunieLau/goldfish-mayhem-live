@@ -789,88 +789,153 @@ window.GM = {
                   zh: "片子里有三个主要女孩。我不会说哪一个角色完全代表我。她们更像是三面不同的镜子，分别折射出我性格里的不同部分。",
                   source: "interview"
                 },
-        {
-                  type: "names",
+                        {
+                  type: "cast",
                   items: [
                     {
-                      titleEn: "BOBO",
-                      titleZh: "BOBO",
-                      variantsEn: "Published form: BOBO (talk deck, interview, Instagram).",
-                      variantsZh: "已公开的写法：BOBO（访谈、Instagram）。",
-                      en: "BOBO carries my angry and rebellious side, and the part of me that wants to protect the people around me.",
-                      zh: "BOBO 有我暴躁、叛逆，也想保护身边人的一面。",
-                      source: "interview"
+                      "eyebrowEn": "Proudly Introducing",
+                      "eyebrowZh": "隆重介绍",
+                      "titleEn": "Goldfish Street’s “Monkey King” — BOBO",
+                      "titleZh": "金鱼街的「齐天大圣」——BOBO",
+                      "keyEn": "“Monkey King”",
+                      "keyZh": "「齐天大圣」",
+                      "taglineEn": "Her trade is humble; her opinion of herself is not.",
+                      "taglineZh": "身在油盐酱醋里，心比凌霄宝殿高。",
+                      "bodyEn": [
+                        "A fishball seller and heir to a kung fu school, BOBO has formidable fighting skills and an equally formidable sense of her own importance.",
+                        "Her robotic arm was built to make fishballs; her curry fishball cannon ensures that anyone threatening the neighbours receives a hot meal at considerable speed.",
+                        "She runs a food cart with the authority of a grandmaster and walks through the street as though expecting a standing ovation.",
+                        "Raised by the neighbourhood, she considers everyone’s troubles her personal responsibility.",
+                        "Her heart is in the right place; her fists tend to get there first.",
+                        "She insists she has given up on her dreams, although the hope of reopening her old kung fu school has proved rather difficult to abandon.",
+                        "Threaten a neighbour, however, and Goldfish Street’s “Monkey King” returns to heroic duty—without waiting to be asked."
+                      ],
+                      "bodyZh": [
+                        "鱼蛋摊主，武馆传人，南拳有根有据，自信无边无际。",
+                        "机械臂原为搓丸，咖喱炮兼管不平。",
+                        "一辆小吃车，硬是摆出山门气派。",
+                        "平日昂首过街，仿佛天下英雄皆欠她一句佩服。",
+                        "吃百家饭长大，便把百家闲事一并包办。",
+                        "脾气与义气齐飞，拳头比道理先到。",
+                        "嘴上自称早已没有梦想，可一见街坊受欺，这位隐居鱼蛋摊前的「齐天大圣」，便又擅自复职。"
+                      ],
+                      "quoteEn": "BOBO carries my angry and rebellious side, and the part of me that wants to protect the people around me.",
+                      "quoteZh": "BOBO 有我暴躁、叛逆，也想保护身边人的一面。",
+                      "variantsEn": "Published form: BOBO (talk deck, interview, Instagram).",
+                      "variantsZh": "已公开的写法：BOBO（访谈、Instagram）。",
+                      "source": "interview",
+                      "poster": {
+                        "href": "https://www.instagram.com/junielaux/reel/Dd876e-hI6l/",
+                        "kindEn": "Instagram",
+                        "kindZh": "Instagram",
+                        "labelEn": "Goldfish Street: BOBO",
+                        "labelZh": "金鱼街：BOBO",
+                        "poster": "assets/ig/Dd876e-hI6l.jpg",
+                        "posterW": 360,
+                        "posterH": 640,
+                        "altEn": "Cover of the Goldfish Street: BOBO Instagram reel"
+                      }
                     },
                     {
-                      titleEn: "风水妹 / Fengshui Girl",
-                      titleZh: "风水妹",
-                      variantsEn: "Talk deck and Xiaohongshu: 风水妹. Interview: Fengshui Girl. Instagram: FENG SHUI GIRL. These are published variants, not one official standard.",
-                      variantsZh: "小红书：风水妹。访谈英文：Fengshui Girl。Instagram：FENG SHUI GIRL。这些都是已公开的不同写法，我不会把它们收成一个标准官方名。",
-                      en: "She carries the part of me that has to perform in social situations, and sometimes wear another face.",
-                      zh: "风水妹有我在社交场合里需要表演、需要戴上另一种面具的一面。",
-                      source: "interview"
+                      "eyebrowEn": "Proudly Introducing",
+                      "eyebrowZh": "隆重介绍",
+                      "titleEn": "Goldfish Street’s “Oscar-Worthy” Actress — FENG SHUI GIRL",
+                      "titleZh": "金鱼街的「奥斯卡」影后——风水妹",
+                      "keyEn": "“Oscar-Worthy”",
+                      "keyZh": "「奥斯卡」",
+                      "taglineEn": "A saintly smile; a thoroughly commercial mind.",
+                      "taglineZh": "眉间三分慈悲相，袖里七分生意经。",
+                      "bodyEn": [
+                        "Her fortune-telling stall is her stage, and every consultation is a starring performance.",
+                        "Her compass finds north; her instincts tell her what you can afford.",
+                        "You come seeking your fortune; she sees an opportunity to improve hers.",
+                        "You believe you have found someone who understands you; she believes she has found a valued customer.",
+                        "She can move a flowerpot without touching it, but persuading you to open your wallet is her real speciality.",
+                        "Every smile is carefully judged, every gesture perfectly timed—even her sympathy comes at a price.",
+                        "Whether your luck improves remains to be seen; her bank balance improves immediately.",
+                        "The secrets of the universe are, of course, strictly confidential—unless you can afford the consultation fee."
+                      ],
+                      "bodyZh": [
+                        "算命摊前的当家花旦，未必句句真心，却能声声入耳。",
+                        "罗盘定方位，眼色定行情。",
+                        "你问前程，她看财路；你以为遇见知己，她认为遇见贵客。",
+                        "气功能移花盆，口才能动钱袋。",
+                        "一颦一笑皆有章法，连善解人意也颇具商业价值。",
+                        "一番指点过后，客人能否转运尚待观察，她的财运倒已当场应验。",
+                        "都说天机不可泄漏，她认为，此事可以酌情收费。"
+                      ],
+                      "quoteEn": "She carries the part of me that has to perform in social situations, and sometimes wear another face.",
+                      "quoteZh": "风水妹有我在社交场合里需要表演、需要戴上另一种面具的一面。",
+                      "variantsEn": "Talk deck and Xiaohongshu: 风水妹. Interview: Fengshui Girl. Instagram: FENG SHUI GIRL. These are published variants, not one official standard.",
+                      "variantsZh": "小红书：风水妹。访谈英文：Fengshui Girl。Instagram：FENG SHUI GIRL。这些都是已公开的不同写法，我不会把它们收成一个标准官方名。",
+                      "source": "interview",
+                      "poster": {
+                        "href": "https://www.instagram.com/junielaux/reel/Dd5_GT6B8f-/",
+                        "kindEn": "Instagram",
+                        "kindZh": "Instagram",
+                        "labelEn": "Goldfish Street: FENG SHUI GIRL",
+                        "labelZh": "金鱼街：FENG SHUI GIRL",
+                        "poster": "assets/ig/Dd5_GT6B8f-.jpg",
+                        "posterW": 360,
+                        "posterH": 640,
+                        "altEn": "Cover of the Goldfish Street: FENG SHUI GIRL Instagram reel"
+                      }
                     },
                     {
-                      titleEn: "细细粒 / Xixili",
-                      titleZh: "细细粒",
-                      variantsEn: "Talk deck and Xiaohongshu: 细细粒. Interview: Xixili. Instagram: LITTLE ONE. Again, published variants only.",
-                      variantsZh: "小红书：细细粒。访谈英文：Xixili。Instagram：LITTLE ONE。同样只并列已公开的写法。",
-                      en: "She carries my curiosity about new technology, strange inventions, different dimensions, and the unknown.",
-                      zh: "细细粒则有我对新科技、奇怪发明、多维度世界和未知事物的好奇心。",
-                      source: "interview"
+                      "eyebrowEn": "Proudly Introducing",
+                      "eyebrowZh": "隆重介绍",
+                      "titleEn": "Goldfish Street’s “Nobel-Worthy” Inventor — LITTLE ONE",
+                      "titleZh": "金鱼街的「诺贝尔」发明家——细细粒",
+                      "keyEn": "“Nobel-Worthy”",
+                      "keyZh": "「诺贝尔」",
+                      "taglineEn": "Incense for the dead; bright ideas for the living.",
+                      "taglineZh": "一炷清香敬祖宗，满屏代码探天机。",
+                      "bodyEn": [
+                        "A deadpan genius, Little One runs a shop selling paper phones, computers and other offerings to be burnt as gifts for the afterlife.",
+                        "Others burn paper money for their ancestors; she burns Bitcoin access codes—apparently, being dead is no excuse for falling behind on technology.",
+                        "She rarely speaks, and when she does, her remarks tend to require decoding.",
+                        "The neighbours mistake her late-night coding sessions for attempts to summon spirits—an understandable error, given the incense and eerie blue light.",
+                        "Her ambitions are modest: uncover the secrets of the mysterious world known as the Cloud, and see her family once more.",
+                        "As for the distinction between science and superstition, the matter remains under review, pending a response from her ancestors."
+                      ],
+                      "bodyZh": [
+                        "纸扎铺里的冷面奇才，白日经营阴间百货，深夜钻研阳间科技。",
+                        "别人烧纸钱，她烧比特币密钥；别人求祖先保佑，她先替祖先升级装备。",
+                        "平日惜字如金，开口宛如天书，街坊以为她在招魂，其实她在写程式。",
+                        "一生所愿，无非探探云端底细，再见家人一面。",
+                        "至于科学与迷信如何划界，不妨等祖先回信再议。"
+                      ],
+                      "quoteEn": "She carries my curiosity about new technology, strange inventions, different dimensions, and the unknown.",
+                      "quoteZh": "细细粒则有我对新科技、奇怪发明、多维度世界和未知事物的好奇心。",
+                      "variantsEn": "Talk deck and Xiaohongshu: 细细粒. Interview: Xixili. Instagram: LITTLE ONE. Again, published variants only.",
+                      "variantsZh": "小红书：细细粒。访谈英文：Xixili。Instagram：LITTLE ONE。同样只并列已公开的写法。",
+                      "source": "interview",
+                      "poster": {
+                        "href": "https://www.instagram.com/junielaux/reel/Dd3bIc3uqDZ/",
+                        "kindEn": "Instagram",
+                        "kindZh": "Instagram",
+                        "labelEn": "Goldfish Street: LITTLE ONE",
+                        "labelZh": "金鱼街：LITTLE ONE",
+                        "poster": "assets/ig/Dd3bIc3uqDZ.jpg",
+                        "posterW": 360,
+                        "posterH": 640,
+                        "altEn": "Cover of the Goldfish Street: LITTLE ONE Instagram reel"
+                      }
                     }
                   ]
                 },
                 {
                   type: "links",
+                  layout: "solo",
                   items: [
-        {
-                      href: "https://www.instagram.com/junielaux/reel/Dd876e-hI6l/",
-                      kindEn: "Instagram",
-                      kindZh: "Instagram",
-                      labelEn: "Goldfish Street: BOBO",
-                      labelZh: "金鱼街：BOBO",
-                      noteEn: "Character reel, 2026.10.01. Opens the official post in a new tab.",
-                      noteZh: "角色短视频，2026.10.01。将在新标签页打开官方帖子。",
-                      poster: "assets/ig/Dd876e-hI6l.jpg",
-                      posterW: 360,
-                      posterH: 640,
-                      altEn: "Cover of the Goldfish Street: BOBO Instagram reel"
-                    },
-                    {
-                      href: "https://www.instagram.com/junielaux/reel/Dd5_GT6B8f-/",
-                      kindEn: "Instagram",
-                      kindZh: "Instagram",
-                      labelEn: "Goldfish Street: FENG SHUI GIRL",
-                      labelZh: "金鱼街：FENG SHUI GIRL",
-                      noteEn: "Character reel, 2026.09.30. Opens the official post in a new tab.",
-                      noteZh: "角色短视频，2026.09.30。将在新标签页打开官方帖子。",
-                      poster: "assets/ig/Dd5_GT6B8f-.jpg",
-                      posterW: 360,
-                      posterH: 640,
-                      altEn: "Cover of the Goldfish Street: FENG SHUI GIRL Instagram reel"
-                    },
-                    {
-                      href: "https://www.instagram.com/junielaux/reel/Dd3bIc3uqDZ/",
-                      kindEn: "Instagram",
-                      kindZh: "Instagram",
-                      labelEn: "Goldfish Street: LITTLE ONE",
-                      labelZh: "金鱼街：LITTLE ONE",
-                      noteEn: "Character reel, 2026.09.29. Opens the official post in a new tab.",
-                      noteZh: "角色短视频，2026.09.29。将在新标签页打开官方帖子。",
-                      poster: "assets/ig/Dd3bIc3uqDZ.jpg",
-                      posterW: 360,
-                      posterH: 640,
-                      altEn: "Cover of the Goldfish Street: LITTLE ONE Instagram reel"
-                    },
                     {
                       href: "https://www.instagram.com/wearewonderstudios/reel/DeJsNDlImjg/",
                       kindEn: "Instagram",
                       kindZh: "Instagram",
                       labelEn: "Wonder Studios collaboration reel",
                       labelZh: "与 Wonder Studios 的合作短视频",
-                      noteEn: "Posted 2026.10.06. I have also written this collaboration as 金魚街大亂鬥 × WONDERSTUDIOS. Opens the official post in a new tab.",
-                      noteZh: "发布于 2026.10.06。我也把这次合作写为「金魚街大亂鬥 × WONDERSTUDIOS」。将在新标签页打开官方帖子。",
+                      noteEn: "Posted 2026.10.06. I have also written this collaboration as 金魚街大亂鬥 × WONDERSTUDIOS.",
+                      noteZh: "发布于 2026.10.06。我也把这次合作写为「金魚街大亂鬥 × WONDERSTUDIOS」。",
                       poster: "assets/ig/DeJsNDlImjg.jpg",
                       posterW: 360,
                       posterH: 640,

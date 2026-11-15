@@ -153,10 +153,48 @@
       </a>`;
   }
 
-  function renderLinks(links) {
+  function markKey(text, key) {
+    const safe = esc(text || "");
+    if (!key) return safe;
+    const k = esc(key);
+    const at = safe.indexOf(k);
+    if (at < 0) return safe;
+    return safe.slice(0, at) + `<span class="cast-key">${k}</span>` + safe.slice(at + k.length);
+  }
+
+  function castParas(lines) {
+    return (lines || []).map((p) => `<p>${esc(p)}</p>`).join("");
+  }
+
+  function renderCastSide(it, lang) {
+    const zh = lang === "zh";
+    return `<div class="${lang}">
+      <p class="cast-eyebrow">${esc(zh ? it.eyebrowZh : it.eyebrowEn)}</p>
+      <h3 class="cast-title">${markKey(zh ? it.titleZh : it.titleEn, zh ? it.keyZh : it.keyEn)}</h3>
+      <p class="cast-tagline">${esc(zh ? it.taglineZh : it.taglineEn)}</p>
+      <div class="cast-body">${castParas(zh ? it.bodyZh : it.bodyEn)}</div>
+      <p class="cast-quote">${esc(zh ? it.quoteZh : it.quoteEn)} ${sourceMark(it.source || "interview", lang)}</p>
+      <p class="cast-variants">${esc(zh ? it.variantsZh : it.variantsEn)}</p>
+    </div>`;
+  }
+
+  function renderCast(b) {
+    const items = (b.items || [])
+      .map(
+        (it) => `<article class="cast-feature">
+        <div class="cast-poster">${renderPosterCard(it.poster || {})}</div>
+        <div class="cast-copy">${renderCastSide(it, "en")}${renderCastSide(it, "zh")}</div>
+      </article>`
+      )
+      .join("");
+    return `<div class="mod cast-set">${items}</div>`;
+  }
+
+  function renderLinks(links, layout) {
     const posters = (links || []).filter((l) => l.poster);
     const texts = (links || []).filter((l) => !l.poster);
-    return `${posters.length ? `<div class="poster-grid">${posters.map(renderPosterCard).join("")}</div>` : ""}${
+    const posterClass = layout === "solo" ? "poster-solo" : "poster-grid";
+    return `${posters.length ? `<div class="${posterClass}">${posters.map(renderPosterCard).join("")}</div>` : ""}${
       texts.length ? `<div class="link-grid">${texts.map(renderLinkCard).join("")}</div>` : ""
     }`;
   }
@@ -637,7 +675,7 @@
       case "videos":
         return `<div class="mod video-grid">${(b.items || []).map(renderVideo).join("")}</div>`;
       case "links":
-        return `<div class="mod">${renderLinks(b.items || [])}</div>`;
+        return `<div class="mod">${renderLinks(b.items || [], b.layout)}</div>`;
       case "plates":
         return `<div class="mod plate-stack">${(b.items || [])
           .map((pl, i) => renderPlate(pl, `${idxPrefix}-plate-${i}`))
@@ -655,6 +693,8 @@
           </article>`
           )
           .join("")}</div>`;
+      case "cast":
+        return renderCast(b);
       case "names":
         return `<div class="mod name-grid">${(b.items || [])
           .map(
