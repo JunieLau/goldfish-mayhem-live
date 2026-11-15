@@ -95,9 +95,7 @@ window.GM = {
               kindEn: "Official website",
               kindZh: "官网",
               labelEn: "junielau.com",
-              labelZh: "junielau.com",
-              noteEn: "My official homepage.",
-              noteZh: "我的官方主页。"
+              labelZh: "junielau.com"
             }
           ]
         },
@@ -226,17 +224,9 @@ window.GM = {
                   kindEn: "Press",
                   kindZh: "报道",
                   labelEn: "Forbes profile, September 2026",
-                  labelZh: "《福布斯》专访，2026年9月",
-                  noteEn: "Opens in a new tab.",
-                  noteZh: "将在新标签页打开。"
+                  labelZh: "《福布斯》专访，2026年9月"
                 }
           ]
-        },
-        {
-          type: "para",
-          en: "In 2018, during my master’s at University of the Arts London, I started working with early artificial intelligence, virtual reality, mixed reality, and interactive art. In 2020, during the pandemic, I returned to China. I had few industry contacts then, and becoming a director overnight was not realistic, so I chose a job close to directing: production design. On set I worked with carpenters, prop makers, gaffers and cinematographers, and learned how to make an idea physically real.",
-          zh: "2018 年，我在伦敦艺术大学读硕士，开始接触早期的人工智能、虚拟现实、混合现实，还有交互艺术。2020 年疫情期间，我回到中国。那时候没有什么行业人脉，想直接当导演不太现实，所以我选择了一个离导演很近的工作：美术指导。在片场，我跟木工、道具师、灯光师、摄影师一起工作，学习怎么把一个想法真正做出来。",
-          source: "public"
         },
         {
           type: "plates",
@@ -301,6 +291,12 @@ window.GM = {
               capZh: "整条路径放在同一块版面上：1999 年的画，2020 年 7 月的美术指导，2022 年 2 月用 Disco Diffusion 创造世界，以及 2023 年 5 月为 Peter Gabriel 创作的 AI MV《The Court》。"
             }
           ]
+        },
+        {
+          type: "para",
+          en: "In 2018, during my master’s at University of the Arts London, I started working with early artificial intelligence, virtual reality, mixed reality, and interactive art. In 2020, during the pandemic, I returned to China. I had few industry contacts then, and becoming a director overnight was not realistic, so I chose a job close to directing: production design. On set I worked with carpenters, prop makers, gaffers and cinematographers, and learned how to make an idea physically real.",
+          zh: "2018 年，我在伦敦艺术大学读硕士，开始接触早期的人工智能、虚拟现实、混合现实，还有交互艺术。2020 年疫情期间，我回到中国。那时候没有什么行业人脉，想直接当导演不太现实，所以我选择了一个离导演很近的工作：美术指导。在片场，我跟木工、道具师、灯光师、摄影师一起工作，学习怎么把一个想法真正做出来。",
+          source: "public"
         },
         {
           type: "paras",
@@ -473,6 +469,12 @@ window.GM = {
           ]
         },
         {
+          type: "heading",
+          num: "01",
+          en: "The future world I created grew out of my childhood in my hometown and my memories of Goldfish Street, just outside my home.",
+          zh: "我创造的未来世界，源于我在家乡的童年生活，以及楼下的那条金鱼街。"
+        },
+        {
           type: "paras",
           items: [
             {
@@ -499,10 +501,22 @@ window.GM = {
           source: "interview"
         },
         {
+          type: "heading",
+          num: "02",
+          en: "Through the contrast between the human warmth of Goldfish Street and the cold order of the Cloud, I ask: what does a better life really mean?",
+          zh: "在金鱼街的市井温情与云端的冰冷秩序之间，我想问：什么才是更好的生活？"
+        },
+        {
           type: "para",
           en: "The upper world, the Cloud, was inspired by a rotating restaurant I visited with my parents when I was very young. It was expensive, and I could only go if I worked hard and got good grades. In my memory it stood for a higher place — upper, costly, and difficult to reach. In the film, Goldfish Street and the Cloud became two opposite worlds: one grounded, chaotic, emotional, and full of human connection; the other high above, cold, controlled, and defined by success and upgrading.",
           zh: "而片子里上方的云端，灵感来自我小时候和父母去过的一家旋转餐厅。那是一个比较贵的地方，小时候我只有很努力、拿到好成绩，才有机会去那里。所以在我的记忆里，它代表着一个「更高的地方」——一个更上层、更昂贵、也更难抵达的空间。金鱼街和云端就变成了两个相反的世界：一个是落地的、混乱的、充满情感和人情味的；另一个是高高在上的、冰冷的、被成功和升级定义的。",
           source: "interview"
+        },
+        {
+          type: "heading",
+          num: "03",
+          en: "With AI, I can bring to life the stories I wanted to see as a child: stories in which girls become heroes, save others and save the world.",
+          zh: "借助 AI，我可以拍出小时候就想看的故事：女孩成为英雄，拯救他人，也拯救世界。"
         },
         {
           type: "para",
@@ -627,8 +641,8 @@ window.GM = {
                 },
                 {
                   type: "para",
-                  en: "The first thing I need is a place to hold the feeling of the world — colour, street life, the clash between something very local and something already speeding toward the future. These official links belong here, in the order of early process: from the first idea to the final moodboard. Two private pages, the screenplay and character design, sit with them here. They are early design, early inspiration and early research — not later making.",
-                  zh: "首先我需要一个地方，把这个世界的感觉放下——颜色、市井生活，以及非常本地的事物和已经冲向未来的事物怎样撞在一起。这些正式链接都放在这里，顺序是早期过程：从最初的想法，到最终情绪板。剧本和角色设计两页是不公开内页，也放在这里。它们是早期设计、早期灵感和早期研究，而不是后面的制作环节。",
+                  en: "The first thing I need is a place to hold the feeling of the world — colour, street life, the clash between something very local and something already speeding toward the future. These official links belong here, in the order of early process: from the first idea to the final moodboard. The screenplay, and the character design and background story, also sit with them here. They are early design, early inspiration and early research — not later making.",
+                  zh: "首先我需要一个地方，把这个世界的感觉放下——颜色、市井生活，以及非常本地的事物和已经冲向未来的事物怎样撞在一起。这些正式链接都放在这里，顺序是早期过程：从最初的想法，到最终情绪板。剧本和角色设计与背景故事两页也放在这里。它们是早期设计、早期灵感和早期研究，而不是后面的制作环节。",
                   source: "interview"
                 },
                 {
@@ -673,21 +687,17 @@ window.GM = {
                     },
                     {
                       href: "screenplay.html",
-                      kindEn: "Private page",
-                      kindZh: "不公开内页",
+                      kindEn: "On this site",
+                      kindZh: "本站页面",
                       labelEn: "Screenplay",
-                      labelZh: "剧本",
-                      noteEn: "A private page. The full text is not on the public site.",
-                      noteZh: "不公开内页，全文不在公开站点。"
+                      labelZh: "剧本"
                     },
                     {
                       href: "character-design.html",
-                      kindEn: "Private page",
-                      kindZh: "不公开内页",
-                      labelEn: "Character design",
-                      labelZh: "角色设计",
-                      noteEn: "A private page. The full text is not on the public site.",
-                      noteZh: "不公开内页，全文不在公开站点。"
+                      kindEn: "On this site",
+                      kindZh: "本站页面",
+                      labelEn: "Character design and background story",
+                      labelZh: "角色设计与背景故事"
                     }
                   ]
                 },
@@ -1630,9 +1640,7 @@ window.GM = {
       kindEn: "Official website",
       kindZh: "官网",
       labelEn: "junielau.com",
-      labelZh: "junielau.com",
-      noteEn: "My official homepage.",
-      noteZh: "我的官方主页。"
+      labelZh: "junielau.com"
     }
   },
   sourceList: [

@@ -2970,3 +2970,214 @@ a.doc-link:focus-visible .doc-go {
   .kf-beside, .kf-two, .kf-three { grid-template-columns: 1fr; }
   .link-grid.cols-3 { grid-template-columns: 1fr; }
 }
+
+
+/* in-chapter thesis headings (story 01–03) */
+.block-heading {
+  margin: 2.6rem 0 1.15rem;
+}
+.block-heading .hk {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  color: var(--red);
+  margin: 0 0 0.5rem;
+}
+.block-heading .block-heading-line .en,
+.block-heading .block-heading-line .zh {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(1.45rem, 2.05vw, 1.9rem);
+  line-height: 1.32;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0;
+}
+[data-lang="zh"] .block-heading .block-heading-line .zh,
+[data-lang="both"] .block-heading .block-heading-line .zh {
+  font-family: var(--zh-display);
+  font-weight: 900;
+}
+
+
+/* leftover character design sheets: cap height to the 风水妹 four-across row */
+@media (min-width: 901px) {
+  .char-sheets {
+    width: fit-content;
+    max-width: 100%;
+  }
+  .char-sheets .fig {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+  .char-sheets .fig img {
+    width: auto;
+    height: auto;
+    max-height: calc((min(100vw, var(--max)) - (2 * var(--pad)) - 48px) / 7.2433);
+  }
+}
+
+/* public document pages (screenplay / character background) */
+.is-doc-page .toc { display: none; }
+.doc-shell {
+  width: min(var(--max), 100%);
+  margin: 0 auto;
+  padding: 48px var(--pad) 96px;
+}
+.doc-shell .kicker {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin: 0 0 14px;
+}
+.doc-shell h1 {
+  font-family: var(--display);
+  font-size: clamp(2.6rem, 5.2vw, 4.6rem);
+  line-height: 0.95;
+  margin: 0 0 10px;
+  color: var(--ink);
+}
+[data-lang="both"] .doc-shell h1 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+[data-lang="both"] .doc-shell h1 .zh,
+.doc-shell h1 .title-zh {
+  display: block;
+  font-family: var(--zh-display);
+  font-weight: 900;
+  font-size: 0.42em;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  margin-top: 6px;
+}
+[data-lang="zh"] .doc-shell h1 {
+  font-family: var(--zh-display);
+  font-weight: 900;
+}
+.doc-back {
+  margin: 18px 0 0;
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+.doc-back a { text-decoration: none; border-bottom: 1px solid var(--line-strong); }
+.doc-back a:hover { color: var(--red); border-color: var(--red); }
+.doc-back-end { margin-top: 48px; }
+.doc-article {
+  width: min(46rem, 100%);
+  margin: 2.6rem 0 0;
+  color: var(--ink);
+}
+.doc-work-title {
+  font-family: var(--zh-display);
+  font-weight: 900;
+  font-size: clamp(1.7rem, 2.6vw, 2.25rem);
+  line-height: 1.3;
+  margin: 0 0 0.45rem;
+  color: var(--ink);
+}
+.doc-credit {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  margin: 0 0 2.2rem;
+}
+.doc-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 2.8rem 0 1.15rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line-strong);
+}
+.doc-sec-num {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  color: var(--red);
+}
+.doc-sec-name {
+  font-family: var(--zh-display);
+  font-weight: 900;
+  font-size: clamp(1.25rem, 1.9vw, 1.55rem);
+  line-height: 1.35;
+  color: var(--ink);
+}
+.doc-p, .doc-lead, .doc-dialogue, .doc-cue, .doc-note, .doc-role {
+  font-family: "Noto Serif SC", var(--serif);
+  font-size: 1.08rem;
+  line-height: 1.9;
+  margin: 0 0 1.05rem;
+}
+.doc-lead { font-weight: 600; }
+.doc-slug {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  margin: 1.55rem 0 0.7rem;
+}
+.doc-dialogue { padding-left: 1.25rem; }
+.doc-speaker {
+  font-weight: 700;
+  margin-right: 0.45em;
+  color: var(--ink);
+}
+.doc-speech { }
+.doc-cue { padding-left: 1.25rem; margin-bottom: 0.2rem; }
+.doc-note {
+  color: var(--muted);
+  font-size: 1rem;
+  padding-left: 1.25rem;
+}
+.doc-end {
+  font-family: var(--zh-display);
+  font-weight: 900;
+  font-size: 1.35rem;
+  text-align: center;
+  margin: 2.8rem 0 1.2rem;
+  letter-spacing: 0.08em;
+}
+.doc-break { height: 1.6rem; }
+.doc-char {
+  margin: 2.6rem 0 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line-strong);
+}
+.doc-char-name {
+  font-family: var(--zh-display);
+  font-weight: 900;
+  font-size: clamp(1.45rem, 2.2vw, 1.85rem);
+  margin: 0 0 0.25rem;
+  color: var(--ink);
+}
+.doc-role {
+  margin: 0 0 1rem;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+.doc-field {
+  font-family: var(--zh-display);
+  font-weight: 900;
+  font-size: 1.05rem;
+  margin: 1.5rem 0 0.55rem;
+  color: var(--ink);
+}
+.doc-list {
+  margin: 0 0 1.05rem;
+  padding-left: 1.35rem;
+  font-family: "Noto Serif SC", var(--serif);
+  font-size: 1.08rem;
+  line-height: 1.85;
+}
+.doc-list li { margin: 0 0 0.35rem; }
+/* Chinese document stays visible in every language mode */
+[data-lang="en"] .doc-article,
+[data-lang="zh"] .doc-article,
+[data-lang="both"] .doc-article { display: block; }

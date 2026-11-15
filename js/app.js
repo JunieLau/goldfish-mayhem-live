@@ -728,6 +728,11 @@
 
   function renderBlock(b, idxPrefix) {
     switch (b.type) {
+      case "heading":
+        return `<div class="mod block-heading">
+          ${b.num ? `<div class="hk">${esc(b.num)}</div>` : ""}
+          ${textPair({ en: typo(b.en || ""), zh: typo(b.zh || "") }, "block-heading-line")}
+        </div>`;
       case "lede":
         return `<div class="mod">${rich(b, "lede")}</div>`;
       case "para":
@@ -874,18 +879,6 @@
         <span class="t zh">${esc(ch.titleZh)}</span>
       </h2>
       ${(ch.blocks || []).map((b, bi) => renderBlock(b, ch.id + "-" + bi)).join("")}
-      <nav class="chap-nav">
-        ${
-          prev
-            ? `<a href="#${esc(prev.id)}"><span class="dir">${textPair({en:"Previous", zh:"上一章"})}</span>${textPair({en: prev.titleEn, zh: prev.titleZh})}</a>`
-            : "<span></span>"
-        }
-        ${
-          next
-            ? `<a class="next" href="#${esc(next.id)}"><span class="dir">${textPair({en:"Next", zh:"下一章"})}</span>${textPair({en: next.titleEn, zh: next.titleZh})}</a>`
-            : "<span></span>"
-        }
-      </nav>
     </section>`;
   }
 
@@ -906,22 +899,9 @@
 
   function renderSources() {
     const s = window.GM.sourceSection;
-    const items = (window.GM.sourceList || [])
-      .map((it) => `<li>${textPair({ en: it.en, zh: it.zh })}</li>`)
-      .join("");
-    return `<section class="sources-wrap" id="sources">
-      <details class="fold">
-        <summary>${textPair(s.summary)}</summary>
-        <div class="fold-body">
-          ${rich(s.intro, "para")}
-          <ol class="source-list">${items}</ol>
-        </div>
-      </details>
-    </section>
-    <section class="end-band">
+    return `<section class="end-band" id="join">
       <h2>${esc(s.endZh)}<em>JOIN US</em></h2>
       ${rich(s.endLead, "para")}
-      ${s.endCard ? `<div class="link-grid solo">${renderLinkCard(s.endCard)}</div>` : ""}
     </section>`;
   }
 
