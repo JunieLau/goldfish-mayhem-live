@@ -1010,15 +1010,15 @@ window.GM = {
                   cols: 1,
                   items: [
                     {
-                      src: "assets/characters/height-comparison.jpg",
-                      w: 1159,
+                      src: "assets/characters/height-comparison-with-children.png",
+                      w: 2050,
                       h: 941,
                       natural: true,
                       heightSheet: true,
-                      altEn: "Height comparison of the three girls, lettered 风水妹 173 cm, BOBO 176 cm, and XIXILI / 细细粒 195 cm",
-                      altZh: "三个女孩的身高对照图，画面上标有风水妹 173 cm、BOBO 176 cm，以及 XIXILI / 细细粒 195 cm",
-                      capEn: "Height comparison of the three girls, as lettered on the artwork: 风水妹 173 cm, BOBO 176 cm, and XIXILI / 细细粒 195 cm. XIXILI appears here as a published variant; the English name used in this section is Little One.",
-                      capZh: "三个女孩的身高对照，按画面上的标注：风水妹 173 cm、BOBO 176 cm，以及 XIXILI / 细细粒 195 cm。XIXILI 是已公开的异写；这一段里使用的英文名是 Little One。"
+                      altEn: "Height comparison of the three girls and their younger selves, lettered 风水妹 173 cm, BOBO 176 cm, and XIXILI / 细细粒 195 cm; 小风水妹 128 cm, 小BOBO 130 cm, and 小细细粒 105 cm",
+                      altZh: "三个女孩与她们小时候的身高对照图，画面上标有风水妹 173 cm、BOBO 176 cm，以及 XIXILI / 细细粒 195 cm；小风水妹 128 cm、小BOBO 130 cm，以及小细细粒 105 cm",
+                      capEn: "Height comparison of the three girls and their younger selves, as lettered on the artwork: 风水妹 173 cm, BOBO 176 cm, and XIXILI / 细细粒 195 cm; 小风水妹 128 cm, 小BOBO 130 cm, and 小细细粒 105 cm. XIXILI appears here as a published variant; the English name used in this section is Little One.",
+                      capZh: "三个女孩与她们小时候的身高对照，按画面上的标注：风水妹 173 cm、BOBO 176 cm，以及 XIXILI / 细细粒 195 cm；小风水妹 128 cm、小BOBO 130 cm，以及小细细粒 105 cm。XIXILI 是已公开的异写；这一段里使用的英文名是 Little One。"
                     }
                   ]
                 },

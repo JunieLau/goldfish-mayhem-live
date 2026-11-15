@@ -295,8 +295,8 @@ main { padding: 0 0 16px; }
   justify-self: center;
 }
 .fig.height-sheet {
-  width: 64%;
-  max-width: 720px;
+  width: 100%;
+  max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
 }
