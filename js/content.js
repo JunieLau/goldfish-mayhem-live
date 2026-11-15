@@ -1283,9 +1283,9 @@ window.GM = {
             { kicker: "叮叮车", titleEn: "Depth map", titleZh: "深度图", src: "assets/video/dingdingche-depth.mp4", poster: "assets/video/dingdingche-depth.jpg" }
           ],
           rowB: [
-            { kicker: "打鱼蛋", titleEn: "Original kung fu footage", titleZh: "原始功夫素材", src: "assets/video/dayudan.mp4", poster: "assets/video/dayudan.jpg" },
-            { kicker: "打鱼蛋", titleEn: "Depth map", titleZh: "深度图", src: "assets/video/dayudan-depth.mp4", poster: "assets/video/dayudan-depth.jpg" },
-            { kicker: "打鱼蛋", titleEn: "3D White Model", titleZh: "3D 白模", src: "assets/video/dayudan-white-model.mp4", poster: "assets/video/dayudan-white-model.jpg" }
+            { kicker: "八卦掌打鱼蛋", titleEn: "Original kung fu footage", titleZh: "原始功夫素材", src: "assets/video/dayudan.mp4", poster: "assets/video/dayudan.jpg" },
+            { kicker: "八卦掌打鱼蛋", titleEn: "Depth map", titleZh: "深度图", src: "assets/video/dayudan-depth.mp4", poster: "assets/video/dayudan-depth.jpg" },
+            { kicker: "八卦掌打鱼蛋", titleEn: "3D White Model", titleZh: "3D 白模", src: "assets/video/dayudan-white-model.mp4", poster: "assets/video/dayudan-white-model.jpg" }
           ]
         },
 
@@ -1350,18 +1350,7 @@ window.GM = {
               en: "I have been thinking about what I call Neural Media. In the last fifteen years we have watched artificial intelligence, deep learning and online algorithms rise. These systems sense and model our behaviour, predict what we might want, and can now generate content that folds into the media around us. New sensing tools — from smart rings and brain–computer interfaces to the gyroscope in a phone — are also reading the body in different ways. We are in the middle of Neural Media’s development, and this is already changing the relationship between the filmmaker, the work and the audience.",
               zh: "所以，我们现在正处于神经媒体，Neural Media 的发展中段。过去十五年，我们见证了人工智能、深度学习以及各种在线算法的崛起。这些系统不断地感知和分析我们的行为，为我们建立模型，预测我们可能想要什么。生成式媒体出现后，系统甚至可以直接生成与我们相关的内容。与此同时，智能戒指、脑机接口 BCI，甚至智能手机里的陀螺仪，也在通过不同方式感知我们的身体。而这种新的媒体形态，也正在逐渐改变创作者、内容和观众之间的关系。",
               source: "public"
-            },
-            {
-              en: "If you ask me what I most want to do in the future, my answer is: I want to bring dreams into reality. Everyone has a world in their head that no one else can see. I want to know whether a new art form could let us walk into someone else’s imagined world — to feel it, explore it, even leave a trace.",
-              zh: "如果大家问我，未来最想做什么，我的答案是：我想把梦境带进现实。每个人脑海里都有一个别人看不到的世界。我很想知道，有没有一种新的艺术形式，可以让我们走进别人想象的世界，可以在里面感受、探索，甚至留下自己的痕迹。",
-              source: "public"
-            },
-            {
-              en: "I have been researching questions like this since 2023. This September, in Los Angeles, I visited DATALAND, which is called the world’s first AI art museum, and found that their work on multi-sensory art was close to some of what I had imagined. You wear a device that can sense signals from the body — heartbeat, movement, position in space — and those data become part of the art system. The images, sounds, even smells, change with the environment and with the people inside it. I became more sure that future moving-image media will slowly change from a fixed work into a world that can keep changing.",
-              zh: "其实从 2023 年开始，我就一直在研究类似的课题。今年九月，我在美国洛杉矶参观了被称为世界首座 AI 艺术博物馆 DATALAND，发现他们对多感官艺术的探索，跟我的想象有一些相似的地方。进入这个空间时，你会佩戴一个能够感知身体信号的装置，采集心跳、身体运动和空间位置，这些数据也会成为整个艺术系统的一部分。你看到的影像、听到的声音，甚至闻到的气味，都会随着环境数据和观众的参与不断变化。我更加确定，未来的动态媒体，会逐渐从一个固定的作品，变成一个能够持续变化的世界。",
-              source: "public"
-            }
-          ]
+            },          ]
         },
         {
           type: "plates",
@@ -1408,11 +1397,19 @@ window.GM = {
           ]
         },
         {
-          type: "callout",
-          kind: "idea",
-          en: "I have recently been conceiving a futurist virtual ecosystem. It might combine AI agents, real-time generation, XR, and future sensing technologies such as brain–computer interfaces. In that world, humans and AI agents could talk and work together; the world itself would keep changing with what different characters do; some stories would not need every detail written in advance, but could keep generating inside rules, relationships, visual assets and narrative boundaries we have set. I am exploring this. It is not a greenlit production I can announce.",
-          zh: "我最近一直在构想一个未来主义的虚拟生态系统。它可能结合 AI 智能体、实时生成、XR，以及脑机接口等未来的感知技术。在这个世界里，人类和 AI 智能体可以相互交流、合作；整个世界也会随着不同角色的行为持续发生变化；其中一些故事，也不需要由人类创作者提前写好每一个细节，而是可以在我们设定好的世界规则、人物关系、视觉资产和叙事边界之内，由 AI 持续生成和演化。这是我正在探索的构想，并不是一个已经立项、可以宣布开拍的项目。",
-          source: "public"
+          type: "paras",
+          items: [
+            {
+              en: "If you ask me what I most want to do in the future, my answer is: I want to bring dreams into reality. Everyone has a world in their head that no one else can see. I want to know whether a new art form could let us walk into someone else’s imagined world — to feel it, explore it, even leave a trace.",
+              zh: "如果大家问我，未来最想做什么，我的答案是：我想把梦境带进现实。每个人脑海里都有一个别人看不到的世界。我很想知道，有没有一种新的艺术形式，可以让我们走进别人想象的世界，可以在里面感受、探索，甚至留下自己的痕迹。",
+              source: "public"
+            },
+            {
+              en: "I have been researching questions like this since 2023. This September, in Los Angeles, I visited DATALAND, which is called the world’s first AI art museum, and found that their work on multi-sensory art was close to some of what I had imagined. You wear a device that can sense signals from the body — heartbeat, movement, position in space — and those data become part of the art system. The images, sounds, even smells, change with the environment and with the people inside it. I became more sure that future moving-image media will slowly change from a fixed work into a world that can keep changing.",
+              zh: "其实从 2023 年开始，我就一直在研究类似的课题。今年九月，我在美国洛杉矶参观了被称为世界首座 AI 艺术博物馆 DATALAND，发现他们对多感官艺术的探索，跟我的想象有一些相似的地方。进入这个空间时，你会佩戴一个能够感知身体信号的装置，采集心跳、身体运动和空间位置，这些数据也会成为整个艺术系统的一部分。你看到的影像、听到的声音，甚至闻到的气味，都会随着环境数据和观众的参与不断变化。我更加确定，未来的动态媒体，会逐渐从一个固定的作品，变成一个能够持续变化的世界。",
+              source: "public"
+            }
+          ]
         },
         {
           type: "plates",
@@ -1428,9 +1425,10 @@ window.GM = {
           ]
         },
         {
-          type: "para",
-          en: "I hope, in the future, I can become a new kind of artist: a World Architect. What I am after is not merely “AI-generated film” or “AI-generated fiction”, but a form of dynamic, interactive, generative media we cannot yet fully imagine.",
-          zh: "我希望未来，自己可以成为一种新型的艺术家。World Architect，世界建筑师。我所追求的，并不仅仅是「AI 生成的电影」，或者「AI 生成的小说」，而是探索一种我们今天还无法完全想象的，动态的、交互式的、生成型媒体的新形式。",
+          type: "callout",
+          kind: "idea",
+          en: "I have recently been conceiving a futurist virtual ecosystem. It might combine AI agents, real-time generation, XR, and future sensing technologies such as brain–computer interfaces. In that world, humans and AI agents could talk and work together; the world itself would keep changing with what different characters do; some stories would not need every detail written in advance, but could keep generating inside rules, relationships, visual assets and narrative boundaries we have set. I am exploring this. It is not a greenlit production I can announce.",
+          zh: "我最近一直在构想一个未来主义的虚拟生态系统。它可能结合 AI 智能体、实时生成、XR，以及脑机接口等未来的感知技术。在这个世界里，人类和 AI 智能体可以相互交流、合作；整个世界也会随着不同角色的行为持续发生变化；其中一些故事，也不需要由人类创作者提前写好每一个细节，而是可以在我们设定好的世界规则、人物关系、视觉资产和叙事边界之内，由 AI 持续生成和演化。这是我正在探索的构想，并不是一个已经立项、可以宣布开拍的项目。",
           source: "public"
         },
         {
@@ -1451,6 +1449,12 @@ window.GM = {
               capZh: "我希望成为一种全新的艺术家——世界建筑师（World Architect）。"
             }
           ]
+        },
+        {
+          type: "para",
+          en: "I hope, in the future, I can become a new kind of artist: a World Architect. What I am after is not merely “AI-generated film” or “AI-generated fiction”, but a form of dynamic, interactive, generative media we cannot yet fully imagine.",
+          zh: "我希望未来，自己可以成为一种新型的艺术家。World Architect，世界建筑师。我所追求的，并不仅仅是「AI 生成的电影」，或者「AI 生成的小说」，而是探索一种我们今天还无法完全想象的，动态的、交互式的、生成型媒体的新形式。",
+          source: "public"
         },
         {
           type: "para",
@@ -1565,13 +1569,7 @@ window.GM = {
             }
           ]
         },
-{
-          type: "para",
-          en: "If you also like creating worlds, or you are interested in new technologies and new art forms, you are very welcome to come and talk to us. Our studio is always looking for people who can walk this path together. I hope we will have the chance to create worlds together.",
-          zh: "如果也有喜欢创造世界，或者对未来的新技术、新艺术形式感兴趣的朋友，很欢迎来找我们交流。我们工作室也一直都在招募可以并肩作战的小伙伴。希望未来有机会，跟大家一起创造世界。",
-          source: "public"
-        },
-{
+        {
           type: "plates",
           items: [
             {
@@ -1584,6 +1582,12 @@ window.GM = {
               capZh: "我并不是末日乐观主义者，但我仍然选择继续创造世界。"
             }
           ]
+        },
+        {
+          type: "para",
+          en: "If you also like creating worlds, or you are interested in new technologies and new art forms, you are very welcome to come and talk to us. Our studio is always looking for people who can walk this path together. I hope we will have the chance to create worlds together.",
+          zh: "如果也有喜欢创造世界，或者对未来的新技术、新艺术形式感兴趣的朋友，很欢迎来找我们交流。我们工作室也一直都在招募可以并肩作战的小伙伴。希望未来有机会，跟大家一起创造世界。",
+          source: "public"
         }
       ]
     },

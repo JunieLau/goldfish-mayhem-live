@@ -921,7 +921,7 @@
     <section class="end-band">
       <h2>${esc(s.endZh)}<em>JOIN US</em></h2>
       ${rich(s.endLead, "para")}
-      ${s.endCard ? `<div class="link-grid">${renderLinkCard(s.endCard)}</div>` : ""}
+      ${s.endCard ? `<div class="link-grid solo">${renderLinkCard(s.endCard)}</div>` : ""}
     </section>`;
   }
 
@@ -1007,10 +1007,14 @@
 
   function renderAll() {
     const main = $("#main");
-    main.innerHTML =
-      renderHero() +
-      window.GM.chapters.map((ch, i) => renderChapter(ch, i, window.GM.chapters)).join("") +
-      renderSources();
+    const chapters = window.GM.chapters;
+    const parts = [renderHero()];
+    chapters.forEach((ch, i) => {
+      if (ch.id === "qa") parts.push(renderSources());
+      parts.push(renderChapter(ch, i, chapters));
+    });
+    if (!chapters.some((ch) => ch.id === "qa")) parts.push(renderSources());
+    main.innerHTML = parts.join("");
     $("#foot-credit").innerHTML = textPair(window.GM.ui.footer);
     bindMedia();
     scalePlates();
