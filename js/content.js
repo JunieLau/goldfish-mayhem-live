@@ -483,7 +483,7 @@ window.GM = {
             {
               kind: "who",
               highlight: "worlds",
-              headline: "*Who am I?*",
+              headline: "WHO AM I？",
               titlePos: { x: 35.6, y: 42.0, w: 28.8 },
               photo: { src: "assets/plates/16-whoami-network.jpg", altEn: "A network of stills from the Goldfish Mayhem world, arranged around a central space for the question “Who am I?”", altZh: "《金魚街大亂鬥》世界里的一组剧照，环绕在「我是谁？」的中心留白周围" },
               tags: [
@@ -1546,6 +1546,15 @@ window.GM = {
       en: "If you like creating worlds, you are welcome to come and talk to us.",
       zh: "如果也有喜欢创造世界的朋友，很欢迎来找我们交流。",
       source: "public"
+    },
+    endCard: {
+      href: "https://junielau.com/",
+      kindEn: "Official website",
+      kindZh: "官网",
+      labelEn: "junielau.com",
+      labelZh: "junielau.com",
+      noteEn: "My official homepage.",
+      noteZh: "我的官方主页。"
     }
   },
   sourceList: [

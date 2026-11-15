@@ -777,6 +777,7 @@
     <section class="end-band">
       <h2>${esc(s.endZh)}<em>JOIN US</em></h2>
       ${rich(s.endLead, "para")}
+      ${s.endCard ? `<div class="link-grid">${renderLinkCard(s.endCard)}</div>` : ""}
     </section>`;
   }
 

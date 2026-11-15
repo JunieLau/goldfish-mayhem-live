@@ -146,7 +146,7 @@ a:hover { color: var(--red); }
 [data-lang="both"] .toc a .lab.zh { display: block; font-weight: 500; color: var(--ink-soft); font-size: 0.72rem; white-space: normal; }
 
 /* -------- layout -------- */
-main { padding: 0 0 80px; }
+main { padding: 0 0 16px; }
 .hero, .chapter, .sources-wrap, .end-band {
   width: 100%;
   max-width: none;
@@ -609,7 +609,9 @@ details.fold .fold-body { padding: 0 18px 18px; border-top: 1px solid var(--line
 .end-band {
   text-align: left;
   padding-top: 10px;
+  padding-bottom: 8px;
 }
+.end-band .link-grid { margin: 18px auto 0; }
 .end-band h2 {
   font-family: var(--zh-display); font-weight: 900;
   font-size: clamp(2.4rem, 6vw, 4.5rem);
