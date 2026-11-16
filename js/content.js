@@ -565,16 +565,16 @@ window.GM = {
               src: "assets/stills/goldfish-1.jpg",
               altEn: "A richly dressed group seated in a red velvet salon, with a street visible through the window",
               altZh: "一群盛装的人坐在红色丝绒的厅里，窗外是街道",
-              capEn: "An official still from a luxurious interior.",
-              capZh: "官方剧照：一处华丽的室内。",
+              capEn: "An official still from GOLDFISH MAYHEM.",
+              capZh: "《金魚街大亂鬥》官方剧照。",
               source: "stills"
             },
             {
               src: "assets/stills/goldfish-8.jpg",
               altEn: "A vast gilded hall with a towering golden figure under a red sky",
               altZh: "一座巨大的金色殿堂，红天下有一座金色巨像",
-              capEn: "An official still from a gilded, elevated space.",
-              capZh: "官方剧照：一处金碧辉煌、高高在上的空间。",
+              capEn: "An official still from GOLDFISH MAYHEM.",
+              capZh: "《金魚街大亂鬥》官方剧照。",
               source: "stills"
             }
           ]
