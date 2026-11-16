@@ -2618,6 +2618,105 @@ html { scroll-padding-top: calc(var(--header) + 8px); }
   display: none;
 }
 
+/* Character + stall rows: three images, equal height, complete, not too tall */
+#sets .stall-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 1.55rem;
+  margin: 0.35rem 0 1.1rem;
+}
+#sets .stall-group {
+  margin: 0;
+}
+#sets .stall-head {
+  margin: 0 0 0.65rem;
+}
+#sets .stall-name {
+  margin: 0 0 0.15rem;
+}
+#sets .stall-name .en,
+#sets .stall-name .zh {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: clamp(1.05rem, 1.4vw, 1.35rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink);
+  line-height: 1.2;
+}
+#sets .stall-name .zh {
+  text-transform: none;
+  letter-spacing: 0.04em;
+  font-family: var(--zh-display), var(--sans);
+  font-weight: 700;
+}
+#sets .stall-place .en,
+#sets .stall-place .zh {
+  font-family: var(--serif);
+  font-size: clamp(0.92rem, 1.15vw, 1.05rem);
+  line-height: 1.4;
+  color: var(--ink-soft, #4a4540);
+}
+#sets .stall-place .zh {
+  font-family: var(--zh-display), var(--serif);
+  font-weight: 600;
+}
+#sets .stall-row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 100%;
+}
+#sets .stall-row .fig {
+  margin: 0;
+  flex: var(--ar, 1) 1 0;
+  min-width: 0;
+  width: auto;
+  background: #fff;
+}
+#sets .stall-row .fig.natural img {
+  width: 100%;
+  height: auto;
+  max-width: none;
+  display: block;
+  object-fit: contain;
+  object-position: center center;
+  aspect-ratio: var(--ar, auto);
+  background: #fff;
+}
+#sets .stall-row .fig figcaption {
+  display: none;
+}
+@media (max-width: 700px) {
+  #sets .stall-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  #sets .stall-row .fig:first-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    flex: none;
+    width: auto;
+    max-width: 42vw;
+  }
+  #sets .stall-row .fig:first-child img {
+    height: clamp(220px, 52vw, 340px);
+    width: auto;
+    aspect-ratio: var(--ar, auto);
+  }
+  #sets .stall-row .fig:not(:first-child) {
+    flex: none;
+    width: auto;
+  }
+  #sets .stall-row .fig:not(:first-child) img {
+    height: auto;
+    width: 100%;
+  }
+}
+
 .media-grid.cols-4 .fig figcaption {
   font-size: 0.92rem;
   line-height: 1.5;

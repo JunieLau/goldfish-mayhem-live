@@ -1127,6 +1127,107 @@ window.GM = {
                   ]
                 },
                 {
+                  type: "stall-rows",
+                  groups: [
+                    {
+                      nameEn: "BOBO",
+                      nameZh: "BOBO",
+                      placeEn: "Fishball hawker stall",
+                      placeZh: "鱼蛋走鬼摊位",
+                      items: [
+                        {
+                          src: "assets/characters/bobo-poster-bad-girl-good-luck.jpg",
+                          w: 941,
+                          h: 1672,
+                          natural: true,
+                          altEn: "Character poster of BOBO in a lion-dance headdress, with a mechanical right arm",
+                          altZh: "BOBO 的角色海报：头戴醒狮头，右臂为机械臂"
+                        },
+                        {
+                          src: "media/character-stalls/bobo-stall-cart.jpg",
+                          w: 2400,
+                          h: 1239,
+                          natural: true,
+                          altEn: "Two states of BOBO’s fishball hawker cart: travel mode and open for business, with detail callouts below",
+                          altZh: "BOBO 鱼蛋走鬼车的两种状态：行驶模式与营业模式，下方有细节标注"
+                        },
+                        {
+                          src: "media/character-stalls/bobo-stall-street.jpg",
+                          w: 2400,
+                          h: 1350,
+                          natural: true,
+                          altEn: "Goldfish Street from above, with the fishball hawker cart in the square under the 金魚街 sign",
+                          altZh: "俯瞰金鱼街，鱼蛋走鬼车停在「金魚街」牌匾下的广场上"
+                        }
+                      ]
+                    },
+                    {
+                      nameEn: "FENG SHUI GIRL",
+                      nameZh: "风水妹",
+                      placeEn: "The feng shui stall deep in the alley",
+                      placeZh: "巷子深处的风水摊",
+                      items: [
+                        {
+                          src: "assets/characters/fengshui-poster-teal-fox.jpg",
+                          w: 941,
+                          h: 1672,
+                          natural: true,
+                          altEn: "Character poster of FENG SHUI GIRL in a pink qipao, with a white fox behind her",
+                          altZh: "风水妹的角色海报：身穿粉色旗袍，身后有一只白狐"
+                        },
+                        {
+                          src: "media/character-stalls/fengshui-stall-alley.jpg",
+                          w: 2048,
+                          h: 1152,
+                          natural: true,
+                          altEn: "A narrow alley marked 風水大師, with the feng shui stall glowing at the far end",
+                          altZh: "一条挂着「風水大師」横幅的窄巷，尽头是亮着灯的风水摊"
+                        },
+                        {
+                          src: "media/character-stalls/fengshui-stall-interior.jpg",
+                          w: 1672,
+                          h: 941,
+                          natural: true,
+                          altEn: "FENG SHUI GIRL at her stall, seeing two clients, with a laptop on the table",
+                          altZh: "风水妹坐在摊位里为两位客人看事，桌上放着笔记本电脑"
+                        }
+                      ]
+                    },
+                    {
+                      nameEn: "LITTLE ONE",
+                      nameZh: "细细粒",
+                      placeEn: "The Ancestors’ Level-Up Invention Shop",
+                      placeZh: "祖先升呢发明铺",
+                      items: [
+                        {
+                          src: "assets/characters/little-one-poster-soul-leaving.jpg",
+                          w: 941,
+                          h: 1672,
+                          natural: true,
+                          altEn: "Character poster of LITTLE ONE, with a ghostly face above her head and a mechanical chest",
+                          altZh: "细细粒的角色海报：头顶幽魂面容，胸前是机械装置"
+                        },
+                        {
+                          src: "media/character-stalls/littleone-stall-shopfront.jpg",
+                          w: 1672,
+                          h: 941,
+                          natural: true,
+                          altEn: "The shopfront of the Ancestors’ Level-Up Invention Shop, with the sign 祖先升呢發明舖",
+                          altZh: "「祖先升呢发明铺」店面，招牌写作「祖先升呢發明舖」"
+                        },
+                        {
+                          src: "media/character-stalls/littleone-stall-workshop.jpg",
+                          w: 1672,
+                          h: 941,
+                          natural: true,
+                          altEn: "The workshop inside the Ancestors’ Level-Up Invention Shop, with tools, paper offerings and mechanical arms around a desk",
+                          altZh: "祖先升呢发明铺内的工坊，书桌周围是工具、纸扎和机械臂"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
                   type: "links",
                   items: [
                     {

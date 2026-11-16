@@ -95,7 +95,7 @@
     const go = img.href && !img.hideGo
       ? `<div class="doc-go">${textPair({ en: (img.hrefKindEn || "Open") + " ↗", zh: (img.hrefKindZh || "打开") + " ↗" })}</div>`
       : "";
-    const loading = img.sheet ? "eager" : "lazy";
+    const loading = (img.sheet || img.eager) ? "eager" : "lazy";
     const fig = `<figure class="${cls.join(" ")}" ${img.href ? "" : `data-lb="${esc(img.src)}" data-slide="${img.slide ? "1" : ""}" data-idx="${i}" tabindex="0" role="button"`} aria-label="${alt}"${arStyle}>
       <img src="${esc(img.src)}" alt="${alt}"${wh} loading="${loading}">
       ${hint}
@@ -761,6 +761,20 @@
         return `<div class="mod media-grid ${cols}">${(b.items || [])
           .map((img, i) => renderFig(img, `${idxPrefix}-img-${i}`))
           .join("")}</div>`;
+      }
+      case "stall-rows": {
+        const groups = (b.groups || []).map((g, gi) => {
+          const namePair = `<div class="pair stall-name"><div class="en">${esc(g.nameEn || "")}</div><div class="zh">${esc(g.nameZh || "")}</div></div>`;
+          const head = `<div class="stall-head">
+            ${namePair}
+            <div class="stall-place">${textPair({ en: g.placeEn || "", zh: g.placeZh || "" })}</div>
+          </div>`;
+          const row = `<div class="stall-row">${(g.items || [])
+            .map((img, i) => renderFig(Object.assign({ natural: true, eager: true }, img), `${idxPrefix}-stall-${gi}-${i}`))
+            .join("")}</div>`;
+          return `<section class="stall-group">${head}${row}</section>`;
+        }).join("");
+        return `<div class="mod stall-rows">${groups}</div>`;
       }
       case "slides":
         return `<div class="mod slide-stack">${(b.items || [])
