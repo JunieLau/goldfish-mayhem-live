@@ -1326,8 +1326,8 @@ window.GM = {
       blocks: [
         {
           type: "lede",
-          en: "What we have talked about so far is work I have already made. I also want to share a little of how I imagine the future — and to keep a clear line between plans I have already named, and ideas I am still exploring.",
-          zh: "前面聊的是我已经做过的事情。接下来，想跟大家分享一点我对未来的想象——也会分清：哪些是我已经说过的愿望，哪些还只是仍在探索的构想。",
+          en: "What we have talked about so far is work I have already made. I also want to share a little of how I imagine the future.",
+          zh: "前面聊的是我已经做过的事情。接下来，想跟大家分享一点我对未来的想象。",
           source: "public"
         },
         {
@@ -1452,8 +1452,8 @@ window.GM = {
         {
           type: "callout",
           kind: "idea",
-          en: "I have recently been conceiving a futurist virtual ecosystem. It might combine AI agents, real-time generation, XR, and future sensing technologies such as brain–computer interfaces. In that world, humans and AI agents could talk and work together; the world itself would keep changing with what different characters do; some stories would not need every detail written in advance, but could keep generating inside rules, relationships, visual assets and narrative boundaries we have set. I am exploring this. It is not a greenlit production I can announce.",
-          zh: "我最近一直在构想一个未来主义的虚拟生态系统。它可能结合 AI 智能体、实时生成、XR，以及脑机接口等未来的感知技术。在这个世界里，人类和 AI 智能体可以相互交流、合作；整个世界也会随着不同角色的行为持续发生变化；其中一些故事，也不需要由人类创作者提前写好每一个细节，而是可以在我们设定好的世界规则、人物关系、视觉资产和叙事边界之内，由 AI 持续生成和演化。这是我正在探索的构想，并不是一个已经立项、可以宣布开拍的项目。",
+          en: "I have recently been conceiving a futurist virtual ecosystem. It might combine AI agents, real-time generation, XR, and future sensing technologies such as brain–computer interfaces. In that world, humans and AI agents could talk and work together; the world itself would keep changing with what different characters do; some stories would not need every detail written in advance, but could keep generating inside rules, relationships, visual assets and narrative boundaries we have set. I am exploring this.",
+          zh: "我最近一直在构想一个未来主义的虚拟生态系统。它可能结合 AI 智能体、实时生成、XR，以及脑机接口等未来的感知技术。在这个世界里，人类和 AI 智能体可以相互交流、合作；整个世界也会随着不同角色的行为持续发生变化；其中一些故事，也不需要由人类创作者提前写好每一个细节，而是可以在我们设定好的世界规则、人物关系、视觉资产和叙事边界之内，由 AI 持续生成和演化。这是我正在探索的构想。",
           source: "public"
         },
         {
